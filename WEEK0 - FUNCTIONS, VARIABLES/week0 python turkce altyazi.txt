@@ -1,0 +1,8794 @@
+
+1 00:00:00.000 --> 00:00:03,444
+[GENTLE ORKESTRAL MÜZİK ÇALMA]
+
+2 00:00:03,444 --> 00:00:24,110
+
+3 00:00:24,110 --> 00:00:26,840
+DAVID MALAN: Pekala, bu
+CS50'nin Tanıtımı
+
+4 00:00:26,840 --> 00:00:28,190'dan
+Python ile Programlamaya.
+
+5 00:00:28,190 --> 00:00:32.009
+Benim adım David Malan ve bu hafta
+fonksiyonlar ve değişkenlerle ilgili haftamız.
+
+6 00:00:32.009 --> 00:00:35,690 Ama
+muhtemelen çoğunuz, çoğunuz daha önce
+gerçekten programlamadınız.
+
+7 00:00:35,690 --> 00:00:37,790
+Öyleyse tam da bunu yaparak başlayalım.
+
+8 00:00:37,790 --> 00:00:40,250
+Buradan devam edeyim
+ve bilgisayarımı açayım.
+
+9 00:00:40,250 --> 00:00:43,220 ve
+üzerinde, adlı bir program
+Visual Studio Kodu veya VS
+10
+00:00:43,220 --> 00:00:45,650
+Günümüzde çok popüler bir
+program olan kod
+
+11 00:00:45,650 --> 00:00:47,220
+gerçekten kod yazmak için.
+12
+00:00:47,220 --> 00:00:49,840 Artık
+bu özel aracı kullanarak kod
+yazmanız gerekmiyor.
+
+Machine Translated by Google
+13
+
+00:00:49,840 --> 00:00:51,590
+Aslında, günün sonunda
+ihtiyacımız olan tek şey
+14
+00:00:51,590 --> 00:00:54,742 bir
+metin düzenleyici, metin yazmak için
+bir programdır.
+15
+00:00:54,742 --> 00:00:57,200
+Heck, eğer gerçekten istersen, bir
+şey bile kullanabilirsin.
+16
+00:00:57,200 --> 00:00:59,180 Google
+Dokümanlar veya Microsoft Word gibi.
+17
+00:00:59,180 --> 00:01:00,952
+Doğru biçimde
+kaydetmeniz gerekir,
+18
+00:01:00,952 --> 00:01:04,160 ama
+aslında günün sonunda tek ihtiyacınız olan
+metin yazmak için bir program
+19
+00:01:04,160 --> 00:01:06,170 çünkü
+kod budur-- metin.
+20
+00:01:06,170 --> 00:01:08,090
+Şimdi bu özel program içinde,
+gidiyorum
+21
+00:01:08,090 --> 00:01:10,550 bir veya
+daha fazla dosya oluşturma yeteneğine
+sahip olmak
+22
+00:01:10,550 --> 00:01:12,500 ekranın
+bu üst kısmı aracılığıyla.
+23
+00:01:12,500 --> 00:01:14,810
+Ve ben bunu doğrudan
+suya dalarak yapacağım.
+24
+00:01:14,810 --> 00:01:17,030 ve bunu
+
+Machine Translated by Google
+ekranımın altında.
+25
+00:01:17,030 --> 00:01:20,060
+Ekranımın altında sözde bir
+terminal penceresi var
+26
+00:01:20,060 --> 00:01:25,310 ve bu,
+temeldeki bir komut satırı arabirimi veya
+CLI arabirimidir.
+27
+00:01:25,310 --> 00:01:29,340
+bilgisayar, ister Mac'iniz, ister PC'niz, hatta
+buluttaki bir sunucu olsun.
+28
+00:01:29,340 --> 00:01:32,240
+Ve burada yapacağım şey, kelimenin
+tam anlamıyla "kod" yazmak ve sonra
+29
+00:01:32,240 --> 00:01:36,530
+Kodlamak istediğim dosyanın adı,
+örneğin Hello.py.
+30
+00:01:36,530 --> 00:01:40,310
+Birazdan göreceğimiz gibi, Python'da yazdığınız
+herhangi bir programın genellikle bir dosyası vardır.
+
+31
+00:01:40,310 --> 00:01:44,210
+Bilgisayara bunun gerçekten bir program
+olduğunu belirtmek için .py ile biten ad
+32
+00:01:44,210 --> 00:01:45,320 Python
+ile yazılmıştır.
+33
+00:01:45,320 --> 00:01:48,440
+Şimdi burada ekranımın üst kısmında
+göreceksiniz, yanıp sönen bir imlecim var,
+34
+00:01:48,440 --> 00:01:51,800 bir
+satır bir-- kodumun ilk satırının gideceği
+yer-35
+00:01:51,800 --> 00:01:55,730 ve
+sonra bana Hello.py dosyasının adını
+hatırlatan bir sekme.
+
+Machine Translated by Google
+36
+00:01:55,730 --> 00:01:58,370
+Ve çok fazla Python
+bilmeden, ben
+37
+00:01:58,370 --> 00:02:00,770
+buraya ilk programımı şu şekilde
+yazacağım-38
+00:02:00,770 --> 00:02:02,120
+yazdır("merhaba,dünya").
+39
+00:02:02,120 --> 00:02:08,396
+
+40
+00:02:08,396 --> 00:02:10.729
+Ve klavyemde bazı
+düşüncelerimi göreceksin
+
+41 00:02:10.729 --> 00:02:11,604
+benim için bitmişti.
+42
+00:02:11,604 --> 00:02:14.870
+Sadece bir parantez yazmam gerekti ve
+diğeri otomatik olarak belirdi,
+43
+00:02:14,870 --> 00:02:18,590 ve
+burada bu araç gibi araçların
+göreceğimiz özelliği bu.
+44
+00:02:18,590 --> 00:02:21,080
+Şimdi daha önce hiç
+programlama yapmamış olsanız bile,
+
+45
+00:02:21,080 --> 00:02:25,610
+ihtimal, bu basit programın ne
+yapacağını tahmin edebilirsiniz.
+46
+00:02:25,610 --> 00:02:28,250 Ve
+bu sadece bir satır.
+print("merhaba,dünya").
+47
+00:02:28,250 --> 00:02:32,030
+
+Machine Translated by Google
+
+48
+00:02:32.030 --> 00:02:33,830
+Gerçekten de, bu programı
+en sonunda çalıştırdığımda,
+
+49
+00:02:33,830 --> 00:02:35,948 Sadece
+dünyaya merhaba diyecek.
+
+50
+00:02:35,948 --> 00:02:37,490
+Ve aslında, bu çok ünlü...
+51
+00:02:37,490 --> 00:02:39,440 belki de
+sahip olduğunuz en standart program
+
+52
+00:02:39,440 --> 00:02:42,530 Python
+veya başka bir dilde ilk programınız olarak
+yazabilir,
+53
+00:02:42,530 --> 00:02:44,280 ve
+burada yaptığım şey bu.
+54
+00:02:44,280 --> 00:02:48,230
+Ama Mac'imde, bilgisayarımda, hatta
+telefonumda bile, genellikle böyle bir alışkanlığım var,
+
+55
+00:02:48,230 --> 00:02:51,170 sizin
+gibi, bir simgeye çift tıklayarak
+programları çalıştırma
+56
+00:02:51,170 --> 00:02:52.760 veya
+sadece ekrana dokunarak.
+57
+00:02:52,760 --> 00:02:54,920 Ama
+burada böyle bir simge göremiyorum.
+58
+00:02:54,920 --> 00:02:58,730
+Ve aslında bunun nedeni, en azından
+şu anki Mac'imle olan arayüzümün
+59
+00:02:58,730 --> 00:03:02,180
+
+Machine Translated by Google
+veya buluttaki PC veya bir
+
+sunucu, yine yalnızca bir CLI'dir-60
+00:03:02,180 --> 00:03:04,340
+komut satırı arabirimi--
+
+61
+00:03:04,340 --> 00:03:07,820
+menülerden, düğmelerden ve
+simgelerden bir adım geri gibi gelebilir
+62
+00:03:07,820 --> 00:03:10.730 sen
+ve ben her gün doğal olarak kabul
+ettiğimizi, bulacağınızı düşünüyoruz,
+
+63
+00:03:10.730 --> 00:03:13.670
+sonuçta çok daha güçlü bir arayüz
+ve inanılmaz
+64
+00:03:13,670 --> 00:03:16,920
+gerçek dünyadaki programcılar
+arasında popülerdir.
+65
+00:03:16,920 --> 00:03:20.245
+Yani bu programı çalıştırmak
+için bir komut kullanmam gerekecek
+66
+00:03:20,245 --> 00:03:23,120 ve
+imlecimi ekranın altına geri götüreceğim
+
+67
+00:03:23,120 --> 00:03:25,790
+burada daha önce bir komut
+çalıştırdım-68
+00:03:25,790 --> 00:03:30,410
+Bilgisayarımda VS Code açma etkisine sahip
+Code komutu,
+69
+00:03:30,410 --> 00:03:33,560 ve
+sonra kodlamak istediğim dosyanın
+adını geçtim.
+70
+00:03:33,560 --> 00:03:36.000
+
+Machine Translated by Google
+Şimdi ikinci bir komut
+yazma şansım var,
+71
+00:03:36.000 --> 00:03:38,090 ve
+ikinci bir dolar işareti gördüğümü
+göreceksiniz.
+72
+00:03:38,090 --> 00:03:41,360
+Şimdi buradaki dolar işareti herhangi
+bir para birimini veya parayı göstermiyor,
+73
+00:03:41,360 --> 00:03:43,340
+genellikle kullanılan semboldür
+
+74
+00:03:43,340 --> 00:03:46,610 komut
+satırı arayüzünün nerede istediğini
+belirtmek için
+75
+00:03:46,610 --> 00:03:47,990 bu
+komutları siz koyun.
+76
+00:03:47,990 --> 00:03:51,530
+Şimdi burada çalıştırabileceğim
+komut şu olacak-77
+00:03:51,530 --> 00:03:55,310
+Python of Hello.py'yi çalıştıracağım.
+78
+00:03:55,310 --> 00:03:56,490 Şimdi
+neden böyle?
+79
+00:03:56,490 --> 00:04:00,380
+Görünüşe göre Python gibi bir dilde kod
+yazdığımda,
+80
+00:04:00,380 --> 00:04:02,120 tabii
+ki o dosyada saklanıyor-81
+00:04:02,120 --> 00:04:07,063
+Merhaba.py, ancak kodu yukarıdan
+aşağıya yorumlamam gerekiyor,
+82
+
+Machine Translated by Google
+00:04:07,063 --> 00:04:09,230
+
+soldan sağa, böylece bilgisayar ne
+yapacağını bilir.
+83
+00:04:09,230 --> 00:04:10,940
+Gerçekten de, günün
+sonunda, gerçekten yapmasanız bile
+84
+00:04:10,940 --> 00:04:12,920
+bilgisayarlar hakkında çok şey
+biliyorsunuz, muhtemelen
+85
+00:04:12,920 --> 00:04:16,790
+bilgisayarların yalnızca sıfırları ve birleri
+anladığını duydum, sözde ikili
+86
+00:04:16,790 --> 00:04:17,390
+sistem.
+87
+00:04:17,390 --> 00:04:21,769
+Eğer durum buysa, o zaman "yazdır" yazan
+ve parantez içindeki bir şey
+88
+00:04:21,769 --> 00:04:25,430 ve
+alıntısız merhaba dünya, kesinlikle
+sıfırlar ve birler değildir.
+89
+00:04:25,430 --> 00:04:27,750
+Bir şekilde onu sıfırlara ve birlere
+çevirmeliyiz.
+
+90
+00:04:27,750 --> 00:04:29,000
+bilgisayarın anladığı.
+91
+00:04:29,000 --> 00:04:33,360
+Neyse ki, böyle bir programı önceden
+yüklediyseniz,
+92
+00:04:33,360 --> 00:04:36,380
+Python adında bir dilin yanı sıra bir
+program var.
+93
+00:04:36,380 --> 00:04:39,390
+Yani Python sadece bir dil değil
+
+Machine Translated by Google
+içine kod yazacağımız,
+94
+00:04:39,390 --> 00:04:42,590 aynı
+zamanda tercüman olarak da
+bilinen bir programdır
+95
+00:04:42,590 --> 00:04:46,490 kendi
+başınıza ücretsiz olarak kurabilirsiniz
+Mac veya PC veya buluttaki bir sunucu
+96
+00:04:46,490 --> 00:04:50,990 ve
+daha sonra o programı, o yorumlayıcıyı
+çalıştırabilir ve ona girdi olarak iletebilirsiniz.
+97
+00:04:50,990 --> 00:04:53,870
+dosyanızın adı benimki gibi burada,
+Hello.py.
+98
+00:04:53,870 --> 00:04:56.000
+Ve sonra o program, o
+tercüman,
+99
+00:04:56.000 --> 00:04:59,210
+yukarıdan aşağıya, soldan sağa
+okuma işlemini gerçekleştirin
+100
+00:04:59,210 --> 00:05:02,210 ve bu
+sıfırlara ve birlere etkili bir şekilde
+çevrilmesi
+101
+00:05:02,210 --> 00:05:04,170
+bilgisayarın anlayabileceği şekilde.
+102
+00:05:04,170 --> 00:05:05,360 O
+halde hadi bunu yapalım.
+103
+00:05:05,360 --> 00:05:07,190
+Burada VS Koduna geri döneyim.
+104
+00:05:07,190 --> 00:05:11,030
+Hello.py'nin Python'unu zaten
+yazdım ama Enter'a basmadım.
+105
+
+Machine Translated by Google
+
+00:05:11,030 --> 00:05:13,430
+
+Ve şimdi bu komutu başlatacak
+olan şey bu
+106
+00:05:13,430 --> 00:05:16,190 ve
+umarım, eğer bunların hiçbirini
+batırmadıysam,
+107
+00:05:16,190 --> 00:05:20,370 İlk
+programımın çıktısını ekranda
+görmeliyim.
+108
+00:05:20,370 --> 00:05:23,480 Ve
+işte, merhaba dünya.
+109
+00:05:23,480 --> 00:05:25,970
+Yani siz de tam olarak aynı
+kodu yazdıysanız
+110
+00:05:25,970 --> 00:05:28,400 ve
+tam olarak aynı komutu yürüttüler,
+
+111
+00:05:28,400 --> 00:05:32,840 Bu
+durumda ilk programınızı
+Python'da yazmış olacaksınız.
+112
+00:05:32,840 --> 00:05:34,790
+Şimdi bir adım geriye
+gidelim ve düşünelim,
+113
+00:05:34,790 --> 00:05:37,190
+Aslında az önce yaptığımız şey
+nedir ve ne
+114
+00:05:37,190 --> 00:05:38,930
+burada ekrana mı bakıyoruz?
+115
+00:05:38,930 --> 00:05:41,450
+Her şeyden önce, çoğu
+programlama dilinde,
+116
+00:05:41,450 --> 00:05:43,950
+
+Machine Translated by Google
+fonksiyonlar denir.
+
+117
+00:05:43,950 --> 00:05:46,460
+Bir işlev, bir eylem veya
+fiil gibidir.
+
+118
+00:05:46,460 --> 00:05:48,800
+programda bir şeyler yapmanızı sağlar.
+119
+00:05:48,800 --> 00:05:52,730
+Ve genel olarak konuşursak, herhangi bir dil
+önceden belirlenmiş bazı setlerle birlikte gelir.
+
+120
+00:05:52,730 --> 00:05:57,097
+işlev-- bilgisayarın zaten yapacağı bazı
+çok temel eylemler veya fiiller
+121
+00:05:57,097 --> 00:05:59,180
+sizin için nasıl yapılacağını
+biliyorum, bu dil, gerçekten,
+122
+00:05:59,180 --> 00:06:00,530
+sizin için nasıl yapılacağını bilecek.
+123
+00:06:00,530 --> 00:06:04,640
+Ve siz, programcı, insan, bu işlevleri
+istediğiniz zaman kullanabilirsiniz.
+124
+00:06:04,640 --> 00:06:07,020
+bilgisayarın bunları yapmasını sağlamak için.
+125
+00:06:07,020 --> 00:06:11,835
+Burada söz konusu program, Hello.py
+tek bir işlev kullanıyor.
+126
+00:06:11,835 --> 00:06:13,460 Ve
+belki de ne olduğunu tahmin edebilirsiniz.
+127
+00:06:13,460 --> 00:06:16,760
+Bu işlev, elbette, bu işlev
+yazdırılacak
+128
+00:06:16,760 --> 00:06:19,430
+
+Machine Translated by Google
+ve bu yazdırma işlevi,
+elbette,
+129
+00:06:19,430 --> 00:06:22,340
+önceden belirlenmiş bir dizi metin yazdırın.
+130
+00:06:22,340 --> 00:06:26,240 Yani
+siz ne yazdırmak istiyorsanız onu
+yazdırır.
+131
+00:06:26,240 --> 00:06:29,600
+Ve burada da, dünyada başka bir
+terminoloji parçamız var mı?
+132
+00:06:29,600 --> 00:06:31,430
+programlama, yani argümanlar.
+133
+00:06:31,430 --> 00:06:36,830 Bir
+argüman, bir şekilde onun davranışını
+etkileyen bir fonksiyon girdisidir.
+134
+00:06:36,830 --> 00:06:38,660
+icat eden insanlar
+tabii ki piton
+135
+00:06:38,660 --> 00:06:40,790 sen
+ve ben ne olduğumuzu tam olarak
+bilmiyorduk
+136
+00:06:40,790 --> 00:06:43,850
+ekrana yazdırmak isteyecekler, bu
+yüzden bu baskıyı tasarladılar
+137
+00:06:43,850 --> 00:06:46,580 bu
+parantezleri kullanarak işlev
+
+138
+00:06:46,580 --> 00:06:49,340 bir
+metin dizesini girdi olarak almak
+için
+139
+00:06:49,340 --> 00:06:52,250
+İngilizce veya başka bir insan
+dilinde, yani
+
+Machine Translated by Google
+140
+00:06:52,250 --> 00:06:56,540 Bu
+işlevin nihayetinde ekrana
+yazdırmasını istediğiniz şey.
+141
+00:06:56,540 --> 00:06:59,640 Ve
+programın nihayetinde ekranda
+yaptığı şey nedir?
+142
+00:06:59,640 --> 00:07:01,070
+Evet, elbette yazdırılıyor.
+143
+00:07:01,070 --> 00:07:03,230
+Ekranda bize merhaba, dünyayı
+gösteriyor.
+144
+00:07:03,230 --> 00:07:05,743 Ve
+bu genellikle programlamada
+yan etki olarak bilinir.
+145
+00:07:05,743 --> 00:07:07,160
+Görsel olabilir, işitsel olabilir.
+146
+00:07:07,160 --> 00:07:09,470
+Bu durumda, ekranda
+görünen bir şey
+147
+00:07:09,470 --> 00:07:12,690 ve
+bu nedenle işlevler gerçekten de
+bu yan etkilere sahip olabilir.
+148
+00:07:12,690 --> 00:07:15,650
+Bu fiil veya eylem olarak
+yapabilecekleri şeylerden biri,
+149
+00:07:15,650 --> 00:07:19,100
+ekranda yan etki olarak
+görüntülenecek, bu kelimeler gibi bir şey
+150
+00:07:19,100 --> 00:07:20,240
+istediğimiz-151
+00:07:20,240 --> 00:07:21,870
+
+Machine Translated by Google
+Selam Dünya.
+152
+00:07:21,870 --> 00:07:25.080 Bu
+benim ilk programım ve bilirsiniz,
+oldukça iyi hissediyorum.
+153
+00:07:25.080 --> 00:07:26,570 Her
+şey planlandığı gibi çalıştı.
+154
+00:07:26,570 --> 00:07:28,490
+Hiç hata yapmadım,
+ama dürüst olmak gerekirse,
+
+155
+00:07:28,490 --> 00:07:30,560
+programlamayı öğrenirken ve
+hatta
+156
+00:07:30,560 --> 00:07:34,250
+Yıllar sonra programlamayı öğrendikten
+sonra hata yapacaksınız.
+157
+00:07:34,250 --> 00:07:36,615
+Ve elbette bu hatalara
+atıfta bulunulur.
+158
+00:07:36,615 --> 00:07:38,990
+zaten biliyor olabileceğiniz bir
+terime, ki bu bir hata terimidir.
+159
+00:07:38,990 --> 00:07:42,230 Bir
+hata, bir programdaki bir hatadır
+ve pek çok biçim alabilirler.
+160
+00:07:42,230 --> 00:07:46,460
+Ve belki de önümüzdeki
+haftalarda bunu bilerek rahatlayın,
+161
+00:07:46,460 --> 00:07:48,450 çok
+fazla hata yapacaksın.
+162
+00:07:48,450 --> 00:07:51,320
+Tıpkı benim yaptığım gibi, kodunuzda
+çok fazla hata olacak
+
+Machine Translated by Google
+163
+
+00:07:51,320 --> 00:07:53,490 ve
+hala yaptığım gibi.
+164
+00:07:53,490 --> 00:07:55,610
+Ve bu böceklerin kendileri
+sadece hatalar
+165
+00:07:55,610 --> 00:07:57,230
+çözmeniz gereken problemler.
+166
+00:07:57,230 --> 00:07:59,540
+Ve önümüzdeki haftalarda, size
+
+167
+00:07:59,540 --> 00:08:03,760 Bu
+sorunları çözebileceğiniz hem zihinsel hem
+de teknik birçok araç.
+168
+00:08:03,760 --> 00:08:07,010
+Ancak programınızı ilk kez yazarken
+cesaretiniz kırılmasın.
+169
+00:08:07,010 --> 00:08:11,630 ilk
+seferde bile çalışmıyor, zamanla, pratikle
+çalışacak,
+170
+00:08:11,630 --> 00:08:12,810 ve
+tecrübeli.
+171
+00:08:12,810 --> 00:08:15,200
+Bu yüzden şimdi kasıtlı olarak
+bir hata yapmama izin ver
+
+172
+00:08:15,200 --> 00:08:18,710 zaten
+kazara yapmış olabileceğim sıfırdan
+farklı bir şans vardı,
+173
+00:08:18,710 --> 00:08:19,760 ama
+şansım yaver gitti.
+174
+00:08:19,760 --> 00:08:22,280
+Devam edeyim ve sadece
+unuttuğumu varsayalım
+
+Machine Translated by Google
+175
+00:08:22,280 --> 00:08:24,950 kapanış
+parantezi gibi bir şey eklemek için
+
+176
+00:08:24,950 --> 00:08:26,570 bu kod
+satırının sonunda.
+177
+00:08:26,570 --> 00:08:30,451
+Kod neredeyse doğru, oradaki
+yolun %99'u gibi,
+178
+00:08:30,451 --> 00:08:32,659 ama
+şimdi işaret ettiğime göre, bu oldukça
+açık
+179
+00:08:32,659 --> 00:08:34,820 kapalı
+parantez eksik.
+
+180
+00:08:34,820 --> 00:08:39,530
+Ama bunun gibi küçük, görünüşte önemsiz
+ayrıntılar bile, sen ve ben insanlar olarak
+181
+00:08:39,530 --> 00:08:40,740
+gerçekten umursamıyor.
+182
+00:08:40,740 --> 00:08:44,300 E-posta
+veya metin mesajı gönderiyorsanız, her neyse,
+bu sadece bir yazım hatasıdır.
+183
+00:08:44,300 --> 00:08:45,605 O kadar
+da önemli bir şey değil.
+184
+00:08:45,605 --> 00:08:47,480
+Bilgisayar için çok önemli olacak.
+
+185
+00:08:47,480 --> 00:08:49,230
+Bir bilgisayar sizi
+kelimenin tam anlamıyla alacak,
+186
+00:08:49,230 --> 00:08:53,210
+
+Machine Translated by Google
+ve düşüncenizi dilin beklediği şekilde
+bitirmezseniz,
+187
+00:08:53,210 --> 00:08:55,380
+mutlaka çalışmayacaktır.
+
+188
+00:08:55,380 --> 00:08:56,112
+Öyleyse yapalım şunu.
+189
+00:08:56,112 --> 00:08:58,820
+Burada devam edeceğim ve alt
+kısımdaki ekranımı temizleyeceğim
+190
+00:08:58,820 --> 00:09:01,340 sırf yeni
+bir başlangıç yapabilmem için ve
+
+Devam edeceğim ve koşacağım
+191
+00:09:01,340 --> 00:09:05,420
+Programımın bu versiyonunu silerek
+bu değişikliği yaptıktan sonra
+192
+00:09:05,420 --> 00:09:06,410
+parantez.
+193
+00:09:06,410 --> 00:09:10.490 Devam
+edeceğim ve tekrar Hello.py'ye Python
+yazacağım ve bu sefer
+194
+00:09:10.490 --> 00:09:13.040 Enter'a
+bastığımda, umarım
+Merhaba, dünyayı görmeye gidiyorum,
+
+195
+00:09:13,040 --> 00:09:16,850 ama
+burada ekranda bir hata var, sözde
+sözdizimi
+196
+00:09:16,850 --> 00:09:21,140
+klavyemde bir hata yaptığımı ifade
+eden hata.
+197
+00:09:21,140 --> 00:09:24,030 Ve
+neyse ki bu oldukça basit.
+
+Machine Translated by Google
+198
+00:09:24,030 --> 00:09:28,410
+Gerçekten de bu açık parantezin
+asla kapatılmadığını söylüyor.
+199
+00:09:28,410 --> 00:09:30,945 Ve bu
+muhtemelen oldukça sezgiseldir.
+200
+00:09:30,945 --> 00:09:33,320 Şimdi
+ne yapmam gerekiyor, tabii ki
+kapatmam gerekiyor.
+201
+00:09:33,320 --> 00:09:36,530
+Ne yazık ki, bazen önümüzdeki haftalarda
+göreceğimiz hata mesajları
+202
+00:09:36,530 --> 00:09:38,840 o
+kadar da kullanıcı dostu olmayacak.
+
+203
+00:09:38,840 --> 00:09:41,720
+Ama yine orada, deneyimle,
+pratikle,
+204
+00:09:41,720 --> 00:09:44,360 bu tür
+programlarda hata ayıklama konusunda daha iyi olun.
+
+205
+00:09:44,360 --> 00:09:46,650 Şimdi
+gerçekten doğru şekilde
+düzelttiğimden emin olayım.
+206
+00:09:46,650 --> 00:09:50,420 Devam
+edeyim ve şimdi koşayım Hello.py
+ve Enter'a basın ve işte,
+207
+00:09:50,420 --> 00:09:51,890 işimize
+geri döndük.
+208
+00:09:51,890 --> 00:09:55,430
+Pekala, burada durayım ve şimdi
+herhangi bir sorumuz var mı görelim.
+209
+00:09:55,430 --> 00:10:02,480
+
+Machine Translated by Google
+Python'un kendisi, bu programların en
+basitini yazma veya çalıştırma hakkında.
+210
+00:10:02,480 --> 00:10:06,890
+İZLEYİCİ: Bir kelimenin veya örneğin Microsoft
+Excel'in içine kod yazabilir miyim?
+211
+00:10:06,890 --> 00:10:09,473 Peki
+bunu yapmanın önündeki engel nedir?
+212
+00:10:09,473 --> 00:10:11,390
+DAVID MALAN: Gerçekten iyi
+bir soru ve izin ver
+213
+00:10:11,390 --> 00:10:14,630 tüm
+internete açıkça söylemem
+
+214
+00:10:14,630 --> 00:10:17,810
+Microsoft Word ile kod
+yazmamalısınız.
+215
+00:10:17,810 --> 00:10:20,480
+Bunu sadece bir araç
+olduğu için söyledim.
+216
+00:10:20,480 --> 00:10:23,283
+metin yazabilirsiniz ve kod, günün
+sonunda sadece metindir.
+217
+00:10:23,283 --> 00:10:24,950
+Ancak bu iş için doğru araç değil.
+218
+00:10:24,950 --> 00:10:27,890 Kalın
+yazı tipine, altını çizmeye,
+paragraflara ve benzerlerine ihtiyacımız yok.
+219
+00:10:27,890 --> 00:10:31,580
+Genellikle Microsoft Word veya Google
+Dokümanlar'dan çok daha basit bir şey isteriz.
+220
+00:10:31,580 --> 00:10:36,110 Ve
+dolayısıyla VS Kodu sadece daha genel
+amaçlı bir metin düzenleyicinin bir örneğidir.
+
+Machine Translated by Google
+221
+00:10:36,110 --> 00:10:39,110
+Hayattaki amacı, insan olarak sizin
+metni düzenlemenize izin vermektir.
+222
+00:10:39,110 --> 00:10:42,050
+Günümüzde bu metin düzenleyiciler
+çok daha fazla özellikle birlikte geliyor.
+223
+00:10:42,050 --> 00:10:44,600
+Aslında, buradaki
+kodumda bile fark edeceksiniz,
+224
+00:10:44,600 --> 00:10:47,570 Tek
+satır olmasına rağmen, biraz renk
+var.
+225
+00:10:47,570 --> 00:10:49,910 Benim
+için "yazdır" kelimesi mavi renkte
+görünüyor.
+226
+00:10:49,910 --> 00:10:51,050
+Parantezler siyahtır.
+227
+00:10:51,050 --> 00:10:54,290
+Ve daha fazla kod satırı yazdıkça göreceğiz,
+daha fazla satır
+228
+00:10:54,290 --> 00:10:56,630 çeşitli
+renklerde hayat bulacak.
+229
+00:10:56,630 --> 00:10:58,993 Şimdi
+bu, bir metin düzenleyicinin
+özelliklerinden yalnızca biri.
+
+230
+00:10:58,993 --> 00:11:01,910 Bu
+yerleşik terminal penceresi gibi
+özelliklere sahip olduğunu da göreceğiz.
+231
+00:11:01,910 --> 00:11:05,120
+Hata ayıklamak veya sorunları
+bulmak için yerleşik bir araca sahip olacak
+232
+
+Machine Translated by Google
+00:11:05,120 --> 00:11:05,780 kodlu.
+
+233
+00:11:05,780 --> 00:11:07,760
+Ve bugünlerde sadece
+çok popüler bir araç,
+234
+00:11:07,760 --> 00:11:09,560 ama
+orada çok, çok daha fazlası var.
+
+235
+00:11:09,560 --> 00:11:11,900 Bunları
+bu kursta ve sonrasında
+kullanabilirsiniz.
+236
+00:11:11,900 --> 00:11:14,120
+Biz sadece bunu büyük
+ölçüde kullanıyoruz
+237
+00:11:14,120 --> 00:11:18,980 de
+çünkü bugünlerde VS Code'u bulutta
+ücretsiz olarak kullanabilirsiniz.
+238
+00:11:18,980 --> 00:11:22,190
+Python ile programlama hakkında
+burada başka bir soruya ne dersiniz?
+239
+00:11:22,190 --> 00:11:24,950 veya
+merhaba, dünya mı yoksa daha genel
+olarak sözdizimi mi?
+
+240
+00:11:24,950 --> 00:11:28,850
+İZLEYİCİ: Evet, öyle değil mi
+diye sormaya çalışıyordum.
+241
+00:11:28,850 --> 00:11:31,923
+bilgisayarı terminal penceresini
+kullanarak çalıştırmak mümkün mü?
+242
+00:11:31,923 --> 00:11:33,590
+DAVID MALAN: Sanırım duydum ki...
+243
+00:11:33,590 --> 00:11:37,530
+programı çalıştırmak mümkünse
+
+Machine Translated by Google
+terminal penceresi olmadan?
+
+244
+00:11:37,530 --> 00:11:38,030
+Sen-245
+00:11:38,030 --> 00:11:38,540
+İZLEYİCİ: Evet efendim.
+246
+00:11:38,540 --> 00:11:39,870
+DAVID MALAN: Tamam, yine benim için dondun.
+247
+00:11:39,870 --> 00:11:41,730 Ama
+sorunun ne olduğunu anlamama izin verin.
+
+248
+00:11:41,730 --> 00:11:44,660
+Yani bu ortamda,
+Bilgisayarımı yapılandırdım,
+249
+00:11:44,660 --> 00:11:48,320 Bu
+Python programlarını sadece
+terminal penceresinden çalıştırabilirim.
+250
+00:11:48,320 --> 00:11:51,140
+Şimdi bu benim için iyi,
+programcı ya da
+251
+00:11:51,140 --> 00:11:53,390
+programlamayı öğrenmeye
+çalışıyor ama pek iyi değil
+252
+00:11:53,390 --> 00:11:57,050 Bu
+yazılımı göndermek ve diğer kişilerin
+gerçek kodunuzu kullanmasını istiyorsanız.
+253
+00:11:57,050 --> 00:12:01,550
+Kesinlikle programlar yazabilir ve sonra
+başkalarının kullanmasına izin verebilirsiniz,
+
+254
+00:12:01,550 --> 00:12:05,300 bir
+komut satırı arayüzü değil, bir grafik
+kullanıcı arayüzü veya GUI-255
+00:12:05,300 --> 00:12:08,390
+
+Machine Translated by Google
+GUI. Bu sadece bir
+
+mekanizma ve belki de, bence,
+256
+00:12:08,390 --> 00:12:10,700 kod
+yazmaya başlamak için en iyisi
+
+257
+00:12:10,700 --> 00:12:14,045
+çünkü sonunda bize çok daha
+fazla kontrol verecek.
+258
+00:12:14,045 --> 00:12:15,920
+Burada ilerlememe izin ver,
+ama lütfen hisset
+259
+00:12:15,920 --> 00:12:19,820
+sadece sohbet yoluyla da olsa soru
+sormaya devam etmek için ücretsiz.
+260
+00:12:19,820 --> 00:12:23,690
+Şimdi bu programı nasıl
+geliştirebileceğimizi düşünelim.
+261
+00:12:23,690 --> 00:12:27,530
+Biraz daha etkileşimli hale getirmek için bu
+programı geliştirmeye başlayalım
+262
+00:12:27,530 --> 00:12:30,740 ve
+herkesin selamlanmak isteyeceğini
+varsaymayın
+263
+00:12:30,740 --> 00:12:32,120 daha
+genel olarak merhaba, dünya.
+264
+00:12:32,120 --> 00:12:35,120
+Bakalım bu programa Merhaba, David
+gibi bir şey söyleyemeyecek miyim?
+265
+00:12:35,120 --> 00:12:40,280 veya
+Merhaba, Jeremiah veya Merhaba,
+Horatio veya gerçek kullanıcının adı her neyse.
+266
+00:12:40,280 --> 00:12:43,670
+Peki bunu yapmak için gidiyorum
+
+Machine Translated by Google
+Hello to pi'ye geri dönmek için
+267
+00:12:43,670 --> 00:12:46,950 ve en
+üste basitçe şöyle yazan başka bir kod
+satırı ekleyeceğim,
+268
+00:12:46,950 --> 00:12:52,490
+örneğin, adınız ne, sonunda fazladan bir
+boşluk bırakarak alıntı yapın.
+269
+00:12:52,490 --> 00:12:55,530
+Bu yüzden, bazı girdiler için onlara bir
+soru soran kullanıcıya yazdırıyorum,
+270
+00:12:55,530 --> 00:12:58,940 ama
+şimdi gerçekten kullanıcıdan girdi almak
+için başka bir fonksiyona ihtiyacım var.
+271
+00:12:58,940 --> 00:13:02,550 Ve
+mükemmel bir şekilde Python, input
+adlı bir işlevle birlikte gelir.
+272
+00:13:02,550 --> 00:13:06,470
+Yani burada devam edeceğim ve bir
+fonksiyon girişi arayacağım, paren'i aç,
+273
+00:13:06,470 --> 00:13:07,400 paren'i
+kapat.
+274
+00:13:07,400 --> 00:13:11,000
+Ve bu, yalnızca yanıp sönen bir imleç
+bekleyen kullanıcıya soracak
+275
+00:13:11,000 --> 00:13:12,440 bir
+şeyler yazmaları için.
+276
+00:13:12,440 --> 00:13:15,860
+Şimdi, giriş işlevinin belgelerini
+okursam ortaya çıkıyor,
+277
+00:13:15,860 --> 00:13:18,210 aslında
+kendisi bir argüman alır.
+278
+
+Machine Translated by Google
+00:13:18,210 --> 00:13:21,740
+
+"Yazdır"ı ayrı olarak kullanmam ve
+ardından kullanıcıdan girdi istemem gerekmiyor.
+279
+00:13:21,740 --> 00:13:25,100 Yani
+bu kodu daha kullanmadan
+basitleştirebilirim.
+280
+00:13:25,100 --> 00:13:28,430
+Burada devam edeceğim ve aynı
+dizeyi baskıdan alacağım,
+281
+00:13:28,430 --> 00:13:30,800 bunu
+giriş işlevine bir argüman olarak
+koyun,
+282
+00:13:30,800 --> 00:13:32,383 ve
+"baskıdan" tamamen kurtulun.
+283
+00:13:32,383 --> 00:13:34,967 Ve
+aslında, bu "baskı" zaten yeni bir
+satır eklerdi.
+284
+00:13:34,967 --> 00:13:37,340
+Şimdi, kullanıcının imlecinin nerede
+olduğu konusunda bir bilgi istemi aldım.
+
+285
+00:13:37,340 --> 00:13:41,030
+satırın sonunda yanıp sönecek ve onlara
+"Adın ne?" diye soracak.
+286
+00:13:41,030 --> 00:13:46,580
+Terminal penceremde Python of
+Hello.py'yi çalıştıracağım, Enter.
+287
+00:13:46,580 --> 00:13:47,150
+Tamam.
+288
+00:13:47,150 --> 00:13:48,150
+İlerleme kaydediyoruz.
+289
+00:13:48,150 --> 00:13:51,280
+Görünüşe göre bu yeni işlev girişi
+gerçekten beni, insanı,
+
+Machine Translated by Google
+290
+00:13:51,280 --> 00:13:51,780
+giriş için.
+291
+00:13:51,780 --> 00:13:53,155
+Bu yüzden adımı yazacağım-292
+00:13:53,155 --> 00:13:54,290
+David-- ve Enter'a basın.
+293
+00:13:54,290 --> 00:13:57,440
+Ne yazık ki, benim adımla
+gerçekten hiçbir şey yapmıyor,
+294
+00:13:57,440 --> 00:13:59,240
+hemen çıktı verir.
+295
+00:13:59,240 --> 00:14:01,160
+Pekala, bunu düzeltebilirim,
+değil mi?
+296
+00:14:01,160 --> 00:14:05,480
+2. satıra geçebilir ve "dünya"yı
+"David" olarak değiştirebilirim.
+297
+00:14:05,480 --> 00:14:10,310 ve
+sonra burada terminal penceremde
+Python of Hello.py, Enter yapabilirim.
+298
+00:14:10,310 --> 00:14:11,150
+Adın ne?
+299
+00:14:11,150 --> 00:14:12,410
+David, Girin.
+300
+00:14:12,410 --> 00:14:13,105
+Ve işte başlıyoruz.
+301
+00:14:13,105 --> 00:14:14,480
+Pekala, şimdi hazırım ve koşuyorum.
+302
+00:14:14,480 --> 00:14:17,520
+
+Machine Translated by Google
+Şimdi programım istendiği gibi çalışıyor.
+303
+00:14:17,520 --> 00:14:21,410 Tabii
+ki, burada amaçlandığı gibi
+çalışmıyor.
+304
+00:14:21,410 --> 00:14:25,070
+Devam edeyim ve meslektaşım, Carter
+gibi davranmayı deneyeyim.
+305
+00:14:25.070 --> 00:14:26,760 Peki
+Carter'ın adı bu.
+306
+00:14:26,760 --> 00:14:29,927
+Devam edeceğim ve Enter'a basacağım ve
+Bakacağım, tabii ki, Merhaba Carter-307
+00:14:29,927 --> 00:14:32,520 tabii
+ki hayır, çünkü
+Tabiri caizse, kodladım,
+308
+00:14:32,520 --> 00:14:35,010
+İsmimi kelimenin tam anlamıyla
+dizenin içine yazdım.
+309
+00:14:35,010 --> 00:14:40,040
+Bu yüzden, kullanıcının girdisinin ne olduğunu
+gerçekten geri almanın bir yoluna ihtiyacımız var.
+
+310
+00:14:40,040 --> 00:14:41.780 ve
+nihayetinde onunla bir şeyler yapmak.
+311
+00:14:41,780 --> 00:14:44,930
+Ve bunun için programlamanın başka
+bir özelliğinden yararlanacağız,
+312
+00:14:44,930 --> 00:14:47,510
+özellikle bazı işlevlerin bir özelliğidir.
+
+313
+00:14:47,510 --> 00:14:49,850 de
+dönüş değerlerine sahip olabilir.
+314
+
+Machine Translated by Google
+00:14:49,850 --> 00:14:52,700
+Girdiyi yine bu eylem
+olarak düşünürseniz,
+315
+00:14:52,700 --> 00:14:55,880
+bu fiil-- aslında onu belki bir kişi
+olarak kişileştirebilirsiniz,
+316
+00:14:55,880 --> 00:14:58,130
+soru sorduğunuz bir arkadaşınız
+gibi
+317
+00:14:58,130 --> 00:15:00,797
+ve arkadaşınızdan başka birinden
+bilgi almasını istediniz-318
+00:15:00,797 --> 00:15:02,210
+git o kişiye adını sor.
+319
+00:15:02,210 --> 00:15:05,630
+Ve arkadaşın o kişinin adını
+bilerek geri dönerse, peki,
+320
+00:15:05,630 --> 00:15:08,357
+sana bu ismi geri verseler iyi
+olmaz mıydı?
+321
+00:15:08,357 --> 00:15:10,940
+Bu, mecazi olarak yapmamız
+gereken işleve ihtiyacımız olan şey,
+322
+00:15:10,940 --> 00:15:15,200
+kullanıcının girdisini alıp bana geri
+ver ki ben, programcı,
+323
+00:15:15,200 --> 00:15:16,610
+onunla bir şeyler yapabilir.
+324
+00:15:16,610 --> 00:15:19,280
+Ama bana geri
+verilecekse,
+325
+00:15:19,280 --> 00:15:23,060
+bir yere koymak istiyorum
+
+Machine Translated by Google
+böylece geri yazdırabilirim
+326
+00:15:23,060 --> 00:15:23,720
+ekranda.
+327
+00:15:23,720 --> 00:15:26,970
+Bir kağıt parçası veya Post-It notu gibi
+çıkarmanın eşdeğerini yapmam gerekiyor,
+328
+00:15:26,970 --> 00:15:31,040 insanın
+ne söylediğini bu kağıda yazın,
+
+329
+00:15:31,040 --> 00:15:34,650 böylece
+onu yazdırma işlevinin girdisi olarak
+besleyebilirim.
+330
+00:15:34,650 --> 00:15:38,120
+Ve bunu yapmak için, programlamanın
+bir özelliğine daha ihtiyacımız olacak, yani
+331
+00:15:38,120 --> 00:15:38,960
+değişken.
+332
+00:15:38,960 --> 00:15:42,410
+Ve olasılıklar, herkesin matematik dersindeki
+değişkenlere aşina olması.
+333
+00:15:42,410 --> 00:15:45,380
+zaman-- x ve y ve z ve benzerleri.
+
+334
+00:15:45,380 --> 00:15:48,110
+Eh, programlama aynı yeteneğe
+sahiptir, bu yetenek
+335
+00:15:48,110 --> 00:15:51,560 bir
+değişken oluşturmak için-- bu
+durumda, bilgisayarın belleğinde-336
+00:15:51,560 --> 00:15:53,100 sadece
+bir kağıt parçası üzerinde değil.
+337
+
+Machine Translated by Google
+
+00:15:53,100 --> 00:15:55,620
+Ve bu değişken bir değer saklayabilir-338
+00:15:55,620 --> 00:15:58,910 bir
+sayı, bir miktar metin, hatta bir resim
+veya video veya daha fazlası.
+339
+00:15:58,910 --> 00:16:06,740
+Değişken, bilgisayarın içindeki bazı
+değerler için yalnızca bir kapsayıcıdır.
+340
+00:16:06,740 --> 00:16:08,300 veya
+kendi programınızın içinde.
+341
+00:16:08,300 --> 00:16:11.303 Peki
+kendimi bu şekilde nasıl ifade
+edebilirim?
+342
+00:16:11.303 --> 00:16:13,220
+Sanırım yapacağım şey
+tanıştırmak
+343
+00:16:13,220 --> 00:16:16,730 x veya
+y'den biraz daha ilginç bir şekilde
+adlandırılan bir değişken.
+344
+00:16:16,730 --> 00:16:19,970 Sadece
+şunu söyleyebilirim-- x = girdi.
+345
+00:16:19,970 --> 00:16:23,780
+Ama burada tipik bir matematiksel değişkenden
+daha iyi bir isim kullanacağım.
+346
+00:16:23,780 --> 00:16:26,240 ve
+değişkenime tam anlamıyla "isim"
+diyeceğim, neden?
+347
+00:16:26,240 --> 00:16:29,073
+Programlamada, çünkü önümde koca bir
+klavye var,
+348
+00:16:29,073 --> 00:16:32,150
+Yazdıklarımı açıklamak için daha
+açıklayıcı terimler kullanabilirim.
+
+Machine Translated by Google
+349
+00:16:32,150 --> 00:16:36,590
+Ve şimdi, belirli bir sözdizimi parçasını
+düşünmek için bir fırsat var.
+350
+00:16:36,590 --> 00:16:39,470
+Parantezler gördük, alıntılar
+gördük, hepsi
+351
+00:16:39,470 --> 00:16:42,020
+girişleri bir fonksiyona geçirirken
+gereklidir,
+352
+00:16:42,020 --> 00:16:47,810
+ama buradaki eşittir işareti
+sağdaki girdi ile ad arasında
+353
+00:16:47,810 --> 00:16:49,820
+soldaki aslında önemli.
+354
+00:16:49,820 --> 00:16:52,490
+Ve teknik olarak tek başına
+eşittir işareti değil.
+355
+00:16:52,490 --> 00:16:56,060
+Görev vermek kadar eşitlik
+anlamına da gelmez.
+356
+00:16:56,060 --> 00:16:59,000
+Python'da ve birçok
+programlama dilinde,
+357
+00:16:59,000 --> 00:17:01,610
+atama operatörü tek bir eşittir
+işaretidir
+358
+00:17:01,610 --> 00:17:03,860
+ve bunun özellikle anlamı şu ki,
+siz
+359
+00:17:03,860 --> 00:17:08,839
+kullanıcının girişi ne olursa olsun
+sağdan sola atamak istiyor.
+
+Machine Translated by Google
+360
+
+00:17:08,839 --> 00:17:14.540
+Yani eşittir işareti, dönüş ne olursa
+olsun sağdan sola kopyalar
+361
+00:17:14,540 --> 00:17:17,420
+sağdaki fonksiyonun değeridir.
+362
+00:17:17,420 --> 00:17:20.670 Yani
+yine giriş işlevi kullanıcıdan girdi
+alır.
+363
+00:17:20.670 --> 00:17:24,140
+Bu yüzden adımı veya Carter'ın
+adını yazabildim, ama aynı zamanda
+364
+00:17:24,140 --> 00:17:29,390 bir
+nevi sahne arkası eller o değeri, o dönen
+değeri bana geri veriyor
+365
+00:17:29,390 --> 00:17:30,230
+programcı.
+366
+00:17:30,230 --> 00:17:33,680
+Ve eğer bir eşittir işareti ve bir değişken
+kullanırsam, adını ne koyarsam koyayım,
+
+367
+00:17:33,680 --> 00:17:38,460 Daha
+sonra tekrar kullanmak için bu
+girdiyi o değişkende saklayabilirim.
+368
+00:17:38,460 --> 00:17:40,670
+Şimdi, bilgisayarın
+hafızasında bir yerde oturuyor,
+369
+00:17:40,670 --> 00:17:44,870,
+"David" alıntısı, alıntısız veya "Carter"
+alıntısı içeren bir kapsayıcıdır,
+370
+00:17:44,870 --> 00:17:47,490
+alıntısız veya insan her ne yazmışsa.
+
+371
+00:17:47,490 --> 00:17:49,280
+
+Machine Translated by Google
+
+Ama burada hata yapmak kolaydır.
+372
+00:17:49,280 --> 00:17:53,850
+
+Diyelim ki bu ismi
+yazdırmaya karar verdim ve
+373
+00:17:53,850 --> 00:17:57,800 Bu
+konuda bir tür önseziye sahibim,
+merhaba, isim.
+374
+00:17:57,800 --> 00:18:00,440
+Değişkenin adını takmak gibi bir
+şey.
+375
+00:18:00,440 --> 00:18:05,300 Pekala,
+buradan devam edeyim ve Hello.py'nin
+Python'unu çalıştırıp Enter'a basayım.
+
+376
+00:18:05,300 --> 00:18:07,040 Bu
+benden adımı isteyecek.
+377
+00:18:07,040 --> 00:18:08,207
+Ve adımı yazayım-378
+00:18:08,207 --> 00:18:10,440
+DAVID. Ama henüz Enter'a basmadım.
+379
+00:18:10,440 --> 00:18:15,350 Ve
+belki sohbet yoluyla, şimdi Enter'a
+bastığımda burada ne olacak?
+380
+00:18:15,350 --> 00:18:17,840
+Umarım, Merhaba David.
+381
+00:18:17,840 --> 00:18:22,580
+Merhaba dünya derse iyi olurdum, ama
+gerçekte ne olduğunu söylemesini istemiyorum
+
+382
+00:18:22,580 --> 00:18:25,370
+diyeceğim ve evet, sohbette
+gördüğümüz şey,
+383
+00:18:25,370 --> 00:18:28,640
+
+Machine Translated by Google
+Şey, muhtemelen kelimenin tam
+anlamıyla Merhaba, isim diyecektir.
+
+384
+00:18:28,640 --> 00:18:30,030 Yani bu
+pek doğru değil.
+385
+00:18:30,030 --> 00:18:34,250
+Bu yüzden bu değişkenin içindeki değeri
+yazdırmanın başka bir yoluna ihtiyacımız var.
+386
+00:18:34,250 --> 00:18:36,785 sadece
+bu "isim" kelimesi yerine.
+387
+00:18:36,785 --> 00:18:38,910 Bunu
+birkaç farklı yolla deneyeyim.
+
+388
+00:18:38,910 --> 00:18:40,890
+Bunu şu şekilde deneyeyim-389
+00:18:40,890 --> 00:18:44,390 devam
+edeyim ve belki bunu geri alayım çünkü
+zaten oldukça iyiyim
+390
+00:18:44,390 --> 00:18:45,550 Merhaba
+derken.
+391
+00:18:45,550 --> 00:18:48,050
+Hadi o çizgiyi kuma çizelim ve
+diyelim ki, tamam,
+392
+00:18:48,050 --> 00:18:50,360 en
+azından Merhaba virgülünü kapıdan
+çıkaralım.
+393
+00:18:50,360 --> 00:18:53,790 Şimdi
+adı yazdıralım ve bir önseziyle bunu
+deneyeceğim.
+394
+00:18:53,790 --> 00:18:55,115
+Baskıyı tekrar kullanacağım-395
+00:18:55,115 --> 00:18:57,740
+
+Machine Translated by Google
+
+çünkü bu işlevleri istediğiniz kadar
+kullanabilirsiniz-396
+00:18:57,740 --> 00:19:02,660 ve
+ad adındaki değişkeni yazdırma
+işlevine ileteceğim.
+397
+00:19:02,660 --> 00:19:04,730 Ama
+şimdi biraz akıllı davrandığımı
+fark edin.
+398
+00:19:04,730 --> 00:19:07,970
+Çift tırnak içine almıyorum çünkü
+zaten bu ikiliyi gördük.
+399
+00:19:07,970 --> 00:19:10.610 tırnak işareti,
+kelimenin tam anlamıyla İSİM'in yazdırılması
+
+anlamına gelir.
+
+400
+00:19:10,610 --> 00:19:13,700
+Bu sefer alıntılardan
+kurtulacağım umuduyla,
+401
+00:19:13,700 --> 00:19:19,440
+şimdi name adlı değişkeni print adlı işleve
+geçirerek,
+402
+00:19:19,440 --> 00:19:23,480
+aslında, bu değişkenin içeriğini
+yazdırmaya başlayın, yani,
+403
+00:19:23,480 --> 00:19:24,808
+onun sözde değeri.
+404
+00:19:24,808 --> 00:19:26,600
+Pekala, devam edelim ve bunu
+burada yapalım.
+405
+00:19:26,600 --> 00:19:29,030
+Hello.py'nin Python'u, Girin.
+406
+00:19:29,030 --> 00:19:30,020 Adın
+ne?
+
+Machine Translated by Google
+407
+
+00:19:30,020 --> 00:19:30,590 David.
+
+408
+00:19:30,590 --> 00:19:35,520 Ve
+şimdi parmaklarımı çaprazlarken
+Merhaba virgül David'i görüyorum.
+409
+00:19:35,520 --> 00:19:36,020 Pekala.
+
+410
+00:19:36.020 --> 00:19:38,090 Yani
+en iyi program değil.
+411
+00:19:38,090 --> 00:19:40,670 Burada
+biraz köşeleri kesiyorum, tabiri
+caizse.
+412
+00:19:40,670 --> 00:19:44,128
+Merhaba David diyorum iki ayrı
+satırda.
+413
+00:19:44,128 --> 00:19:45,920
+Yani o kadar zarif değil,
+o kadar güzel değil,
+414
+00:19:45,920 --> 00:19:48,950
+İngilizce'de sadece söylemek kadar
+dilbilgisi açısından uygun değil
+415
+00:19:48,950 --> 00:19:52.820 hepsi
+tek satırda tek nefeste, ama en azından
+sorunu çözdüm, değil
+416
+00:19:52,820 --> 00:19:54,020 henüz
+çok iyi.
+417
+00:19:54,020 --> 00:19:56,390
+Ama şimdi bir adım geri
+atmama izin verin ve belki
+418
+00:19:56,390 --> 00:19:59,070 aşina
+olmamız gereken birkaç başka
+kavram,
+
+Machine Translated by Google
+419
+00:19:59,070 --> 00:20:03,260
+programlarımız uzadıkça ve artık sadece bir
+veya iki satır olmaktan çıkıyor
+420
+00:20:03,260 --> 00:20:07,370
+hatta üç, sonunda programlarımız
+düzinelerce satır olacak,
+421
+00:20:07,370 --> 00:20:09,020
+belki yüzlerce satır uzunluğunda.
+422
+00:20:09,020 --> 00:20:11.990
+İlerlemek için başarı için zemin
+hazırlayalım.
+423
+00:20:11,990 --> 00:20:14,840
+Görünüşe göre Python ve bir
+çok programlama dili
+424
+00:20:14,840 --> 00:20:17,120
+ayrıca yorum adı verilen bir şeyi de destekler.
+425
+00:20:17,120 --> 00:20:21,200
+Yorumlar, kodunuzdaki
+kendinize notlardır
+426
+00:20:21,200 --> 00:20:24,260 ve
+Python'da özel bir sembol yoluyla
+yorumları eklersiniz
+427
+00:20:24,260 --> 00:20:26,150
+hash sembolü olacak, tipik olarak--
+
+428
+00:20:26,150 --> 00:20:27,980 ve
+bu eşdeğerini yazmanıza izin verir
+
+429
+00:20:27,980 --> 00:20:30,950
+kendinize bir not ama kodunuzu
+kırmayacak şekilde.
+430
+
+Machine Translated by Google
+00:20:30,950 --> 00:20:33,380
+Bilgisayar aslında yorumunuzu
+yok sayar.
+431
+00:20:33,380 --> 00:20:36,030
+Sadece senin için orada,
+sadece öğretmenin için orada,
+432
+00:20:36.030 --> 00:20:38,030 iş
+arkadaşınız için orada
+
+433
+00:20:38,030 --> 00:20:40,020
+sonuçta o kodu paylaşıyorsunuz.
+434
+00:20:40,020 --> 00:20:42,320
+Yani VS'ye geri dönersem
+Burada kod ve ben sadece
+
+435
+00:20:42,320 --> 00:20:46,040
+öğretmenime açıklamak için bu
+programa bazı yorumlar eklemek istiyorum,
+436
+00:20:46,040 --> 00:20:49,325
+kendime, meslektaşlarıma bu
+programın ne yaptığını,
+437
+00:20:49,325 --> 00:20:50,700
+peki, hadi devam edelim ve yapalım.
+438
+00:20:50,700 --> 00:20:54,020
+Programımın en üstüne ve
+1. satıra gideceğim
+439
+00:20:54,020 --> 00:20:56,990
+şimdi orijinal kod satırını biraz
+aşağı kaydıracağım,
+440
+00:20:56,990 --> 00:21:00,530
+Bir karma ekleyeceğim ve şöyle
+bir şey söyleyeceğim,
+441
+00:21:00,530 --> 00:21:03,210
+kullanıcıya adını sor.
+
+Machine Translated by Google
+442
+00:21:03,210 --> 00:21:05,040 Şimdi,
+o dili kullanmak zorunda değilim.
+443
+00:21:05,040 --> 00:21:06,950 Bu
+metni kullanmak zorunda değilim.
+444
+00:21:06,950 --> 00:21:08,910
+Herhangi bir insan dilini
+kullanabilirdim.
+445
+00:21:08,910 --> 00:21:10,250
+İngilizce olması gerekmez.
+446
+00:21:10,250 --> 00:21:14,120
+Ama şimdi, bunun altında, sadece şöyle
+bir şey söyleyeceğim-447
+00:21:14,120 --> 00:21:16,012
+kullanıcıya merhaba deyin.
+448
+00:21:16,012 --> 00:21:17,720
+Ve bunu fark edeceksin
+Varsayılan olarak VS Kodu
+
+449
+00:21:17,720 --> 00:21:19,302
+yorumlarımı biraz karartıyor.
+450
+00:21:19,302 --> 00:21:22,010 Artık
+mavi değiller, kırmızı yok, içlerinde
+renk yok.
+451
+00:21:22,010 --> 00:21:24,240
+Ve bu sadece kendime
+notlar oldukları için
+452
+00:21:24,240 --> 00:21:26,730 ve
+bilgisayar sonunda onları görmezden
+gelecek.
+453
+00:21:26,730 --> 00:21:29,350
+Ama şimdi elimizde iki yorum
+var-- kullanıcıya sor
+
+Machine Translated by Google
+454
+00:21:29,350 --> 00:21:32,380
+adları ve ardından ikinci bir yorum
+için kullanıcıya Merhaba deyin.
+455
+00:21:32,380 --> 00:21:35,590
+Ve her kod parçasına
+biraz yorum yaptım,
+456
+00:21:35,590 --> 00:21:40,180 her
+satır veya satır çoğul kod gibi, bunlar
+kayda değer bir şey yapıyor.
+457
+00:21:40,180 --> 00:21:40,750
+Neden?
+458
+00:21:40,750 --> 00:21:43,120
+Peki, yarın sabah
+uyandığımda
+459
+00:21:43,120 --> 00:21:47,740
+epey bir süre uyudum, önceki gün ne
+yaptığımı unuttum,
+460
+00:21:47,740 --> 00:21:49,840
+sadece görmek için yorumlarla
+uygun
+461
+00:21:49,840 --> 00:21:52,510
+İngilizce veya kendi insan dilinizde
+ne
+462
+00:21:52,510 --> 00:21:55,810
+kodun kendisini okumak zorunda
+kalmamanız için bu program yapıyor
+463
+00:21:55,810 --> 00:21:59,200 ve
+daha da iyisi, yolda bir hata varsa,
+
+464
+00:21:59,200 --> 00:22:02,740
+niyetinizin ne olduğunu okuyabilir ve
+ardından koda bakabilirsiniz.
+
+Machine Translated by Google
+465
+
+00:22:02,740 --> 00:22:06,050 ve
+kodunuzun şimdi istediğinizi yapıp
+yapmadığını öğrenin.
+466
+00:22:06,050 --> 00:22:08,920 Yani
+bu kadar küçük bir program için
+bu gerçekten gerekli değil.
+467
+00:22:08,920 --> 00:22:11,287
+Sadece bir veya iki veya üç
+satırla oldukça açık
+468
+00:22:11,287 --> 00:22:12,370
+programın ne yaptığı.
+469
+00:22:12,370 --> 00:22:14,668
+Kodu okumak
+yorumlardan daha hızlı,
+470
+00:22:14,668 --> 00:22:16,960 ama
+bu alışkanlığı edinmek genellikle
+iyi bir şeydir-471
+00:22:16,960 --> 00:22:21,220
+kodunuzu kendinize hatırlatmak için bir
+veya birkaç satırda bir yorum yapın
+472
+00:22:21,220 --> 00:22:24,250 ve
+diğerleri amacınız ve kodunuzun
+yaptığı şey.
+473
+00:22:24,250 --> 00:22:26,590
+Yorumlarla ilgili güzel olan şey de bu--
+
+474
+00:22:26,590 --> 00:22:30,940
+yorum da kendiniz için bir tür
+yapılacaklar listesi işlevi görebilir.
+475
+00:22:30,940 --> 00:22:33,850
+Sözde kodun programlanmasında
+bu kavram vardır.
+476
+00:22:33,850 --> 00:22:35,350
+
+Machine Translated by Google
+Sözde kod resmi bir şey değildir.
+477
+00:22:35,350 --> 00:22:37,300 Belirli
+bir dil değil.
+478
+00:22:37,300 --> 00:22:40,090
+Bu sadece İngilizceyi veya
+kendi insan dilinizi kullanmaktır.
+479
+00:22:40,090 --> 00:22:44,590
+düşüncelerinizi özlü, metodik, algoritmik
+olarak ifade etmek için,
+480
+00:22:44,590 --> 00:22:45,460 tabiri
+caizse.
+481
+00:22:45,460 --> 00:22:48,070
+Ancak sözde kod, bu nedenle,
+Python olmadığı için
+482
+00:22:48,070 --> 00:22:51,130 ve
+zorunlu değil
+İngilizce, sadece izin veriyor
+483
+00:22:51,130 --> 00:22:53,520
+programınızı önceden bile ana
+hatlarıyla belirtmeniz.
+484
+00:22:53,520 --> 00:22:56,532
+Örneğin, bugün nasıl
+olduğundan emin değilsem
+485
+00:22:56,532 --> 00:22:58,240
+Bu programı yazmaya
+başlamak istedim
+486
+00:22:58,240 --> 00:23:01,720 ama
+ne yapmak istediğimi bilmiyordum,
+bugün başlayabilirdim
+487
+00:23:01,720 --> 00:23:04,570 bunu
+Hello.py'ye yazarak.
+488
+
+Machine Translated by Google
+00:23:04,570 --> 00:23:07,870
+
+Kod yok, kendime sadece birkaç yorum
+yazabilirdim-489
+00:23:07,870 --> 00:23:09,460 Adım
+1, kullanıcıya adını sorun.
+490
+00:23:09,460 --> 00:23:11,440 2.
+Adım, kullanıcıya merhaba deyin.
+491
+00:23:11,440 --> 00:23:15,520
+Sonra programımı sözde kodda özetledikten
+sonra oraya gidebilirim.
+492
+00:23:15,520 --> 00:23:18,190 ve
+tamam, kullanıcıya adını nasıl
+soracağım?
+493
+00:23:18,190 --> 00:23:21,910 Peki,
+"adın ne" sorusunu girebilir miyim?
+
+494
+00:23:21,910 --> 00:23:26,080 Ve
+sonra burada solda, belki bir değişken koyup
+ona atayabilirim.
+495
+00:23:26,080 --> 00:23:27,730
+Tamam, kullanıcıya nasıl merhaba derim?
+496
+00:23:27,730 --> 00:23:30,280
+Ekranda bir şeyler söylemek için
+baskıyı kullanabileceğimi biliyorum.
+497
+00:23:30,280 --> 00:23:32,920
+Bir merhaba dememe izin ver ve...
+498
+00:23:32,920 --> 00:23:35,210
+Tamam, şimdi kişinin adını yazdırayım.
+499
+00:23:35,210 --> 00:23:38,960
+Yine, sözde kod, yapılacaklar listenizi
+yapılandırmanın güzel bir yoludur,
+500
+
+Machine Translated by Google
+00:23:38,960 --> 00:23:41,680
+
+özellikle kodu nasıl yazacağınızı
+bilmiyorsanız,
+501
+00:23:41,680 --> 00:23:45,993 çünkü
+daha büyük bir programı küçük küçük
+görevlere böler.
+502
+00:23:45,993 --> 00:23:48,160
+Pekala, şimdi burada olup
+olmadığını görmek için burada durayım
+
+503
+00:23:48,160 --> 00:23:56,390
+Yorumlar, sözde kod, dönüş değerleri veya
+değişkenlerle ilgili tüm sorular.
+504
+00:23:56,390 --> 00:23:59,170 Burada
+çözebileceğimiz herhangi bir soru var mı?
+505
+00:23:59,170 --> 00:24:02,500
+İZLEYİCİ: Evet, sorum şu ki, işlev girdi
+mi?
+506
+00:24:02,500 --> 00:24:06,843
+herhangi bir bilgi türü için mi yoksa
+sadece kelimeler için mi çalışıyor?
+
+507
+00:24:06,843 --> 00:24:08,510 DAVID
+MALAN: Evet, gerçekten güzel bir soru.
+508
+00:24:08,510 --> 00:24:12.070
+Bu yüzden belgelerine göre ve daha çok resmi
+belgelere bakacağız
+509
+00:24:12,070 --> 00:24:14,290
+yakında, girdi denilen şeyi bekleyecek
+
+510
+00:24:14,290 --> 00:24:16,900 bir
+metin dizisi,
+
+511
+00:24:16,900 --> 00:24:19,030
+İngilizce veya başka bir insan dilinde.
+
+Machine Translated by Google
+512
+00:24:19,030 --> 00:24:23,660 Ama
+gerçekten de kullanıcıya sorulacak bir
+metin bekliyor olacak.
+513
+00:24:23,660 --> 00:24:24,340 Güzel
+bir soru.
+514
+00:24:24,340 --> 00:24:26,632
+Yapabilirsek gruptan başka bir
+soruya ne dersiniz?
+515
+00:24:26,632 --> 00:24:30,520
+İZLEYİCİ: Birkaç satırlık bir yorumu nasıl
+yapacağımı sormak istedim.
+516
+00:24:30,520 --> 00:24:32,770
+DAVID MALAN: Oh, nasıl bu kadar çok
+yorum yaparsın,
+517
+00:24:32.770 --> 00:24:34.000 eğer
+seni doğru duyuyorsam?
+518
+00:24:34.000 --> 00:24:34,330
+İZLEYİCİ: Evet.
+519
+00:24:34,330 --> 00:24:35,290 DAVID
+MALAN: Elbette.
+520
+00:24:35,290 --> 00:24:38,380 Onları
+böyle yapmaya devam ederdin.
+
+521
+00:24:38,380 --> 00:24:43,300 Burada
+yaptığım gibi, satırların her birinin önüne
+bir karma sembolü ekleyin.
+522
+00:24:43,300 --> 00:24:46,990
+Python'da çok satırlı yorumlar yapmak için
+başka bir teknik daha vardır.
+523
+00:24:46,990 --> 00:24:48,670 aslında
+özel bir anlama sahip olma eğilimindedir.
+
+Machine Translated by Google
+524
+00:24:48,670 --> 00:24:53,650
+Bunun gibi üç çift tırnak işareti yapabilir ve
+ardından burada arasında herhangi bir şey yapabilirsiniz.
+
+525
+00:24:53,650 --> 00:24:54,910 bir
+yorumdur.
+526
+00:24:54,910 --> 00:24:55,960 Bu
+başka bir teknik.
+527
+00:24:55,960 --> 00:24:57,502 Veya
+tek tırnak da kullanabilirsiniz.
+528
+00:24:57,502 --> 00:25:00,257 Ama
+bunlardan daha fazlası, sanırım,
+başka bir zaman.
+529
+00:25:00,257 --> 00:25:02,590
+Pekala, kusura bakmayın,
+burada ilerlememe izin verin
+530
+00:25:02,590 --> 00:25:05,290 ve bu
+programı nasıl daha da
+geliştirebileceğimizi görün
+531
+00:25:05,290 --> 00:25:07,570 ve
+ayrıca kullanabileceğimiz birkaç
+özellik daha tanıtıyoruz.
+532
+00:25:07,570 --> 00:25:10,100 zaman
+içinde dikkate almak istiyorum.
+533
+00:25:10,100 --> 00:25:13,270
+Yani bu programı kesinlikle
+geliştirebileceğimiz ortaya çıktı.
+534
+00:25:13,270 --> 00:25:17,020 çünkü
+bu köşeyi kesiyor olmam biraz hayal
+kırıklığı yaratıyor
+535
+00:25:17,020 --> 00:25:20.680 ve
+Merhaba virgül deyip ardından
+
+Machine Translated by Google
+adını yazdıran yeni bir satırda.
+536
+00:25:20.680 --> 00:25:21,700 Sanki
+daha iyisini yapabiliriz gibi.
+537
+00:25:21,700 --> 00:25:24,760
+Ve telefonunuzda veya dizüstü bilgisayarınızda
+kullandığınız çoğu program kesinlikle
+
+538
+00:25:24,760 --> 00:25:26,810
+İnsanlar istediğinde metni bir arada tut.
+539
+00:25:26,810 --> 00:25:28,243 Peki
+bunu nasıl yapabiliriz?
+540
+00:25:28,243 --> 00:25:29,660 Birkaç
+farklı yol var.
+541
+00:25:29,660 --> 00:25:32,890
+Ve aslında, buradaki amaç, bu tek
+sorunu çözmek değil,
+542
+00:25:32,890 --> 00:25:35,290 ancak
+programlamada bunu göstermek
+ve vurgulamak için-543
+00:25:35,290 --> 00:25:38,080
+Python ve diğer diller-- pek çok
+yolu var
+544
+00:25:38,080 --> 00:25:40,690 bazen
+aynı sorunu çözmek için.
+545
+00:25:40.690 --> 00:25:42,830 Ve işte
+bu sorunu çözmenin bir yolu.
+
+546
+00:25:42,830 --> 00:25:48,100
+Buraya gireyim ve şimdi devam
+edeyim ve merhaba dememe izin verin,
+
+547
+00:25:48,100 --> 00:25:52,450 ve
+şunu eklememe izin verin:
+
+Machine Translated by Google
+
+bunun sonunda kullanıcının adı.
+548
+
+00:25:52,450 --> 00:25:54,980 Bu
+yüzden +'yı ilginç bir şekilde
+kullanıyorum.
+549
+00:25:54,980 --> 00:25:56,560 Bu,
+başlı başına bir ekleme değildir.
+550
+00:25:56,560 --> 00:25:59,290
+Açıkçası sayı eklemiyorum,
+ama yapıyorum
+551
+00:25:59,290 --> 00:26:04,840
+Merhaba virgül metin dizisine kişinin adını
+eklemek istiyorum.
+552
+00:26:04,840 --> 00:26:08,830 Şimdi
+terminal pencereme gitmeme ve Python of
+Hello.py'yi çalıştırmama izin verin
+553
+00:26:08,830 --> 00:26:10,000 tekrar
+girin.
+554
+00:26:10,000 --> 00:26:10,750 Adınız
+ne?
+555
+00:26:10,750 --> 00:26:11.920 David
+yazacağım.
+556
+00:26:11,920 --> 00:26:12,940 Girin.
+
+557
+00:26:12,940 --> 00:26:14,260
+Tamam, daha iyi.
+558
+00:26:14,260 --> 00:26:18,160 Daha
+iyi ama burada estetik de olsa küçük
+bir hata var.
+559
+00:26:18,160 --> 00:26:20.830 Eksik
+alan var, ama burada biraz sezgi
+kullanalım.
+
+Machine Translated by Google
+560
+00:26:20.830 --> 00:26:22.900
+Peki, virgülden sonraki
+boşluğu kaçırıyorsam,
+561
+00:26:22,900 --> 00:26:25,780
+neden devam edip buraya manuel
+olarak eklemiyorum.
+562
+00:26:25,780 --> 00:26:30,670
+Şimdi Hello.py, Enter, David, Enter'ın
+Python programını yeniden çalıştırayım.
+563
+00:26:30,670 --> 00:26:31,540 Ve
+işte başlıyoruz.
+564
+00:26:31,540 --> 00:26:33,400
+Şimdi biraz daha güzel görünen
+bir şeyimiz var
+565
+00:26:33,400 --> 00:26:34,570
+İngilizce gramer açısından.
+566
+00:26:34,570 --> 00:26:36,640
+Merhaba, virgül, boşluk, David.
+567
+00:26:36,640 --> 00:26:40,060
+Ve şimdi geri sararsak, daha
+önce fark etmiş olabilirsin
+568
+00:26:40,060 --> 00:26:45,100
+veya soru işaretimden sonra neden bu
+fazladan boşluk olduğunu merak ettim,
+569
+00:26:45,100 --> 00:26:45,940
+yani burada.
+570
+00:26:45,940 --> 00:26:48,790
+Soru işaretinden sonra ancak çift
+alıntıdan önce bir boşluk var
+571
+00:26:48,790 --> 00:26:50,332 ve
+bu sadece estetik içindi.
+
+Machine Translated by Google
+572
+00:26:50,332 --> 00:26:53,315
+Kullanıcının imlecini bir
+boşluk sağa taşımak istedim
+573
+00:26:53,315 --> 00:26:55,690
+böylece isimlerini yazdığımda
+veya onlar isimlerini yazdığında,
+574
+00:26:55,690 --> 00:26:59,650
+oradaki aynı soru işaretinin
+hemen yanında değil.
+575
+00:26:59,650 --> 00:27:01,790
+Ancak bunu yapmanın başka yolları da var.
+576
+00:27:01,790 --> 00:27:05,080
+Bazı işlevlerin
+aralarında yazdırıldığı ortaya çıktı,
+577
+00:27:05,080 --> 00:27:07,570
+aslında birden çok argüman alır.
+578
+00:27:07,570 --> 00:27:11,200
+Ve eğer girdileri
+ayırırsanız ortaya çıkıyor.
+579
+00:27:11,200 --> 00:27:14,620 bir
+işleve-- bir işlevin sözde
+argümanları-- virgülle,
+580
+00:27:14,620 --> 00:27:19,250
+sadece bir değil, iki, üç, dört, beş,
+ileri geçebilirsiniz.
+581
+00:27:19,250 --> 00:27:24,970
+Öyleyse devam edeyim ve sadece merhaba,
+virgül, boşluk değil, ardından gelenleri de geçeyim
+
+582
+00:27:24,970 --> 00:27:25,660
+adıyla.
+583
+00:27:25,660 --> 00:27:27,880
+
+Machine Translated by Google
+Ve bu, ilk bakışta potansiyel
+olarak biraz kafa karıştırıcı
+584
+00:27:27,880 --> 00:27:30,297
+çünkü şimdi iki virgülüm var ama not
+etmek önemli
+585
+00:27:30,297 --> 00:27:35,800 ilk
+virgül tırnak işaretlerimin içindedir,
+bu sadece
+586
+00:27:35,800 --> 00:27:37.490 bir
+İngilizce gramer meselesi.
+587
+00:27:37,490 --> 00:27:40,270
+Buradaki ikinci virgül,
+alıntıların dışında,
+588
+00:27:40,270 --> 00:27:44,170
+ancak yazdırılacak iki ayrı
+argüman arasında.
+589
+00:27:44,170 --> 00:27:46,270 İlk
+argüman merhaba, virgül,
+boşluktur.
+590
+00:27:46,270 --> 00:27:49,490
+İkinci argüman isim değişkeninin
+kendisidir.
+591
+00:27:49,490 --> 00:27:51,640 Şimdi
+bunun nasıl göründüğüne bir bakalım.
+
+592
+00:27:51,640 --> 00:27:53,620
+Hello.py'nin Python'u, Girin.
+593
+00:27:53,620 --> 00:27:54,460
+Adın ne?
+594
+00:27:54,460 --> 00:27:55,060
+David.
+595
+00:27:55,060 --> 00:27:56,050
+
+Machine Translated by Google
+Girmek.
+
+596
+00:27:56,050 --> 00:27:57,910 Tamam,
+biraz fazla düzelttim.
+597
+00:27:57,910 --> 00:28:000,040 Şimdi
+nedense iki boşluğum var.
+598
+00:28:000,040 --> 00:28:02,080
+Eh, ortaya çıkıyor ve bu
+ince, ne zaman
+599
+00:28:02,080 --> 00:28:07,960
+yazdırmak için birden fazla argüman iletirseniz,
+sizin için otomatik olarak bir boşluk ekler.
+600
+00:28:07,960 --> 00:28:10,270
+Bu daha önce alakalı
+değildi çünkü ben
+
+601
+00:28:10,270 --> 00:28:16,510 +
+operatörünü kullanarak hepsini bir kerede
+yazdırmak için büyük bir argümanla iletir.
+602
+00:28:16,510 --> 00:28:19,070 Bu
+sefer virgül yüzünden ikiye geçiyorum.
+
+603
+00:28:19,070 --> 00:28:23,210
+O yüzden fazladan boşluk istemiyorsam,
+Birini kendim geçmeme gerek yok,
+604
+00:28:23,210 --> 00:28:26,530
+Bunu yapabilirim ve şimdi fark ettim ki,
+bu programı tekrar çalıştırırsam-605
+00:28:26,530 --> 00:28:29,560
+Hello.py'nin Python'u, adımı David
+yazın,
+606
+00:28:29,560 --> 00:28:32,620 şimdi
+dilbilgisi açısından isteyebileceğim
+gibi görünüyor.
+
+Machine Translated by Google
+607
+
+00:28:32,620 --> 00:28:34,330
+Şimdi bu yaklaşımlardan hangisi daha iyi?
+608
+00:28:34,330 --> 00:28:37,840
+Bu yaklaşım, iki bağımsız
+değişkenli bir işlev yazdırma kullanır--
+
+609
+00:28:37,840 --> 00:28:40,810
+Merhaba, virgül ve isim değişkeni.
+610
+00:28:40,810 --> 00:28:44,195
+Önceki versiyon, hatırlama,
+teknik olarak bir argüman kullandı,
+611
+00:28:44,195 --> 00:28:45,820
+biraz meraklı görünse de.
+612
+00:28:45,820 --> 00:28:49,270
+Bilgisayar, tıpkı matematikçiler gibi,
+
+613
+00:28:49,270 --> 00:28:51,950
+önce parantez içindekileri
+yapacaklar.
+614
+00:28:51,950 --> 00:28:54,670
+Yani parantez içinde bu
+metin dizisi varsa-615
+00:28:54,670 --> 00:28:58,350
+merhaba, virgül ve geri eklemem
+gereken bir boşluk.
+616
+00:28:58,350 --> 00:29:01,050
+O zaman bir + var, bu da
+kendi başına toplama değil,
+617
+00:29:01,050 --> 00:29:05,400
+ama birleştirme-- soldaki ve sağdaki
+şeyi birleştirmek için.
+618
+00:29:05,400 --> 00:29:08,400
+Bu sonuçta olur
+
+Machine Translated by Google
+İngilizce ifade-619
+00:29:08,400 --> 00:29:10.890
+Merhaba, virgül, boşluk, David.
+620
+00:29:10,890 --> 00:29:14,400
+Ve sonra nihayetinde işleve ne
+aktarılıyor?
+621
+00:29:14,400 --> 00:29:18,870 teknik
+olarak böyle bir şey ama hepsini
+dinamik olarak yapıyor.
+622
+00:29:18,870 --> 00:29:23,860 Daha
+önce gizlice yaptığım gibi David'i
+yazan ben değilim.
+623
+00:29:23,860 --> 00:29:27,930
+Hello'yu birleştirdikten sonra bu değerin
+ne olduğunu dinamik olarak bulmaktır.
+624
+00:29:27,930 --> 00:29:30,900 name
+değeriyle ve ardından en sonunda
+bunu ileterek
+625
+00:29:30,900 --> 00:29:33,750 tek
+argüman olarak yazdırılacak.
+626
+00:29:33,750 --> 00:29:38,130
+Argüman sayısıyla ilgili herhangi bir
+soru olup olmadığını görmek için burada durayım.
+627
+00:29:38,130 --> 00:29:41,250 şimdi
+işlevlere.
+628
+00:29:41,250 --> 00:29:43,950
+İZLEYİCİ: Bir işlevi birçok kez
+kullanabilir miyiz?
+629
+00:29:43,950 --> 00:29:48,765
+Kodumuzda birçok kez karşılaşabileceğimiz
+belirli bir sorunu çözmek için mi?
+630
+
+Machine Translated by Google
+00:29:48,765 --> 00:29:49,640
+DAVID MALAN: Yapabilirsin.
+631
+00:29:49,640 --> 00:29:52,700 Bir
+sorunu çözmek için bir işlevi birçok kez
+kullanabilirsiniz.
+632
+00:29:52,700 --> 00:29:55,040
+Yakında göreceğimiz şey, eğer
+kendini bulursan
+633
+00:29:55,040 --> 00:29:58,620
+programcı bir problemi yine aynı
+şekilde çözerken,
+634
+00:29:58,620 --> 00:30:00,560 ve
+tekrar ve yine,
+
+635
+00:30:00,560 --> 00:30:02,450
+kendi işlevinizi yapabilmeniz için
+
+636
+00:30:02,450 --> 00:30:07,130 dille
+birlikte gelen temelleri yeniden
+kullanmaya devam etmek zorunda değilsiniz.
+637
+00:30:07,130 --> 00:30:10.890
+İZLEYİCİ: Virgül ve + işaretini merak
+ediyordum.
+638
+00:30:10.890 --> 00:30:15,320
+Yani + işaretinden sonra sadece bir
+değişken verip virgülden sonra tekrar verebilir miyiz?
+
+639
+00:30:15,320 --> 00:30:17,180 birden
+çok değişken durumu mu veriyor?
+
+640
+00:30:17,180 --> 00:30:18.470 Fark
+nedir?
+641
+00:30:18,470 --> 00:30:19,678
+DAVID MALAN: Güzel bir soru.
+
+Machine Translated by Google
+642
+
+00:30:19,678 --> 00:30:21,320
+Yani dizeler bağlamında-643
+00:30:21,320 --> 00:30:22,640 ve ben bu
+terimi kullanmaya devam ediyorum.
+
+644
+00:30:22,640 --> 00:30:25,130
+"String", bir programlama dilinde
+teknik bir terimdir.
+645
+00:30:25,130 --> 00:30:29,570 ve yine,
+bir metin dizisi anlamına gelir-- bir karakter, bir
+kelime, bütün bir paragraf,
+646
+00:30:29,570 --> 00:30:30,080
+Bile.
+
+647
+00:30:30,080 --> 00:30:33,650
+Yani + operatörü,
+yapacağımız gibi sadece kullanılmaz.
+
+648
+00:30:33,650 --> 00:30:37,790 sayıların
+eklenmesi için bkz.
+Python, kağıt kalemde yaptığımız gibi,
+649
+00:30:37,790 --> 00:30:41.760 ama aynı
+zamanda sol ve sağdaki dizilerin birleştirilmesi
+için de kullanılır.
+650
+00:30:41,760 --> 00:30:44,180
+Sadece iki diziyi birleştirmek
+istemediysen-651
+00:30:44,180 --> 00:30:46,310 sol ve
+sağ-- ancak üçüncü ve dördüncü,
+
+652
+00:30:46,310 --> 00:30:51,380 +, +, +, +
+kullanmaya kesinlikle devam edebilir ve
+bunları birbirine zincirleyebilirsiniz
+653
+00:30:51,380 --> 00:30:52,460 tıpkı
+matematikte olduğu gibi.
+
+Machine Translated by Google
+654
+00:30:52,460 --> 00:30:54,830
+Sonunda bu biraz çirkin
+görünmeye başlayacak,
+655
+00:30:54,830 --> 00:30:57,080
+Özellikle kod satırınız uzarsa
+söylemeye cüret ediyorum.
+656
+00:30:57,080 --> 00:31:00,200
+Yani yakında göreceğimiz daha
+iyi yollar var.
+657
+00:31:00,200 --> 00:31:01,670 Ve
+güzel bir soru.
+658
+00:31:01,670 --> 00:31:04,190
+Pekala, söz konusu koda
+geri dönmeme izin verin
+659
+00:31:04,190 --> 00:31:06,800 ve
+bakalım size birkaç başka yol
+gösterebilir miyiz
+660
+00:31:06,800 --> 00:31:10,520
+aynı sorunu çözmek için, yol boyunca teknik
+olarak ne olduğumuzu vurgulayarak
+661
+00:31:10,520 --> 00:31:12,980
+burada bahsediyoruz, evet, ipler
+var, ama hatta
+662
+00:31:12,980 --> 00:31:15.170
+Python'da bu dizeler için teknik
+bir terim,
+663
+00:31:15,170 --> 00:31:19,700
+sadece STR, tabiri caizse, STR
+kısaca, string için.
+664
+00:31:19,700 --> 00:31:22,220
+Bildiğiniz gibi, diğer
+dillerde programladıysanız,
+
+Machine Translated by Google
+665
+
+00:31:22,220 --> 00:31:26,270
+Programlama dilleri icat eden kişiler çok kısa ve
+öz olmayı severler,
+666
+00:31:26,270 --> 00:31:29,780 bu yüzden
+bir şeyleri tanımlamak için oldukça kısa
+ifadeler kullanma eğilimindeyiz,
+
+667
+00:31:29,780 --> 00:31:31,370 tam
+kelimeler olmak zorunda değil.
+668
+00:31:31,370 --> 00:31:33,920
+Yani teknik olarak "string"
+diyebilirken
+669
+00:31:33,920 --> 00:31:37.070
+Python'da gerçekten bahsettiğimiz şey,
+bu metin dizileri,
+670
+00:31:37,070 --> 00:31:38,300 teknik
+olarak STR'lerdir.
+671
+00:31:38,300 --> 00:31:41,450 Bu,
+bir programdaki gerçek veri türüdür.
+
+672
+00:31:41,450 --> 00:31:45,420 Ancak
+yakında programlarda başka veri türleri
+de olduğunu göreceğiz.
+673
+00:31:45,420 --> 00:31:48,980 Aslında,
+bunu başka bir şekilde iyileştirip
+iyileştiremeyeceğimize bir bakalım.
+
+674
+00:31:48,980 --> 00:31:52,550
+Her şeyi aynı çizgide tutarak
+kaydettiğimiz ilerlemeyi seviyorum-675
+00:31:52,550 --> 00:31:55,490
+Merhaba David, hepsi aynı hatta.
+676
+00:31:55,490 --> 00:31:59,070
+daha ne yapabilirdik ki
+
+Machine Translated by Google
+Bu sorunu çözmenin şartları?
+677
+00:31:59,070 --> 00:32:02,420
+Pekala, tamamen vazgeçmek
+zorunda olmadığımız ortaya çıktı.
+678
+00:32:02,420 --> 00:32:03,800 baskıyı
+iki kez kullanarak.
+679
+00:32:03,800 --> 00:32:07,460
+Biraz geri saralım ve önceki sürüme
+geri dönelim
+680
+00:32:07,460 --> 00:32:11,660 burada
+bu sorunu nasıl çözeceğimden gerçekten emin
+değildim, bu yüzden bir kez baskı kullanıyordum
+681
+00:32:11,660 --> 00:32:14,090 sadece
+Merhaba, boşluk ve virgül yazdırmak
+için.
+682
+00:32:14,090 --> 00:32:17,750 Sonra
+adı yazdırmak için tekrar print
+kullandım.
+683
+00:32:17,750 --> 00:32:22,220
+Bu, kesinlikle konuşmak gerekirse, fena
+değildi, ama şu görsel yan etki vardı.
+684
+00:32:22,220 --> 00:32:23,270
+beğenmedim.
+685
+00:32:23,270 --> 00:32:26,540
+Bu iki metin satırının ayrı olması
+çirkin görünüyordu.
+686
+00:32:26,540 --> 00:32:27,600
+birbirinden.
+687
+00:32:27,600 --> 00:32:29,480 Ancak
+bunu düzeltmenin başka bir yolu var.
+688
+00:32:29,480 --> 00:32:34,130
+
+Machine Translated by Google
+Açıkçası, yazdırma işlevinin otomatik
+olarak olduğu gibi görünüyor.
+689
+00:32:34,130 --> 00:32:36,110 boş
+bir satır çıkıyor.
+690
+00:32:36,110 --> 00:32:39,380
+İmleci benim için otomatik olarak bir
+sonraki satıra taşıyor
+691
+00:32:39,380 --> 00:32:42,620 çünkü
+bu yüzden görüyorum
+Merhaba bir satırda ve David
+692
+00:32:42,620 --> 00:32:44,150 sonraki
+ve sonra benim istemim-693
+00:32:44,150 --> 00:32:46.530 dolar
+işareti-- bunun altındaki satırda.
+
+694
+00:32:46,530 --> 00:32:48,800
+Yani baskı otomatik
+olarak varsayıyor gibi görünüyor
+695
+00:32:48,800 --> 00:32:51,230 imleci
+bir sonraki satıra taşımasını istediğiniz
+
+696
+00:32:51,230 --> 00:32:53,040 biraz
+argüman ilettikten sonra.
+697
+00:32:53,040 --> 00:32:54,890 Ancak
+bu davranışı geçersiz kılabilirsiniz.
+698
+00:32:54,890 --> 00:32:58,400
+Yine, işlevler davranışlarını etkileyen
+argümanlar alır,
+699
+00:32:58,400 --> 00:33:00,740 sadece
+bu argümanların ne olduğunu
+bilmek zorundasınız.
+700
+
+Machine Translated by Google
+00:33:00,740 --> 00:33:06,560
+Ve ortaya çıktı ki Python'un baskısı
+için belgelere bakarsak
+701
+00:33:06,560 --> 00:33:09,980
+işlevi, aslında buradaki URL'ye
+bakabiliriz-702
+00:33:09,980 --> 00:33:14,150
+docs.python.org Python'un tüm
+resmi belgelerinin bulunduğu yerdir.
+703
+00:33:14,150 --> 00:33:17,870
+Biraz kurcalarsam, daha spesifik
+olarak bu URL'ye giden yolu bulabilirim
+704
+00:33:17,870 --> 00:33:22,970
+burada Python'da mevcut tüm
+fonksiyonları bulabileceğim
+705
+00:33:22,970 --> 00:33:24,630 ve
+oradaki belgeler.
+706
+00:33:24,630 --> 00:33:26,900
+Ve biraz daha kesin olarak
+gidersem,
+707
+00:33:26,900 --> 00:33:30,230
+yazdırma işlevinin kendisine özel
+belgeleri bulun.
+708
+00:33:30,230 --> 00:33:31,980
+Ve bunu bir tarayıcıda
+açmak yerine,
+709
+00:33:31,980 --> 00:33:36,050
+Devam edeceğim ve aynı URL'den
+yalnızca bir satırı vurgulayacağım.
+710
+00:33:36,050 --> 00:33:39,890 bu
+ve bu şimdiye kadar gördüğümüz
+en gizemli şey.
+711
+00:33:39,890 --> 00:33:42,717
+
+Machine Translated by Google
+ancak bu, yazdırma işlevi
+için resmi belgedir.
+712
+00:33:42,717 --> 00:33:45,800
+Ve bir programlama dili öğrenirken
+yapabileceğiniz en iyi şeylerden biri
+713
+00:33:45,800 --> 00:33:48,110,
+dürüst olmak gerekirse, belgeleri
+okumayı öğrenmektir,
+714
+00:33:48,110 --> 00:33:51,920 çünkü
+gerçekten, sorularınızın tüm cevapları
+bir şekilde
+715
+00:33:51,920 --> 00:33:55,430 orada
+olun, her ne kadar kuşkusuz her zaman
+açık olmasa da.
+716
+00:33:55,430 --> 00:33:57,290
+Ve ben de söyleyeceğim,
+
+Python'un belgeleri
+717
+00:33:57,290 --> 00:34:01,460,
+özellikle ilk kez veya yeni başlayanlar
+için mutlaka en kolay şey değil
+718
+00:34:01,460 --> 00:34:02,072
+programcı.
+719
+00:34:02,072 --> 00:34:05,030
+Bu da sadece pratik gerektirir, bu
+yüzden değilseniz bunalmamaya çalışın.
+720
+00:34:05,030 --> 00:34:06,292 neye
+baktığınızdan emin olun.
+721
+00:34:06,292 --> 00:34:08.000 Ama
+izin verin size bu örneği anlatayım.
+
+722
+00:34:08.000 --> 00:34:11.360
+Bu yine bir metin satırı
+Python'un resmi belgeleri
+
+Machine Translated by Google
+
+723
+00:34:11,360 --> 00:34:12,690
+yazdırma işlevi için.
+724
+00:34:12,690 --> 00:34:14,659
+
+Bunun aşağıdaki gibi gösterdiği şey--
+
+725
+00:34:14,659 --> 00:34:17,000
+bu fonksiyonun adı elbette
+print.
+726
+00:34:17,000 --> 00:34:20.570
+Sonra burada bir parantez var ve
+başka bir yakın parantez yolu
+727
+00:34:20.570 --> 00:34:21,230
+şurada.
+728
+00:34:21,230 --> 00:34:23,570
+Bu parantezlerin
+içindeki her şey
+729
+00:34:23,570 --> 00:34:27,270
+argümanlar, potansiyel
+argümanlar, fonksiyona.
+730
+00:34:27,270 --> 00:34:30,830
+Ancak, bu argümanlara
+baktığımızda
+731
+00:34:30,830 --> 00:34:34,400
+Bunun gibi belgelerde teknik
+olarak farklı bir terim var
+732
+00:34:34,400 --> 00:34:35,150
+kullanacağımız.
+733
+00:34:35,150 --> 00:34:37,920
+Bunlar teknik olarak işlevin
+parametreleridir.
+734
+00:34:37,920 --> 00:34:41,900
+Yani hakkında konuşurken
+
+Machine Translated by Google
+bir fonksiyona ne iletebilirsin
+735
+00:34:41,900 --> 00:34:45,679 ve bu
+girdilerin adı, parametrelerdir.
+
+736
+00:34:45,679 --> 00:34:48.080
+İşlevi gerçekten
+kullandığınızda ve geçtiğinizde
+737
+00:34:48,080 --> 00:34:51,650 bu
+parantez içindeki değerlerde, bu
+girdiler,
+738
+00:34:51,650 --> 00:34:53,580 bu
+değerler bağımsız değişkenlerdir.
+739
+00:34:53,580 --> 00:34:56,719
+Yani tam olarak aynı şeyden bahsediyoruz-parametreler ve argümanlar
+740
+00:34:56,719 --> 00:34:58,850
+aslında aynı şey ama
+
+741
+00:34:58,850 --> 00:35:01,520
+soruna farklı yönlerden bakarak
+kullanın.
+742
+00:35:01,520 --> 00:35:04,220
+Fonksiyonun neye karşı ne
+alabileceğine baktığımızda
+743
+00:35:04,220 --> 00:35:06,210
+aslında fonksiyona geçiyorsunuz.
+
+744
+00:35:06,210 --> 00:35:07,500 Peki
+bu ne anlama geliyor?
+745
+00:35:07,500 --> 00:35:10.610
+Peki bu sözdizimi oldukça
+şifreli, ama şu anda,
+
+Machine Translated by Google
+746
+
+00:35:10,610 --> 00:35:14,360 sadece
+bir yıldız işaretinin, bir yıldızın ve
+ardından "nesneler" kelimesinin
+747
+00:35:14,360 --> 00:35:17,330,
+yazdırma işlevinin herhangi bir sayıda
+nesne alabileceği anlamına gelir.
+748
+00:35:17,330 --> 00:35:20.540
+0 metin dizesi, bir dize
+iletebilirsiniz
+749
+00:35:20.540 --> 00:35:23,900 benim
+yaptığım gibi, benim yaptığım gibi iki
+dizi veya teknik olarak sonsuz sayıda
+750
+00:35:23,900 --> 00:35:27,170 Eğer
+gerçekten isterseniz, bu kod çok iyi
+görünmeyecek olsa da.
+751
+00:35:27,170 --> 00:35:31,130
+Bundan sonra bir virgül görüyoruz, ardından
+burada başka bir parametre görüyoruz.
+
+752
+00:35:31,130 --> 00:35:34,400 SEP
+olarak adlandırılır, İngilizce'de
+ayırıcının kısaltmasıdır.
+753
+00:35:34,400 --> 00:35:38,640 Ve
+eşittir işaretine ve tek tırnak, boşluk, tek
+tırnak işaretine dikkat edin.
+754
+00:35:38,640 --> 00:35:42,350
+Yani 'uzay' bunun ne
+olduğunu henüz bilmiyorum,
+
+755
+00:35:42,350 --> 00:35:44,570 ama
+sanırım bununla ilgili bir ipucu gördük.
+756
+00:35:44,570 --> 00:35:46,430
+Bir an için buna
+odaklanalım-757
+
+Machine Translated by Google
+00:35:46,430 --> 00:35:50,720 yazdırma
+işlevi end adlı başka bir parametre alır
+ve varsayılan
+758
+00:35:50,720 --> 00:35:54,560 bu
+parametrenin değeri görünüşte, bu eşittir
+işaretine göre ve bu
+759
+00:35:54,560 --> 00:35:57,020 tırnak, /
+n.
+760
+00:35:57,020 --> 00:36:00,260 Peki
+sohbete katılmak isterseniz /n nedir?
+
+761
+00:36:00,260 --> 00:36:02,810
+Daha önce program yapan herkes
+muhtemelen bunu görmüştür,
+762
+00:36:02,810 --> 00:36:07,070 daha
+önce hiç programlamadıysanız, bu oldukça
+şifreli görünebilir.
+763
+00:36:07,070 --> 00:36:12,530
+Ters eğik çizgi n yeni satır anlamına gelir
+ve bu metinsel olarak bir yoldur
+
+764
+00:36:12,530 --> 00:36:15,710
+bilgisayarı etkili bir şekilde isteyip
+istemediğinizi ve ne zaman istediğinizi belirten
+765
+00:36:15,710 --> 00:36:19,490 İmleci
+bir sonraki satıra taşımak için yeni bir
+metin satırı oluşturun.
+766
+00:36:19,490 --> 00:36:22,310
+Ve teknik olarak, belgeleri
+okursak,
+767
+00:36:22,310 --> 00:36:23,960 Bu
+konuda daha fazla ayrıntı göreceğiz.
+768
+00:36:23,960 --> 00:36:28,550
+adında bir parametre olduğu gerçeği
+
+Machine Translated by Google
+baskı belgelerinde son
+769
+00:36:28,550 --> 00:36:32,840 işlevi,
+yalnızca varsayılan olarak bu yazdırma
+işlevinin sona ereceği anlamına gelir
+770
+00:36:32,840 --> 00:36:35,240 /n ile
+her satır.
+771
+00:36:35,240 --> 00:36:37.670 Kelimenin
+tam anlamıyla /n'yi görmüyorsunuz, yeni
+bir satır görüyorsunuz.
+
+772
+00:36:37,670 --> 00:36:40,320
+İmlecin bir sonraki satıra geçtiğini
+görüyorsunuz.
+773
+00:36:40,320 --> 00:36:42,500
+Şimdi bu mantıkla geriye gidelim.
+774
+00:36:42,500 --> 00:36:46,790
+SEP dört ayırıcı-- ayırıcının
+varsayılan değeri
+775
+00:36:46,790 --> 00:36:49,460
+görünüşte tek bir boşluktur.
+776
+00:36:49,460 --> 00:36:51,020 Peki
+bunu nerede gördük?
+777
+00:36:51,020 --> 00:36:55,190
+Sadece bir değil iki tane geçtiğimde
+daha önceki bir örnekte iyi hatırla
+778
+00:36:55,190 --> 00:36:57,210
+yazdırma işlevi için bağımsız değişken.
+779
+00:36:57,210 --> 00:37:00,300
+Aralarında sihirli bir şekilde boşluk
+olduğunu hatırlayın.
+780
+00:37:00,300 --> 00:37:02,540
+Aslında, onlar vardı
+
+Machine Translated by Google
+boşluk + kendi alanım
+781
+00:37:02,540 --> 00:37:05,720 ve
+bu yüzden alanımı sildim çünkü o
+noktada fazladandı.
+782
+00:37:05,720 --> 00:37:09,620
+Yani bu sadece, yazdırmak için birden
+fazla argüman ilettiğinizde, varsayılan olarak
+783
+00:37:09,620 --> 00:37:11,750 tek
+bir boşlukla ayrılacaklar.
+
+784
+00:37:11,750 --> 00:37:14.570
+Varsayılan olarak, yazdırılacak
+bağımsız değişkenleri ilettiğinizde,
+
+785
+00:37:14,570 --> 00:37:17,880 her
+şey yeni bir satırla sona erecek.
+
+786
+00:37:17,880 --> 00:37:19,850
+Şimdi sadece bunu bilerek ve kelimenin
+tam anlamıyla bana izin verin
+
+787
+00:37:19,850 --> 00:37:22,890
+Elimi başka bir gün için belgelerin
+geri kalanına salla,
+788
+00:37:22,890 --> 00:37:24,890
+Baskının yapabileceği daha çok
+şey var, ama biz
+789
+00:37:24,890 --> 00:37:29,360
+sadece SEP'e ve SON'a odaklanacağız,
+bakalım şimdi bundan yararlanamaz mıyız
+790
+00:37:29,360 --> 00:37:31,010 bu
+orijinal sorunu çözmek için.
+791
+00:37:31,010 --> 00:37:34,250
+Asıl sorun şuydu,
+Merhaba, David'i sevmiyorum.
+
+Machine Translated by Google
+792
+00:37:34,250 --> 00:37:35,750 iki
+farklı satırda.
+793
+00:37:35,750 --> 00:37:38,420
+Eh, bu tekrar oluyor çünkü
+baskı otomatik olarak
+794
+00:37:38,420 --> 00:37:41,810 yeni
+bir satır yazdırın, bunu
+yapmamasını söyleyelim.
+795
+00:37:41,810 --> 00:37:47,150
+PRINT'in ilk kullanımına ikinci bir
+argüman ileterek söyleyelim.
+796
+00:37:47,150 --> 00:37:51,110 SON
+demek için = alıntı, alıntıyı kaldır-797
+00:37:51,110 --> 00:37:54,840 /n
+değil, otomatik olarak varsayılandır.
+
+798
+00:37:54,840 --> 00:37:58,250
+Alıntı yapalım, başka hiçbir şeyi
+alıntılamayın.
+799
+00:37:58,250 --> 00:38:01,850 Yeni
+satır olmaması için varsayılan
+değeri geçersiz kılalım.
+800
+00:38:01,850 --> 00:38:03,560 Orada
+kelimenin tam anlamıyla hiçbir şey yok.
+
+801
+00:38:03,560 --> 00:38:05,250 Ve
+bakalım ne olacak.
+802
+00:38:05,250 --> 00:38:08,270
+Şimdi terminal pencereme inip
+temizleyeyim.
+803
+00:38:08,270 --> 00:38:10.672
+Ve koşacağım
+
+Machine Translated by Google
+Hello.py'nin Python'u, Enter.
+804
+00:38:10,672 --> 00:38:12,380
+Adımı yazacağım,
+David ve ben
+805
+00:38:12,380 --> 00:38:16,280
+şimdi her şeyin aynı çizgide
+kalacağını düşünün çünkü-806
+00:38:16,280 --> 00:38:22,460 ve
+yaptı-- buradaki 5 satırı Merhaba,
+virgül, boşluk,
+807
+00:38:22,460 --> 00:38:24,710
+ama sonunda hiçbir şey yok
+çünkü ben
+808
+00:38:24,710 --> 00:38:26,450 alıntı
+yapmak, alıntı yapmak için değiştirdi.
+
+809
+00:38:26,450 --> 00:38:29,210
+İkinci satır David adını
+yazdıracak.
+810
+00:38:29,210 --> 00:38:32.780
+veya insanın adı ne olursa olsun, imleci bir
+sonraki satıra taşır
+811
+00:38:32,780 --> 00:38:36,230
+çünkü orada END değerini
+geçersiz kılmadım.
+812
+00:38:36,230 --> 00:38:39,710
+Bunu daha açık bir şekilde
+görmek için, şifreli bir şey yaparsanız,
+813
+00:38:39,710 --> 00:38:41,420
+neler olduğu hakkında hiçbir fikrim yok.
+814
+00:38:41,420 --> 00:38:44,120
+Buraya geçici olarak üç soru
+işareti koyayım.
+
+Machine Translated by Google
+815
+
+00:38:44,120 --> 00:38:46,040 Bunun
+sonuçlarını da göreceğiz.
+816
+00:38:46,040 --> 00:38:49,202
+Terminal pencereme geri dönmeme izin
+verin, Python of Hello'yu çalıştırın. not,
+817
+00:38:49,202 --> 00:38:49,910 Adın
+ne?
+818
+00:38:49,910 --> 00:38:50,420 David.
+
+819
+00:38:50,420 --> 00:38:54,207
+Ve şimdi kelimenin tam anlamıyla
+gerçekten çirkin çıktı görüyorsunuz,
+
+820
+00:38:54,207 --> 00:38:55,790 ama
+gerçekte neler olduğunu görüyorsunuz.
+821
+00:38:55,790 --> 00:39:01,010
+Merhaba, virgül, boşluk, ardından üç soru işareti,
+END, bu ifadeyi yazdırın,
+822
+00:39:01,010 --> 00:39:05,570 ve
+ardından DAVID'i görüyorsunuz.
+Yani iyi bir sonuç değil,
+823
+00:39:05,570 --> 00:39:09,080 ama
+burada da ne kadar kontrolümüz
+olduğunu gösteriyor.
+824
+00:39:09,080 --> 00:39:10.490 Ve
+biraz daha geri sarmama izin verin.
+825
+00:39:10.490 --> 00:39:13.250
+Bunun diğer
+versiyonumuzda hatırlayın,
+826
+00:39:13,250 --> 00:39:18,710
+Merhaba, virgül ve isim kelimesini geçtiğimde tek
+boşlukla ayrılmışlardı.
+
+Machine Translated by Google
+827
+
+00:39:18,710 --> 00:39:22,340
+Hello.py'nin Python'u, DAVID, Enter.
+828
+00:39:22,340 --> 00:39:23,690 Bu
+işe yaradı.
+829
+00:39:23,690 --> 00:39:27,950 Peki
+ya ayırıcı için SEP değerini geçersiz
+kılarsak?
+830
+00:39:27,950 --> 00:39:31,730
+Tek bir boşluk olmak yerine,
+bir şey söyleyebiliriz
+831
+00:39:31,730 --> 00:39:35,030
+beğeni, soru işareti, soru işareti,
+soru işareti sadece sarmak için
+832
+00:39:35,030 --> 00:39:37,110
+aklımız orada olup bitenler etrafında döner.
+833
+00:39:37,110 --> 00:39:41,300 Şimdi
+Hello.py, DAVID, Enter'ın Python'unu
+yapayım.
+834
+00:39:41,300 --> 00:39:42,650 Ve iki
+tane görüyorsunuz.
+835
+00:39:42,650 --> 00:39:43,850
+Bu iki girdi-836
+00:39:43,850 --> 00:39:47,840
+Merhaba virgül ve isim artık çirkin
+bir şekilde ayrılmış
+837
+00:39:47,840 --> 00:39:52,580 üç
+soru işaretiyle çünkü SEP'in varsayılan
+davranışını geçersiz kıldım.
+838
+00:39:52,580 --> 00:39:54,803
+Ve belgelerde tek tırnak
+kullanılmasına rağmen,
+
+Machine Translated by Google
+839
+
+00:39:54,803 --> 00:39:56,720 Çift
+tırnak kullanma alışkanlığım var.
+
+840
+00:39:56,720 --> 00:39:58,580
+Python'da her ikisini de kullanabilirsiniz.
+841
+00:39:58,580 --> 00:40:01,620
+Kesin konuşmak gerekirse,
+önemli değil, ama tutarlı olmalısınız
+842
+00:40:01,620 --> 00:40:03,530 ve ben
+genellikle her zaman çift tırnak
+kullanırım.
+843
+00:40:03,530 --> 00:40:08,240
+Python'un belgeleri her zaman tek
+tırnak kullanır.
+844
+00:40:08,240 --> 00:40:12,320 Şimdi
+bu tür parametreler hakkında
+sorularınız mı var?
+845
+00:40:12,320 --> 00:40:15,290 Ve
+bunlara resmi bir isim vermemizi
+önermeme izin verin.
+846
+00:40:15,290 --> 00:40:19,220
+Şimdiye kadar, değerleri
+yazdırmaya aktarırken,
+847
+00:40:19,220 --> 00:40:22,160
+bunlara konumsal parametreler
+denir-- konumsal anlamda
+848
+00:40:22,160 --> 00:40:24,620
+yazdırmak için ilettiğiniz ilk şey önce
+yazdırılır.
+849
+00:40:24,620 --> 00:40:27,830
+Virgülden sonra yazdırmak için ilettiğiniz
+ikinci şey ikinci olarak yazdırılır.
+850
+
+Machine Translated by Google
+
+00:40:27,830 --> 00:40:28,710 Ve
+benzeri.
+851
+00:40:28,710 --> 00:40:32,210 Ama
+şimdi gördüğümüz, adlandırılmış
+
+parametreler denen şeyler de var.
+852
+00:40:32,210 --> 00:40:37,550 Satır
+sonu için SEP, ayırıcı veya END, END
+olarak adlandırılır.
+853
+00:40:37,550 --> 00:40:40,910
+Bunlar parametre olarak
+adlandırılmıştır, çünkü biri isteğe bağlıdır
+854
+00:40:40,910 --> 00:40:44,450 ve
+bunları print ifadenizin sonunda
+iletebilirsiniz,
+855
+00:40:44,450 --> 00:40:48,290 ancak
+adlarıyla da kullanabilirsiniz.
+856
+00:40:48,290 --> 00:40:51,050
+İZLEYİCİ: Bu garip bir soru olabilir, ama
+merak ediyordum,
+857
+00:40:51,050 --> 00:40:57,350 ya
+birisi alıntıya gerçekten tırnak işareti eklemek
+isterse
+858
+00:40:57,350 --> 00:40:57,920 işaret?
+
+859
+00:40:57,920 --> 00:40:59,600 DAVID
+MALAN: Evet, düşünme şeklini beğendim.
+860
+00:40:59,600 --> 00:41:01,880 Köşe
+davası dediğimiz şey bu değil mi?
+
+861
+00:41:01,880 --> 00:41:03,860
+Tam yaptığımız zaman-doğru, hepsi bu
+
+Machine Translated by Google
+862
+
+00:41:03,860 --> 00:41:06,823 kulağa
+harika geliyor, en azından
+programlama devam ederken, ama bir dakika,
+863
+00:41:06,823 --> 00:41:08,240 Bir
+fiyat teklifi yazdırmak isterseniz ne olur?
+864
+00:41:08,240 --> 00:41:09,557 Bu
+gerçekten iyi bir soru.
+865
+00:41:09,557 --> 00:41:11.390 Peki,
+bakalım bunu çözemeyecek miyiz.
+
+866
+00:41:11,390 --> 00:41:15,590 Diyelim
+ki sadece kullanıcının adını yazdırmak
+istemiyorum.
+867
+00:41:15,590 --> 00:41:16,940 Bunu
+daha da basitleştirmeme izin verin.
+868
+00:41:16,940 --> 00:41:18,980
+Devam edeyim ve bunların
+çoğundan kurtulayım,
+869
+00:41:18,980 --> 00:41:21,510 ve
+şöyle bir şey söylememe izin verin,
+Merhaba-870
+00:41:21,510 --> 00:41:24,170
+
+871
+00:41:24,170 --> 00:41:26,240 belki
+burada biraz alaycı davranıyorum.
+872
+00:41:26,240 --> 00:41:28,310
+Merhaba, (alaycı bir şekilde) "arkadaş."
+873
+00:41:28,310 --> 00:41:30,022
+Bilirsiniz, bu tarz bir tonda.
+874
+00:41:30,022 --> 00:41:31,730
+
+Machine Translated by Google
+Aslında bu işe
+
+yaramayacak,
+875
+00:41:31,730 --> 00:41:36,260 çünkü
+parmak tırnaklarında "arkadaş" gibi olmak
+için tırnak işaretleri kullanmaya çalışıyorsunuz,
+
+876
+00:41:36,260 --> 00:41:38,070 ama
+aynı zamanda cümleyi bitirmeye
+çalışıyorsun.
+877
+00:41:38,070 --> 00:41:39,778 Bunu
+çalıştırmayı denersem, hadi
+yapalım.
+878
+00:41:39,778 --> 00:41:43,160
+Hello.py'nin Python'u, bunun yalnızca
+geçersiz sözdizimi olduğunu göreceksiniz.
+
+879
+00:41:43,160 --> 00:41:44,420 Belki
+bir virgül unuttunuz.
+880
+00:41:44,420 --> 00:41:45,920 Ve
+bu aslında biraz can sıkıcı.
+881
+00:41:45,920 --> 00:41:48,822
+Bazen gördüğünüz hata mesajları
+yanıltıcı olabilir.
+882
+00:41:48,822 --> 00:41:50,780
+Bilgisayar gibi, dil de
+gerçekten
+883
+00:41:50,780 --> 00:41:52,488 neler
+olduğunu bilmek için elinden gelenin
+en iyisini yapar
+
+884
+00:41:52,488 --> 00:41:55,010
+tahmin ama mutlaka doğru değil.
+885
+00:41:55,010 --> 00:41:57,870 Ama
+bu sorunu birkaç şekilde çözebilirim.
+
+Machine Translated by Google
+886
+
+00:41:57,870 --> 00:41:59,160
+Bunu yapabilirim--
+
+887
+00:41:59,160 --> 00:42:01,912 En
+dıştaki alıntılarımı tek tırnak olarak
+değiştirebilirim.
+888
+00:42:01,912 --> 00:42:03,620
+Çünkü bir anı tekrar hatırla,
+sana dedim
+889
+00:42:03,620 --> 00:42:07,130, tutarlı
+olduğunuz sürece çift tırnak veya tek
+tırnak kullanabilir.
+890
+00:42:07,130 --> 00:42:08.000 Yani
+sorun değil.
+891
+00:42:08.000 --> 00:42:10.142
+Dışarıda tek tırnak
+kullanırsanız,
+892
+00:42:10,142 --> 00:42:13,100 daha
+sonra iç kısımda çift tırnak kullanabilir ve
+onları kelimenin tam anlamıyla göreceksiniz.
+893
+00:42:13,100 --> 00:42:17,000 Yani
+örneğin, Hello.py'nin Python'unu
+çalıştırırsam, işte başlıyoruz.
+894
+00:42:17,000 --> 00:42:18.590
+Merhaba, "arkadaş."
+895
+00:42:18,590 --> 00:42:19,910 Ama
+başka bir yol daha var.
+896
+00:42:19,910 --> 00:42:23,450
+İstediğiniz gibi çift tırnak
+kullanmakta ısrar ediyorsanız,
+897
+00:42:23,450 --> 00:42:27,800 Tutarlı
+olması için ters eğik çizgi karakterini
+tekrar kullanabilirsiniz.
+
+Machine Translated by Google
+898
+00:42:27,800 --> 00:42:30,080 /na'yı
+biraz önce gördük.
+899
+00:42:30,080 --> 00:42:33,380
+Bu da çıktıda n harfinin olmasını
+istemediğimiz anlamına geliyordu.
+900
+00:42:33,380 --> 00:42:34,640 yeni
+bir hat istedik.
+901
+00:42:34,640 --> 00:42:38,420 Yani
+ters eğik çizgi aslında kaçış karakteri
+denilen şeyi temsil eder.
+902
+00:42:38,420 --> 00:42:40,430
+Bir kaçış karakteri, sadece
+yapamayacağınız bir karakterdir.
+
+903
+00:42:40,430 --> 00:42:43,130
+mutlaka klavyenizden bir kez yazın.
+904
+00:42:43,130 --> 00:42:45,270
+Birden çok karakterle ifade etmeniz
+gerekiyor.
+905
+00:42:45,270 --> 00:42:50,920
+Yani aslında bu iç çift tırnakların önüne
+ters eğik çizgi koyabilirim.
+906
+00:42:50,920 --> 00:42:52,920
+böylece bilgisayar şunu anlar, Ah
+bir dakika,
+907
+00:42:52,920 --> 00:42:57,560
+bunlar düşünceyi bitiren veya başlatan
+alıntılar değil, gerçek alıntılardır.
+908
+00:42:57,560 --> 00:43:02,420 Şimdi
+terminal pencereme geri dönmeme izin
+verin, Python of Hello.py'yi çalıştırın, Enter.
+909
+00:43:02,420 --> 00:43:04,800
+
+Machine Translated by Google
+
+Ve şimdi aynı zamanda çalışıyor.
+910
+00:43:04,800 --> 00:43:08,390 Yani
+kaçmak, onu da yapmamızı sağlayan
+genel bir tekniktir.
+911
+00:43:08,390 --> 00:43:12,230
+Ve izin verirseniz, şimdi bu örnekler
+
+üzerinde geri sarmama izin verin.
+
+912
+00:43:12,230 --> 00:43:14,810 ve
+kodumla kaldığımız yere geri
+dönün,
+913
+00:43:14,810 --> 00:43:18,200
+Ben sadece hepsini geri alıyorum, çünkü
+konuya geri dönmek istiyorum
+914
+00:43:18,200 --> 00:43:23,820 en
+sonunda bu sorunu çözmenin son
+bir yolunu belirlemektir.
+915
+00:43:23,820 --> 00:43:26,300
+Görünüşe göre başka
+bir yolumuz daha var.
+916
+00:43:26,300 --> 00:43:30,680 belki
+de en sık yapılan bu sorunu çözebiliriz
+
+917
+00:43:30,680 --> 00:43:35,030 şimdi
+veya en azından iş bizi hazırlamaya
+geldiğinde en zarif
+918
+00:43:35,030 --> 00:43:38,840 daha
+uzun ve daha uzun dizi kullanımları için.
+919
+00:43:38,840 --> 00:43:43,620
+Python'un bunu yapmanıza izin veren
+nispeten yeni bir özelliğini kullanabilirsiniz.
+920
+00:43:43,620 --> 00:43:47,397
+Dizenize böyle bir değişkenin adını değil,
+kelimenin tam anlamıyla koyabilirsiniz,
+
+Machine Translated by Google
+921
+00:43:47,397 --> 00:43:49,230 çünkü
+bunun yanlış olduğunu zaten gördük,
+değil mi?
+922
+00:43:49,230 --> 00:43:52,340 Bunu
+yaparsanız, kelimenin tam anlamıyla
+Merhaba, virgül, isim göreceksiniz.
+923
+00:43:52,340 --> 00:43:53,580 Peki ya
+bunu yaparsam?
+924
+00:43:53,580 --> 00:43:58,070 Değişken
+adının etrafına küme parantezleri veya
+küme parantezleri koyarsam ne olur?
+925
+00:43:58,070 --> 00:44:00,830 VS Kodu
+aslında çok ince bir şekilde rengini
+değiştiriyor.
+926
+00:44:00,830 --> 00:44:03,590 Yani VS
+Kodu burada ilginç bir şeyler olduğunu
+biliyor.
+927
+00:44:03,590 --> 00:44:08,060 İzin ver
+bu programı çalıştırayım, ama henüz
+bitirmedim Python of Hello.py, Enter.
+928
+00:44:08,060 --> 00:44:09,650 DAVID,
+Girin.
+929
+00:44:09,650 --> 00:44:13,430
+Tamam, açıkçası istediğim bu değil
+ama Python'a söylemem gerek
+930
+00:44:13,430 --> 00:44:15,140 bunun
+özel bir dize olduğunu.
+931
+00:44:15,140 --> 00:44:18,470
+Bu, bir biçim dizgisi veya bir F dizgisi
+diyeceğimiz şeydir,
+932
+00:44:18,470 --> 00:44:21,660
+
+Machine Translated by Google
+nispeten yeni bir özellik
+Python'un son yıllarda
+933
+00:44:21,660 --> 00:44:26,750
+Python'a dizedeki öğeleri gerçekten
+özel bir şekilde biçimlendirmesini söyler.
+934
+00:44:26,750 --> 00:44:29,480
+Ve yaptığın şeyin sembolü biraz
+garip,
+935
+00:44:29,480 --> 00:44:31,220
+ama dünyanın seçtiği şey bu.
+936
+00:44:31,220 --> 00:44:35,390
+Dizenin başına F
+koyarsanız,
+937
+00:44:35,390 --> 00:44:40,160 İlk
+alıntı işaretinden hemen önce, bu
+Python için bir ipucu, ooh,
+938
+00:44:40,160 --> 00:44:41,210 bu
+özel bir dizedir.
+939
+00:44:41,210 --> 00:44:43,550
+Bunu sizin için özel bir şekilde
+formatlayayım.
+940
+00:44:43,550 --> 00:44:45,380
+Şimdi programı yeniden çalıştırayım.
+941
+00:44:45,380 --> 00:44:47,120
+Python Hello.py, Girin.
+942
+00:44:47,120 --> 00:44:48,410
+DAVID, Girin.
+943
+00:44:48,410 --> 00:44:51,170
+Ve şimdi bunca
+zamandır hedefi görüyoruz-944
+00:44:51,170 --> 00:44:52,395
+
+Machine Translated by Google
+Merhaba David.
+945
+00:44:52,395 --> 00:44:55,520
+Bu şekilde başlamıyoruz, çünkü
+Bence bunu ilk yoldan yaparsak,
+946
+00:44:55,520 --> 00:44:57,330
+diyorsunuz ki, bunu neden yapıyoruz?
+947
+00:44:57,330 --> 00:44:58,850 Bütün
+bu sihirli semboller nelerdir?
+948
+00:44:58,850 --> 00:45:02,370 Ancak
+bu, aynı sorunu çözmenin başka bir
+yoludur.
+949
+00:45:02,370 --> 00:45:04,940
+Ama şimdi henüz
+düşünmemizi önermeme izin verin
+950
+00:45:04,940 --> 00:45:06,920
+dizelerle yapabileceğimiz diğer şeyler.
+951
+00:45:06,920 --> 00:45:11,190
+Ve ortaya çıktı ki, nispeten basit işlemler yapıyor
+olmamıza rağmen
+952
+00:45:11,190 --> 00:45:14,665 burada,
+genellikle kullanıcının işbirliği yapacağına
+güveniyoruz
+953
+00:45:14,665 --> 00:45:17,790 ve bu
+demek oluyor ki aslında bizim
+istediklerimizi yazacaklar
+954
+00:45:17,790 --> 00:45:18,450 yazmak
+için.
+955
+00:45:18,450 --> 00:45:20,850
+Şimdi, sadece bir dize yazmaları,
+şu anlama gelmez:
+956
+00:45:20,850 --> 00:45:22,410
+
+Machine Translated by Google
+istediğimiz gibi görünecek.
+957
+00:45:22,410 --> 00:45:24,510
+Sen ve ben, dürüst olmak
+gerekirse, insanlar aslında
+958
+00:45:24,510 --> 00:45:27,840
+alışkanlıkta-- web sitelerinde ve
+uygulamalarda-- yanlışlıkla vurmak gibi
+959
+00:45:27,840 --> 00:45:30,300 boşluk
+çubuğu çok fazla, ya girişimizin
+başında
+960
+00:45:30,300 --> 00:45:33.460 veya
+sonunda, belki boşluk çubuğu çok
+büyük olduğu için.
+961
+00:45:33,460 --> 00:45:35,790
+Yanlışlıkla boşluklar elde
+etmek oldukça yaygındır
+962
+00:45:35,790 --> 00:45:37,950 bazı
+kullanıcıların girdilerinden önce veya sonra.
+963
+00:45:37,950 --> 00:45:41,675
+Sen ve ben kesinlikle kelimeleri büyük harfle
+yazmama alışkanlığımız var
+964
+00:45:41,675 --> 00:45:42,300
+yapmamız gerektiği gibi.
+965
+00:45:42,300 --> 00:45:45,122
+Kısa mesaj gönderiyorsak, muhtemelen
+biraz hızlı davranıyoruzdur.
+966
+00:45:45,122 --> 00:45:46,830 ve her
+şeyi küçük harfle gönderme,
+
+967
+00:45:46,830 --> 00:45:49,913 örneğin,
+tarzınız buysa, telefonunuz sizin için
+düzeltmiyorsa.
+
+Machine Translated by Google
+968
+
+00:45:49,913 --> 00:45:52,530 Belki
+resmi bir mektupta her şeyi düzgün
+bir şekilde büyük harfle yazardınız.
+969
+00:45:52,530 --> 00:45:56,400
+Ama sen ve ben insanlar olarak, bir şeyleri güzel
+bir şekilde yazmak için gerçekten güvenemeyiz.
+
+970
+00:45:56,400 --> 00:45:58,870
+mutlaka bir yazılım parçası
+kullanırken,
+971
+00:45:58,870 --> 00:46:00,940 bir
+uygulama, web sitesi veya başka
+bir şey olsun.
+972
+00:46:00,940 --> 00:46:04,560
+Ama dizelerin
+kendilerinin geldiği ortaya çıktı
+973
+00:46:04,560 --> 00:46:06,450 çok
+sayıda yerleşik işlevselliğe sahip.
+974
+00:46:06,450 --> 00:46:09,300
+Bunların hepsini Python'un kendi
+belgelerinde burada görebilirsiniz.
+975
+00:46:09,300 --> 00:46:12,600
+Bahsettiğimiz dize veri türü
+
+976
+00:46:12,600 --> 00:46:14,970 içinde
+yerleşik birçok işlevsellik bulunur
+
+977
+00:46:14,970 --> 00:46:18,360,
+kullanıcının girdisini, yalnızca daha fazlasını
+yapmak için değiştirebileceğimiz anlamına gelir.
+
+978
+00:46:18,360 --> 00:46:22,290 gibi
+başka bir şeyle ona katıl
+Merhaba, aslında temizleyebiliriz
+979
+
+Machine Translated by Google
+00:46:22,290 --> 00:46:26,380 veya
+bizim için biraz daha iyi görünecek şekilde
+yeniden biçimlendirin.
+980
+00:46:26,380 --> 00:46:29,070
+Bu yüzden buradaki koduma
+geri dönmeme izin verin ve izin verin
+
+981
+00:46:29,070 --> 00:46:32,100 bir
+kullanıcı işbirliği yapmazsa neler
+olabileceğini gösterir.
+982
+00:46:32,100 --> 00:46:35,490
+Buradan devam edip Hello.py'nin
+Python'unu çalıştırırsam, Enter.
+983
+00:46:35,490 --> 00:46:38,890
+Boşluk çubuğuna birkaç kez
+özensizce basmama izin verin.
+984
+00:46:38,890 --> 00:46:39,390
+Neden?
+985
+00:46:39,390 --> 00:46:40,890
+Sadece dikkat etmiyordum.
+986
+00:46:40,890 --> 00:46:43,710
+Ve şimdi adımı DAVID yazacağım ve
+bilmiyorum,
+987
+00:46:43,710 --> 00:46:45,510
+Boşluk tuşuna birkaç kez daha bastım.
+988
+00:46:45,510 --> 00:46:46,620 Sanki
+ortalık karışmış gibi.
+989
+00:46:46,620 --> 00:46:47,785 Hepsi
+küçük harf.
+990
+00:46:47,785 --> 00:46:50,160 Bu,
+dilbilgisi açısından mutlaka doğru
+görünmeyecek.
+991
+
+Machine Translated by Google
+00:46:50,160 --> 00:46:51,900
+Burada ve burada boşluklar var.
+992
+00:46:51,900 --> 00:46:54,030
+Program tam olarak
+bunu yazdıracak
+993
+00:46:54,030 --> 00:46:55,890 ve
+bu gerçekten kötü görünüyor, en
+azından
+994
+00:46:55,890 --> 00:46:57,900
+estetik ve dilbilgisine öncelik verir.
+995
+00:46:57,900 --> 00:47:00,330
+Neden virgülden sonra bu kadar
+çok boşluk var?
+996
+00:47:00,330 --> 00:47:03,420 Bu,
+kullanıcılarınızı selamlamanın pek
+hoş bir yolu değil.
+997
+00:47:03,420 --> 00:47:05,130 Ama
+bunu temizleyebiliriz.
+998
+00:47:05,130 --> 00:47:10.170
+Görünen o ki, yine bu veri türü olan
+dizgilerde yerleşik, yani
+999
+00:47:10.170 --> 00:47:12.780 tabiri
+caizse, Python'daki bu tür veriler-1000
+00:47:12,780 --> 00:47:15,730
+aslında o diziye bir şeyler yapma
+yeteneğidir.
+1001
+00:47:15,730 --> 00:47:20,280
+Bunu yapmama izin verin, gerçekten
+devam edip şöyle bir şey yapabilirim-1002
+00:47:20,280 --> 00:47:23,820 ad =
+ad.şerit.
+1003
+
+Machine Translated by Google
+
+00:47:23,820 --> 00:47:25,240 Peki
+bu ne işe yarıyor?
+1004
+00:47:25,240 --> 00:47:30,460
+Dizedeki beyaz boşluğu kaldırın.
+1005
+00:47:30,460 --> 00:47:32.060
+Bununla ne demek istiyorum?
+1006
+00:47:32.060 --> 00:47:33,910
+Peki, sağ tarafta, dikkat
+edin
+1007
+
+00:47:33,910 --> 00:47:36,700
+Name adlı değişken adını yazdı.
+1008
+00:47:36,700 --> 00:47:40,120
+Daha sonra bir nokta veya
+nokta kullandım ve sonra
+
+1009
+00:47:40,120 --> 00:47:42,520 bir
+işlevi yerine getiriyor gibi
+görünüyor, değil mi?
+1010
+00:47:42,520 --> 00:47:46,300
+Şimdiye kadar bir fonksiyon
+gördüğümüzde, fonksiyonun adını görürüz-- print
+1011
+00:47:46,300 --> 00:47:49,030 veya
+girdi, sonra bir parantez, sonra başka
+bir parantez görüyoruz,
+1012
+00:47:49.030 --> 00:47:50,678 ve
+burada tam olarak bunu görüyorum.
+1013
+00:47:50,678 --> 00:47:52.720 Ama
+ben bu işlevi biraz farklı
+kullanıyorum.
+1014
+00:47:52,720 --> 00:47:55,990
+Teknik olarak, bu işleve-- bu
+bağlamda-- bir yöntem denir.
+1015
+
+Machine Translated by Google
+00:47:55,990 --> 00:47:57,620
+
+Bununla ne demek istiyorum?
+1016
+00:47:57,620 --> 00:48:00,250
+Pekala, eğer İsim bir dizge ise, yani
+1017
+00:48:00,250 --> 00:48:03,130
+STR, ortaya çıkıyor,
+belgelere göre,
+1018
+00:48:03,130 --> 00:48:07,630
+Python'da dizelerle birlikte gelen
+birçok işlev vardır.
+1019
+00:48:07,630 --> 00:48:10,150
+Ve kullanarak bu işlevselliğe
+erişebilirsiniz.
+1020
+00:48:10,150 --> 00:48:14,860
+burada tam anlamıyla isim gibi bir
+dizgenin adı, sonra bir nokta, sonra isim
+1021
+00:48:14,860 --> 00:48:18,220,
+fonksiyonunun ardından bir açık
+parantez ve bir kapalı parantez.
+1022
+00:48:18,220 --> 00:48:21,320
+Belki bu parantezlerin içinde bazı
+argümanlar var, ama bu durumda,
+1023
+00:48:21,320 --> 00:48:22,900
+herhangi bir argümana ihtiyaç duymaz.
+1024
+00:48:22,900 --> 00:48:26,320
+Sadece soldan ve boşluktan
+boşluğu çıkarmak istiyorum
+1025
+00:48:26,320 --> 00:48:28.000
+kullanıcı girişinin sağından.
+1026
+00:48:28,000 --> 00:48:29,210 Ama
+bu yeterli değil.
+1027
+
+Machine Translated by Google
+00:48:29,210 --> 00:48:31,120
+soyunduğumu
+
+hatırlamak istiyorum
+1028
+00:48:31,120 --> 00:48:32.920
+soldaki ve sağdaki beyaz boşluk,
+
+1029
+00:48:32,920 --> 00:48:35,470 bu
+yüzden burada yine eşittir işaretini
+kullanacağım.
+1030
+00:48:35,470 --> 00:48:38,590
+Ve daha önce olduğu gibi, bunun eşitlik
+anlamına gelmediğine dikkat edin,
+
+1031
+00:48:38,590 --> 00:48:40,940 bu
+sağdan sola atama anlamına gelir.
+
+1032
+00:48:40,940 --> 00:48:43,900 Yani
+buradaki kod satırı-- name.strip--
+
+1033
+00:48:43,900 --> 00:48:46,600
+bana geri dönüyor, aka
+1034
+00:48:46,600 --> 00:48:49,123 bir
+dönüş değeri, aynı şeyi döndürür
+
+1035
+00:48:49,123 --> 00:48:51,790
+kullanıcının yazdığı, ancak solda
+artık boşluk olmayan
+1036
+00:48:51,790 --> 00:48:54,370 veya
+sağdaki beyaza [CHUCKLES].
+1037
+00:48:54,370 --> 00:48:56,860
+Öyleyse eşittir işareti
+ataması gidiyor
+1038
+00:48:56,860 --> 00:49:00,190
+
+Machine Translated by Google
+sağdan sola,
+1039
+00:49:00,190 --> 00:49:04,820
+böylece name değişkenimin
+içindeki değer güncellenir.
+1040
+00:49:04,820 --> 00:49:07,240
+Yani sadece değişkenlere
+değer atayamazsınız,
+1041
+00:49:07,240 --> 00:49:10,300
+Değişkenlerin değerini kesinlikle
+değiştirebilirsiniz
+1042
+00:49:10,300 --> 00:49:12,817
+sadece atama operatörünü, eşittir
+işaretini kullanarak,
+1043
+00:49:12,817 --> 00:49:15,400 ve
+tekrar ve tekrar ve sağdan
+kopyalamaya devam edecek
+1044
+00:49:15,400 --> 00:49:17,810 yeni
+değer ne olursa olsun sola.
+
+1045
+00:49:17,810 --> 00:49:23,740
+Şimdi bu programı yeniden
+çalıştırırsam, Python of Hello.py, Enter.
+1046
+00:49:23,740 --> 00:49:25,930
+DAVI'm var-- ayy, hadi tekrar yapalım.
+1047
+00:49:25,930 --> 00:49:29,170
+Uzay, uzay, uzay, uzay, uzay. david
+tüm küçük harflerle, boşlukta,
+1048
+00:49:29,170 --> 00:49:30,760
+boşluk, Girin.
+1049
+00:49:30,760 --> 00:49:32.060
+Daha iyi.
+1050
+
+Machine Translated by Google
+00:49:32,060 --> 00:49:34,300
+Büyük harf kullanımımı
+düzeltmedi, bu yüzden hala
+1051
+00:49:34,300 --> 00:49:38,050 ilk D ile
+biraz özensiz, Ama sıyrıldı
+
+1052
+00:49:38,050 --> 00:49:39,430 tüm bu
+ekstra alan.
+1053
+00:49:39,430 --> 00:49:41,170 Çok
+küçük bir ayrıntı, değil mi?
+1054
+00:49:41,170 --> 00:49:44,050
+Bunun gibi o kadar heyecan
+verici değil, ama sadece
+
+1055
+00:49:44,050 --> 00:49:47,440 tek bir
+kod satırıyla yapabileceklerinizin gücünden
+bahsediyor.
+1056
+00:49:47,440 --> 00:49:49,160 Şimdi
+burada başka ne yapabilirim?
+1057
+00:49:49,160 --> 00:49:51,610
+Kullanıcının girdisini büyük harfle
+yazabilirim.
+1058
+00:49:51,610 --> 00:49:53,390 Devam
+edip şunu deneyeyim.
+1059
+00:49:53,390 --> 00:49:59,810 Bunu da
+yapabileceğim ortaya çıktı-name.capitalize.
+1060
+00:49:59,810 --> 00:50:03,420 Öyleyse
+devam edeyim ve kullanıcının adını
+büyük harfle yazayım.
+1061
+00:50:03,420 --> 00:50:05,170
+Ve yine, yorum yapıyorum
+ve orada
+
+Machine Translated by Google
+1062
+
+00:50:05,170 --> 00:50:06,820 kimse
+yorum yazamaz.
+1063
+00:50:06,820 --> 00:50:08,770
+Ben sadece biraz kısa kullanıyorum
+
+İngilizce ifadeler burada
+1064
+00:50:08,770 --> 00:50:10,510 ne
+yaptığımı kendime hatırlatmak için.
+1065
+00:50:10,510 --> 00:50:12,190 Şimdi
+burada neler oluyor?
+1066
+00:50:12,190 --> 00:50:15,310 Pekala,
+devam edeyim ve Hello.py, Enter'ın
+Python'unu çalıştırayım.
+1067
+00:50:15,310 --> 00:50:19,240 Boşluk,
+boşluk, boşluk, boşluk, boşluk, david,
+boşluk, boşluk, Girin.
+1068
+00:50:19,240 --> 00:50:19,960
+Tamam.
+1069
+00:50:19,960 --> 00:50:21.580 Şimdi
+daha güzel görünüyor, değil mi?
+1070
+00:50:21,580 --> 00:50:24,640
+Kullanıcı adını nasıl yazmış olursa
+olsun, biraz özensiz de olsa,
+1071
+00:50:24,640 --> 00:50:25,720 Şimdi
+bunu düzeltiyorum.
+1072
+00:50:25,720 --> 00:50:27,313 Ama
+bir şeyler deneyelim.
+1073
+00:50:27,313 --> 00:50:28,730 Burada
+biraz meraklanmaya başladım.
+1074
+00:50:28,730 --> 00:50:29,830 Buna
+ne dersin?
+
+Machine Translated by Google
+1075
+00:50:29,830 --> 00:50:33,910
+Uzay, uzay, uzay, uzay, uzay,
+david uzay malan-1076
+00:50:33,910 --> 00:50:35,530
+Artık soyadımı kullanacağım-1077
+00:50:35,530 --> 00:50:36,640
+Girin.
+1078
+00:50:36,640 --> 00:50:42,100 Tamam,
+ironik bir şekilde, "büyük harf kullanmak"
+gerçekten istediğimiz her şeyi büyük harf yapmak değildir.
+
+1079
+00:50:42,100 --> 00:50:43.870 Neyi
+büyük harfle yazdığı çok açık?
+1080
+00:50:43.870 --> 00:50:45,580
+Sadece ilk harf.
+1081
+00:50:45,580 --> 00:50:48,940
+Böylece Python'da yine
+başka işlevler olduğu ortaya çıktı.
+1082
+00:50:48,940 --> 00:50:49,960
+dizelerle birlikte gelir.
+1083
+00:50:49,960 --> 00:50:54,670
+Ve belgelere şöyle bir göz gezdirirsek, böyle
+bir URL'yi kaydırırsak,
+1084
+00:50:54,670 --> 00:50:58,540
+Bahse girerim başka bir çözüm
+bulacağız, bunlardan biri aslında bu.
+1085
+00:50:58,540 --> 00:51:01,180
+Aslında bunu başlığa çevirelim.
+1086
+00:51:01,180 --> 00:51:03,550
+Dizelerle birlikte gelen başka
+bir işlev daha var
+
+Machine Translated by Google
+1087
+
+00:51:03,550 --> 00:51:07,120
+Başlık tabanlı büyük harf kullanımı
+yapan Başlık, sadece
+1088
+00:51:07,120 --> 00:51:09,310 bir
+kitap veya bir kişinin adı gibi,
+büyük harfle
+1089
+00:51:09,310 --> 00:51:12,010 her
+kelimenin ilk harfi.
+1090
+00:51:12,010 --> 00:51:14,450 Ve
+bu bizim için biraz daha fazla iş
+yapacak.
+1091
+00:51:14,450 --> 00:51:15,880 Öyleyse
+devam edelim ve bunu çalıştıralım.
+
+1092
+00:51:15,880 --> 00:51:18,700
+Ve bir kenara, bu noktada
+artık biraz yorgunum
+1093
+00:51:18,700 --> 00:51:22,130
+sürekli Python, Python, Python
+yazarak.
+1094
+00:51:22,130 --> 00:51:25,570
+Bunun gibi bir komut satırı
+arayüzü kullanırken,
+1095
+00:51:25.570 --> 00:51:28.000 eski
+komutlarınızın tümüne geri
+dönebilirsiniz.
+1096
+00:51:28,000 --> 00:51:30,280 Az
+önce yaptığım şey yukarı oka
+basmaktı.
+1097
+00:51:30,280 --> 00:51:33,820
+Bu, tüm komutların geçmişime hemen
+geri döner.
+1098
+00:51:33,820 --> 00:51:34,720
+
+Machine Translated by Google
+Hiç yazdım.
+1099
+00:51:34,720 --> 00:51:37,960
+Yani bu, kendimi
+tekrarlamam için daha hızlı bir yol.
+1100
+00:51:37,960 --> 00:51:39,700 her
+şeyi manuel olarak yazmaktansa.
+1101
+00:51:39,700 --> 00:51:42,850
+Devam edeyim ve Enter, boşluk,
+boşluk, boşluk, boşluk, boşluk,
+1102
+00:51:42,850 --> 00:51:47,110
+david malan boşluk, boşluk,
+tümü küçük harf, Enter.
+1103
+00:51:47,110 --> 00:51:49,690
+Şimdi daha iyi görünüyor.
+1104
+00:51:49,690 --> 00:51:52.030
+Şimdi büyük harfle yazdım ve her
+şeyi temizledim.
+1105
+00:51:52,030 --> 00:51:53,200
+Peki ya kodum?
+1106
+00:51:53,200 --> 00:51:55,930
+Şu anda sekiz satır
+kodum var, dördü
+1107
+00:51:55,930 --> 00:51:58,030
+yorumlardır, dördü gerçek
+koddur.
+1108
+00:51:58,030 --> 00:51:59,710
+Gerçekten bu kadar çok ihtiyacım var mı?
+
+1109
+00:51:59,710 --> 00:52:00,910 Eh,
+mutlaka değil.
+1110
+00:52:00,910 --> 00:52:03,520
+Python'da da neler yapabileceğimi izleyin.
+
+Machine Translated by Google
+1111
+00:52:03,520 --> 00:52:07,100
+Kullanıcının adını ayrı ayrı büyük
+harfle yazmayayım.
+1112
+00:52:07,100 --> 00:52:08,170
+Şunu söyleyeyim...
+1113
+00:52:08,170 --> 00:52:12.970 ve
+kullanıcı adını büyük harfle yazın.
+1114
+00:52:12,970 --> 00:52:15,370 Bu
+işlevleri birlikte zincirleyebilirim.
+1115
+00:52:15,370 --> 00:52:18,130 Bunun
+sonuna Başlık ekleyebilirim.
+1116
+00:52:18,130 --> 00:52:19,600 Peki
+şimdi ne oluyor?
+1117
+00:52:19,600 --> 00:52:21,440
+Yine, bunun gibi bir
+kod satırıyla,
+1118
+00:52:21,440 --> 00:52:24,490 önce
+eşittir işaretinin sağındakine
+odaklanırsınız,
+1119
+00:52:24,490 --> 00:52:26,470 o
+zaman eşittir işaretinin soluna
+gideceğiz.
+1120
+00:52:26,470 --> 00:52:28,095 Eşittir
+işaretinin sağında ne var?
+1121
+00:52:28,095 --> 00:52:29,240
+Buradaki satır.
+1122
+00:52:29,240 --> 00:52:30,390 Peki
+bu ne anlama geliyor?
+1123
+00:52:30,390 --> 00:52:35,610
+
+Machine Translated by Google
+DAVID alanı, MALAN gibi ad
+değişkeninin değerini alın.
+1124
+00:52:35,610 --> 00:52:38,700
+Ardından sol ve sağdaki beyaz
+boşluğu çıkarın.
+1125
+00:52:38,700 --> 00:52:40.920 Bu
+bir değer döndürecek.
+1126
+00:52:40.920 --> 00:52:44,790
+DAVID alanını döndürecek
+MALAN, boşluksuz
+1127
+00:52:44,790 --> 00:52:45,720
+sola veya sağa.
+1128
+00:52:45,720 --> 00:52:47,940 Bu
+dönüş değeriyle ne yapmak
+istiyorsunuz?
+1129
+00:52:47,940 --> 00:52:50,850
+Python'un davaya başlık
+vermesini istiyorsunuz, yani
+
+1130
+00:52:50,850 --> 00:52:54,330 bu
+sonuçtaki dizedeki her kelimeyi
+gözden geçirin
+1131
+00:52:54,330 --> 00:52:57.000 ve
+ilk kelimenin ilk harfini sabitleyin,
+ilk harfi
+1132
+00:52:57.000 --> ikinci kelimenin
+00:52:58,390 vb.
+1133
+00:52:58,390 --> 00:53:00,330
+Ve sonra-- şimdi
+düşüncemizi bitirebiliriz-1134
+00:53:00,330 --> 00:53:05,580
+her şeyi sağdan sola aynı isim
+değişkenine kopyalayın.
+
+Machine Translated by Google
+1135
+
+00:53:05,580 --> 00:53:06,330 Ve
+biliyor musun?
+1136
+00:53:06,330 --> 00:53:08,340
+Bunu bir adım daha ileri götürebilirim.
+1137
+00:53:08,340 --> 00:53:11,400
+Neden devam edip istiyorsak
+bunu yapmıyoruz.
+1138
+00:53:11,400 --> 00:53:16,890
+Tüm bunlardan kurtulmama izin ver
+ve sadece striptiz ve başlık yapmama izin ver
+
+1139
+00:53:16,890 --> 00:53:18,270
+hepsi ilk satırda.
+1140
+00:53:18,270 --> 00:53:21,380 Ve
+şimdi sekiz kod satırından dörde
+çıktık.
+1141
+00:53:21,380 --> 00:53:22,740 Çok
+daha sıkı.
+1142
+00:53:22,740 --> 00:53:23,880 Çok
+daha temiz.
+1143
+00:53:23,880 --> 00:53:26,250
+Ve makul insanlar aynı fikirde
+olmasa da,
+1144
+00:53:26,250 --> 00:53:30,090
+daha iyi çünkü okunması daha
+kolay.
+1145
+00:53:30,090 --> 00:53:32,670
+Daha az kod satırı, daha az
+hata fırsatı,
+1146
+00:53:32,670 --> 00:53:37,350
+sadece çözmem gereken bir
+sonraki sorunuma geçmeme izin veriyor.
+
+Machine Translated by Google
+1147
+
+00:53:37,350 --> 00:53:41,730 Pekala,
+burada durup bu yöntemlerle ilgili herhangi
+bir soru olup olmadığına bakmama izin verin.
+1148
+00:53:41,730 --> 00:53:45,540
+Yöntem, bir değer türüne yerleşik
+bir işlevdir,
+1149
+00:53:45,540 --> 00:53:47,820 bu
+işlevler gibidir.
+1150
+00:53:47,820 --> 00:53:50,640 Veya
+az önce gördüğümüz F tellerinde.
+
+1151
+00:53:50,640 --> 00:53:51,390
+İZLEYİCİ: Evet, merhaba.
+1152
+00:53:51,390 --> 00:53:52,410
+Teşekkürler David.
+1153
+00:53:52,410 --> 00:53:56,190
+Yani boşluklar arasındaki
+boşlukları kaldırmanın bir yolu var mı?
+1154
+00:53:56,190 --> 00:53:57,430 eklemiş
+olabilir miyim?
+1155
+00:53:57,430 --> 00:53:58,680 DAVID
+MALAN: Kısa cevap, hayır.
+1156
+00:53:58,680 --> 00:54:01,060
+Aynı URL'deki belgeleri daha önce
+okuduysanız,
+1157
+00:54:01,060 --> 00:54:05.090 Şeritin
+soldan ve sağdan ayrıldığını, ancak aradan
+çıkmadığını göreceksiniz.
+1158
+00:54:05,090 --> 00:54:07,590
+Aslında, dizelerle gelen iki işlev daha
+vardır.
+
+Machine Translated by Google
+1159
+
+00:54:07,590 --> 00:54:10.560
+Birine L şeridi, diğerine R
+şeridi denir,
+1160
+00:54:10.560 --> 00:54:12,378
+birini veya diğerini yapmanıza izin verir.
+1161
+00:54:12,378 --> 00:54:14.670
+Ortadaki boşluktan
+kurtulmak istiyorsak,
+1162
+00:54:14,670 --> 00:54:17,760
+tamamen farklı bir numara
+yapmamız gerekecek.
+1163
+00:54:17,760 --> 00:54:22,380
+İZLEYİCİ: Bu nokta şeridi, nokta başlığı,
+
+1164
+00:54:22,380 --> 00:54:23,160
+hepsi bir arada.
+1165
+00:54:23,160 --> 00:54:24,930 Peki
+kaç tane birleştirebiliriz?
+1166
+00:54:24,930 --> 00:54:26,970
+DAVID MALAN: Evet, gerçekten
+güzel bir soru.
+1167
+00:54:26,970 --> 00:54:30,177
+Teknik olarak istediğiniz
+kadar ama bir noktada
+1168
+00:54:30,177 --> 00:54:32.760
+kodunuz gerçekten çok kötü
+görünmeye başlayacak, değil mi?
+1169
+00:54:32.760 --> 00:54:35,302
+Çünkü kod satırı gerçekten çok
+uzun sürecek.
+1170
+00:54:35,302 --> 00:54:38,130
+Sonunda belki olacak
+
+Machine Translated by Google
+tekrar tekrar sarın.
+1171
+00:54:38,130 --> 00:54:41,220 Yani
+bir noktada, uh-uh, bu çok fazla
+diyorsunuz.
+1172
+00:54:41,220 --> 00:54:44,340 Ve
+benim yaptığım gibi birden çok
+satıra bölmeye başlıyorsunuz.
+1173
+00:54:44,340 --> 00:54:47,518 Belki
+gerektiğinde değeri değişkene
+yeniden atamak.
+1174
+00:54:47,518 --> 00:54:49.060 Ve bu
+aslında iyi bir soru.
+1175
+00:54:49,060 --> 00:54:52.830 Eğer
+sorunuzdan [DUYILMAZ] bir dönüş
+yapabilirsem, demek istediğim, insanlar ne düşünüyor?
+1176
+00:54:52.830 --> 00:54:55,770
+Devam edip bir an için herkesin
+elini kaldırabilseydik.
+1177
+00:54:55,770 --> 00:54:57,690
+Şunu sorayım...
+1178
+00:54:57,690 --> 00:55:03,450 şimdi
+bunu şerit, başlık ve girdi ile yapma
+yöntemim
+1179
+00:55:03,450 --> 00:55:04,800 hepsi
+aynı satırda-1180
+00:55:04,800 --> 00:55:07,290 önceki
+yaklaşımımdan daha mı iyi?
+1181
+00:55:07,290 --> 00:55:10.830
+Yakınlaştırmada Evet simgesini veya
+Hayır simgesini kullanabilirsiniz.
+
+1182
+00:55:10.830 --> 00:55:14,370
+
+Machine Translated by Google
+Bu versiyonun daha iyi olduğunu
+düşünüyorsanız, Evet deyin.
+
+1183
+00:55:14,370 --> 00:55:19,060
+Örneğin, bu önceki sürümün
+daha iyi olduğunu düşünüyorsanız,
+1184
+00:55:19,060 --> 00:55:23,310
+burada her şeyin bozulduğu yer,
+Hayır deyin.
+1185
+00:55:23,310 --> 00:55:26,610 Ve
+sonra nedenini birazdan göreceğiz.
+1186
+00:55:26,610 --> 00:55:30,000
+Daha önce makul insanların
+aynı fikirde olamayacağını önermiştim.
+
+1187
+00:55:30,000 --> 00:55:32.730 ve
+durum kesinlikle böyle.
+1188
+00:55:32,730 --> 00:55:35,520
+Öyle ya da böyle yapmak
+mutlaka en iyisi değildir,
+1189
+00:55:35,520 --> 00:55:37,800 en
+azından haklı gösterebilirsen.
+1190
+00:55:37,800 --> 00:55:41,280
+Burada en son sürüme geri dönelim.
+
+1191
+00:55:41,280 --> 00:55:45,360
+Pekâlâ, pek çok Evet ve pek çok
+Hayır görüyoruz.
+1192
+00:55:45,360 --> 00:55:48,900
+Yapabilirsek neden devam edip
+Evetlerden birini çağırmıyoruz.
+1193
+00:55:48,900 --> 00:55:52,710
+Evet oyu veren biri sizce neden bu kodun
+güncel versiyonu
+
+Machine Translated by Google
+1194
+
+00:55:52,710 --> 00:55:57,330
+gerçekten de kodun önceki uzun
+versiyonundan daha mı iyi?
+1195
+00:55:57,330 --> 00:55:59,110
+İZLEYİCİ: Bence daha okunaklı.
+1196
+00:55:59,110 --> 00:56:03,030
+Yani isim değişkeni bu diyebilirim.
+1197
+00:56:03,030 --> 00:56:07,360
+Biraz girdi alır ve ardından boşluğu
+kaldırır ve ona bir başlık verir.
+1198
+00:56:07,360 --> 00:56:08,320 Ve
+işte başlıyorsunuz.
+1199
+00:56:08,320 --> 00:56:09,600 Bir
+merhabanız var, adınız.
+1200
+00:56:09,600 --> 00:56:10.860
+DAVID MALAN: Evet, bence bu
+oldukça makul.
+1201
+00:56:10,860 --> 00:56:12,660
+Çok okunabilir, en azından
+alışkanlığınız varsa,
+1202
+00:56:12,660 --> 00:56:14,660
+İngilizce olduğunuz gibi, soldan
+sağa okuma.
+1203
+00:56:14,660 --> 00:56:16,990
+Sonuç olarak çok doğal bir şekilde
+akıyor.
+1204
+00:56:16,990 --> 00:56:18,943
+Satır o kadar uzun değil.
+1205
+00:56:18,943 --> 00:56:20.860
+Kesinlikle ekrana çok yakışmış.
+
+Machine Translated by Google
+1206
+
+00:56:20.860 --> 00:56:21,870 Bence
+bu iyi bir argüman.
+1207
+00:56:21,870 --> 00:56:23,310 Bir
+kontrpuana ne dersiniz?
+1208
+00:56:23,310 --> 00:56:27,810 Hayır
+oyu veren biri, eğer bunun daha kötü olduğunu
+düşünen birini çağırabilirsek.
+1209
+00:56:27,810 --> 00:56:31,410
+İZLEYİCİ: Çünkü hiç okunamıyor.
+
+1210
+00:56:31,410 --> 00:56:37,300 Çok
+uzun bir hat gibi görünüyor.
+1211
+00:56:37,300 --> 00:56:39,170 Bence
+ayrılmak daha iyi.
+1212
+00:56:39,170 --> 00:56:39,920 DAVID
+MALAN: Evet.
+1213
+00:56:39,920 --> 00:56:41.580 Bence
+bu da ikna edici, değil mi?
+1214
+00:56:41.580 --> 00:56:43.050 Biraz
+daha uzuyor.
+1215
+00:56:43.050 --> 00:56:46,890
+Ve buradaki cümlem-- adın ne-- görece kısa
+olsa da,
+1216
+00:56:46,890 --> 00:56:49,530 bunun
+daha da çirkinleşebileceğini hayal
+edebilirsiniz
+1217
+00:56:49,530 --> 00:56:52,350 Eğer
+kullanıcıya daha uzun bir soru
+soruyorsam, bu
+1218
+00:56:52,350 --> 00:56:56,070
+
+Machine Translated by Google
+
+bu kod satırını daha da uzun ve
+dolayısıyla daha az okunabilir hale getirecek.
+1219
+00:56:56,070 --> 00:56:59,970
+
+Striptiz dediğim benim veya
+meslektaşlarım için daha az açık olabilir.
+1220
+00:56:59,970 --> 00:57:01,530 ya
+da başlığı aradığım.
+1221
+00:57:01,530 --> 00:57:03,870
+Beklenmedik bir sürpriz olabilir.
+
+1222
+00:57:03,870 --> 00:57:05,460
+Bence bu da makul.
+1223
+00:57:05,460 --> 00:57:07,570
+Kısacası burada doğru bir cevap yok.
+1224
+00:57:07,570 --> 00:57:10.680
+Ve aslında, programlamada daha
+iyi olma sürecinin bir parçası
+1225
+00:57:10.680 --> 00:57:14,168
+kendi stil anlayışınızı elde etmek
+veya bir şirkette çalışmaktır
+1226
+00:57:14,168 --> 00:57:16,710
+hangi yolun diğerinden daha iyi
+olduğunu belirleyebilirler
+1227
+00:57:16,710 --> 00:57:18,930
+çünkü herkesin aynı şeyi
+yapmasını istiyorlar,
+1228
+00:57:18,930 --> 00:57:22,080
+makul insanlar aynı fikirde olmasa
+da.
+1229
+00:57:22,080 --> 00:57:24,750
+Sonunda olsa da, neye
+sahip olduğun sürece
+
+Machine Translated by Google
+1230
+
+00:57:24,750 --> 00:57:28,710 şu ya
+da bu şekilde lehine oldukça iyi bir
+argüman, sonuçta,
+1231
+00:57:28,710 --> 00:57:29,820
+önemli olan bu.
+1232
+00:57:29,820 --> 00:57:32,160
+Hangisinin daha iyi olduğunu bilmediğin için
+bir şeyler yapıyorsan,
+1233
+00:57:32,160 --> 00:57:33,180 bu
+harika değil.
+1234
+00:57:33,180 --> 00:57:35,460
+Ama eğer ve ne zaman
+fikir edinmeye başlarsanız
+1235
+00:57:35,460 --> 00:57:38,610 ve
+patronunuz, öğretmeniniz,
+meslektaşınız, arkadaşınız ise,
+1236
+00:57:38,610 --> 00:57:41,312 size
+meydan okuyabilir ve "Bekle, neden
+böyle yaptın?" diyebilir.
+1237
+00:57:41,312 --> 00:57:43.770
+Seninle aynı fikirde olmayabilirler,
+ama en azından bir cevapları var,
+1238
+00:57:43,770 --> 00:57:47.010 ve bu
+genel olarak yeterince ikna edici
+olmalıdır.
+1239
+00:57:47,010 --> 00:57:49,230
+Şimdi, dizeler bir sürü başka
+yöntemle birlikte gelir
+1240
+00:57:49,230 --> 00:57:53,310 da
+bunlardan biri split olarak adlandırılır
+ve adından da anlaşılacağı gibi,
+1241
+00:57:53,310 --> 00:57:57,030
+
+Machine Translated by Google
+tabiri caizse bir dizgiyi birden
+çok küçük alt dizgeye bölmek.
+1242
+00:57:57,030 --> 00:57:59,040
+Örneğin, buradaki
+insan alışkanlık içindeyse
+1243
+00:57:59,040 --> 00:58:02,130
+adlarını, ardından boşluk ve soyadlarını
+yazarak,
+1244
+00:58:02,130 --> 00:58:05.070 ve
+devam edip onları sadece ilk
+isimleriyle selamlamak istiyorsunuz,
+1245
+00:58:05,070 --> 00:58:07,140
+aslında o tek boşluktan
+yararlanabiliriz
+1246
+00:58:07,140 --> 00:58:09,930 ad ve
+soyadı arasında ve bu dizeyi böl
+
+1247
+00:58:09,930 --> 00:58:11,760 iki
+küçük alt diziye bölünür.
+1248
+00:58:11,760 --> 00:58:12,820 Bunu
+nasıl yapabiliriz?
+1249
+00:58:12,820 --> 00:58:14.820
+Pekala, bu satırlar arasında
+devam edeyim
+1250
+00:58:14,820 --> 00:58:18,210
+proaktif olarak kullanıcının
+
+1251
+00:58:18,210 --> 00:58:22,230 ad ve
+soyad olarak.
+1252
+00:58:22,230 --> 00:58:25,920
+Ve sonra devam edelim ve şu anda içeren
+bu isim değişkenini alalım.
+
+Machine Translated by Google
+1253
+
+00:58:25,920 --> 00:58:28,590
+muhtemelen şöyle bir şey,
+David, uzay, Malan,
+1254
+00:58:28,590 --> 00:58:32,130 ve
+devam edip split'i çağırıp argüman
+olarak iletmeme izin verin
+1255
+00:58:32,130 --> 00:58:35,820 tek
+bir beyaz alanı bölmek için
+
+1256
+00:58:35,820 --> 00:58:37,750 bu
+karakter üzerinde ayrılmak istiyor
+1257
+00:58:37,750 --> 00:58:41,363
+Şimdi, bölünmenin ideal olarak bir
+dizi değer döndüreceği ortaya çıktı.
+1258
+00:58:41,363 --> 00:58:42,780 bir
+ad ve sonra bir soyadı.
+1259
+00:58:42,780 --> 00:58:45,330
+Ve aslında Python'da bu değerlerin
+her ikisini de atayabiliriz.
+1260
+00:58:45,330 --> 00:58:47,940 bu
+diziden bir kerede bazı değişkenlere.
+
+1261
+00:58:47,940 --> 00:58:51,360
+Örneğin, ilk virgül son eşittir
+ve bu
+1262
+00:58:51,360 --> 00:58:53,220
+etkisi sağdan sola olacak
+
+1263
+00:58:53,220 --> 00:58:56.760 bu
+tür ilk değeri ilk değişkene, ikinci değeri
+böyle bir değere koymak
+1264
+00:58:56,760 --> 00:58:57,880
+
+Machine Translated by Google
+ikinci değişkende.
+
+1265
+00:58:57,880 --> 00:59:01,350
+Şimdi son kod satırımda içeri
+girip merhaba diyebilirim
+1266
+00:59:01,350 --> 00:59:03,900 tam
+adı değil, David Malan gibi bir şey,
+
+1267
+00:59:03,900 --> 00:59:06,540 Önce
+Merhaba diyebilirim.
+1268
+00:59:06,540 --> 00:59:10,200
+Pekala, hadi devam edelim ve terminal
+penceremi temizleyelim, Python of Hello.py'yi çalıştırın
+1269
+00:59:10,200 --> 00:59:10.807 ve
+Enter'a basın.
+1270
+00:59:10.807 --> 00:59:13,890
+Bu sefer önde gelen beyaz boşluklarla
+uğraşmayacağım, ama devam edeyim
+1271
+00:59:13,890 --> 00:59:19,290 ve
+David space Malan yazıp her zamanki
+gibi parmaklarımı çaprazlayarak, Merhaba,
+1272
+00:59:19,290 --> 00:59:21.720 Şu
+anda gördüğümüz şey David.
+1273
+00:59:21,720 --> 00:59:25,530
+Pekala, şimdiye kadar çok fazla örnek
+gördük,
+1274
+00:59:25,530 --> 00:59:29,430
+dizeler, ancak kesinlikle programlar
+ve programlama dilleri
+1275
+00:59:29,430 --> 00:59:32.080 diğer
+veri türlerini de yönetir.
+1276
+00:59:32.080 --> 00:59:36.000
+
+Machine Translated by Google
+Devam edelim ve daha sonra çok
+yaygın başka bir veri türüne geçelim
+
+1277
+00:59:36,000 --> 00:59:38,610
+Python'da, daha genel olarak
+programlamada, yani
+1278
+00:59:38,610 --> 00:59:41,160
+tam sayılar, Python'da INT
+olarak da bilinir-1279
+00:59:41,160 --> 00:59:46.080
+INT. STR nasıl dizgenin
+kısaltmasıdır, Python'da INT de öyledir.
+1280
+00:59:46.080 --> 00:59:47,210
+tamsayı için kısa.
+1281
+00:59:47,210 --> 00:59:48,210
+Peki, tamsayı nedir?
+1282
+00:59:48,210 --> 00:59:51,390
+Aynen matematikte
+olduğu gibi, eksi 2 gibi bir sayı,
+1283
+00:59:51,390 --> 00:59:55,605
+eksi 1, 0, 1, 2 ve eksi sonsuza
+kadar, hepsi
+1284
+00:59:55,605 --> 00:59:56,980
+pozitif sonsuzluğa giden yol.
+1285
+00:59:56,980 --> 00:59:59,040
+Ancak bir tamsayıda ondalık
+nokta yoktur.
+1286
+00:59:59,040 --> 01:00:04,260
+Bu sadece eksi 2, eksi 1, 0, 1 ve
+2'den sonraki gibi bir sayı.
+1287
+01:00:04,260 --> 01:00:05,160
+Bu bir INT.
+1288
+
+Machine Translated by Google
+
+01:00:05,160 --> 01:00:09,360 Elbette
+
+matematik dünyasında kullandığımız birçok
+sembol var.
+1289
+01:00:09,360 --> 01:00:12,300 Farklı
+bir amaç için kullanmamıza rağmen +'yı
+daha önce de görmüştük.
+1290
+01:00:12,300 --> 01:00:15.030 Ancak
+Python bu sembolleri ve daha
+fazlasını destekler.
+1291
+01:00:15.030 --> 01:00:18.090
+Ve Python, sayıları bir araya
+getirmenize izin verir +,
+1292
+01:00:18.090 --> 01:00:21.580 sayıları
+çıkarma, sayıları çarpma, sayıları
+bölme.
+1293
+01:00:21.580 --> 01:00:25,380
+Ve burada insanlara biraz garip veya tanıdık
+gelmeyebilecek tek kişi
+1294
+01:00:25,380 --> 01:00:29,310 bu
+yüzde işaretidir, ancak bu bağlamda
+yüzde anlamına gelmez.
+1295
+01:00:29,310 --> 01:00:32,400
+Bir Python programında tek
+bir yüzde işareti kullanıyorsanız,
+1296
+01:00:32,400 --> 01:00:34,680 bu
+aslında sözde modulo operatörüdür,
+
+1297
+01:00:34,680 --> 01:00:38,400
+böldükten sonra kalanı almanızı
+sağlayan operatör
+1298
+01:00:38,400 --> 01:00:40,210 birer
+birer numara.
+1299
+01:00:40,210 --> 01:00:43,230
+
+Machine Translated by Google
+Çok geçmeden bunun örneklerini
+göreceğiz, ancak bunlardan ilk dördü
+1300
+01:00:43,230 --> 01:00:45,570 belki
+oldukça, oldukça tanıdık.
+1301
+01:00:45,570 --> 01:00:49,240
+Peki ortaya çıkıyor
+
+Python, mutlaka-1302
+01:00:49,240 --> 01:00:54,480
+Hello.py gibi bir dosyaya kod yazmaya
+devam etmek zorunda değilsiniz
+1303
+01:00:54,480 --> 01:00:56,700 ve
+ardından bir terminal penceresinde
+çalıştırma.
+1304
+01:00:56,700 --> 01:00:59,610
+Python hakkında pek çok
+kişinin beğendiği özelliklerden biri
+1305
+01:00:59,610 --> 01:01:02,250 bu
+sözde interaktif modu
+desteklemesidir.
+1306
+01:01:02,250 --> 01:01:06,240
+Python kodunu yazmaya başlayabilir
+ve hemen çalıştırabilirsiniz.
+1307
+01:01:06,240 --> 01:01:08,965 bu
+satırların her biri etkileşimli olarak,
+özellikle
+1308
+01:01:08,965 --> 01:01:11,340 tüm
+kod satırlarınızı kaydetmeyi
+umursamıyorsanız.
+1309
+01:01:11,340 --> 01:01:14.590
+Sadece kodu çalıştırmak ve bazı
+yanıtları geri almak istiyorsunuz.
+1310
+01:01:14,590 --> 01:01:18,400
+Örneğin, VS'ye geri dönmeme izin verin
+
+Machine Translated by Google
+Buraya kodlayın ve Hello.py'yi kapatmama izin verin
+
+1311
+01:01:18,400 --> 01:01:22,050 ve
+terminal penceremdeki küçük üçgene
+tıklamama izin verin
+1312
+01:01:22,050 --> 01:01:24,880 sadece
+bir an için çok daha büyük hale
+getirmek için.
+1313
+01:01:24,880 --> 01:01:30,450 Yani
+şimdi herhangi bir .py dosyası
+oluşturmuyorum, Python'u kendi başına çalıştıracağım
+1314
+01:01:30,450 --> 01:01:31,410 benim
+istemimde.
+1315
+01:01:31,410 --> 01:01:35,100
+Ve bunu yaptığımda göreceksin,
+şifreli görünümlü çıktılar alıyorum
+1316
+01:01:35,100 --> 01:01:38,890 ve
+programın en son güncellendiği tarih
+ve saat vb.
+1317
+01:01:38,890 --> 01:01:43,710 Ama
+sonunda bunun gibi üç tane üçlü
+parantez alıyorum.
+1318
+01:01:43,710 --> 01:01:46,740 Python
+için etkileşimli moddur.
+1319
+01:01:46,740 --> 01:01:52,050
+Bu yüzden Python yorumlayıcısını
+çalıştırıyorum ve ne zaman bir kod satırı yazsam
+1320
+01:01:52.050 --> 01:01:54,570
+yorumlayıcıda, hemen çalıştıracak.
+
+1321
+01:01:54,570 --> 01:01:56,942
+Python'u tekrar tekrar çalıştırmam
+gerekmiyor.
+
+Machine Translated by Google
+1322
+01:01:56,942 --> 01:01:58,650
+Sanki insan
+dünyasında, eğer sen
+1323
+01:01:58,650 --> 01:02:01,635
+başka bir dil konuşan bir insanın
+yanında duruyordu,
+1324
+01:02:01,635 --> 01:02:04,260 ve
+onlarla sadece ileri geri sohbet
+ediyorsunuz,
+1325
+01:02:04,260 --> 01:02:07,030
+hepsi oluyor-- çeviri-- hemen.
+
+1326
+01:02:07,030 --> 01:02:08,940
+Peki interaktif modda ne yapabilirim?
+1327
+01:02:08,940 --> 01:02:11,760 1
++ 1, Enter gibi bir şey yapabilirim.
+
+1328
+01:02:11,760 --> 01:02:13,380
+Bu aslında kod, tamam mı?
+1329
+01:02:13,380 --> 01:02:16,590
+Bunu kod olarak düşünmeyebilirsiniz,
+ancak biraz aritmetik ve
+1330
+01:02:16,590 --> 01:02:21,060
+sayıları biliyorsun ve + biliyorsun,
+bu geçerli Python kodu.
+1331
+01:02:21,060 --> 01:02:23,537 Ve
+Python'u gerçekten süslü bir hesap
+makinesi olarak kullanabilirsiniz.
+
+1332
+01:02:23,537 --> 01:02:24,870
+Ama başka şeyler de yapabilirdim.
+1333
+01:02:24,870 --> 01:02:28,020
+yazdırmak istersem
+
+Machine Translated by Google
+Kendim Merhaba dünya,
+
+1334
+01:02:28,020 --> 01:02:30,750
+Ayrıca oradaki kod satırını
+da yazdırabilirim-1335
+01:02:30,750 --> 01:02:31,530
+Merhaba dünya.
+1336
+01:02:31,530 --> 01:02:33,600
+Yani şu an anlamında
+etkileşimli
+
+1337
+01:02:33,600 --> 01:02:36,960 bir
+kod satırı çalıştırıyorsunuz, boom,
+sonucu görüyorsunuz.
+1338
+01:02:36,960 --> 01:02:39,450
+Genelde bunu yapmayacağız
+çünkü en azından
+1339
+01:02:39,450 --> 01:02:42,810 dil
+öğretirken, işleri aşamalı olarak
+yapmak isteriz
+1340
+01:02:42.810 --> 01:02:45,513 ve
+nereden geldiğimizi görmenizi
+istiyoruz.
+1341
+01:02:45,513 --> 01:02:48,180
+Ve bir şeyleri tekrar tekrar
+deneyebilmek istiyoruz, özellikle
+1342
+01:02:48,180 --> 01:02:49,140 hata
+yaparsak.
+1343
+01:02:49,140 --> 01:02:51,690
+Ancak bunun gerçekten
+Python'un bir özelliği olduğunu bilin,
+
+1344
+01:02:51,690 --> 01:02:54,250 bu
+sözde interaktif mod.
+1345
+
+Machine Translated by Google
+01:02:54,250 --> 01:02:57,015
+
+Ama şimdi bir anlığına odaklanalım,
+sadece bu etkileşime değil,
+1346
+01:02:57,015 --> 01:02:58,890 ama
+aslında Python'un görünüşe göre
+
+1347
+01:02:58,890 --> 01:03:03,310
+tamsayıları ve matematiği ve bu temel
+işlemlerden bazılarını destekler.
+1348
+01:03:03,310 --> 01:03:06,430
+Bakalım kendi küçük hesap
+makinemizi yapamayacak mıyız.
+1349
+01:03:06,430 --> 01:03:08,820
+Öyleyse devam edeyim ve
+tekrar VS Kodunu açayım,
+1350
+01:03:08,820 --> 01:03:11,440 ve
+terminal penceremi küçülteceğim,
+
+1351
+01:03:11,440 --> 01:03:14.610 ve
+Calculator.py adında yeni bir dosya
+oluşturacağım.
+1352
+01:03:14,610 --> 01:03:17,950
+Bu geri çağırmayı
+yapmak için buraya Kod yazabilirim,
+1353
+01:03:17,950 --> 01:03:21.540 ve
+oluşturmak istediğim dosyanın
+adı, .py, Enter.
+1354
+01:03:21.540 --> 01:03:23,550 Bu
+bana yukarıda yeni bir sekme veriyor.
+1355
+01:03:23,550 --> 01:03:25,620 Bu
+yüzden Hello.py'yi zaten kapattım.
+1356
+01:03:25,620 --> 01:03:27,150 Artık
+Calculator.py'deyim.
+
+Machine Translated by Google
+1357
+01:03:27,150 --> 01:03:30,900 Ve
+benim için biraz ekleme yapan basit bir hesap
+makinesi yapalım.
+1358
+01:03:30,900 --> 01:03:33,690
+Ama bunu tekrarlayabilmemiz için
+bir dosyada yapacağım.
+1359
+01:03:33,690 --> 01:03:36,607 ve
+zamanla daha iyisi veya daha kötüsü
+için değişiklikler yapın.
+1360
+01:03:36,607 --> 01:03:38,940 Önce
+birkaç değişken tanımlayayım.
+
+1361
+01:03:38,940 --> 01:03:42,840
+İlk değişkenimi x olarak adlandırarak
+matematiksel şeyi yapacağım,
+1362
+01:03:42,840 --> 01:03:45,840 ikinci
+değişkenim y ve sonra kendime
+
+1363
+01:03:45,840 --> 01:03:48,720 üçüncü
+bir değişken z = x + y.
+1364
+01:03:48,720 --> 01:03:50,970 Sonra
+devam edip z'yi yazdıracağım.
+
+1365
+01:03:50,970 --> 01:03:54,858
+Şimdi bu program, kuşkusuz çok
+heyecan verici veya ilginç değil,
+1366
+01:03:54,858 --> 01:03:57,900
+aslında, ekrana bir şeyler yazdırmaktan
+biraz daha az ilginç
+1367
+01:03:57,900 --> 01:04:01,110
+dizelerde olduğu gibi, ama biz
+bunun üzerine inşa edeceğiz
+
+Machine Translated by Google
+1368
+
+01:04:01,110 --> 01:04:04,030 ve
+Python'da yararlanabileceğimiz başka
+hangi özelliklerin bulunduğunu görün.
+1369
+01:04:04,030 --> 01:04:07,410
+Umarım, Python matematik olduğunu
+benim kadar iyi biliyorsa,
+1370
+01:04:07,410 --> 01:04:13,140 Python
+of Calculator.py çalıştırdığımda umarım 1 +
+2 olduğunu görmeliyim
+1371
+01:04:13,140 --> 01:04:15,600 =
+gerçekten 3.
+1372
+01:04:15,600 --> 01:04:18,510 Pekala,
+o kadar şaşırtıcı ve ilginç değil.
+
+1373
+01:04:18,510 --> 01:04:20.730
+Ve dürüst olmak gerekirse,
+bu en kullanışlı program değil
+1374
+01:04:20.730 --> 01:04:24,840 çünkü
+her zaman 1 + 2 = 3 hesaplayacaktır.
+
+1375
+01:04:24,840 --> 01:04:28,170 En
+azından bu programı biraz daha
+interaktif hale getirelim, değil mi?
+1376
+01:04:28,170 --> 01:04:31,590
+Kullanıcıdan nasıl girdi alabileceğimizi önceki
+örneklerden zaten biliyoruz.
+1377
+01:04:31,590 --> 01:04:33,540 Şimdi
+bu girdi işlevini geri getirelim.
+1378
+01:04:33,540 --> 01:04:37,380
+Bunu yapalım, şimdi devam edeyim ve
+kodumun en üstünde,
+1379
+01:04:37,380 --> 01:04:40,650
+
+Machine Translated by Google
+x'i her zaman 1 sayısı
+olmayacak şekilde değiştirelim,
+1380
+01:04:40,650 --> 01:04:42,510 dönüş
+ne olursa olsun değiştirelim
+
+1381
+01:04:42,510 --> 01:04:45,690 değeri
+kullanıcıdan x istemek içindir.
+1382
+01:04:45,690 --> 01:04:48,730 Burada
+istediğim herhangi bir İngilizce veya
+insan dilini kullanabilirim.
+1383
+01:04:48,730 --> 01:04:49,890 X nedir
+diyeceğim.
+1384
+01:04:49,890 --> 01:04:52,410 Daha
+önce de sorduğum gibi, adın ne?
+
+1385
+01:04:52,410 --> 01:04:54,180 Aynı
+şeyi y için de yapacağım.
+
+1386
+01:04:54,180 --> 01:04:57,330
+Input'u tekrar kullanacağım, ancak bu
+sefer soruyu şu şekilde değiştirin:
+1387
+01:04:57,330 --> 01:04:58,728 y nedir?
+
+1388
+01:04:58,728 --> 01:05:01,770
+Pekala, bu noktada, sanırım kodun geri
+kalanını bırakacağım.
+1389
+01:05:01,770 --> 01:05:02,730 aynı.
+
+1390
+01:05:02,730 --> 01:05:06,450
+Z = x + y Ve sonra z
+yazdırın ama ne güzel
+1391
+
+Machine Translated by Google
+
+01:05:06,450 --> 01:05:10,140 Şimdi
+güzel bir etkileşimli hesap makinem
+olduğunu düşünüyorum.
+1392
+01:05:10,140 --> 01:05:12,510 Doğru,
+şimdi her zaman 1 + 2 yapmayacak.
+
+1393
+01:05:12,510 --> 01:05:16,330
+Kullanıcı ne yazıyorsa onu yapacak +
+kullanıcı ne yazıyorsa onu yapacak.
+1394
+01:05:16,330 --> 01:05:17,530 Hadi
+bunu deneyelim.
+1395
+01:05:17,530 --> 01:05:19,080 Devam
+edeyim ve şu programı çalıştırayım.
+1396
+01:05:19,080 --> 01:05:20,110 Pekala,
+yapalım.
+1397
+01:05:20,110 --> 01:05:26,670 1 x
+olacak, 2 y olacak ve tabii ki herkes
+hemfikir, 1
+1398
+01:05:26,670 --> 01:05:30,762 + 2 =
+thr-1399
+01:05:30,762 --> 01:05:31,980 ha.
+
+1400
+01:05:31,980 --> 01:05:36,040 Orada
+neler oluyor?
+1401
+01:05:36,040 --> 01:05:40,720 Ya
+matematik dersin seni ya da ben
+seni yanlış yönlendirdim.
+1402
+01:05:40,720 --> 01:05:43.000
+Neden burada olup
+olmadığını görmek için birini aramıyoruz.
+
+1403
+01:05:43.000 --> 01:05:46.900
+
+Machine Translated by Google
+Hatanın ne olduğunu anlamamıza
+yardımcı olamaz, hata nedir?
+1404
+01:05:46,900 --> 01:05:48,970
+Anjali, eğer doğru söylüyorsam.
+1405
+01:05:48,970 --> 01:05:52,960
+İZLEYİCİ: Bence sorun şu ki
+
+dizeleri birleştiriyor çünkü sen
+1406
+01:05:52,960 --> 01:05:54,935
+eklemek yerine + operatörünü kullanın.
+1407
+01:05:54,935 --> 01:05:55,810
+DAVID MALAN: Mükemmel.
+1408
+01:05:55,810 --> 01:05:57,040 Çok
+mükemmel bir sezgi.
+1409
+01:05:57,040 --> 01:06:01,060
++'nın karakter dizileri bağlamında
+biraz farklı kullanıldığını gördük.
+1410
+01:06:01,060 --> 01:06:03,940
+çünkü birleştirir, yani iki dizeyi
+birleştirir,
+1411
+01:06:03,940 --> 01:06:06,100 ve
+gerçekten de burada olan şey bu
+gibi görünüyor,
+1412
+01:06:06,100 --> 01:06:07,990
+kullanıcı bir sayı yazmasına rağmen.
+1413
+01:06:07,990 --> 01:06:09,910
+Ama burada ilginç
+olan şu ki, ne zaman
+1414
+01:06:09,910 --> 01:06:13,660
+Mac'lerinde klavye kullandıkları için
+kullanıcı girdisi alırsınız
+1415
+01:06:13,660 --> 01:06:16,900
+
+Machine Translated by Google
+veya PC veya telefonları, her
+zaman metin olacak.
+1416
+01:06:16,900 --> 01:06:19,030
+Bir sayı gibi görünebilir,
+ancak varsayılan olarak,
+1417
+01:06:19,030 --> 01:06:21,850
+klavyeden string olarak geliyor--
+
+1418
+01:06:21,850 --> 01:06:23,560 yani
+metin olarak.
+1419
+01:06:23,560 --> 01:06:27,760
+Ve böylece, eğer eninde sonunda
+bunu yaparsak, bunu nasıl çözeceğiz?
+1420
+01:06:27,760 --> 01:06:30,190 bu
+girdileri dizge olarak ele almak
+istemez,
+1421
+01:06:30,190 --> 01:06:32,110 Onları
+gerçek sayılar olarak mı ele almak istiyoruz?
+1422
+01:06:32,110 --> 01:06:35,050
+Pekala, başka bir fonksiyona ihtiyacımız
+var ve bu Python'da ortaya çıkıyor
+
+1423
+01:06:35,050 --> 01:06:39,610 bazen
+bir veri türünden başka bir veri türüne
+dönüştürebileceğiniz,
+1424
+01:06:39,610 --> 01:06:43.880 örneğin
+string'den INT'ye şöyle bir şey yaparak.
+
+1425
+01:06:43.880 --> 01:06:46,690
+Koduma geri dönmeme izin
+ver ve değiştirmeme izin ver
+1426
+01:06:46,690 --> 01:06:51,730 x'i, x'in
+tamsayı versiyonu ne olursa olsun,
+y'ye eklemeden önce
+
+Machine Translated by Google
+1427
+01:06:51,730 --> 01:06:56,030, + y'nin
+tamsayı versiyonu ne olursa olsun.
+
+1428
+01:06:56,030 --> 01:06:59,950
+Böylece INT'nin Python'da sadece
+bir veri türü olmadığı ortaya çıktı.
+1429
+01:06:59,950 --> 01:07:02,590 aynı
+zamanda bir fonksiyondur ve bir
+fonksiyondur
+1430
+01:07:02,590 --> 01:07:05,410 Eğer
+bir string gibi bir girdi iletirseniz,
+
+1431
+01:07:05,410 --> 01:07:09,790 bu dize
+1 veya 2 gibi bir sayı gibi göründüğü
+sürece,
+1432
+01:07:09,790 --> 01:07:13,450
+matematik yapabileceğiniz gerçek bir sayıya
+çevirir
+1433
+01:07:13,450 --> 01:07:14,510 yerine.
+
+1434
+01:07:14,510 --> 01:07:18,340
+Şimdi terminal pencereme geri
+dönersem ve Python'u çalıştırırsam-1435
+01:07:18,340 --> 01:07:19,870 ve size
+başka bir numara göstereyim.
+1436
+01:07:19,870 --> 01:07:21.580 "Hesap
+Makinesi" biraz uzun bir kelimedir.
+1437
+01:07:21.580 --> 01:07:22,930 Yazması
+biraz sıkıcı.
+1438
+01:07:22,930 --> 01:07:26,470
+Kendimde neler yapabileceğime dikkat edin
+
+Machine Translated by Google
+
+terminal penceresi, komut satırında
+1439
+01:07:26,470 --> 01:07:27,460 genel
+olarak arayüz.
+1440
+01:07:27,460 --> 01:07:31,300
+Hesap makinesi için CAL
+yazmaya başlarsam, aslında
+1441
+01:07:31,300 --> 01:07:33,700
+
+Düşüncemi bitirmek için Tab'a basın.
+1442
+01:07:33,700 --> 01:07:36,550 Bu
+şekilde bir terminal penceresinde
+otomatik tamamlama mümkündür.
+1443
+01:07:36,550 --> 01:07:39,663
+İlk harfi veya birkaç harfi yazın
+ve ardından sekme ile bom,
+1444
+01:07:39,663 --> 01:07:41,080 sizin
+için düşüncenizi tamamlayacaktır.
+1445
+01:07:41,080 --> 01:07:44,770 Veya
+benim Yukarı ve Aşağı Oklarla yaptığım
+gibi geçmişinize gidebilirsiniz.
+1446
+01:07:44,770 --> 01:07:46,570
+Devam edeyim ve bunu gerçekleştireyim.
+1447
+01:07:46,570 --> 01:07:47,270 x
+nedir?
+1448
+01:07:47,270 --> 01:07:47,770 1.
+
+1449
+01:07:47,770 --> 01:07:48,290 x
+nedir?
+1450
+01:07:48,290 --> 01:07:48,790 2.
+
+1451
+
+Machine Translated by Google
+
+01:07:48,790 --> 01:07:49,880 Ve işte
+
+başlıyoruz.
+1452
+01:07:49,880 --> 01:07:53,050
+Şimdi destekleyecek genel amaçlı bir
+hesaplayıcımız var.
+1453
+01:07:53,050 --> 01:07:57,280 sadece
+1 ve 2'nin eklenmesi değil, şimdi
+herhangi ikisinin toplamı
+1454
+01:07:57,280 --> 01:07:58,882
+kullanıcının yazdığı tam sayılar.
+1455
+01:07:58,882 --> 01:08:00,340 Şimdi
+bunu geliştirmeme izin verin, değil mi?
+1456
+01:08:00,340 --> 01:08:03,190
+Kodda nasıl iyileştirmeler
+yapabileceğimizi gördük
+1457
+01:08:03,190 --> 01:08:05,650 ve daha
+iyi olup olmayacağını bilmiyorum,
+
+1458
+01:08:05,650 --> 01:08:07.000 ama
+bunu deneyelim.
+1459
+01:08:07.000 --> 01:08:09,730 z
+değişkenine gerçekten ihtiyacım var mı?
+1460
+01:08:09,730 --> 01:08:13,630
+z adında bir değişken
+yarattığımı belirtmekte fayda var.
+1461
+01:08:13,630 --> 01:08:16,720 ve
+hemen sonraki kod satırında
+kullanıyorum.
+1462
+01:08:16,720 --> 01:08:20.770
+Şimdi bu o kadar zorlayıcı değil, çünkü
+bir değişken oluşturuyorsanız
+1463
+
+Machine Translated by Google
+
+01:08:20.770 --> 01:08:23.470 ve
+ardından hemen kullanmak, ancak
+
+bir daha asla kullanmamak,
+1464
+01:08:23,470 --> 01:08:26,890
+Gerçekten başka bir sembolü
+tanıtmak için zaman ayırmanız gerekiyor muydu?
+1465
+01:08:26,890 --> 01:08:30,279 ve
+sadece bir kez kullanmak için başka
+bir değişken mi?
+1466
+01:08:30,279 --> 01:08:31,090 Belki
+değil.
+1467
+01:08:31,090 --> 01:08:33,729 Belki
+de bu şekilde z'ye gerçekten
+ihtiyacımız yok.
+1468
+01:08:33,729 --> 01:08:38,319 Belki
+de gidip böyle bir şey yapmalıyım.
+
+1469
+01:08:38,319 --> 01:08:41,140 Belki
+burada z'den kurtulmalıyım.
+1470
+01:08:41,140 --> 01:08:45,729
+Belki bunu burada INT olacak
+şekilde değiştirmeliyim, değiştir
+1471
+01:08:45,729 --> 01:08:50,260
+burada INT olmak, şimdi oldukça ilginç bir şey
+yapmak.
+1472
+01:08:50,260 --> 01:08:53,680
+Biraz yeni sözdizimi olsa da,
+
+1473
+01:08:53,680 --> 01:08:56,380
+işlevleri iç içe yerleştirebilir, tabiri caizse.
+1474
+01:08:56,380 --> 01:09:01,330
+Bir işlevin kullanımı olan bir işlev
+çağrısı koyabilirsiniz.
+
+Machine Translated by Google
+1475
+01:09:01,330 --> 01:09:04,540 içinde
+başka bir işlevin kullanılması,
+böylece geri dönüş
+1476
+01:09:04,540 --> 01:09:09,040 iç
+fonksiyonun değeri argümanı olur
+
+1477
+01:09:09,040 --> 01:09:11,410 veya
+dış fonksiyon girişi.
+1478
+01:09:11,410 --> 01:09:14,510
+Tıpkı matematikte olduğu gibi,
+parantezleriniz, parantezleriniz, parantezleriniz varsa,
+
+1479
+01:09:14,510 --> 01:09:16,218
+muhtemelen öğretmeniniz size
+odaklanmayı öğretti
+1480
+01:09:16,218 --> 01:09:18,430 önce
+en içteki parantez içindekiler
+hakkında
+1481
+01:09:18,430 --> 01:09:19,603 ve
+sonra yolunuza devam edin.
+1482
+01:09:19,603 --> 01:09:20.770
+Programlama ile aynı şey.
+1483
+01:09:20.770 --> 01:09:22,040
+Python'un yapacağı şey bu.
+1484
+01:09:22,040 --> 01:09:24,729
+Önce parantez içindekilere
+bakacak,
+1485
+01:09:24,729 --> 01:09:26,920
+cevabı alacak ve sonra
+
+1486
+01:09:26,920 --> 01:09:30,710
+dönüş değerini geçecek
+
+Machine Translated by Google
+en dıştaki fonksiyona.
+
+1487
+01:09:30,710 --> 01:09:34,600
+Şimdi 1. satırda olan şey, önce giriş
+fonksiyonunun çağrılmasıdır,
+1488
+01:09:34,600 --> 01:09:37,990 o
+zaman sonucu
+o, alıntıyı kaldır
+1489
+01:09:37,990 --> 01:09:42,670
+INT işlevinin girdisi olur ve 2.
+satırda aynıdır.
+1490
+01:09:42,670 --> 01:09:47,300
+y'nin çıktısı bu INT işlevinin
+girdisi olur.
+1491
+01:09:47,300 --> 01:09:49,479
+Ve artık z yok.
+1492
+01:09:49,479 --> 01:09:52,210
+Sadece x + y yazdırabilirim.
+1493
+01:09:52,210 --> 01:09:56,410
+Ve bu dizelerin her birini
+dönüştürmek için zaman ayırdığım için
+1494
+01:09:56,410 --> 01:09:58,720
+bir tamsayıya, sanırım iyiyiz.
+1495
+01:09:58,720 --> 01:10:01,570
+Bunu deneyeyim, Python of
+Calculator.py, Enter.
+1496
+01:10:01,570 --> 01:10:05,170 1
+ve 2 ve hala 3 alıyoruz.
+1497
+01:10:05,170 --> 01:10:09,130
+12 değil ya da 12 değil 1,2,
+gerçekten 3 alıyoruz.
+1498
+01:10:09,130 --> 01:10:11,350
+
+Machine Translated by Google
+Ve ayrıca değişkenden de
+kurtulduk
+1499
+01:10:11,350 --> 01:10:13,900 çünkü
+buna ille de ihtiyacımız yoktu, öyle
+görünüyor ki,
+1500
+01:10:13,900 --> 01:10:15,490
+özellikle sadece bir kez kullanılıyorsa.
+1501
+01:10:15,490 --> 01:10:18,280
+Peki burada da, bir an için herkesin elini
+bırakmama izin verin
+1502
+01:10:18,280 --> 01:10:19,930 ve
+daha önce olduğu gibi sorayım-1503
+01:10:19,930 --> 01:10:26,530 şimdi
+giriş çağrılarında INT kullanan bu
+sürüm,
+1504
+01:10:26,530 --> 01:10:30,640 ve z
+kullanmıyor, bu önceki sürümden
+daha mı iyi?
+1505
+01:10:30,640 --> 01:10:32,560 Evet
+oyu vermek istiyorsanız buyurun.
+1506
+01:10:32,560 --> 01:10:35,270 Veya
+eski yolu tercih ediyorsanız, Hayır oyu verin.
+1507
+01:10:35,270 --> 01:10:40,455 Eski
+yöntemde, oy verirken bunların hepsini
+geri alacağım, bunun yerine şöyle görünüyordum.
+
+1508
+01:10:40,455 --> 01:10:43,510
+
+1509
+01:10:43,510 --> 01:10:45,850
+Pekala, şimdi en yeni sürüme geri
+dönmeme izin verin.
+1510
+01:10:45,850 --> 01:10:48,040
+
+Machine Translated by Google
+Evetlerden bir el
+
+alalım, kim
+1511
+01:10:48,040 --> 01:10:51,430 bu son
+sürümün daha iyi olduğunu düşünüyor.
+
+1512
+01:10:51,430 --> 01:10:57,130
+İZLEYİCİ: Bence bu yol daha iyi çünkü
+hemen görmemizi sağlıyor.
+1513
+01:10:57,130 --> 01:11:01,840
+tamsayılı x ve y değişkenleri nelerdir
+
+1514
+01:11:01,840 --> 01:11:04,660 ve
+onlardan ne bekleyeceğimizi biliyoruz.
+1515
+01:11:04,660 --> 01:11:09,250
+Ayrıca print argümanı daha
+sezgiseldir.
+1516
+01:11:09,250 --> 01:11:12,330
+Kodda çok fazla karmaşadan kaçınıyoruz.
+1517
+01:11:12,330 --> 01:11:14,330 DAVID
+MALAN: Bunların hepsinin iyi sebepler
+olduğunu düşünüyorum.
+
+1518
+01:11:14,330 --> 01:11:15,370 Güzel
+ve özlü.
+1519
+01:11:15,370 --> 01:11:17,650 Kod
+satırları çok uzun değil.
+1520
+01:11:17,650 --> 01:11:20.530 z'nin
+ne olduğunu bilmeme gerek yok
+çünkü o yok.
+1521
+01:11:20.530 --> 01:11:21,820
+Sadece x + y çıktısını görüyor.
+1522
+01:11:21,820 --> 01:11:22,390 Bunu
+beğendim.
+
+Machine Translated by Google
+1523
+01:11:22,390 --> 01:11:25,990
+Ama z'ye sahip olduğumuz eski
+yolu tercih eden biri
+1524
+01:11:25,990 --> 01:11:30,970 ve
+bireysel değişkenleri daha açık bir şekilde INT
+işlevine aktardık.
+1525
+01:11:30,970 --> 01:11:32.050
+İZLEYİCİ: Evet, merhaba.
+1526
+01:11:32,050 --> 01:11:36,100
+Bence önceki sürüm daha
+iyi çünkü ne zaman--
+
+1527
+01:11:36,100 --> 01:11:39,370
+Yani, kullanıcı bunun
+dışında bir şey girerse,
+1528
+01:11:39,370 --> 01:11:43,570 diyelim
+ki, diyelim ki 1 ve 2 yazıyorlar,
+
+1529
+01:11:43,570 --> 01:11:46,780 böylece
+hata ayıklamak daha kolay olacaktır.
+
+1530
+01:11:46,780 --> 01:11:49,807 DAVID
+MALAN: Bu sürüm mü yoksa-- buradaki sürüm
+mü yoksa eski sürüm mü?
+1531
+01:11:49,807 --> 01:11:50,890
+İZLEYİCİ: Eski versiyon.
+1532
+01:11:50,890 --> 01:11:52,098 DAVID
+MALAN: Tamam, bu adil.
+1533
+01:11:52,098 --> 01:11:57,190 Ve
+aslında, bugün elimden geldiğince ortalığı
+karıştırmamaya çok dikkat ediyorum.
+1534
+01:11:57,190 --> 01:12:01,050
+şimdiye kadar sadece giriş yaptım
+
+Machine Translated by Google
+
+tamsayılar beklediğimde tamsayılar.
+1535
+01:12:01,050 --> 01:12:02,800
+
+Ve Raoul aslında bir
+şeye işaret ediyor
+1536
+01:12:02,800 --> 01:12:05,980
+önümüzdeki haftalarda geri döneceğiz,
+hataları gerçekte nasıl ele alacağız?
+1537
+01:12:05,980 --> 01:12:09,770
+Kullanıcı 1 rakamını, 2 rakamını veya
+bir rakamı yazmazsa ne olur?
+1538
+01:12:09,770 --> 01:12:10,270 hiç
+mi?
+1539
+01:12:10,270 --> 01:12:13,390 Ya
+kedi, CAT gibi bir kelime yazarlarsa?
+
+1540
+01:12:13,390 --> 01:12:16,150 Bu
+bir sayı değil ve bahse girerim onu
+bir tam sayıya çeviremem.
+1541
+01:12:16,150 --> 01:12:18,110
+Ancak bugün için buna
+odaklanmayacağım.
+1542
+01:12:18,110 --> 01:12:20,110
+Kullanıcının işbirliği yapmasını
+umuyorum.
+1543
+01:12:20,110 --> 01:12:21,740 Ama
+durum böyle olmayacak.
+1544
+01:12:21,740 --> 01:12:24,280
+Ve belki de bir yol bizi daha fazla
+başarıya hazırlar.
+1545
+01:12:24,280 --> 01:12:26,020 bu
+hataların ele alınması söz konusu olduğunda.
+1546
+
+Machine Translated by Google
+01:12:26.020 --> 01:12:28,495
+
+Bugünün amaçları için hangisi daha
+iyi?
+1547
+01:12:28,495 --> 01:12:29,650 Eh,
+yani, ikisini de seviyorum.
+1548
+01:12:29,650 --> 01:12:32,440
+Ve bence ikiniz de orada çok geçerli
+argümanlar ortaya koydunuz,
+1549
+01:12:32,440 --> 01:12:36,250 oldukça
+mantıklı bir gerekçeniz olduğu sürece.
+
+1550
+01:12:36,250 --> 01:12:37,930 Demek
+istediğim, sonuçta önemli olan bu.
+1551
+01:12:37,930 --> 01:12:41,500 Ama
+yine de buradaki değiş tokuşlar
+hakkında bir fikir edinmek.
+1552
+01:12:41,500 --> 01:12:43,180 Peki,
+bu yol daha mı iyi?
+1553
+01:12:43,180 --> 01:12:44,885 Varsa
+neden veya neden olmasın?
+1554
+01:12:44,885 --> 01:12:46,760 Sadece
+bu takasların ne olduğunu anlayın.
+
+1555
+01:12:46,760 --> 01:12:51,460 Ancak
+genel olarak konuşursak, okunabilirliğe
+öncelik vermek çok iyi bir şeydir.
+1556
+01:12:51,460 --> 01:12:54,740
+Kodunuzu başka biri için okunabilir
+hale getirmek çok iyi bir şey
+1557
+01:12:54,740 --> 01:12:57,608 ve
+senin için de çok iyi, böylece ertesi
+sabah uyandığında,
+
+Machine Translated by Google
+1558
+
+01:12:57,608 --> 01:12:59,650 ya da
+gelecek hafta ya da gelecek yıl
+tekrar gelirsiniz,
+1559
+01:12:59,650 --> 01:13:02,290 siz de
+kendi kodunuzu boşa harcamadan
+okuyabilirsiniz
+1560
+01:13:02,290 --> 01:13:04,270 kez
+ne yaptığınızı hatırlamaya çalışıyorsunuz.
+1561
+01:13:04,270 --> 01:13:08,500 Ve
+basitlik de iyi bir şey olma eğilimindedir-kodunuzu basit tutmak.
+1562
+01:13:08,500 --> 01:13:10.960
+Böylece programlama
+ile daha rahat hale geldikçe,
+1563
+01:13:10,960 --> 01:13:15,250 Tüm
+bir programı tek bir uzun satırda birleştirmeyi
+denemek isteyebilirsiniz.
+1564
+01:13:15,250 --> 01:13:17,740
+Örneğin, bunu yapmama izin verin.
+1565
+01:13:17,740 --> 01:13:20.680
+Teknik olarak konuşursak, bir
+değişkende x'e gerçekten ihtiyacımız yok.
+1566
+01:13:20.680 --> 01:13:22,480 Bir
+değişkende y'ye gerçekten ihtiyacımız yok.
+1567
+01:13:22,480 --> 01:13:24,460
+Bunu da yapabiliriz-1568
+01:13:24,460 --> 01:13:27,820 x ve
+y'den tamamen kurtulabilirdim.
+
+1569
+01:13:27,820 --> 01:13:32.080 Artık
+bunu ortadan kaldırabilir ve sadece
+bir kod satırı yapabilirim.
+
+Machine Translated by Google
+1570
+01:13:32,080 --> 01:13:34,510
+Tamam, bir anlamda, düşünmeye
+meyilli olabilirsiniz, vay,
+1571
+01:13:34,510 --> 01:13:35,740 bu
+gerçekten güzel.
+1572
+01:13:35,740 --> 01:13:38,410 Basit
+bir kod satırı yaptınız.
+1573
+01:13:38,410 --> 01:13:40,520 Bunun
+aslında o kadar basit olmadığını
+iddia ediyorum.
+1574
+01:13:40,520 --> 01:13:43,180 Artık
+çok fazla şeyi iç içe geçirmeye
+başladığımı düşünüyorum.
+1575
+01:13:43,180 --> 01:13:46,330 Baskı,
+INT ve girdi hakkında düşünmem
+gerekiyor.
+1576
+01:13:46,330 --> 01:13:49,150
+O zaman şunu fark etmeliyim, tamam,
+
+İki parantez açtım,
+1577
+01:13:49,150 --> 01:13:50,300 İki
+tanesini kapattım.
+1578
+01:13:50,300 --> 01:13:51,040 Bir +
+var.
+1579
+01:13:51,040 --> 01:13:53,680
+Beni çok fazla düşündürüyorsun ve ne
+zaman beni düşündürüyorsan,
+1580
+01:13:53,680 --> 01:13:54,730 zaman
+kaybediyorsunuz.
+1581
+01:13:54,730 --> 01:13:58,360
+Ve ne zaman kodun görünüşünü
+bu şekilde karmaşıklaştırsan,
+
+Machine Translated by Google
+1582
+01:13:58,360 --> 01:14:01,300
+sadece hata olasılığını
+artıracaksınız
+1583
+01:14:01,300 --> 01:14:04,270 ve
+kodunuzdaki taktiksel hatalar
+veya mantıksal hatalar.
+1584
+01:14:04,270 --> 01:14:07,810
+Yani yaptığımız onca şey varsa,
+tartışacağım tek şey bu,
+1585
+01:14:07,810 --> 01:14:10.870
+evet, tek satır ve hoş ve kompakt.
+
+1586
+01:14:10,870 --> 01:14:12,340
+Yeterince okunaklı değil.
+1587
+01:14:12,340 --> 01:14:15,850
+Bunu yapmaktan çekinirim, özellikle
+bu işlevlerden ikisi
+1588
+01:14:15,850 --> 01:14:18,040
+aramalar kullanıcıdan girdi alıyor.
+1589
+01:14:18,040 --> 01:14:20.410
+Ama orada da makul
+insanlar aynı fikirde olmayabilir,
+
+1590
+01:14:20.410 --> 01:14:23,830
+ama bazen
+
+1591
+01:14:23,830 --> 01:14:28,300
+kod biraz fazla karmaşık, biraz
+fazla zeki olmaya başlıyor,
+1592
+01:14:28,300 --> 01:14:31,450
+belki de kendi iyiliği için.
+1593
+01:14:31,450 --> 01:14:34,270
+
+Machine Translated by Google
+Pekala, erişimimiz olan
+sadece tamsayılar değil.
+1594
+01:14:34,270 --> 01:14:38,920
+Burada tamsayılardan bir veri tipine daha
+geçiş yapmamızı önermeme izin verin,
+1595
+01:14:38,920 --> 01:14:40,360 yani
+bir kayan nokta.
+1596
+01:14:40,360 --> 01:14:43,390 Yani
+yine, bir dize bir metin dizisidir.
+
+1597
+01:14:43,390 --> 01:14:46,570 Bir
+INT, negatif 1, 0 ve 1 gibi bir
+tamsayıdır.
+1598
+01:14:46,570 --> 01:14:50.860
+Kayan nokta, düzgün bir şekilde kayan
+nokta olarak adlandırılan ondalık noktalı bir sayıdır.
+
+1599
+01:14:50,860 --> 01:14:51,470
+değer.
+1600
+01:14:51,470 --> 01:14:53.470
+Ve kayan noktayı şu şekilde
+düşünebilirsiniz:
+1601
+01:14:53,470 --> 01:14:56,740
+burada veya burada olabilecek birkaç
+basamaklı ondalık sayı
+1602
+01:14:56,740 --> 01:14:57,820 sola
+veya sağa.
+1603
+01:14:57,820 --> 01:15:02,000
+Matematiksel olarak, bu gerçek bir
+sayıdır, ondalık noktası olan bir sayıdır.
+1604
+01:15:02.000 --> 01:15:04,750 Bu,
+Python'un desteklediği üçüncü bir
+veri türüdür.
+
+Machine Translated by Google
+1605
+
+01:15:04,750 --> 01:15:07,270
+Şu anda hesap makinemiz
+biraz saf
+1606
+01:15:07,270 --> 01:15:09,820
+kullanıcının yalnızca tamsayı
+yazacağını varsayarsak,
+1607
+01:15:09,820 --> 01:15:12,970
+ancak kayan nokta değerlerini de
+desteklemek istersem,
+1608
+01:15:12,970 --> 01:15:15,070
+Sanırım birkaç değişiklik
+yapabilirim.
+1609
+01:15:15,070 --> 01:15:17,270 Bu
+yüzden burada VS Koduna geri döneceğim.
+1610
+01:15:17,270 --> 01:15:20.890
+Ve sadece kullanıcının x ve y
+girdisini dönüştürmek yerine
+1611
+01:15:20.890 --> 01:15:23,950 satır
+1 ve 2'de tam sayılar, hadi basit
+bir değişiklik yapalım.
+1612
+01:15:23,950 --> 01:15:27,400
+Aslında onu ilk satırda bir
+şamandıraya dönüştürelim
+1613
+01:15:27,400 --> 01:15:30,640 ve
+burada ikinci satırda bir kayan nokta.
+1614
+01:15:30,640 --> 01:15:35,410
+Şimdi düşünüyorum da, terminal pencereme
+iner ve Python of Calculator.py'yi çalıştırırsam,
+1615
+01:15:35,410 --> 01:15:39.040 1.2
+gibi bir sayıyı ondalık nokta ile
+yazalım
+1616
+01:15:39,040 --> 01:15:42,100
+
+Machine Translated by Google
+ve 3.4 ondalık nokta ile
+ve işte başlıyoruz.
+1617
+01:15:42,100 --> 01:15:44,510
+Nihai cevap olarak elimizde 4.6 var.
+1618
+01:15:44,510 --> 01:15:48,250
+Yani bu daha önce işe yaramazdı
+
+eğer sadece tamsayılar bekliyor olsaydım
+
+1619
+01:15:48,250 --> 01:15:51,550
+kullanıcıdan, ancak şimdi kayan
+nokta değerleri bekliyorum
+1620
+01:15:51,550 --> 01:15:56,180
+ve onu barındırarak, artık kayan nokta
+aritmetiği de yapabilirim.
+1621
+01:15:56,180 --> 01:15:59,020
+Ama son cevabı
+gerçekten istemediğimi varsayalım
+1622
+01:15:59,020 --> 01:16:03,160
+4.6 gibi bir kayan nokta değeri olacak.
+1623
+01:16:03,160 --> 01:16:05,930
+En yakın tam sayıya yuvarlarsak
+sevinirim.
+1624
+01:16:05,930 --> 01:16:08,800
+Bu yüzden kayan nokta
+yazarak kullanıcıyı desteklemek istiyorum
+
+1625
+01:16:08,800 --> 01:16:11,120
+ondalık basamaklı değerler,
+ancak günün sonunda,
+1626
+01:16:11,120 --> 01:16:15,760
+Sadece sonucu mümkün olan en
+yakın tam sayıya yuvarlamak istiyorum.
+1627
+01:16:15,760 --> 01:16:20.830
+Burada da Python'un yerleşik bazı
+işlevlerle birlikte geldiği ortaya çıktı.
+
+Machine Translated by Google
+1628
+01:16:20.830 --> 01:16:23,620
+Ve aslında, daha önce bu
+URL'ye dönersek
+1629
+01:16:23,620 --> 01:16:26,560
+burada tüm Python yerleşik
+işlevleri listelenir,
+1630
+01:16:26,560 --> 01:16:29,200
+"yuvarlak" adında bir tane var
+ve bu tam olarak
+1631
+01:16:29,200 --> 01:16:31,510
+beklediğimiz gibi, girdi olarak
+bir sayı alır
+1632
+01:16:31,510 --> 01:16:36,860
+ve sonra bizim için örneğin en
+yakın tam sayıya yuvarlar.
+1633
+01:16:36,860 --> 01:16:40,390
+
+Ama bu belgelere biraz daha
+
+yakından bakarsak, burada yapabildiğimiz gibi--
+
+1634
+01:16:40,390 --> 01:16:41,710
+Bir alıntı yapacağım-1635
+01:16:41,710 --> 01:16:45,400
+Bu, belgede işlevin nasıl
+göründüğüdür.
+1636
+01:16:45,400 --> 01:16:48,550
+Ve daha önce baskı için belgelere
+baktığımızı hatırlayın.
+1637
+01:16:48,550 --> 01:16:51,550
+ve bu ruhen benzerdir ki bu
+bize sadece
+1638
+01:16:51,550 --> 01:16:54.880
+işlevin adı ancak mevcut
+parametreleri, yani,
+
+Machine Translated by Google
+1639
+01:16:54,880 --> 01:16:57,850 Bu
+işlevi kullanırken
+sağlayabileceğimiz girişler.
+1640
+01:16:57,850 --> 01:17:00,280
+Ama bu da biraz şifreli,
+tıpkı Print'in yaptığı gibi,
+1641
+01:17:00,280 --> 01:17:01,640 ve
+bazı sözdizimi ekler.
+1642
+01:17:01,640 --> 01:17:02,290 Bir
+bakalım.
+1643
+01:17:02,290 --> 01:17:04,630
+Buradaki işlevin adı elbette
+Yuvarlak
+
+1644
+01:17:04,630 --> 01:17:07,450 ve
+ilk argümanı bir sayıdır.
+1645
+01:17:07,450 --> 01:17:10.548
+Dikkat bu sefer yıldız yok,
+yıldız nesneleri yok
+1646
+01:17:10.548 --> 01:17:11.590
+baskı için olduğu gibi.
+1647
+01:17:11.590 --> 01:17:16,000
+Round işlevi ilk argümanı olarak
+yalnızca bir sayı alır, nokta.
+1648
+01:17:16,000 --> 01:17:18,820 Bu
+onun konumsal parametresidir.
+1649
+01:17:18,820 --> 01:17:20,420 Ancak
+bu sözdizimine dikkat edin.
+
+1650
+01:17:20,420 --> 01:17:22,720
+Ve bu, programlama veya
+teknolojide bir sözleşmedir.
+1651
+
+Machine Translated by Google
+01:17:22,720 --> 01:17:26,260
+daha genel olarak, köşeli parantezler
+gördüğünüzde
+1652
+01:17:26,260 --> 01:17:28,630 ve
+bunun gibi belgeler,
+
+1653
+01:17:28,630 --> 01:17:30,370
+isteğe bağlı bir şey görmek üzere.
+1654
+01:17:30,370 --> 01:17:32,350
+Ve bunun anlamı, eğer
+istersen
+1655
+01:17:32,350 --> 01:17:37,480
+yuvarlak işlevi istediğiniz basamak sayısını
+daha kesin olarak belirtmek için
+1656
+01:17:37,480 --> 01:17:43,760
+yuvarlamak için, burada bir virgül
+ve ardından o sayıyı ekleyerek belirtebilirsiniz.
+1657
+01:17:43,760 --> 01:17:48,190
+Bu nedenle, belgeleri okursak, bir
+sayı belirtmezseniz,
+1658
+01:17:48,190 --> 01:17:52,000
+yuvarlanacak sayıyı belirtmeniz
+yeterlidir, en yakın tam sayıya yuvarlar.
+1659
+01:17:52.000 --> 01:17:55.990
+Ama farz edin ki onuncular basamağı ya
+da yüzlerceler basamağı yapmak istiyorsunuz.
+
+1660
+01:17:55,990 --> 01:17:58,330
+ondalık noktadan sonra bir veya
+iki basamak olan,
+1661
+01:17:58,330 --> 01:18:04,167
+Daha kesin olması için ek olarak virgül
+1 veya virgül 2 iletebilirsiniz.
+1662
+01:18:04,167 --> 01:18:06,250
+
+Machine Translated by Google
+Yani belgeler böyle
+
+söylüyor.
+1663
+01:18:06,250 --> 01:18:10.460 Bakalım
+bunu bizim için gerçek bir koda
+çeviremez miyiz.
+1664
+01:18:10.460 --> 01:18:13,630
+Yani şimdi geri dönersem
+VS Kodu ve ben düşünüyorum
+1665
+01:18:13,630 --> 01:18:18,350 x ve
+y'nin etrafında ilerlemek istiyorum, bunu birkaç
+yolla yapabilirim.
+1666
+01:18:18,350 --> 01:18:22,630
+x + y turunu yapabilirdim,
+ama bilirsin, yapardım
+1667
+01:18:22,630 --> 01:18:25,210 aslında
+bunu şimdi iki satıra bölmeyi tercih
+ediyor.
+1668
+01:18:25,210 --> 01:18:28,300
+Mecbur değilim ve buradaki makul
+insanlar aynı fikirde olmayabilirler.
+1669
+01:18:28,300 --> 01:18:31,330 ancak
+z yazdırdığım bir senaryoya dönmek
+istiyorum,
+1670
+01:18:31,330 --> 01:18:34,270 böylece
+kendime ve başkalarına biraz daha
+açık konuşabileyim,
+1671
+01:18:34,270 --> 01:18:38,890 z = x +
+y'nin yuvarlatılmış sonucu.
+1672
+01:18:38,890 --> 01:18:41,060
+Bunu yapmak için
+mutlaka daha iyi bir yol değil,
+1673
+01:18:41,060 --> 01:18:44,690 ama
+biraz daha rahatım
+
+Machine Translated by Google
+
+Düşüncelerimi birer birer bölerek,
+1674
+01:18:44,690 --> 01:18:47,882
+özellikle bu kod parçalarının her
+birini yorumlamaya başlamak istersem.
+1675
+01:18:47,882 --> 01:18:49,840
+Pekala, terminal pencereme
+inmeme izin verin
+1676
+01:18:49,840 --> 01:18:52,120
+şimdi ve Python of Calculator.py'yi çalıştırın.
+1677
+01:18:52,120 --> 01:18:52,840 x
+nedir?
+1678
+01:18:52,840 --> 01:18:54,490
+Tekrar 1.2 yapalım.
+1679
+01:18:54,490 --> 01:18:56,260 O
+zaman 3.4 yapalım.
+1680
+01:18:56,260 --> 01:18:59,980
+Önceden 4.6 idi, ama şimdi
+
+1681
+01:18:59,980 --> 01:19:04,540 en
+yakın tam sayıya yuvarlandı, ki bu elbette
+5 olacak.
+1682
+01:19:04,540 --> 01:19:09,050
+Peki ya bunu biraz daha
+değiştirmek istersem?
+1683
+01:19:09,050 --> 01:19:11,830
+Ya gerçekten büyük sayıları
+desteklemek istersem,
+1684
+01:19:11,830 --> 01:19:15,872
+büyük sayılar, yuvarlamadan bağımsız
+olarak, şöyle bir şey yapalım.
+1685
+01:19:15,872 --> 01:19:17,830
+
+Machine Translated by Google
+Devam edeyim ve Python of
+Calculator.py'yi çalıştırayım
+1686
+01:19:17,830 --> 01:19:22,270 tekrar
+ve 999 + 1 eklememe izin verin.
+1687
+01:19:22,270 --> 01:19:25,030
+Ve dikkat edin, ondalık
+nokta yazmak zorunda değilim,
+1688
+01:19:25.030 --> 01:19:27,340 Float'a
+dönüştürmeme rağmen programım
+
+1689
+01:19:27,340 --> 01:19:30,840 sadece
+ondalık basamak yazmama izin verecek
+ama mecbur olmam gerekmiyor.
+1690
+01:19:30,840 --> 01:19:34,110
+Tabii ki burada cevap olmalı ve aslında
+1.000,
+1691
+01:19:34,110 --> 01:19:35,670
+yuvarlasak da dönmesek de.
+1692
+01:19:35,670 --> 01:19:38,470 Yani
+burada tamsayılarla sadece aritmetik
+var.
+1693
+01:19:38,470 --> 01:19:44,640
+Ancak ABD'de uzun sayıları virgül
+koyarak biçimlendirme eğilimindeyiz.
+1694
+01:19:44,640 --> 01:19:47,580 her üç
+basamaktan sonra veya önce.
+1695
+01:19:47,580 --> 01:19:50.660 Diğer
+ülkeler bunu çevirir ve bunun yerine
+nokta ve virgül kullanırlar.
+1696
+01:19:50.660 --> 01:19:51,660 Bu bir
+sistem ayarıdır.
+1697
+
+Machine Translated by Google
+
+01:19:51,660 --> 01:19:53,700
+
+Bunu kendi Mac veya
+PC'nizde değiştirebilirsiniz.
+1698
+01:19:53,700 --> 01:19:57.000
+veya Python veya herhangi bir dil
+için aygıt, ama benim için
+1699
+01:19:57.000 --> 01:20:01.200
+burada ABD yaklaşımını kullanarak,
+ondalık nokta dönemleri
+1700
+01:20:01,200 --> 01:20:02,940 ve
+ayırıcılar için virgül.
+1701
+01:20:02,940 --> 01:20:07,890 Ya
+bunun 1.000 olarak çıkmasını
+isteseydim?
+1702
+01:20:07,890 --> 01:20:12,180
+Sadece 1.000 olduğunu ve 100 gibi bir
+şey olmadığını biraz daha netleştirmek için.
+1703
+01:20:12,180 --> 01:20:14,580
+Bir milyon gibi olduğunda
+bu daha da kullanışlı...
+
+1704
+01:20:14.580 --> 01:20:18.060
+1.000.000.
+1705
+01:20:18,060 --> 01:20:19,950
+Otomatik olarak
+yapabilsek güzel olmaz mıydı
+1706
+01:20:19,950 --> 01:20:21.540 bu
+sayıları da mı çıktı?
+1707
+01:20:21.540 --> 01:20:23,700
+Görünüşe göre yapabiliriz.
+1708
+01:20:23,700 --> 01:20:28,410
+Python'u kullanmanın bir yolu
+var.
+
+Machine Translated by Google
+1709
+
+01:20:28,410 --> 01:20:30,540 bunun
+gibi virgül eklemek istiyor.
+1710
+01:20:30,540 --> 01:20:34,800 Ve
+burada eski dostumuz F dizesini geri
+getirme fırsatımız var.
+1711
+01:20:34,800 --> 01:20:37,440 İlk
+olarak, o kadar da verimli olmayan
+bir şey yapmama izin verin.
+1712
+01:20:37,440 --> 01:20:38,760 Önce
+şunu yapayım.
+1713
+01:20:38,760 --> 01:20:41,610 İzin ver
+z'nin değerini yazdırayım, ama bir
+dakika bekle.
+1714
+01:20:41,610 --> 01:20:44,850
+Sadece "z" diyemem çünkü bu
+kelimenin tam anlamıyla z yazdıracak
+1715
+01:20:44,850 --> 01:20:45,820 ekranda.
+
+1716
+01:20:45,820 --> 01:20:49,050
+Öyleyse daha önce yaptığım gibi
+kaşlı ayraçlarla sarmama izin verin,
+1717
+01:20:49,050 --> 01:20:50,550 ama bu
+da yeterli değildi.
+1718
+01:20:50,550 --> 01:20:54,060
+Kelimenin tam anlamıyla dizemin
+başına bir F eklemem gerekiyordu.
+1719
+01:20:54,060 --> 01:20:56,940 Python'a
+bunun bir F dizgisi, bir biçim dizgisi
+olduğunu söylemek için.
+1720
+01:20:56,940 --> 01:21:01,650
+Bu şimdi çok ilginç değil, sadece z'nin
+değerini yazdıracak.
+
+Machine Translated by Google
+1721
+01:21:01,650 --> 01:21:02,320'nin
+kendisi.
+1722
+01:21:02,320 --> 01:21:06,270
+Bu yüzden, gerçekten yapabileceğim zaman,
+sadece z'yi yazdırmak için çok uğraşacağım.
+1723
+01:21:06,270 --> 01:21:07,890, tek
+argüman olarak z'yi geçti.
+1724
+01:21:07,890 --> 01:21:11,820 Ama
+onu bozmadığımdan emin olmak için,
+hadi bunu tekrar yapalım.
+1725
+01:21:11,820 --> 01:21:14,190 999 + 1,
+Girin.
+1726
+01:21:14,190 --> 01:21:15,300 Tamam,
+hala 1.000.
+1727
+01:21:15,300 --> 01:21:16,950 Yani
+daha kötü bir şey yapmadım.
+1728
+01:21:16,950 --> 01:21:20.460
+Ama dikkat edin-- ve bu sözdizimi ne
+yazık ki biraz şifreli-1729
+01:21:20.460 --> 01:21:22,380 bunu
+gerçekten yapabileceğime dikkat edin.
+1730
+01:21:22,380 --> 01:21:27,450 z'den
+sonra iki nokta üst üste ve ardından
+virgül koyabilirim.
+1731
+01:21:27,450 --> 01:21:29,763
+Bu kuşkusuz çok gizemli
+görünüyor ve ben bile
+1732
+01:21:29,763 --> 01:21:32,430
+belgelerde sürekli olarak buna benzer
+şeyler aramak zorunda
+
+Machine Translated by Google
+1733
+
+01:21:32,430 --> 01:21:33,750
+sözdizimini hatırlamak için.
+1734
+01:21:33,750 --> 01:21:35,460 Ama
+burada tekrar çalıştırmama izin verin.
+1735
+01:21:35,460 --> 01:21:41,250 Python
+of Calculator.py, 999 1 ve şimdi dikkat
+edin
+1736
+01:21:41,250 --> 01:21:43.928 numara
+benim için otomatik olarak
+biçimlendirildi.
+1737
+01:21:43.928 --> 01:21:45,720
+Farklı bir ülkede veya
+bölgede olsaydım,
+1738
+01:21:45,720 --> 01:21:49,620
+Virgül veya mengene yerine nokta
+kullanmak için bunu kesinlikle geçersiz kılabilirim
+1739
+01:21:49,620 --> 01:21:50,290
+tersi.
+
+1740
+01:21:50,290 --> 01:21:52.990 Ama bu
+durumda, bu benim için otomatik
+olarak oluyor.
+1741
+01:21:52,990 --> 01:21:56,310 Burada
+da bir dizgiyi gerçekten biçimlendirmenin
+ne anlama geldiğine dair bir ipucu görüyoruz.
+
+1742
+01:21:56,310 --> 01:21:57,720
+Daha da fazla güç var-1743
+01:21:57,720 --> 01:22:00,633 daha
+güçlü yetenekler buna dahil edilmiştir.
+
+1744
+01:22:00,633 --> 01:22:02,550
+Pekala, burada durup orada olup
+olmadığını görmeme izin verin.
+
+Machine Translated by Google
+1745
+01:22:02,550 --> 01:22:10,200
+Floatlar, yuvarlama veya F dizelerinin
+bu kullanımı hakkında şimdi tüm sorularınız.
+1746
+01:22:10,200 --> 01:22:11,700
+İZLEYİCİ: Evet, bir sorum var.
+1747
+01:22:11,700 --> 01:22:14,760
+Yani şamandıra kullanırken,
+bir şapka gibi var mı?
+
+1748
+01:22:14,760 --> 01:22:16,860 kaç
+ondalık basamağa sahip olabilir?
+1749
+01:22:16,860 --> 01:22:18,360
+DAVID MALAN: Gerçekten güzel bir soru.
+1750
+01:22:18,360 --> 01:22:21,150 Yani
+yüzer, evet ve bu, çok geçmeden
+tekrar ele alacağımız bir problem.
+1751
+01:22:21,150 --> 01:22:25.590 Kayan
+noktalar sayıları sonsuz kesinlikte
+temsil edemez.
+1752
+01:22:25,590 --> 01:22:28,112
+Özetle, çünkü bilgisayarların yalnızca
+bu kadar belleği vardır.
+1753
+01:22:28,112 --> 01:22:29,820
+Yalnızca sınırlı miktarda belleğe
+sahiptirler.
+1754
+01:22:29,820 --> 01:22:34,200
+Sen ve ben bilgisayarın içinde yalnızca
+sınırlı miktarda donanıma sahibiz,
+1755
+01:22:34,200 --> 01:22:36,540 yani
+bir noktada yuvarlanmaları
+gerekecek.
+1756
+01:22:36,540 --> 01:22:38,190
+
+Machine Translated by Google
+Şu anda otomatik olarak yuvarlama yapıyorum.
+
+1757
+01:22:38,190 --> 01:22:40,732
+Etkili bir şekilde bilgisayarlar
+sonunda bunu bizim için yapmak zorunda kalacak,
+
+1758
+01:22:40,732 --> 01:22:44,010 ama
+bunu bir
+çok geçmeden temel sorun.
+1759
+01:22:44,010 --> 01:22:47,385
+Şamandıradaki birkaç son örnek
+için geri dönmeme izin verin
+1760
+01:22:47,385 --> 01:22:50,010
+önce sadece
+
+1761
+01:22:50,010 --> 01:22:52.290 işlevleri
+kullanmak, ancak kendimizinkini yapmak için.
+
+1762
+01:22:52,290 --> 01:22:56,940
+Burada da biraz bölünmeyi denememizi
+önermeme izin verin.
+1763
+01:22:56,940 --> 01:22:59,250
+Şimdi bu hesap makinesini
+değiştirmemizi önermeme izin verin
+
+1764
+01:22:59,250 --> 01:23:01,740 yine
+de birkaç yüzmeye devam edelim,
+ama şimdi yapalım
+1765
+01:23:01,740 --> 01:23:04,050
+biraz daha basit bir şey-1766
+01:23:04,050 --> 01:23:07,085
+bundan biraz farklı, sadece x bölü
+y yapıyor.
+1767
+01:23:07,085 --> 01:23:09,210
+Ve devam edeyim ve format
+dizgemden kurtulayım
+
+Machine Translated by Google
+1768
+
+01:23:09,210 --> 01:23:12,383 ve
+şimdilik basit tutun, bunun yerine z
+yazdırın.
+1769
+01:23:12,383 --> 01:23:13,800 Peki
+burada ne göreceğiz?
+1770
+01:23:13,800 --> 01:23:15,092 Sadece
+basit bir bölme işlemi.
+1771
+01:23:15,092 --> 01:23:19,920
+Calculator.py'nin Python'u, hadi 2
+bölü 3 gibi bir şey yapalım,
+1772
+01:23:19,920 --> 01:23:21.960 ve
+tabii ki 0.66666 alıyorum.
+1773
+01:23:21.960 --> 01:23:25,600 Ve
+Ethan'ın az önceki sorusuna göre, bu
+sonlu gibi görünüyor.
+1774
+01:23:25,600 --> 01:23:30,180 Burada
+garip bir şekilde yuvarlama yapmıyorum,
+ancak sadece çok fazla rakam görüyorum.
+1775
+01:23:30,180 --> 01:23:34,170 Bu
+şekilde bir şamandıra kullanmanın
+kaçınılmazlığı budur.
+1776
+01:23:34,170 --> 01:23:37,620
+Aksine, bildiğiniz gibi, günümüzde
+Python'da tamsayılar
+1777
+01:23:37,620 --> 01:23:39,690
+istediğiniz kadar büyük olabilir.
+1778
+01:23:39,690 --> 01:23:41.910
+Diğer dillerden farklı olarak,
+üst sınır yoktur.
+1779
+01:23:41,910 --> 01:23:44,550
+Python'da artık bir INT'nin ne kadar
+büyük olabileceği konusunda
+
+Machine Translated by Google
+1780
+01:23:44,550 --> 01:23:48,225 bir
+kayan nokta değerinin ne kadar
+kesin olabileceğine ilişkin bir sınırdır.
+1781
+01:23:48,225 --> 01:23:50,850
+Pekala, şimdi burada çalışan basit bir
+bölümüm olduğuna göre,
+1782
+01:23:50,850 --> 01:23:52,380 hadi
+devam edelim ve bunun etrafında dönelim.
+
+1783
+01:23:52,380 --> 01:23:57,060 Bu
+gerçekten uzun sayıyı 0.6666666 ve
+benzeri yuvarlamak güzel olurdu
+1784
+01:23:57,060 --> 01:23:59,190 ile
+belki sadece iki ondalık basamağa kadar.
+1785
+01:23:59,190 --> 01:24:02,460
+Round ile bunu nasıl yapacağımızı gördük,
+en azından onun dökümantasyonunda.
+1786
+01:24:02,460 --> 01:24:04,980
+Bunu en yakın INT'e
+değil yuvarlayalım,
+1787
+01:24:04,980 --> 01:24:09,810
+sadece x bölü y, ki bu bir argümandır,
+matematik
+1788
+01:24:09,810 --> 01:24:13,350
+parantez içinde yapıldı, sadece bir argüman
+ile geçmek istemiyorum.
+1789
+01:24:13,350 --> 01:24:17,100
+n basamak belirleyebilmek
+için ikiye geçmek istiyorum,
+1790
+01:24:17,100 --> 01:24:21,030
+Raund için ikinci parametre olduğunu
+hatırlayacağınız basamak sayısı.
+1791
+
+Machine Translated by Google
+
+01:24:21,030 --> 01:24:23,240 Devam
+
+edeyim ve Python of Calculator.py'yi
+çalıştırayım.
+1792
+01:24:23,240 --> 01:24:24,240
+Ben de aynı şeyi yapacağım1793
+01:24:24,240 --> 01:24:27,300 2 ve
+ardından 3, 0,67.
+1794
+01:24:27,300 --> 01:24:31,130
+Yani burada da, sadece en yakın tamsayıya
+değil, yuvarlamanın bir yolunu görüyoruz,
+1795
+01:24:31,130 --> 01:24:34,160 ancak
+en yakın basamak sayısına kadar.
+1796
+01:24:34,160 --> 01:24:36,300 Ancak
+bunu burada yapmanın başka bir yolu daha var.
+1797
+01:24:36,300 --> 01:24:40,920 Ve
+aslında bu, F string örneğimizi tekrar
+hatırlatıyor.
+1798
+01:24:40.920 --> 01:24:42,270 Devam
+edip bunu değiştirmeme izin verin.
+1799
+01:24:42,270 --> 01:24:45,740
+Diyelim ki yuvarlak işlevi hatırlamadınız veya
+bir nedenden dolayı,
+1800
+01:24:45,740 --> 01:24:46,940
+kullanmak istemediniz.
+1801
+01:24:46,940 --> 01:24:49,340 Bunun
+yerine yalnızca bir biçim dizesi
+kullanmak istiyorsunuz.
+1802
+01:24:49,340 --> 01:24:50,510 Pekala,
+oraya gidelim.
+1803
+01:24:50,510 --> 01:24:55,280
+"z" yapayım ama etrafımı sarayım
+
+Machine Translated by Google
+o kıvırcık parantezlerle.
+1804
+01:24:55,280 --> 01:24:58,850 Başa
+F'yi ekleyeyim ve yine, bu henüz ilginç değil.
+
+1805
+01:24:58,850 --> 01:25:02,300
+Bu sadece z'yi yazdıracak, ancak
+çok daha fazla karmaşıklık ekliyorum
+1806
+01:25:02,300 --> 01:25:03,920 bir F
+dizesine dönüştürmek için.
+1807
+01:25:03,920 --> 01:25:08,940 Ama
+dikkat edin değişken adımdan sonra, iki
+nokta üst üste işaretinden sonra başka bir şey yapabilirim.
+
+1808
+01:25:08,940 --> 01:25:11,300
+Eğer bu büyük bir
+tamsayı olacaksa, ben
+1809
+01:25:11,300 --> 01:25:15,200 her
+üçlü sayıyı ayırmak için önceki gibi bir virgül
+kullanmak isteyebilir
+1810
+01:25:15,200 --> 01:25:15,950
+virgülle.
+1811
+01:25:15,950 --> 01:25:16,580 Ama
+bilmiyorum.
+1812
+01:25:16,580 --> 01:25:20,120 Farklı
+bir karakter dizisi kullanacağım.
+
+1813
+01:25:20,120 --> 01:25:25,190 0.2F
+diyeceğim ve bu da sahip olduğum çok
+şifreli şeylerden biri
+1814
+01:25:25,190 --> 01:25:28,040 o
+kadar sık kullanmazsam unuttuğum
+için sürekli yukarı bakmak.
+1815
+
+Machine Translated by Google
+01:25:28,040 --> 01:25:32,030
+Bu özellikle tuhaf görünüyorsa
+gözünüz korkmasın, ama bu,
+1816
+01:25:32.030 --> 01:25:33,950
+belgelere göre,
+
+1817
+01:25:33,950 --> 01:25:37,830
+kaç basamak yazdırmak
+istediğinizi bir F dizesi kullanarak belirtin.
+1818
+01:25:37,830 --> 01:25:39,980 O halde
+hesap makinesinin bu sürümünü
+çalıştırmama izin verin.
+
+1819
+01:25:39,980 --> 01:25:43,170 2
+ve ardından 3 yazın, aynı şeyi
+elde ederiz.
+1820
+01:25:43,170 --> 01:25:45,350
+Ama yine, bu sadece
+benim iddiamla tutarlı
+1821
+01:25:45,350 --> 01:25:49.580
+programlamada aynı sorunu çok
+sık çözebileceğimizi
+1822
+01:25:49,580 --> 01:25:51,030
+çeşitli şekillerde.
+1823
+01:25:51,030 --> 01:25:56,240 Bu,
+aynı soruna F string yaklaşımıdır.
+
+1824
+01:25:56,240 --> 01:25:57,630
+Pekala, hangisi daha iyi?
+1825
+01:25:57,630 --> 01:25:58,310
+Değişir.
+1826
+01:25:58,310 --> 01:26:00,200 Bu
+durumda, oldukça eşdeğerdirler.
+
+Machine Translated by Google
+1827
+
+01:26:00,200 --> 01:26:03,260
+Yine de, bazen bir işlevi kullanmanın
+yararlı olduğunu hayal edebilirsiniz.
+1828
+01:26:03,260 --> 01:26:07,340
+böylece n basamaklı bir argümanı ikinci
+argüman olarak iletebilirsiniz,
+1829
+01:26:07,340 --> 01:26:10,700 veya
+önceden 0.2 istediğinize karar
+verdiğinizi hayal edebilirsiniz.
+1830
+01:26:10,700 --> 01:26:13,370 ve
+sonra bu şekilde yazmak.
+1831
+01:26:13,370 --> 01:26:17,300
+Şimdi dizelere ve tam sayılara
+odaklanmaktan ve
+1832
+01:26:17,300 --> 01:26:19,880 şimdi
+işlevlerin kendilerine odaklanmaya
+gidiyor.
+1833
+01:26:19,880 --> 01:26:21,860
+Bugün nasıl
+yapabileceğinize odaklanarak başladık.
+1834
+01:26:21,860 --> 01:26:24,230
+Python ile gelen işlevleri kullanır.
+1835
+01:26:24,230 --> 01:26:26,990
+Ama kendi fonksiyonlarını icat
+edebilsen ne güzel olmaz mıydı?
+1836
+01:26:26,990 --> 01:26:29,330
+özellikle, daha önce konumuza göre,
+
+1837
+01:26:29,330 --> 01:26:32,210 aynı
+problemi tekrar tekrar mı
+çözüyorsun?
+1838
+01:26:32,210 --> 01:26:34,700
+
+Machine Translated by Google
+Python'un print işleviyle
+gelmesi güzel
+1839
+01:26:34,700 --> 01:26:37,130
+çünkü ekrana bir şeyler
+yazdırabilmek gerçekten faydalı,
+1840
+01:26:37,130 --> 01:26:40,130
+ama ekrana belirli şeyler
+yazdırabilseydiniz iyi olmaz mıydı
+1841
+01:26:40,130 --> 01:26:42,170
+sadece kendi işlevinizi çağırarak mı?
+1842
+01:26:42,170 --> 01:26:44,100 Peki,
+bunu yapmamızı önermeme izin verin.
+1843
+01:26:44,100 --> 01:26:49,760
+Burada VS Koduna geri dönmeme izin verin
+ve Hello.py'ye geri dönmeyi önermeme izin verin.
+
+1844
+01:26:49,760 --> 01:26:52.820
+Hello.py'yi daha önce bıraktığımız
+yerden yeniden açacağım
+
+1845
+01:26:52.820 --> 01:26:54,620 ve
+şimdi devam edip teklif edeceğim
+
+1846
+01:26:54,620 --> 01:26:58,460
+
+1847
+01:26:58,460 --> 01:26:59,330
+kendi fonksiyonumuz.
+1848
+01:26:59,330 --> 01:27:03,380
+Bugün sadece merhaba diyen o
+kadar çok program yazdım ki
+1849
+01:27:03,380 --> 01:27:05,360 ve
+her baskı kullandığımda.
+1850
+
+Machine Translated by Google
+
+01:27:05,360 --> 01:27:08,090
+Ama güzel olmaz mıydı, bugünün
+başından itibaren,
+1851
+01:27:08,090 --> 01:27:12,620
+
+Merhaba adında sadece bizim için
+Merhaba diyen bir fonksiyon çağırabiliriz.
+1852
+01:27:12,620 --> 01:27:15,080
+Şimdi yazarlar
+
+Python yıllar önce
+1853
+01:27:15,080 --> 01:27:18,020 sadece
+Merhaba demek için özel bir fonksiyona
+ihtiyacımız olduğunu düşünüyorum,
+
+1854
+01:27:18,020 --> 01:27:19,820 ama
+bunun olmasını isterdim.
+1855
+01:27:19,820 --> 01:27:21.980
+Birçok kez merhaba
+diyorum, sadece istiyorum
+1856
+01:27:21.980 --> 01:27:23,600
+Hello işlevini çağırabilmek için.
+1857
+01:27:23,600 --> 01:27:25,550 Bu
+yüzden burada sıfırdan başlayacağım.
+1858
+01:27:25,550 --> 01:27:27,680
+Tüm kodumu daha
+önce sileceğim
+1859
+01:27:27,680 --> 01:27:32,510 ve
+bir an için Hello adında bir fonksiyon varmış
+gibi davranacağım.
+1860
+01:27:32,510 --> 01:27:34,250 Ve
+daha önce yaptığım gibi
+yapacağım.
+1861
+01:27:34,250 --> 01:27:36,740
+Giriş işleviyle kullanıcının
+adını alacağım,
+
+Machine Translated by Google
+1862
+01:27:36,740 --> 01:27:39,110 adının
+ne olduğunu soruyor, soru işareti.
+1863
+01:27:39,110 --> 01:27:42,230
+Ve şimdi bir fonksiyon
+çağıracağım Merhaba
+1864
+01:27:42,230 --> 01:27:45,260 ve
+sonra kullanıcının adını yazdıracağım.
+
+1865
+01:27:45,260 --> 01:27:50,190
+Şimdi kabul edeceğim, Merhaba yok, çok
+kötü şeyler olmak üzere,
+1866
+01:27:50,190 --> 01:27:51,440 ama
+bakalım ne olacak.
+1867
+01:27:51,440 --> 01:27:53,210
+Terminal pencereme gitmeme izin verin.
+1868
+01:27:53,210 --> 01:27:55,700 İzin
+verin Python of Hello.py'yi çalıştırayım.
+1869
+01:27:55,700 --> 01:27:59,030 İlk
+satırın iyi olacağını düşünüyorum
+çünkü bu daha önce işe yaramıştı.
+1870
+01:27:59,030 --> 01:28:01,280 Ve
+gerçekten de adımı soruyor.
+
+1871
+01:28:01,280 --> 01:28:02,780 O
+halde David yazayım.
+1872
+01:28:02,780 --> 01:28:05,090
+İkinci kod satırı görünüşte
+arıyor
+1873
+01:28:05,090 --> 01:28:08,840
+Merhaba deniyor gibi görünen bir işlev,
+çünkü neden bir işlev?
+
+Machine Translated by Google
+1874
+01:28:08,840 --> 01:28:11,820 Bir
+parantez ve hemen arkasında bir kapalı
+parantez vardır.
+1875
+01:28:11,820 --> 01:28:14,300 Ve
+kullandığımız her fonksiyon böyle
+görünüyordu.
+1876
+01:28:14,300 --> 01:28:16,340 Ama
+Python bunu tanımayacak.
+
+1877
+01:28:16,340 --> 01:28:18,890 Şimdi
+Enter'a bastığımda ad hatası alıyorum.
+
+1878
+01:28:18,890 --> 01:28:21,950
+"Merhaba" adı tanımlı değil, Yardım
+mı demek istediniz?
+1879
+01:28:21,950 --> 01:28:26,120
+Yapmadım, her ne kadar uygun olsa da bu
+noktada ihtiyacım olan şey biraz yardım.
+1880
+01:28:26,120 --> 01:28:29,540 ama bu
+hatayla karşılaşıyorum çünkü neden?
+
+1881
+01:28:29,540 --> 01:28:31,440 İşlev
+sadece mevcut değil.
+1882
+01:28:31,440 --> 01:28:33,350 Peki bu
+işlevi nasıl var kılabilirim?
+1883
+01:28:33,350 --> 01:28:39,440 Pekala,
+tanımlama için DEF, DEF anahtar kelimesini
+kullanarak onu kendim oluşturmam gerekiyor.
+1884
+01:28:39,440 --> 01:28:43.610
+Burada da, tıpkı STR'nin string'in ve INT'nin
+tamsayı'nın kısaltması olması gibi,
+1885
+
+Machine Translated by Google
+
+01:28:43.610 --> 01:28:45,830 DEF,
+define için kısadır.
+1886
+01:28:45,830 --> 01:28:50,330
+Kendi fonksiyonlarınızı tanımlamak,
+oluşturmak, icat etmek istediğinizde,
+1887
+01:28:50,330 --> 01:28:53,870
+
+Python'da şimdi bu anahtar sözcüğü
+kullanarak bunu yapabilirsiniz.
+
+1888
+01:28:53,870 --> 01:28:58,310
+Bu yüzden buradaki koduma geri dönmeme izin
+verin ve bunu tanımlamamızı önermeme izin verin.
+
+1889
+01:28:58,310 --> 01:28:59,900 belki
+bu şekilde.
+1890
+01:28:59,900 --> 01:29:02,660
+Dosyamın en üstünde,
+ilk ben alacağım
+1891
+01:29:02,660 --> 01:29:05,150 Hello
+adlı bir işlevi tanımlamak için bir an
+
+1892
+01:29:05,150 --> 01:29:10.430 DEF
+kullanarak Merhaba, parantez aç,
+parantez kapat, iki nokta üst üste.
+1893
+01:29:10,430 --> 01:29:15,110
+Bunun anlamı, Python'un her kod satırını
+ele alacağıdır.
+1894
+01:29:15,110 --> 01:29:20,240 bu
+yeni işlevin anlamı olarak bunun altına
+girinti yaptım, Merhaba.
+1895
+01:29:20,240 --> 01:29:23,030
+Dolayısıyla DEF, alan kadar önemlidir.
+1896
+01:29:23.030 --> 01:29:26,577
+Fonksiyonun adını seçiyorum ve buna
+Merhaba demeyi seçiyorum.
+
+Machine Translated by Google
+1897
+01:29:26,577 --> 01:29:29,660
+İçinde hiçbir şey olmayan parantezler, şu
+anda bu işlevin olduğu anlamına gelir.
+1898
+01:29:29,660 --> 01:29:32,540 herhangi
+bir girdi almayacak, orada da
+argüman yok.
+1899
+01:29:32,540 --> 01:29:35,810 İki
+nokta üst üste demek, biraz girinti
+için bizi izlemeye devam edin.
+1900
+01:29:35,810 --> 01:29:38,750
+Bu kod satırının altına
+girintilenen her şey
+1901
+01:29:38,750 --> 01:29:40,310 bu
+işlevin bir parçası olacak.
+1902
+01:29:40,310 --> 01:29:42,920
+Süper kısa bir fonksiyon olacak-bir satır kod-1903
+01:29:42,920 --> 01:29:46,040 sadece
+"Merhaba" yazdıracak.
+1904
+01:29:46,040 --> 01:29:51,830 Ama
+şimdi 1. ve 2. satırlarda kendi
+fonksiyonumu icat ettim Merhaba.
+1905
+01:29:51,830 --> 01:29:54,740 Burada
+sihirli bir şekilde ortaya çıkan bu
+noktalara dikkat edin.
+1906
+01:29:54,740 --> 01:29:56,660
+Bu sadece benim metin
+editörümün bir ayarı,
+1907
+01:29:56,660 --> 01:30:00,470
+Bu durumda VS Kodu, bu sadece
+benim için süper açık hale getiriyor
+1908
+
+Machine Translated by Google
+01:30:00,470 --> 01:30:04,160
+
+boşluk çubuğuna dört kez veya
+eşdeğeri olarak Tab tuşuna bir kez basın,
+1909
+01:30:04,160 --> 01:30:07,018
+otomatik olarak dört boşluğa
+dönüştürülür.
+1910
+01:30:07,018 --> 01:30:10,310
+Genel olarak konuşursak, girintili kodumun
+tamamının
+1911
+01:30:10,310 --> 01:30:14,150
+şimdi sıralı, böylece Python her şeyin
+aynı şeyin parçası olduğunu bilsin.
+1912
+01:30:14,150 --> 01:30:16,770 Ama
+bu durumda kolay çünkü tek satır.
+
+1913
+01:30:16,770 --> 01:30:20.810
+Ama şimdi, 1. ve 2. satırlar
+sayesinde Hello işlevi
+1914
+01:30:20.810 --> 01:30:24,920 onu
+6. hatta kullanmaya hazır
+olduğumda kesinlikle var olacak.
+1915
+01:30:24,920 --> 01:30:29,180 O
+halde terminal pencereme inip Python of
+Hello.py, Enter'ı çalıştırayım.
+1916
+01:30:29,180 --> 01:30:30,570 İşte
+yine benim adım geliyor.
+1917
+01:30:30,570 --> 01:30:35,120 Ve
+şimdi Enter'a bastığımda Merhaba
+David'i görüyorum.
+1918
+01:30:35,120 --> 01:30:37,190
+Pekâlâ, biraz geriledik, değil mi?
+
+1919
+01:30:37,190 --> 01:30:39,960
+
+Machine Translated by Google
+Bu, bir zamanlar
+olduğu kadar güzel değil.
+1920
+01:30:39,960 --> 01:30:44,840
+Sanırım işleri daha da geliştirerek
+bundan daha iyisini yapabiliriz.
+1921
+01:30:44,840 --> 01:30:47,510
+Neden düşünmeyelim
+ki, nasıl olabiliriz?
+1922
+01:30:47,510 --> 01:30:50,480
+aynı işlevi parametreleştirelim mi?
+1923
+01:30:50,480 --> 01:30:55,010
+Yani, Hello'yu kullanıcının adını girdi
+olarak alacak şekilde özelleştirebilir miyiz?
+1924
+01:30:55,010 --> 01:31:000,020
+böylece sadece Merhaba değil, kişinin
+adı tek satırda, hepsi
+1925
+01:31:000,020 --> 01:31:01,070
+tek nefeste mi?
+1926
+01:31:01,070 --> 01:31:02,450
+Sanırım bunu yapabiliriz.
+1927
+01:31:02,450 --> 01:31:05,400
+Bunu şu şekilde yapmamızı
+önereyim.
+1928
+01:31:05,400 --> 01:31:10,100
+Kodumda devam edeyim, bu
+parantezlerin içine girmeme izin verin,
+1929
+01:31:10,100 --> 01:31:12,350
+izin verin kendi parametre
+ismimi bulayım.
+1930
+01:31:12,350 --> 01:31:14,510
+Burada tam bir seçimim
+var ve gidiyorum
+
+Machine Translated by Google
+1931
+
+01:31:14,510 --> 01:31:17,780
+parametremin adının To kelimesi
+olacağını söylemek için.
+1932
+01:31:17,780 --> 01:31:18,500
+Neden?
+1933
+01:31:18,500 --> 01:31:22,970
+Çünkü işlevimin temsil ettiği fiil
+gibi ses çıkarmasını istiyorum-1934
+01:31:22,970 --> 01:31:23,690
+Merhaba.
+1935
+01:31:23,690 --> 01:31:25,610 Ama
+kime Merhaba demek istersiniz?
+1936
+01:31:25,610 --> 01:31:27,860
+Peki bu fonksiyon için
+parametremi arayacağım
+1937
+01:31:27,860 --> 01:31:30,860
+Sadece İngilizce olduğu için kulağa
+hoş geliyor.
+1938
+01:31:30,860 --> 01:31:32,900
+Merhaba, kime merhaba demek
+istersin?
+1939
+01:31:32,900 --> 01:31:36,050
+Bu yüzden bu parametreyi
+bir şey yerine To olarak adlandırıyorum.
+1940
+01:31:36,050 --> 01:31:38,360 x
+veya y veya z gibi daha basit.
+1941
+01:31:38,360 --> 01:31:40,798
+Pekala, To kelimesiyle ne yapmak
+istiyorum?
+1942
+01:31:40,798 --> 01:31:42,590
+Birkaç farklı şey yapabilirim.
+
+Machine Translated by Google
+1943
+01:31:42,590 --> 01:31:45,320
+Hello'yu uygulamak için pek çok farklı
+yol gördük.
+1944
+01:31:45,320 --> 01:31:48.000
+Gramer açısından oraya bir virgül
+ekleyeyim.
+1945
+01:31:48.000 --> 01:31:52.700
+Ve sonra ikinci argüman olarak To
+kelimesini bundan sonra koyayım.
+1946
+01:31:52,700 --> 01:31:53,715
+Merhaba işlevine.
+1947
+01:31:53,715 --> 01:31:56,090
+Bunu yapmanın başka yolları da
+var ve çok gördük,
+1948
+01:31:56,090 --> 01:31:58,940 ama
+bu bana biraz açık görünüyor,
+diyeceğim.
+1949
+01:31:58,940 --> 01:32:00,380
+Bundan sonra ne olacak?
+1950
+01:32:00,380 --> 01:32:03,470
+Burada fazladan bu satıra ihtiyacım
+olduğunu sanmıyorum.
+1951
+01:32:03,470 --> 01:32:07,040
+Sanırım yapacağım şey şu,
+buradan devam edeceğim
+1952
+01:32:07,040 --> 01:32:12,740 ve
+kişinin adını elle yazdırmayın, bunun
+yerine şunu söyleyeceğim,
+1953
+01:32:12,740 --> 01:32:15,410
+Merhaba parantez adı.
+1954
+01:32:15,410 --> 01:32:16,880
+
+Machine Translated by Google
+Peki şimdi ne yapıyorum?
+1955
+01:32:16,880 --> 01:32:20.690
+1. ve 2. satırlarda Hello adlı kendi
+işlevimi tanımlıyorum,
+1956
+01:32:20.690 --> 01:32:23,240 ama
+bu sefer
+fonksiyon tasarlanmış
+1957
+01:32:23,240 --> 01:32:26,750 bir
+parametreyi, tek bir parametreyi
+girdi olarak almak için.
+1958
+01:32:26,750 --> 01:32:29,810
+Ve bu parametrenin değerini
+kullanıyorum ki
+1959
+01:32:29,810 --> 01:32:33.470
+Yazdırmaya bağlanmak için
+To'yu aradım, böylece yalnızca
+1960
+01:32:33.470 --> 01:32:35,780
+Merhaba, aynı zamanda o kişinin adı.
+1961
+01:32:35,780 --> 01:32:37.070 5.
+satırda ne yapıyorum?
+1962
+01:32:37.070 --> 01:32:39,140 Her
+zamanki gibi, sadece kullanıcının
+adını alıyorum.
+1963
+01:32:39,140 --> 01:32:42,140
+Hat 6, sadece merhaba
+demiyorum, geçiyorum
+1964
+01:32:42,140 --> 01:32:46,500 girdi
+olarak ad değişkenini argüman
+olarak girin
+1965
+01:32:46,500 --> 01:32:48,912 yani
+Hello'ya aktarılan şey bu.
+
+Machine Translated by Google
+1966
+
+01:32:48,912 --> 01:32:50,870
+Ve burada olan şey aslında
+şu-1967
+01:32:50,870 --> 01:32:54,710
+değişken çağrılsa bile
+Fonksiyon ne zaman burada isimlendirin
+
+1968
+01:32:54,710 --> 01:33:00,920
+kendisi çağrılır, bilgisayar aynı değerin
+şimdi To olarak adlandırıldığını varsayar.
+1969
+01:33:00,920 --> 01:33:04,760
+Yani Ad, esasen, adı verilen başka
+bir değişkene kopyalanır.
+1970
+01:33:04,760 --> 01:33:11,420
+Bunun için Merhaba bağlamında, onun
+yerine o değişkene Merhaba diyebilirim.
+1971
+01:33:11,420 --> 01:33:15,140 Ve
+bunları doğru tutmazsak ne olacağını
+birazdan göreceğiz.
+1972
+01:33:15,140 --> 01:33:17,600
+Devam edeyim ve Hello.py,
+Enter'ın Python'unu çalıştırayım.
+1973
+01:33:17,600 --> 01:33:18.540 Adın
+ne?
+1974
+01:33:18,540 --> 01:33:20,060 Ve
+şimdi parmaklarımı çarpıyorum.
+1975
+01:33:20,060 --> 01:33:20,840 Girin.
+
+1976
+01:33:20,840 --> 01:33:21,750 İşte
+başlıyoruz.
+1977
+01:33:21,750 --> 01:33:25,700
+İşe geri döndük, ancak şimdi Hello adında
+kendi özel işlevim var.
+
+Machine Translated by Google
+1978
+01:33:25,700 --> 01:33:28,550 bu,
+belirli bir kişiye Merhaba dememe
+izin veriyor.
+1979
+01:33:28,550 --> 01:33:30,980 Ve
+şimdi işlerin gerçekten süslü
+olabileceği yer burası.
+1980
+01:33:30,980 --> 01:33:34,220
+Merhaba işlevinizin belirli birine Merhaba
+demesini isteseydiniz,
+1981
+01:33:34,220 --> 01:33:37,070 ama
+ne var biliyor musun, kime Merhaba
+demek istediğini bilmiyorsan,
+1982
+01:33:37.070 --> 01:33:38,840 Tüm
+dünyaya merhaba demek
+istiyorsunuz,
+1983
+01:33:38,840 --> 01:33:41,300
+parametrelere varsayılan değerler verebilirsiniz.
+1984
+01:33:41,300 --> 01:33:42.060
+Bunu gördük.
+1985
+01:33:42.060 --> 01:33:45,530
+Print ile SEP için varsayılan bir
+değer olduğunu hatırlayın,
+1986
+01:33:45,530 --> 01:33:46,550
+ayırıcı için.
+1987
+01:33:46,550 --> 01:33:49,700 END
+için varsayılan bir değer vardı,
+satır bitiyordu.
+1988
+01:33:49,700 --> 01:33:52,280
+Bunu da yapabiliriz ve işte
+sözdizimi.
+1989
+01:33:52,280 --> 01:33:56,390
+
+Machine Translated by Google
+Varsayılan olarak bu
+parametrenin değerini istiyorsanız,
+1990
+01:33:56,390 --> 01:34:00,620
+programcı tarafından sağlanmadıysa,
+"dünya"ya eşit olacak şekilde,
+1991
+01:34:00,620 --> 01:34:05,155 Bunu
+tam anlamıyla işlevi tanımladığınız
+satırda yaparsınız.
+1992
+01:34:05,155 --> 01:34:07,280
+Ve itiraf edeyim, daha gizemli
+görünmeye başladı,
+1993
+01:34:07,280 --> 01:34:10.580 ama ben
+hala Hello adında bir fonksiyon
+tanımlıyorum.
+1994
+01:34:10.580 --> 01:34:13.820 adında
+bir parametre alır
+Ama ben onu görevlendiriyorum
+
+1995
+01:34:13,820 --> 01:34:19,340 eşittir
+işaretiyle, programcının her ihtimale karşı
+varsayılan bir "dünya" değeri
+1996
+01:34:19,340 --> 01:34:22,310 Hello'yu
+bir argümanla çağırmaz.
+1997
+01:34:22,310 --> 01:34:23,660 Bunu
+burada görebiliriz.
+1998
+01:34:23,660 --> 01:34:26,750
+Merhaba'yı kullanmak için kodumu iki
+şekilde değiştirmeme izin verin.
+1999
+01:34:26,750 --> 01:34:31,880 5.
+satırda, çok basit bir şekilde Merhaba
+diyeceğim, tartışma yok.
+2000
+01:34:31,880 --> 01:34:33.710 Sonra 6.
+satırda ismi alacağım.
+
+Machine Translated by Google
+2001
+01:34:33,710 --> 01:34:36,320 7.
+satır, Merhaba'yı bir tartışma ile
+arayacağım.
+2002
+01:34:36,320 --> 01:34:39.060
+Böylece Hello'nun iki şekilde
+kullanıldığını göreceksiniz.
+2003
+01:34:39.060 --> 01:34:41.960
+Devam edeyim ve Hello.py'nin
+Python'unu çalıştırayım.
+2004
+01:34:41.960 --> 01:34:43,310
+Adımı yazacağım.
+2005
+01:34:43,310 --> 01:34:44,630 Oh,
+ilginç.
+2006
+01:34:44,630 --> 01:34:47,120
+Dikkat edin zaten görüyorum
+
+Merhaba dünya, ama bu
+2007
+01:34:47,120 --> 01:34:52.070
+bekleniyor çünkü 5. satır 6. satırdan önce
+geliyor, ancak adımı bir kez yazdığımda,
+2008
+01:34:52.070 --> 01:34:55,940 şimdi
+program biraz daha kibar olacak ve
+bana merhaba diyecek
+2009
+01:34:55,940 --> 01:34:57,180
+şahsen.
+2010
+01:34:57,180 --> 01:35:01,550
+Orada da görece basit ama
+yeni sözdizimi görüyoruz.
+2011
+01:35:01,550 --> 01:35:05,990 Ruh
+olarak baskıya çok benzer bir işlevi nasıl
+uygulayabilirsiniz?
+2012
+01:35:05,990 --> 01:35:07,860
+
+Machine Translated by Google
+
+işlevi bize otomatik olarak verdi.
+
+2013
+01:35:07,860 --> 01:35:10,940 Artık
+bunu kendiniz yapmak üzerinde
+kontrol sizde.
+2014
+01:35:10,940 --> 01:35:12,980 Ama
+şimdi bu noktaya da değinmeme izin verin.
+2015
+01:35:12,980 --> 01:35:15,530
+Kendi işlevlerinizi tanımlamanın
+bütün noktalarından biri
+2016
+01:35:15,530 --> 01:35:18,680 bir
+tanedir, sadece kendinizi tekrar
+tekrar tekrar etmekten kaçınmak için.
+2017
+01:35:18,680 --> 01:35:21,890
+Tekerleği yeniden icat etmeye
+devam etmenize gerek yok
+2018
+01:35:21,890 --> 01:35:24,480 ve
+yazdırma işlevini tekrar tekrar ve
+tekrar kullanmaya devam edin,
+2019
+01:35:24,480 --> 01:35:25,850 sadece
+Merhaba demek istiyorsanız.
+2020
+01:35:25,850 --> 01:35:29,780
+Bu kodu taşıyabilsem şimdi
+güzel olmaz mıydı
+
+2021
+01:35:29,780 --> 01:35:34,010 Hello
+işlevini tanımlamak için ve sadece
+dramatik olmak için yazdığım,
+2022
+01:35:34,010 --> 01:35:37,760
+50 satır aşağı bir çok kez Enter'a
+basacağım,
+2023
+01:35:37,760 --> 01:35:41,240 ve
+Merhaba tanımımı bu dosyada biraz
+daha aşağıya koyun.
+
+Machine Translated by Google
+2024
+01:35:41,240 --> 01:35:41,840
+Neden?
+2025
+01:35:41,840 --> 01:35:44,720
+Eh, sadece gözden uzak,
+akıldan çıkmanın ruhu için,
+2026
+01:35:44,720 --> 01:35:48,800
+çünkü şimdi programımın başına
+geri sararsam, şimdi
+2027
+01:35:48,800 --> 01:35:51,240,
+evet, Merhaba bir fonksiyondur.
+
+2028
+01:35:51,240 --> 01:35:51,740
+Neden?
+2029
+01:35:51,740 --> 01:35:54,740
+Çünkü 1. satırda var ve açık bir
+parantez ve kapalı bir parantez var.
+2030
+01:35:54,740 --> 01:35:57,560
+şimdiye kadar bu işlevi çağıran
+parantez.
+2031
+01:35:57,560 --> 01:36:00,200
+Ve sonra 2. satırda
+kullanıcıdan bir değişken alıyoruz
+2032
+01:36:00,200 --> 01:36:04,620
+isimlerini yazıp Merhaba diyoruz, o
+değeri iletiyoruz.
+2033
+01:36:04,620 --> 01:36:07,790
+Bu noktada, Hello'nun var
+olduğunu kabul edebilirim,
+2034
+01:36:07,790 --> 01:36:11,360
+Dosyada çok daha aşağılarda olsa
+veya gelecek haftalarda göreceğimiz gibi,
+2035
+01:36:11,360 --> 01:36:13,970
+
+Machine Translated by Google
+tamamen farklı
+
+bir dosyada olsa bile.
+2036
+01:36:13,970 --> 01:36:15,500
+Ancak burada bir sorun var.
+2037
+01:36:15,500 --> 01:36:19,190 Ve
+devam edeyim ve Hello.py'nin bu
+sürümünü çalıştırayım.
+2038
+01:36:19,190 --> 01:36:23,270
+Çalıştırır çalıştırmaz dikkat edin
+
+yorumlayıcı, Hello.py'nin Python'u,
+2039
+01:36:23,270 --> 01:36:26,360 Bir
+ad hatası görüyorum, Merhaba
+adı tanımlı değil.
+2040
+01:36:26,360 --> 01:36:28,280 Yine,
+Yardım mı demek istediniz?
+2041
+01:36:28,280 --> 01:36:29,480 Yine,
+uygun.
+2042
+01:36:29,480 --> 01:36:33,500
+Burada biraz yardıma ihtiyacım
+var, ama ben işlevi Yardım'ı çağırmak istemedim.
+2043
+01:36:33,500 --> 01:36:36,650
+Ancak buradaki sorun Python'un beni
+tam anlamıyla alması.
+2044
+01:36:36,650 --> 01:36:40,610
+fonksiyonumu tanımladım
+Tüm yol boyunca merhaba,
+2045
+01:36:40,610 --> 01:36:42,500 ama
+onu burada kullanmaya çalışıyorum.
+2046
+01:36:42,500 --> 01:36:43.465 Ve
+buna izin verilmiyor.
+2047
+01:36:43,465 --> 01:36:45,590
+
+Machine Translated by Google
+Python'un tercümanı sizi
+kelimenin tam anlamıyla alacak
+2048
+01:36:45,590 --> 01:36:47,810 ve bir
+işlev kullanıyorsanız,
+
+2049
+01:36:47,810 --> 01:36:50,390 siz onu
+aradığınızda var olur.
+2050
+01:36:50,390 --> 01:36:51,600 Peki
+bunu nasıl düzeltebilirim?
+2051
+01:36:51,600 --> 01:36:53,270
+Görünüşe göre bunu yapamam.
+2052
+01:36:53,270 --> 01:36:57,440
+Dosyamın en üstünde istediğim
+herhangi bir işlevi tanımlamam gerekiyor,
+2053
+01:36:57,440 --> 01:36:59,720 ama
+bu da başımı biraz belaya sokabilir
+
+2054
+01:36:59,720 --> 01:37:04,640 çünkü
+sürekli olarak yukarıda istediğim yerde bir
+fonksiyon tanımlamam gerekiyorsa
+2055
+01:37:04,640 --> 01:37:07,010
+kullanmak için kodu tersten
+yazıyorsunuz,
+2056
+01:37:07,010 --> 01:37:09,218 sürekli
+olarak buraya fonksiyonlar
+yazıyorsunuz, buraya,
+2057
+01:37:09,218 --> 01:37:12,450 burada,
+kodunuzu mantıksal olarak yukarıdan
+aşağıya yazmak yerine.
+2058
+01:37:12,450 --> 01:37:16,190 Öyleyse
+bunu daha standart bir yolla
+düzeltmeme izin verin, bunu yapmak için.
+
+Machine Translated by Google
+2059
+
+01:37:16,190 --> 01:37:20.990
+Genel olarak konuşursak, kodunuzun
+ana bölümünü koymak istiyorsunuz.
+2060
+01:37:20.990 --> 01:37:22,530
+dosyanızın en üstünde.
+2061
+01:37:22,530 --> 01:37:27,110
+Aslında, Main adlı işlevimi tanımlayacak
+kadar ileri gideceğim.
+2062
+01:37:27,110 --> 01:37:29,540
+Bu bir gereklilik değil, ancak
+veri konvansiyonunda,
+2063
+01:37:29,540 --> 01:37:31,910 ve bu
+okuyucuya şunu çağrıştırıyor:
+
+2064
+01:37:31,910 --> 01:37:33,620
+programımın ana kısmı.
+2065
+01:37:33,620 --> 01:37:38,030
+Şimdi boş Merhaba çağrımdan kurtulacağım
+ve sadece bir versiyona geçeceğim
+2066
+01:37:38,030 --> 01:37:39,110 ile
+Merhaba, ad.
+2067
+01:37:39,110 --> 01:37:42,260
+Ve sonra burada, birkaç satır daha
+aşağıda,
+2068
+01:37:42,260 --> 01:37:45,030
+Aslında Merhaba fonksiyonumu tanımlayacağım.
+2069
+01:37:45,030 --> 01:37:47,870
+Ne yazık ki, işlevleri bu şekilde
+yeniden sıraladığıma göre,
+2070
+01:37:47,870 --> 01:37:51,890
+Kodumun ana kısmını en üste ve Hello'yu
+en alta koyarak
+
+Machine Translated by Google
+2071
+01:37:51,890 --> 01:37:55,310
+böylece mantığım yukarıdan aşağıya
+akıyor, eğer devam edip koşarsam
+2072
+01:37:55,310 --> 01:37:57.680
+Hello.py'nin Python'u, Girin.
+2073
+01:37:57,680 --> 01:38:00,290 Hiçbir
+şey olmuyor.
+2074
+01:38:00,290 --> 01:38:02,630
+Tekrar yaparsam hiçbir şey olmuyor.
+
+2075
+01:38:02,630 --> 01:38:04,520 Peki,
+bu neden böyle?
+2076
+01:38:04,520 --> 01:38:06,740
+Eh, sadece adında bir
+fonksiyon tanımladığım için
+2077
+01:38:06,740 --> 01:38:09,230
+Main ve ben Hello adında
+bir fonksiyon tanımladık,
+2078
+01:38:09,230 --> 01:38:11,420
+aslında aradığım anlamına gelmez-2079
+01:38:11,420 --> 01:38:13,340
+kullanılan-- bunlardan biri.
+2080
+01:38:13,340 --> 01:38:16,970
+Evet, Main'in içinde
+Hello kullanıyorum ama hiç kimse
+2081
+01:38:16,970 --> 01:38:20,210 Python'a
+Main'i gerçekten kullanmasını veya
+aramasını söylüyor.
+
+2082
+01:38:20,210 --> 01:38:24,770
+Bunu toparlamak için, bu dosyada
+yapmam gereken son şey,
+
+Machine Translated by Google
+2083
+01:38:24,770 --> 01:38:28,100
+görünüşe göre, aslında benim ana
+işlevimi çağırıyor.
+2084
+01:38:28,100 --> 01:38:30,890
+Ve aslında, ana işlevimi bu
+şekilde çağırarak,
+2085
+01:38:30,890 --> 01:38:33,890 bu beni
+beladan kurtarıyor çünkü şimdi önce
+Main'i tanımlıyorum
+2086
+01:38:33,890 --> 01:38:35,450 ama
+henüz Merhaba'yı aramıyorum.
+2087
+01:38:35,450 --> 01:38:38,760 Bundan
+sonra Merhaba'yı tanımlıyorum ama
+bundan sonra Merhaba demiyorum.
+
+2088
+01:38:38,760 --> 01:38:42,170
+Ben sadece bu dosyanın
+en sonunda Main'i ararım
+2089
+01:38:42,170 --> 01:38:45.090 bu
+kodu burada çalıştırma etkisine sahip,
+
+2090
+01:38:45.090 --> 01:38:47,690 bu
+kodu burada çalıştırma etkisine sahip,
+
+2091
+01:38:47,690 --> 01:38:50.870 ve bu
+nedenle dosyamı düzenlememe izin
+veriyor
+2092
+01:38:50.870 --> 01:38:55,520 ve
+işlevlerimi en üstte Ana dahil olmak üzere
+istediğim şekilde sıralayın,
+2093
+01:38:55,520 --> 01:38:59,930 ve
+sonunda Python'un neler olduğunu
+bilmemesi sorununu çözmek.
+
+Machine Translated by Google
+2094
+
+01:38:59,930 --> 01:39:02,780
+Şimdi, işlevimi tanımladığımı
+not etmek önemlidir.
+2095
+01:39:02,780 --> 01:39:05,690
+Bir argüman alarak
+Merhaba ve sonra ben
+2096
+01:39:05,690 --> 01:39:08,390 bu
+fonksiyona değişkenin değerini
+iletti
+2097
+01:39:08,390 --> 01:39:11,570
+Merhaba demek istediğim, Name
+isimli değişken.
+2098
+01:39:11.570 --> 01:39:14,420
+Çünkü bir şeyi biraz farklı yaptığımı
+varsayalım.
+2099
+01:39:14,420 --> 01:39:17,670
+Diyelim ki tanımlamadım
+Merhaba bir tartışma alıyor,
+2100
+01:39:17,670 --> 01:39:21.560 bu yüzden
+To'dan ve onun varsayılan değeri olan
+"world"den bahsetmeyi kaldırıyorum.
+
+2101
+01:39:21.560 --> 01:39:25,070
+Ve ana işlevime geri
+dönüyorum ve sadece
+2102
+01:39:25.070 --> 01:39:28,193
+Hello'nun kendisini herhangi bir
+argüman iletmeden çağırın.
+2103
+01:39:28,193 --> 01:39:30,360
+Ve şimdi devam edeyim ve bir
+değişiklik daha yapayım,
+2104
+01:39:30,360 --> 01:39:32.760
+teknik olarak bir hata daha, devam
+edeyim
+
+Machine Translated by Google
+2105
+
+01:39:32.760 --> 01:39:37,720 ve
+Hello işlevindeki Name değerini saf
+olarak yazdırmaya çalışın.
+2106
+01:39:37,720 --> 01:39:40,380
+Şimdi açık olmak gerekirse,
+2. satırdaki ana işlevimde,
+2107
+01:39:40,380 --> 01:39:43,740
+Name adlı değişkenimi tanımlıyorum ve
+ona dönüş değeri atıyorum
+2108
+01:39:43,740 --> 01:39:45,480
+kullanıcıdan giriş işlevi.
+2109
+01:39:45,480 --> 01:39:47,010 O
+zaman sadece Merhaba diyorum.
+2110
+01:39:47,010 --> 01:39:50,700
+Artık herhangi bir argüman almayan
+Merhaba işlevimde,
+2111
+01:39:50,700 --> 01:39:54,180
+Print'i arıyorum,
+Merhaba virgülünü geçiyorum,
+2112
+01:39:54,180 --> 01:39:56,970 ve
+ardından değişken Ad'a hemen
+geçer
+2113
+01:39:56,970 --> 01:39:58,740
+kullanıcının girdisini aldım.
+2114
+01:39:58,740 --> 01:40:02,232 Ama
+sorun şu ki, isim artık sadece
+Main'de var.
+2115
+01:40:02,232 --> 01:40:05,190
+Programın bu sürümünü çalıştırmayı
+denediğimde ne olduğunu izleyin.
+2116
+01:40:05,190 --> 01:40:07,170
+Python Hello.py ile.
+
+Machine Translated by Google
+2117
+01:40:07,170 --> 01:40:08,220
+Enter'a bastım.
+2118
+01:40:08,220 --> 01:40:10,500 Adım,
+DAVID, Enter girmem isteniyor.
+
+2119
+01:40:10,500 --> 01:40:11,340 Ve,
+ahh!
+2120
+01:40:11,340 --> 01:40:12,450 Bir
+ad hatası.
+2121
+01:40:12,450 --> 01:40:15,400 Ad
+"Ad" tanımlı değil.
+2122
+01:40:15,400 --> 01:40:19,050
+Dolayısıyla bunun aslında kapsam
+denen şeyin bir sorunu olduğu ortaya çıkıyor.
+2123
+01:40:19,050 --> 01:40:23,970
+Kapsam, yalnızca onu tanımladığınız
+bağlamda var olan bir değişkene atıfta bulunur.
+2124
+01:40:23,970 --> 01:40:28,080
+Bu değişkeni tanımladığım
+kadarıyla, ana işlevimde Name,
+2125
+01:40:28.080 --> 01:40:31,020 Bu
+değişkeni sadece isim fonksiyonumda
+kullanabilirim.
+2126
+01:40:31,020 --> 01:40:34,380
+Burada Merhaba fonksiyonumda
+denediğim için kullanamıyorum.
+2127
+01:40:34,380 --> 01:40:36,930 O
+sözde kapsamda mevcut değil.
+
+2128
+01:40:36,930 --> 01:40:42,010
+Ve bu yüzden şimdi, eğer geri sararsam
+
+Machine Translated by Google
+ve tüm bu değişiklikleri geri almak,
+2129
+01:40:42,010 --> 01:40:45,690 Main
+işlevini kasıtlı olarak ana işlevimden
+geçirdiğimi göreceksiniz
+2130
+01:40:45,690 --> 01:40:47,340
+Merhaba işlevime.
+2131
+01:40:47,340 --> 01:40:50,260 Ve
+şimdi Merhaba işlevinde teknik olarak
+farklı bir adı var.
+2132
+01:40:50,260 --> 01:40:52,380 Bu
+bağlamda Kime olarak adlandırılır,
+ama sorun değil.
+2133
+01:40:52,380 --> 01:40:55,950
+Kendi değişkenlerini adlandırmak
+tamamen her bir fonksiyona bağlıdır.
+2134
+01:40:55,950 --> 01:40:58,230 veya
+kendi argümanlarını adlandırın,
+ancak şimdi bu bir yol
+2135
+01:40:58,230 --> 01:41:01,630 Hello
+işlevine verdiğim o değişkenin
+değeri
+2136
+01:41:01,630 --> 01:41:04,530
+böylece Hello tarafından da yazdırılabilir.
+2137
+01:41:04,530 --> 01:41:07,410
+Buraya ekleyebileceğimiz son bir
+güzellik daha var.
+2138
+01:41:07,410 --> 01:41:10,590
+Artık Hello'yu uyguladığımıza göre,
+yalnızca Hello'nun
+2139
+01:41:10,590 --> 01:41:12,120 sözde
+bir yan etkiye sahiptir.
+2140
+
+Machine Translated by Google
+01:41:12,120 --> 01:41:14.580 Sadece
+ekrana bir şeyler yazdırır.
+
+2141
+01:41:14,580 --> 01:41:19,980
+Peki ya işlevimin kendi başına bir yan etkisi
+olmamasını istiyorsam,
+2142
+01:41:19,980 --> 01:41:22,300 ama
+aslında bana bir değeri geri vermek mi?
+2143
+01:41:22,300 --> 01:41:25,740
+Giriş fonksiyonunun bir
+değer döndürdüğünü hatırlayın,
+2144
+01:41:25,740 --> 01:41:27,510
+kullanıcının yazdığı dize.
+2145
+01:41:27,510 --> 01:41:30,060 INT
+işlevinin bir değer döndürdüğünü
+hatırlayın.
+2146
+01:41:30,060 --> 01:41:33,960 Float
+işlevi, kendisine iletilen bir değeri
+döndürür.
+2147
+01:41:33,960 --> 01:41:37,260
+Pekala, burada kelimenin tam anlamıyla
+son bir anahtar kelime kullanabilirsiniz.
+
+2148
+01:41:37,260 --> 01:41:40.890 Kendiniz
+açıkça bir değer döndürmek için geri
+dönün.
+2149
+01:41:40.890 --> 01:41:43.890
+Aslında, burada VS Koduna
+geri dönmeme izin verin ve ben
+
+2150
+01:41:43,890 --> 01:41:47,820 sanırım
+dikkatimizi Calculator.py'a çevireceğiz
+
+2151
+01:41:47,820 --> 01:41:53,190 ve
+bakalım birini uygulayamayacak mıyız
+
+Machine Translated by Google
+aslında Calculator.py sürümü
+2152
+01:41:53,190 --> 01:41:56,410 bir
+değer bile döndüren kendi
+fonksiyonumuza sahiptir.
+2153
+01:41:56,410 --> 01:41:59,800
+Bu yüzden devam edeceğim ve
+hesap makinesini/py'yi açacağım
+
+2154
+01:41:59,800 --> 01:42:03,100 ve
+sanırım bu sefer her şeyi eskisi gibi
+atacağım,
+2155
+01:42:03,100 --> 01:42:06,600 ve
+burada vaaz ettiğimiz şeyi
+uygulamaya başlayacağım.
+2156
+01:42:06,600 --> 01:42:09,120
+adlı bir işlev tanımlayın
+Şimdi devam eden ana
+2157
+01:42:09,120 --> 01:42:11,070
+işlevimin ana parçası olacak.
+2158
+01:42:11,070 --> 01:42:13,980
+Devam edelim ve şimdi x
+adında bir değişken tanımlayalım,
+2159
+01:42:13,980 --> 01:42:19,350 ve
+kullanıcıya sorduktan sonra girdinin
+dönüştürülmüş versiyonuna atayın,
+2160
+01:42:19,350 --> 01:42:20.430 x nedir?
+
+2161
+01:42:20.430 --> 01:42:23.490 Yine,
+daha önce yaptığımız gibi bir kod
+satırı.
+2162
+01:42:23,490 --> 01:42:27,023 Şimdi
+yapmak istediğim şeyin bu değerin
+karesini almak olduğunu varsayalım.
+
+Machine Translated by Google
+2163
+
+01:42:27,023 --> 01:42:29,190
+Kullanıcının yazdığı numarayı
+almak istiyorum
+2164
+01:42:29,190 --> 01:42:30,840 ve
+2'nin gücüne yükseltin.
+2165
+01:42:30,840 --> 01:42:32.790 Yani
+2'nin karesi 4 olur.
+2166
+01:42:32.790 --> 01:42:34,410 3'ün
+karesi 9 olur.
+2167
+01:42:34,410 --> 01:42:36,840 4'ün
+karesi 16 olur ve bu böyle devam eder.
+2168
+01:42:36,840 --> 01:42:39,450
+Peki, bir işlevi tam anlamıyla
+uygulamaya nasıl devam edebilirim?
+2169
+01:42:39,450 --> 01:42:42.960
+aslında Python yerleşik olarak
+gelmeyen Square olarak mı adlandırılıyor?
+2170
+01:42:42,960 --> 01:42:45,660
+Pekala, bir an için onun var
+olduğunu varsayalım ve
+2171
+01:42:45,660 --> 01:42:47,530 şöyle
+bir şey söylüyorum-2172
+01:42:47,530 --> 01:42:50.670
+devam edeyim ve baskının nasıl
+olduğunu söyleyeyim
+2173
+01:42:50.670 --> 01:42:57,720
+yaklaşık x kare, x'in virgül karesidir.
+2174
+01:42:57,720 --> 01:42:59,170 Peki
+ne yaptım?
+2175
+01:42:59,170 --> 01:43:02,710
+
+Machine Translated by Google
+
+Main adında bir fonksiyon tanımladım ve
+iki satır uyguladım.
+
+2176
+01:43:02,710 --> 01:43:05,190
+Bu satırlardan ilki
+kullanıcıdan bir değer ister.
+2177
+01:43:05,190 --> 01:43:09,330 x ve
+onu bir INT'ye dönüştürür ve x adlı
+bir değişkende saklar.
+2178
+01:43:09,330 --> 01:43:12,930
+3. satırda, x karedir
+diyorum ve sonra
+2179
+01:43:12,930 --> 01:43:16,620
+Geri dönüş ne olursa olsun, yazdırma
+işlevine ikinci bir argüman iletiyorum
+2180
+01:43:16,620 --> 01:43:18,780 değeri
+bir kare fonksiyondur.
+2181
+01:43:18,780 --> 01:43:22,230
+Ama kare diye bir şey yok ve
+size bunu burada göstereceğim,
+2182
+01:43:22,230 --> 01:43:30,090 şimdi
+altta Main'i ararsam ve Python of
+Calculator.py'yi çalıştırırsam,
+2183
+01:43:30,090 --> 01:43:35,100
+x'in 2 olduğunu göreceğim ve sonra
+bir sürü hata görüyorum, bir isim hatası,
+2184
+01:43:35,100 --> 01:43:37.090 isim
+Kare tanımlı değil.
+2185
+01:43:37.090 --> 01:43:39,810 Yani
+buradaki bir yazım hatası değil,
+sadece fonksiyon mevcut değil.
+2186
+01:43:39,810 --> 01:43:41.790 Ama
+burada var olmasını sağlayabileceğimi düşünüyorum.
+
+Machine Translated by Google
+2187
+
+01:43:41,790 --> 01:43:45,180
+Devam edip Kare adında başka bir
+fonksiyon tanımlayayım.
+2188
+01:43:45,180 --> 01:43:47,400
+Bu bir numara alacak
+ve ben
+2189
+01:43:47,400 --> 01:43:50,370 pek
+çok programcının yaptığı gibi
+genel olarak n olarak adlandırılacak,
+2190
+01:43:50,370 --> 01:43:52,260
+herhangi bir eski sayıyı temsil etmek için.
+2191
+01:43:52,260 --> 01:43:56,010 Peki
+n'nin karesini almak için ne
+yapmak istiyorum?
+2192
+01:43:56,010 --> 01:43:59,380
+Bir sayının karesi gerçekten kendisi
+çarpı kendisidir,
+2193
+01:43:59,380 --> 01:44:00,720 bu
+yüzden şunu yapacağım-2194
+01:44:00,720 --> 01:44:02,340 n
+kez n.
+2195
+01:44:02,340 --> 01:44:06,180
+Ancak matematiği sadece kendiniz
+yapmak yeterli değil, n çarpı n.
+2196
+01:44:06,180 --> 01:44:09,990
+Gerçek değeri n çarpı n
+döndürmeniz gerekecek
+2197
+01:44:09,990 --> 01:44:11.970 ve
+buradaki yeni anahtar kelimemiz bu.
+2198
+01:44:11,970 --> 01:44:14,100
+Bunu şimdi yaptığımda, ne olduğunu izleyin.
+
+Machine Translated by Google
+2199
+
+01:44:14,100 --> 01:44:16,230 Python
+Calculator.py, Girin.
+2200
+01:44:16,230 --> 01:44:20,250 X demek
+2 olur, x kare 4 olur.
+2201
+01:44:20,250 --> 01:44:24,020 Şimdi
+devam edeyim ve x'in şimdi 3 olduğunu söyleyeyim.
+2202
+01:44:24,020 --> 01:44:26,010 X'in
+karesi artık 9'dur.
+2203
+01:44:26,010 --> 01:44:30,060
+Bu yüzden bir değerin karesini döndüren kendi
+işlevimi uyguladım.
+2204
+01:44:30,060 --> 01:44:33,180 ve
+return anahtar sözcüğünü kullandığım
+için
+2205
+01:44:33,180 --> 01:44:36,120 bunun
+dönüş değerini iletebilmemi sağlıyor,
+sadece
+2206
+01:44:36,120 --> 01:44:40,140 girişin
+dönüş değeri gibi veya
+INT veya float, başka bir işleve,
+2207
+01:44:40,140 --> 01:44:41.460 bunun
+yerine beğen yazdır.
+2208
+01:44:41.460 --> 01:44:44,520 Ve
+burada da aynı sorunu çözmenin pek çok
+yolu olacak.
+2209
+01:44:44,520 --> 01:44:47,490 Aslında
+n'yi 2'nin kuvvetine yükseltebilirim.
+
+2210
+01:44:47,490 --> 01:44:49,620
+Bu söz dizimini daha
+önce görmemiştik, ancak
+
+Machine Translated by Google
+2211
+
+01:44:49,620 --> 01:44:54,220
+soldaki şeyi yükselten bunun gibi iki
+yıldız işareti, iki yıldız kullanın
+2212
+01:44:54,220 --> 01:44:55,590
+sağdaki güce.
+2213
+01:44:55,590 --> 01:44:58,290
+
+Veya Python'da adında
+
+bir fonksiyon olduğu ortaya çıktı.
+
+2214
+01:44:58,290 --> 01:45:00,480
+Bir şeyi güce yükseltmek için
+POW
+2215
+01:45:00,480 --> 01:45:04,200 iki
+argüman alır, birincisi sayı, ikincisi ise
+
+2216
+01:45:04,200 --> 01:45:05,140
+üssüdür.
+2217
+01:45:05,140 --> 01:45:09,810
+Yani orada da, aynı sorunu gerçekten
+çözmenin pek çok yolu var.
+2218
+01:45:09,810 --> 01:45:11,290 da.
+
+2219
+01:45:11,290 --> 01:45:13,020
+Sonuç olarak, burada ne yaptık?
+2220
+01:45:13,020 --> 01:45:15,960
+İlk önce işlevleri tanıttık-- bu
+eylemler veya fiiller, çoğu
+2221
+01:45:15,960 --> 01:45:19,000
+Python'da yerleşik olarak gelir ve
+sadece kendi kodunuzda kullanabilirsiniz.
+
+2222
+01:45:19,000 --> 01:45:22,290
+Daha sonra, bu dönüş değerlerini
+saklayabileceğiniz değişkenleri tanıttık.
+
+Machine Translated by Google
+2223
+01:45:22,290 --> 01:45:24,120 ve
+sonra belki onunla daha fazlasını
+yapın.
+2224
+01:45:24,120 --> 01:45:25,350
+Günün sonunda da.
+2225
+01:45:25,350 --> 01:45:28,260
+Artık kendi fonksiyonlarınızı yaratma,
+icat etme yeteneğine sahipsiniz.
+2226
+01:45:28,260 --> 01:45:30,750
+Merhaba gibi basit sorunları
+çözmek için veya haftalar içinde
+2227
+01:45:30,750 --> 01:45:36,590
+gelecek-- çok daha karmaşık, daha zorlu, daha
+eğlenceli problemler de.
+2228
+01:45:36.590 --> 01:45:38.000
+
+
