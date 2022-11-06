@@ -1,0 +1,4573 @@
+Machine Translated by Google
+1 00:00:00,000 --> 00:00:02,946
+[MÜZİK ÇALIYOR]
+
+2 00:00:02,946 --> 00:00:25.020
+
+3 00:00:25.020 --> 00:00:28,560
+DAVID MALAN: Bu, CS50'nin Python
+ile Programlamaya Giriş kitabıdır.
+
+4 00:00:28,560 --> 00:00:32,100
+Benim adım David Malan ve bu hafta
+koşul terimlerine odaklanıyoruz.
+
+5 00:00:32,100 --> 00:00:36,120
+Python'da ve diğer dillerde koşullu ifadeler
+veya koşullu ifadeler,
+
+6 00:00:36,120 --> 00:00:40,620
+sırasıyla soru sorma ve bu soruları
+yanıtlama yeteneğidir.
+
+7 00:00:40,620 --> 00:00:43,260
+karar vermek için bu kod satırını
+yürütmek istiyor musunuz?
+
+8 00:00:43,260 --> 00:00:44,220
+Veya bu kod satırı?
+
+9 00:00:44,220 --> 00:00:46.020
+Veya bunun yerine bu diğer kod satırı?
+10
+00:00:46.020 --> 00:00:48,780
+Yoldaki meşhur çatalları
+almanıza izin veriyorlar,
+
+11 00:00:48,780 --> 00:00:50,730
+mantıksal olarak kendi kodunuz içinde.
+12
+00:00:50,730 --> 00:00:54,210 Peki
+bu kararlardan bazılarını nasıl
+alabiliriz?
+
+Machine Translated by Google
+13
+
+00:00:54,210 --> 00:00:57,592
+Python'un birçok yerleşik sözdizimi
+ile geldiği ortaya çıktı.
+14
+00:00:57,592 --> 00:00:59,550
+Örneğin, burada sadece
+bazı semboller var.
+15
+00:00:59,550 --> 00:01:01,770
+Python'da soru sormak için kullanabilirsiniz.
+16
+00:01:01,770 --> 00:01:04,860
+Kuşkusuz, matematiksel sorular, ama
+oradan başlayacağız, eğer sadece
+17
+00:01:04,860 --> 00:01:07,470
+Örnekleri erkenden basit tutmak için.
+18
+00:01:07,470 --> 00:01:11,160
+Matematikten bildiğiniz gibi bu ilk sembol,
+büyüktür.
+19
+00:01:11,160 --> 00:01:14,640
+İkinci sembol çok tanıdık gelmeyebilir, çünkü
+genellikle onu yazarız.
+20
+00:01:14,640 --> 00:01:16,800 hepsi
+bir kağıt parçası üzerinde tek bir şey olarak.
+21
+00:01:16,800 --> 00:01:19,830
+Ama bir klavyede, büyüktür veya
+eşittir demek isterseniz,
+22
+00:01:19,830 --> 00:01:21,300 bunun
+yerine bu sembolü kullanırdınız.
+23
+00:01:21,300 --> 00:01:22,920 Bu,
+elbette, daha az demektir.
+24
+00:01:22,920 --> 00:01:25,590 Bu,
+daha küçük veya eşittir anlamına gelir.
+25
+
+Machine Translated by Google
+00:01:25.590 --> 00:01:27,720 Ve
+bu biraz merak uyandırıcı.
+26
+00:01:27,720 --> 00:01:30,240
+Fonksiyonlara ve
+değişkenlere baktığımızda gördük,
+27
+00:01:30,240 --> 00:01:35,650
+Tek bir eşittir işareti kullanarak
+değişkenlere nasıl değer atayabildik.
+28
+00:01:35,650 --> 00:01:38,010
+Ancak bu eşittir işareti eşitliği
+temsil etmiyordu.
+29
+00:01:38,010 --> 00:01:40,230
+Sağdan sola atamayı temsil
+ediyordu.
+30
+00:01:40,230 --> 00:01:42,390 Bu
+harika, çünkü bu sorunu çözdü.
+
+31 00:01:42,390 --> 00:01:45,030
+Ama bizi biraz zor
+durumda bıraktı, çünkü şimdi nasıl
+32
+00:01:45,030 --> 00:01:47,190 iki
+şeyi karşılaştırın, sol ve sağ?
+
+33 00:01:47,190 --> 00:01:51,390
+Python'da ve birçok dilde aslında iki eşit
+kenar kullanırsınız.
+34
+00:01:51,390 --> 00:01:55,200
+Yani iki eşittir işareti, şeyi
+karşılaştırarak eşitliği temsil eder.
+35
+00:01:55,200 --> 00:01:56,310
+solda ve sağda.
+36
+00:01:56,310 --> 00:01:59,250
+Bir eşittir işareti, her zaman
+olduğu gibi, atamayı temsil eder,
+
+Machine Translated by Google
+37
+00:01:59,250 --> 00:02:01,650 şeyi
+sağdan sola kopyalama.
+
+38
+00:02:01,650 --> 00:02:04,650 Son
+olarak, bu son sembol eşit olmadığını
+temsil eder.
+39
+00:02:04,650 --> 00:02:08,699
+Yani ünlem işareti veya patlama,
+ardından eşittir işareti,
+40
+00:02:08,699 --> 00:02:12,180, yanındaki
+bir değere eşit olmadığı anlamına gelir.
+
+41
+00:02:12,180 --> 00:02:15,900
+Peki, bu sembolleri veya diğerlerini
+kullanarak soruları sormak için,
+42
+00:02:15,900 --> 00:02:18,240 Python'da
+başka bir anahtar kelimeye ihtiyacımız
+olacak.
+43
+00:02:18,240 --> 00:02:21,120 Ve bu
+anahtar kelime, İngilizcede olduğu gibi
+oldukça basit bir şekilde if.
+44
+00:02:21,120 --> 00:02:24,420
+içinde soru sorabilirsiniz
+Python kodu satırları boyunca,
+45
+00:02:24,420 --> 00:02:28,890 eğer bu
+sorunun cevabı doğruysa devam edin
+
+46
+00:02:28,890 --> 00:02:30,760 ve bu
+kodu benim için yürütün.
+47
+00:02:30,760 --> 00:02:33,240 Öyleyse
+devam edelim ve bu örneklerden
+bazılarını buraya yazalım.
+
+Machine Translated by Google
+48
+
+00:02:33,240 --> 00:02:35,073 VS
+Koduna geçeceğim.
+49
+00:02:35,073 --> 00:02:36,990
+Ve devam edelim ve önce
+bir program oluşturalım,
+50
+00:02:36,990 --> 00:02:39,900,
+amacı basitçe
+
+51
+00:02:39,900 --> 00:02:44,980
+değerleri karşılaştıran ve bu değerlere göre
+kararlar veren kod yazmak için.
+52
+00:02:44,980 --> 00:02:47,400
+Devam edelim ve karşılaştırma.py
+kodunu yazalım,
+53
+00:02:47,400 --> 00:02:49,980
+karşılaştır adlı yepyeni bir dosya
+oluşturmak için,
+54
+00:02:49,980 --> 00:02:52,415
+burada bu mantığın bir kısmını
+ifade etmeye başlayacağız.
+55
+00:02:52,415 --> 00:02:53,790 Peki,
+neyi karşılaştırmak istiyoruz?
+56
+00:02:53,790 --> 00:02:56,130
+Tartışma uğruna karşılaştırmak
+istediğimizi varsayalım,
+57
+00:02:56,130 --> 00:02:57,540
+sadece birkaç tam sayı.
+58
+00:02:57,540 --> 00:03:00,210
+Ancak bu tam sayıların
+kullanıcıdan gelmesini isteriz,
+59
+00:03:00,210 --> 00:03:03,810
+
+Machine Translated by Google
+sayılara dayalı kararlar
+
+60
+00:03:03,810 --> 00:03:05,915
+değerlerini önceden bilmiyoruz.
+61
+00:03:05,915 --> 00:03:07,290
+Pekala, devam edelim ve şunu yapalım.
+62
+00:03:07,290 --> 00:03:10,350
+Geçmişte yaptığımız gibi, onu x
+gibi bir değişken ilan edelim.
+63
+00:03:10,350 --> 00:03:15,330
+Bunu int fonksiyonunun
+dönüş değerine eşit olarak atayalım,
+64
+00:03:15,330 --> 00:03:19,320 ve
+giriş fonksiyonunun dönüş
+değerini int fonksiyonuna iletin,
+65
+00:03:19,320 --> 00:03:22,680
+kullanıcıya x nedir, soru gibi bir
+soru sorma
+66
+00:03:22,680 --> 00:03:24,210,
+geçmişte yaptığımız gibi.
+67
+00:03:24,210 --> 00:03:29,490 Bunu
+y ile bir kez daha yapalım, kullanıcıdan
+y'nin değerini soralım.
+68
+00:03:29,490 --> 00:03:33,790 Ve
+yine, sonuçta bunu bir int'ye
+dönüştürmek.
+69
+00:03:33,790 --> 00:03:37,200
+Yani hikayenin bu miktarıyla iki
+değişkenimiz var, x ve y,
+70
+00:03:37,200 --> 00:03:38,622 her
+birinin değerleri vardır.
+71
+00:03:38,622 --> 00:03:41,080
+
+Machine Translated by Google
+Ve ideal olarak, şimdi bu değerleri
+karşılaştırabilmeliyiz.
+72
+00:03:41,080 --> 00:03:45,510 Bu
+değişkenlerin değerlerine dayanarak bir karar
+vermek istediğimi varsayalım.
+73
+00:03:45,510 --> 00:03:46,848 if
+anahtar sözcüğünü kullanacağım.
+74
+00:03:46,848 --> 00:03:49,140
+Ve bu matematiksel sembollerden
+bazılarını kullanacağım.
+75
+00:03:49,140 --> 00:03:51,100 soruyu
+gerçekten sormak için.
+76
+00:03:51,100 --> 00:03:55,860
+Buna ne dersin, x y'den küçükse,
+devam edelim ve
+77
+00:03:55,860 --> 00:03:56,940 kadar
+çıktı alın.
+78
+00:03:56,940 --> 00:03:59,700 Alıntı,
+alıntı yapılmayan x, y'den küçüktür.
+79
+00:03:59,700 --> 00:04:02,250 Yani bu
+henüz çok ilginç bir program değil.
+
+80
+00:04:02,250 --> 00:04:05,580
+Kelimenin tam anlamıyla matematiğe
+dayalı olarak bariz olanı söylüyorum.
+81
+00:04:05,580 --> 00:04:08,160 Ama
+şimdi yeni bir sözdizimi tanıtmama
+izin veriyor.
+82
+00:04:08,160 --> 00:04:10,020 Ve
+sözdizimi tam olarak nedir?
+83
+00:04:10,020 --> 00:04:12,990
+
+Machine Translated by Google
+Pekala, bu-- sadece
+
+eğer anahtar kelimesi değil, hangi
+84
+00:04:12,990 --> 00:04:15,180
+Dördüncü satırın başına
+buraya ekledim,
+85
+00:04:15,180 --> 00:04:18,450 ama
+sonra sorumu burada sordum, x
+y'den küçük.
+86
+00:04:18,450 --> 00:04:21,450 x solda
+bir değişken, y sağda bir değişkendir.
+
+87
+00:04:21,450 --> 00:04:24,570
+Ve elbette, daha az işareti matematiksel
+soruyu ifade ediyor
+88
+00:04:24,570 --> 00:04:25,200 bende.
+
+89
+00:04:25,200 --> 00:04:26,970
+Burada vurguladığım şey
+teknik olarak
+90
+00:04:26,970 --> 00:04:29,400 Boole
+ifadesi olarak adlandırılır.
+91
+00:04:29,400 --> 00:04:32,550
+Adını Bool adlı bir matematikçiden
+alan bir Boole ifadesi,
+92
+00:04:32,550 --> 00:04:36,870, evet
+veya hayır cevabı olan bir sorudur
+veya teknik olarak,
+93
+00:04:36,870 --> 00:04:38,760 doğru
+veya yanlış cevap.
+94
+00:04:38,760 --> 00:04:41,670
+Ve bu güzel çünkü sadece iki
+olası cevap varsa,
+
+Machine Translated by Google
+95
+
+00:04:41,670 --> 00:04:44,760 benim
+için çok kolay ve buna karşılık
+bilgisayar karar vermek-96
+00:04:44,760 --> 00:04:47,100 şunu
+yap ya da yapma.
+97
+00:04:47,100 --> 00:04:49,800
+Şimdi dikkat edin, eğer
+başka dillerden geliyorsanız,
+98
+00:04:49,800 --> 00:04:53,100
+Herhangi bir parantez yazmadığımı
+fark edebilirsiniz.
+99
+00:04:53,100 --> 00:04:56,190
+Aslında, en azından bu durumda
+Python'da gerekli değiller,
+100
+00:04:56,190 --> 00:04:58,980 ama
+satırın sonuna iki nokta üst üste
+yazdım.
+101
+00:04:58,980 --> 00:05:01,920
+Ve daha da önemlisi, bir sonraki
+satırda
+102
+00:05:01,920 --> 00:05:04,350
+Hattıma bazı girintilerle
+başladım,
+103
+00:05:04,350 --> 00:05:07,380 boşluk
+çubuğuna dört kez basmak veya
+sadece bir kez Tab'a basmak,
+104
+00:05:07,380 --> 00:05:09,660
+otomatik olarak aynı şekle
+dönüştürülecektir.
+105
+00:05:09,660 --> 00:05:13,980
+Bu girinti ne söyler
+Python bu satır beş yalnızca
+106
+
+Machine Translated by Google
+00:05:13,980 --> 00:05:20,260
+eğer dördüncü satırın sorusunun
+cevabı gerçekten doğruysa yürütülür.
+107
+00:05:20,260 --> 00:05:24,022
+Yani x, y'den küçükse, bu ifade
+daha sonra yazdırılacaktır.
+108
+00:05:24,022 --> 00:05:25,730
+Pekala, birkaç satır daha kod
+ekleyelim.
+109
+00:05:25,730 --> 00:05:26,855
+Başka bir soruya ne dersiniz?
+110
+00:05:26,855 --> 00:05:30,550 x,
+y'den büyükse, devam edelim ve
+bunu yazdıralım.
+111
+00:05:30,550 --> 00:05:33.010 x,
+y'den büyük.
+112
+00:05:33.010 --> 00:05:38,560 Ve
+son bir soru yapalım, eğer x eşittir y
+ise, o zaman-- bir dakika bekleyin.
+113
+00:05:38,560 --> 00:05:41,360
+Burada neyi yanlış yaptım?
+114
+00:05:41,360 --> 00:05:42,250 İyi
+bir göz.
+115
+00:05:42,250 --> 00:05:44,080 y'yi
+x'e atamak istemiyorum.
+116
+00:05:44,080 --> 00:05:48,430
+Eğer x eşittir y ise eşitliği böyle
+ifade ediyorum, devam edelim
+117
+00:05:48,430 --> 00:05:52,420 ve
+çıktısı x eşittir y.
+118
+00:05:52,420 --> 00:05:56,470
+
+Machine Translated by Google
+Şimdi üç şartım var,
+
+eğer istersen,
+119
+00:05:56,470 --> 00:05:59,935 x'in
+y'den küçük olduğu bir soru, x'in
+y'den büyük olduğu bir soru,
+120
+00:05:59,935 --> 00:06:02,860 x
+eşittir y diye soran biri.
+121
+00:06:02,860 --> 00:06:03,912 Kodu
+çalıştıralım.
+122
+00:06:03,912 --> 00:06:05,620
+Pekala, burada benim
+terminal penceremde
+123
+00:06:05,620 --> 00:06:08,320
+Compare.py'nin Python'unu
+çalıştıracak ve Enter'a basacaktır.
+124
+00:06:08,320 --> 00:06:09,190 x
+nedir?
+125
+00:06:09,190 --> 00:06:10.390 Bir
+tane ile başlayalım.
+126
+00:06:10,390 --> 00:06:11,140 y
+nedir?
+127
+00:06:11,140 --> 00:06:12,370 İki
+tane ile başlayalım.
+128
+00:06:12,370 --> 00:06:15,940
+Bu, elbette, o ilk kod
+satırını yürütmelidir.
+129
+00:06:15,940 --> 00:06:18,970 ve
+bana x'in y'den küçük olduğunu
+söyleyin.
+130
+00:06:18,970 --> 00:06:21.670 Tam
+olarak orada beklediğim gibi.
+
+Machine Translated by Google
+131
+00:06:21,670 --> 00:06:24,400 Peki,
+az önce kodda ne oldu?
+
+132
+00:06:24,400 --> 00:06:28,090
+Pekala, belki de aynı koda görsel
+olarak bir göz atalım,
+133
+00:06:28,090 --> 00:06:31,210
+özellikle daha görsel bir
+öğreniciyseniz, şunu söylemeye cüret ediyorum,
+134
+00:06:31,210 --> 00:06:32,500 az
+önce olan şey.
+135
+00:06:32,500 --> 00:06:34,840 Yani
+burada baktığımız şey bir akış
+şeması.
+136
+00:06:34,840 --> 00:06:37,900 Bu
+programın mantığının bir diyagramıdır.
+137
+00:06:37,900 --> 00:06:41,470 Ve
+daha teknik olarak, programın
+kontrol akışını gösterir.
+138
+00:06:41,470 --> 00:06:43,510
+Yani, kodda, kontrol
+etme yeteneğin
+139
+00:06:43,510 --> 00:06:46,210 Bir
+programın akışı, genellikle yukarıdan
+aşağıya.
+140
+00:06:46,210 --> 00:06:49,300
+Aslında, devam edip bu akış şemasının
+üst kısmını yakınlaştırayım.
+141
+00:06:49,300 --> 00:06:52,510 Ve en
+üstte kelimenin tam anlamıyla "başla"
+yazan bir oval göreceksiniz.
+142
+
+Machine Translated by Google
+
+00:06:52,510 --> 00:06:55,450
+
+Yani, şekli veya
+düzeni ne olursa olsun
+143
+00:06:55,450 --> 00:06:58,180
+diyagram, kendi düşünce ve
+mantığınızın olduğu yerdir
+144
+00:06:58,180 --> 00:07:01,460 bu
+programa kafa yormaya çalışırken
+başlamalıdır.
+145
+00:07:01,460 --> 00:07:04,480
+Baştan bu baklava şekline kadar
+bir ok olduğuna dikkat edin.
+146
+00:07:04,480 --> 00:07:07,450
+Ve o elmasın içinde bir soru, bir
+Boole ifadesi var,
+147
+00:07:07,450 --> 00:07:08,800 x
+y'den küçük.
+148
+00:07:08,800 --> 00:07:12,190
+Ve bu şekil sadece şu anlama
+geliyor, bu sorunun cevabına göre,
+149
+00:07:12,190 --> 00:07:14,140
+sola veya sağa gidin.
+150
+00:07:14,140 --> 00:07:16,690
+Özellikle, cevap
+doğruysa sola gidin,
+151
+00:07:16,690 --> 00:07:19,240
+veya cevap yanlışsa sağa gidin.
+152
+00:07:19,240 --> 00:07:24,460
+Yazdığım girdiler x ve y için sırasıyla
+bir ve iki idi.
+153
+00:07:24,460 --> 00:07:26,980
+Yani, elbette, bir, ikiden küçüktür.
+
+Machine Translated by Google
+154
+
+00:07:26,980 --> 00:07:32,530 İşte
+bu yüzden programım çıktı, alıntısız
+alıntı, x y'den küçük.
+155
+00:07:32,530 --> 00:07:34,120
+Ama kodu hatırla.
+156
+00:07:34,120 --> 00:07:37,270 Kod
+daha sonra iki soru daha sormaya
+devam etti.
+157
+00:07:37,270 --> 00:07:38,800 x,
+y'den büyük mü?
+158
+00:07:38,800 --> 00:07:40,570 x,
+y'ye eşit mi?
+159
+00:07:40,570 --> 00:07:43,570
+Akış şeması da bu soruları
+gösteriyor.
+160
+00:07:43,570 --> 00:07:46.090
+Dikkat edin, soru ne
+olursa olsun
+161
+00:07:46,090 --> 00:07:50,530
+doğru ya da yanlış bir yanıta
+sahipti, okların ikisi de aşağı doğru birleşiyor
+162
+00:07:50,530 --> 00:07:52.990
+buradaki ikinci elmas şekline.
+163
+00:07:52,990 --> 00:07:57.070 Ve
+ikinci elmas şekli ikinci soruyu soruyor,
+x y'den büyük.
+164
+00:07:57,070 --> 00:07:58,840
+Bunun da doğru veya yanlış bir cevabı var.
+165
+00:07:58,840 --> 00:08:00,560
+Yani öyle ya da böyle gidiyoruz.
+166
+
+Machine Translated by Google
+
+00:08:00,560 --> 00:08:04,600
+
+Ama eğer x bir ve y iki ise, o
+zaman hayır, cevap yanlıştır.
+167
+00:08:04,600 --> 00:08:06,190 Bir,
+y'den büyük değildir.
+168
+00:08:06,190 --> 00:08:09,430
+Mantıken, akış şemasında bu sefer
+yanlış oku takip ediyorsunuz.
+169
+00:08:09,430 --> 00:08:13,750 Ve
+dikkat edin, bu yanlış ok boyunca bu
+sefer hiçbir şey yazdırmıyorsunuz.
+170
+00:08:13,750 --> 00:08:16,067 Bu
+yüzden ekranda sadece bir çıktı
+gördük.
+171
+00:08:16,067 --> 00:08:17,650
+Şimdi, hâlâ üçüncü bir soru vardı.
+172
+00:08:17,650 --> 00:08:19,442 Ve
+bu akış şeması da bunu yakalıyor.
+
+173
+00:08:19,442 --> 00:08:22,480
+Üçüncü elmas x eşittir y'yi soruyor.
+
+174
+00:08:22,480 --> 00:08:25,720
+Şimdi bunun da bu durumda yanlış bir
+cevabı var, çünkü biri, elbette,
+175
+00:08:25,720 --> 00:08:27,250
+y'ye eşit değildir.
+176
+00:08:27,250 --> 00:08:30,830 Ve
+burada yine üçüncü yanlış dalı
+takip ediyoruz.
+177
+00:08:30,830 --> 00:08:32,890 Ve
+bu bizi elbette durmaya götürüyor.
+
+Machine Translated by Google
+178
+
+00:08:32,890 --> 00:08:35,659 Dur
+sadece program için bu kadar
+olduğunu gösterir.
+179
+00:08:35,659 --> 00:08:38,020 Bence
+bu doğru.
+180
+00:08:38,020 --> 00:08:40,780
+Ve bu belirli akış
+şeması gerçekleşir
+181
+00:08:40,780 --> 00:08:44,140
+yazdığım asıl kodu temsil etmek
+için.
+182
+00:08:44,140 --> 00:08:45,220 Yani
+doğru.
+183
+00:08:45,220 --> 00:08:46,690
+Yapması gerekeni yapar.
+184
+00:08:46,690 --> 00:08:50,290 x'i
+y'den küçük ekrana yazdırarak soruyu
+doğru yanıtladı.
+185
+00:08:50,290 --> 00:08:53,803 Ama
+belki de bu konuda kötü tasarlanmış
+olan nedir?
+186
+00:08:53,803 --> 00:08:55,220 Bu ilk
+ayrımı yapalım.
+187
+00:08:55,220 --> 00:08:56,770
+Kod için mutlaka
+yeterli değil
+188
+00:08:56,770 --> 00:08:58,937 doğru
+olmak için yazdığınızı ve niyet
+ettiğinizi yaptığınızı.
+189
+00:08:58,937 --> 00:09:02,270
+Daha uzun vadeli, özellikle programlarımız
+daha uzun ve daha karmaşık hale geldikçe,
+
+Machine Translated by Google
+190
+00:09:02,270 --> 00:09:06,910 daha
+karmaşık, onların da iyi tasarlanmış
+olmasını isteyeceğiz.
+191
+00:09:06,910 --> 00:09:12,610
+Bu programın ne şekilde iyi tasarlanmadığına
+dair düşünceler,
+192
+00:09:12,610 --> 00:09:15,230
+doğru olsa bile mi?
+193
+00:09:15,230 --> 00:09:16,300
+Buraya bir bakalım.
+194
+00:09:16,300 --> 00:09:18,880
+Khalid, doğru söylüyorsam
+düşünceleriniz?
+195
+00:09:18,880 --> 00:09:21,730
+KHALID: Bence çok fazla ifs kendini
+tekrar ediyor.
+196
+00:09:21,730 --> 00:09:23,930 Belki
+kodumuzu daha özlü hale
+getirebiliriz.
+197
+00:09:23,930 --> 00:09:25,930
+DAVID MALAN: Evet, biraz tekrara
+benziyor.
+198
+00:09:25,930 --> 00:09:28,692 Şu
+mu, bu mu, bu mu diye soruyorum.
+199
+00:09:28,692 --> 00:09:31,900
+Yine de, mantıksal olarak, bu sonraki
+soruların bazılarının cevabını bilmeliyim.
+200
+00:09:31,900 --> 00:09:33,040
+birini çözdüğümde.
+201
+00:09:33,040 --> 00:09:35,350
+Ve kısaca, eğer
+
+Machine Translated by Google
+buradaki şemaya bakın,
+202
+00:09:35,350 --> 00:09:38,650
+Sola giderim ya da sağa giderim,
+
+203
+00:09:38,650 --> 00:09:41,110 Her
+zaman üç soru soruyorum.
+204
+00:09:41,110 --> 00:09:45,230
+Ne olursa olsun, tüm bu oklar birinciye,
+ikinciye çıkıyor,
+205
+00:09:45,230 --> 00:09:46,480 ve
+üçüncü elmas.
+206
+00:09:46,480 --> 00:09:49,810
+Bu yüzden, bu cevaplardan herhangi
+biri olsun ya da olmasın, üç soru soruyorum.
+
+207
+00:09:49,810 --> 00:09:50,862 doğru
+veya yanlış.
+208
+00:09:50,862 --> 00:09:52,570 Peki
+bunu nasıl iyileştirebilirim?
+
+209
+00:09:52,570 --> 00:09:55,240
+Pekala, başka bir anahtar
+kelime tanıtmayı önermeme izin verin
+210
+00:09:55,240 --> 00:09:57,760
+Python sözlüğümüze, yani elif.
+211
+00:09:57,760 --> 00:09:59,830 Ve
+bu da kısa ve öz.
+
+212
+00:09:59,830 --> 00:10:02,770
+İngilizce'de else if'nin
+bir birleşimidir,
+213
+00:10:02,770 --> 00:10:07,960
+
+Machine Translated by Google
+olup olmadığını dikkate alan bir soru
+sormamıza izin verir.
+214
+00:10:07,960 --> 00:10:10,840 önceki
+bir sorunun doğru veya yanlış yanıtı
+vardı.
+215
+00:10:10,840 --> 00:10:12,110 Peki,
+bununla ne demek istiyorum?
+216
+00:10:12,110 --> 00:10:13,810 Peki,
+buradaki koduma geri döneyim.
+217
+00:10:13,810 --> 00:10:17,830
+Ve şimdi bunu geliştirmemizi
+önermeme izin verin, burada,
+218
+00:10:17,830 --> 00:10:22,360
+Sonunda kendimize nasıl daha az
+soru sorabiliriz?
+219
+00:10:22,360 --> 00:10:24,460
+Ve burada devam edeyim
+ve şunu önereyim
+220
+00:10:24,460 --> 00:10:30,700 olur
+mu, olur mu, olur mu diye sormak yerine,
+bu koşulları potansiyel olarak karşılıklı yapalım
+221
+00:10:30,700 --> 00:10:31,700 özel.
+
+222
+00:10:31,700 --> 00:10:35,920
+Yani, geri döndüğümüzde
+soruları yanıtlamaya devam etmeyin.
+223
+00:10:35,920 --> 00:10:37,220 doğru
+bir cevap.
+224
+00:10:37,220 --> 00:10:39,440 Bu
+yüzden buradaki kodumu aşağıdaki
+gibi değiştireceğim.
+225
+
+Machine Translated by Google
+00:10:39,440 --> 00:10:45,160
+
+Eğer x y'den küçükse, eğer, eğer,
+eğer diye sormak yerine, elif x diyeceğim.
+226
+00:10:45,160 --> 00:10:50,140 y'den
+büyük, elif x eşittir y.
+227
+00:10:50,140 --> 00:10:52,780
+Bu yüzden örtük olarak, tıpkı
+bir İngiliz gibi,
+228
+00:10:52,780 --> 00:10:57,520 sadece
+kendime bu soruları sormaya devam
+edeceğimi hesaba kat
+229
+00:10:57,520 --> 00:11:00,340 henüz
+gerçek bir yanıt almadıysam.
+230
+00:11:00,340 --> 00:11:02,080
+Buradaki mantığı düşünün, İngiliz.
+231
+00:11:02,080 --> 00:11:07,660 x
+y'den küçükse, dördüncü satırda
+x'in y'den küçük çıktısını alın.
+232
+00:11:07,660 --> 00:11:10,300 Eğer
+durum buysa, mantıksal olarak işiniz
+bitti demektir.
+233
+00:11:10,300 --> 00:11:15,670
+Çünkü eğer İngilizler eğer x y'den küçükse,
+aksi takdirde x y'den büyükse diyorsa,
+234
+00:11:15,670 --> 00:11:19,030 ilk
+sorunun cevabı varsa bunlar birbirini dışlayacak
+
+235
+00:11:19,030 --> 00:11:19,625
+doğrudur.
+236
+00:11:19,625 --> 00:11:22,750
+Mantıken zaten bildiğiniz soruları sormaya
+devam etmek zorunda değilsiniz.
+
+Machine Translated by Google
+237
+
+00:11:22,750 --> 00:11:23,570 cevap.
+
+238
+00:11:23,570 --> 00:11:25,418 Şimdi
+devam edeyim ve bu programı
+çalıştırayım.
+239
+00:11:25,418 --> 00:11:27,460 Ve
+bence davranış aynı olacak.
+
+240
+00:11:27,460 --> 00:11:29,710
+Compare.py'nin Python'u, x nedir?
+241
+00:11:29,710 --> 00:11:30,550 Hadi
+bir tane yapalım.
+242
+00:11:30,550 --> 00:11:31,210 y nedir?
+
+243
+00:11:31,210 --> 00:11:32,400 İki tane
+yapalım.
+244
+00:11:32,400 --> 00:11:33,910 x, y'den
+küçüktür.
+245
+00:11:33,910 --> 00:11:37,330 Şimdi,
+dürüst olmak gerekirse, programı
+çalıştırdığımda pek bir fark görmedim.
+246
+00:11:37,330 --> 00:11:41,020
+Ve dürüst olmak gerekirse, Mac'im, benim
+
+PC, bugünlerde telefonum,
+247
+00:11:41,020 --> 00:11:44,020 o kadar
+hızlı ki bu tür iyileştirmeler
+
+248
+00:11:44,020 --> 00:11:47,110
+kendimizi daha hızlı hissetmeyeceğiz.
+
+249
+
+Machine Translated by Google
+
+00:11:47,110 --> 00:11:49,300 daha
+
+büyük, daha hızlı programlar yazmak.
+250
+00:11:49,300 --> 00:11:52,640 Ancak
+daha uzun vadeli daha iyi kod
+yazmanın temelini atıyor.
+251
+00:11:52,640 --> 00:11:54,640 Şimdi
+yaptığım iyileştirme nedir?
+
+252
+00:11:54,640 --> 00:11:57,650
+Peki, daha önce diyagramım
+böyle görünüyorsa,
+253
+00:11:57,650 --> 00:12:02,740 ne
+olursa olsun üç soru sorduğum için
+sorunluydu
+254
+00:12:02,740 --> 00:12:06,280 ne,
+ekrana ne yazdırmak istediğimi çoktan
+bulmuş olsam bile.
+255
+00:12:06,280 --> 00:12:10,720
+Eğer elif, elif diyen programın bu yeni
+versiyonu şöyle görünebilir:
+256
+00:12:10,720 --> 00:12:12,460 bunun
+yerine küçük bir şey.
+257
+00:12:12,460 --> 00:12:13,630 Şimdi
+biraz daha genişledi.
+258
+00:12:13,630 --> 00:12:16,390 Bunun
+nedeni okları burada biraz daha
+geniş olacak şekilde çizmiş olmamız.
+259
+00:12:16,390 --> 00:12:19,030 Ama
+şimdi kaç soru sorulacağına
+odaklanalım.
+260
+00:12:19,030 --> 00:12:20,950 Daha
+önce olduğu gibi yukarıya yakınlaştırayım.
+
+Machine Translated by Google
+261
+
+00:12:20,950 --> 00:12:25,030
+Ve başlangıç ovalinin en üstte olduğunu
+not etmemizi önermeme izin verin,
+262
+00:12:25,030 --> 00:12:27,400 ve
+bizden önce bir soru sormamızı
+istiyor.
+263
+00:12:27,400 --> 00:12:29,980 x
+y'den küçük, bir ikiden az mı?
+264
+00:12:29,980 --> 00:12:33,400
+Ama burada dikkat edin, eğer gerçekten
+daha az ise, uzaklaştırmama izin verin.
+
+265
+00:12:33,400 --> 00:12:39,550 ikiden
+fazla, doğru olarak işaretlenmiş bu
+uzun aşağı oku takip ederiz.
+266
+00:12:39,550 --> 00:12:42,580 Alıntı
+yazdırıyoruz, alıntıdan çıkarma x
+y'den küçük.
+267
+00:12:42,580 --> 00:12:48,160 Ama
+sonra hemen sonraki oku, dur yazan simgeye
+kadar takip ederiz.
+268
+00:12:48,160 --> 00:12:51,670 Yani
+if, elif, elif yapmanın anlamı bu.
+
+269
+00:12:51,670 --> 00:12:55,210
+İlk önce buna doğru bir cevap
+alırsak,
+270
+00:12:55,210 --> 00:12:57,700 x'in
+y'den küçük olduğunu yazdıracağız
+ve sonra duracağız.
+271
+00:12:57,700 --> 00:12:59,870
+Mantıksal olarak programın sonuna
+geldik.
+272
+
+Machine Translated by Google
+00:12:59,870 --> 00:13:03,190
+
+Yani bu resim sadece
+grafiksel olarak temsil ediyor,
+273
+00:13:03,190 --> 00:13:05,650
+kodun gerçekte ne yaptığı.
+274
+00:13:05,650 --> 00:13:07,330 Ama
+başka bir şey yazdığımı varsayalım.
+275
+00:13:07,330 --> 00:13:13,450
+Kodumun gerçekten çalıştığını ve x için iki,
+y için bir yazdığımı varsayalım.
+276
+00:13:13,450 --> 00:13:16,430 Yani,
+ilk sorunun cevabı artık yanlış.
+
+277
+00:13:16,430 --> 00:13:19,000 Ama
+ikinci sorunun cevabı şimdi doğru.
+
+278
+00:13:19,000 --> 00:13:23,340
+Çünkü elbette iki birden büyüktür.
+
+279
+00:13:23,340 --> 00:13:25,240 Peki,
+şemaya geri dönelim.
+280
+00:13:25,240 --> 00:13:28,570
+Daha önce olduğu gibi, en tepeden
+başlıyoruz, diyor.
+281
+00:13:28,570 --> 00:13:33,520
+Buradaki ilk soru, şimdi, x y'den az,
+yanlışın bir cevabıdır,
+282
+00:13:33,520 --> 00:13:35,950
+çünkü hayır, iki birden az değildir.
+283
+00:13:35,950 --> 00:13:39,190 Bu
+oku takip ederek bir sonraki
+soruya, bu elmasa geçiyoruz.
+
+Machine Translated by Google
+284
+
+00:13:39,190 --> 00:13:40,840 x,
+y'den büyük mü?
+285
+00:13:40,840 --> 00:13:43,660
+Evet, iki birden büyüktür.
+286
+00:13:43,660 --> 00:13:47,510
+Şimdi doğru olan bu sol oku takip
+ediyoruz.
+287
+00:13:47,510 --> 00:13:52,250
+Alıntı yazdırıyoruz, alıntıyı kaldırma
+x, y'den büyüktür ve sonra durur.
+288
+00:13:52,250 --> 00:13:53,530 Peki
+gelişme nedir?
+289
+00:13:53,530 --> 00:13:55,810
+İlk durumda, şanslıydık
+ve sadece
+290
+00:13:55,810 --> 00:13:58,090 bir
+soru sormak zorunda kaldık ve
+bum, işimiz bitti.
+291
+00:13:58,090 --> 00:14:01,420 Bu
+sefer iki soru sormamız
+gerekiyordu ama sonra bom, işimiz bitti.
+292
+00:14:01,420 --> 00:14:07,390
+Yalnızca x, y'ye eşit olursa, mantıksal
+olarak kendimizi gerçekten buluruz,
+293
+00:14:07,390 --> 00:14:11,620
+kodumdaki bu son elif'e kadar.
+
+294
+00:14:11,620 --> 00:14:14,830
+Ve resimsel olarak,
+sadece x, y'ye eşitse yap
+295
+00:14:14,830 --> 00:14:17,980
+
+Machine Translated by Google
+üçüncü elmasa kadar,
+296
+00:14:17,980 --> 00:14:23,020
+üçüncü soru, y'ye eşit mi değil
+mi?
+297
+00:14:23,020 --> 00:14:25,850
+Şimdi, umarım, bu noktada cevap
+yanlış değildir.
+298
+00:14:25,850 --> 00:14:28,953
+Programın kendisinin olması
+için yanlış bir ok ekledik.
+299
+00:14:28,953 --> 00:14:29,620 iyi
+tanımlanmış.
+300
+00:14:29,620 --> 00:14:33,520
+Ama mantıksal olarak, aslında
+oraya zaten varmamalıyız,
+301
+00:14:33,520 --> 00:14:37,242
+çünkü bu durumda daha küçük veya
+daha büyük veya buna eşit olmalıdır.
+302
+00:14:37,242 --> 00:14:38,950
+Peki, burada
+durayım mı diye görmek için
+303
+00:14:38,950 --> 00:14:42,340
+herhangi bir soru, şimdi, ya
+burada kod versiyonunda,
+304
+00:14:42,340 --> 00:14:47.090
+veya aynı mantığın bu
+diyagramında.
+305
+00:14:47,090 --> 00:14:52,130 Bu
+kontrol akışıyla ilgili sorularınız mı var?
+306
+00:14:52,130 --> 00:14:55,872
+KONUŞMACI 1: Sonuna başka bir
+şey koymamız gerekmiyor mu?
+
+Machine Translated by Google
+307
+
+00:14:55,872 --> 00:14:57,080
+DAVID MALAN: Güzel bir soru.
+308
+00:14:57,080 --> 00:15:00,103 Ve
+evet-- bu benim üçüncü ve son
+yaklaşımım olacak.
+309
+00:15:00,103 --> 00:15:02,270
+Sakıncası yoksa hemen oraya
+dönelim.
+310
+00:15:02,270 --> 00:15:04,820
+Gerçekten var olan
+üçüncü bir anahtar kelimeyi belirlemek
+
+311
+00:15:04,820 --> 00:15:09,020
+Python'da bu, bu mantığı ifade
+etmede daha da iyi olmamızı sağlar
+312
+00:15:09,020 --> 00:15:10,950 bu
+programı daha da iyi tasarlamak için.
+313
+00:15:10,950 --> 00:15:13,560 Ve
+bu belirli bir sorunu çözecek.
+
+314
+00:15:13,560 --> 00:15:16,820
+Bu yüzden bizi buradaki
+kodumuza geri götürürsem, dikkat edin
+
+315
+00:15:16,820 --> 00:15:20,750 daha
+önce vurguladığım şey, elif x eşittir
+y.
+316
+00:15:20,750 --> 00:15:23,180 Bu
+soruyu sormak yanlış değil.
+317
+00:15:23,180 --> 00:15:25,730
+Aslında, özellikle titiz
+olmaya çalışıyorsanız,
+318
+00:15:25,730 --> 00:15:29,660 olup
+olmadığını kontrol etmek çok mantıklı
+
+Machine Translated by Google
+x, y'den küçük, y'den büyük,
+319
+00:15:29,660 --> 00:15:31,010 veya
+y'ye eşit.
+320
+00:15:31,010 --> 00:15:37,280 Ama
+neden bu üçüncü ve son soruyu
+sormama gerek yok?
+321
+00:15:37,280 --> 00:15:42,080
+KONUŞMACI 2: Artık x'in y'ye eşit olup olmadığını
+sormamıza gerek yok çünkü mantıksal olarak,
+322
+00:15:42,080 --> 00:15:45,320 iki
+koşul yanlış olarak değerlendirilirse,
+
+323
+00:15:45,320 --> 00:15:50,250 true
+olarak değerlendirilecek yalnızca bir
+koşul vardır.
+324
+00:15:50,250 --> 00:15:51,885 Ve bu
+x eşittir y.
+325
+00:15:51,885 --> 00:15:52.760 DAVID
+MALAN: Kesinlikle.
+326
+00:15:52,760 --> 00:15:55,250
+Hepimiz matematik ve
+karşılaştırmalar konusunda oldukça rahatsak
+327
+00:15:55,250 --> 00:15:58,820 burada,
+tabii ki x ya y'den küçük, y'den büyük
+olacak,
+328
+00:15:58,820 --> 00:15:59,750 veya
+y'ye eşittir.
+329
+00:15:59,750 --> 00:16:02,150
+Ama ilk iki senaryoyu bir
+kez elerseniz,
+330
+00:16:02,150 --> 00:16:05,270
+
+Machine Translated by Google
+mantıksal olarak, x'in y'ye
+eşit olması gerektiği gibi olmalı.
+331
+00:16:05,270 --> 00:16:08,060 Durum
+böyle değilse, küçüktür veya
+büyüktür.
+332
+00:16:08,060 --> 00:16:11,220 Bu
+yüzden Hope bu diğer anahtar
+sözcüğü kullanmamızı önerdi, else.
+333
+00:16:11,220 --> 00:16:12,210 Peki
+bunu nasıl kullanırız?
+334
+00:16:12,210 --> 00:16:13,752 Tam
+olarak İngilizce'de olabileceğimiz gibi.
+335
+00:16:13,752 --> 00:16:15,110
+Burada koduma geri döneyim.
+336
+00:16:15,110 --> 00:16:18,830
+Üçüncü ve son soruyu sorma
+zahmetine katlanmak yerine,
+337
+00:16:18,830 --> 00:16:20,330 hiç
+soru sormayalım.
+338
+00:16:20,330 --> 00:16:24,630 Haydi
+bu her şeyi ele alalım. tabiri caizse,
+yazan son bir kod satırı,
+339
+00:16:24,630 --> 00:16:27,830 yoksa
+x'in y'ye eşit olduğunu varsayalım.
+340
+00:16:27,830 --> 00:16:29,682 Bu
+nedenle, onu da yazdırın.
+341
+00:16:29,682 --> 00:16:30,890 Peki
+bunun iyi tarafı ne?
+342
+00:16:30,890 --> 00:16:33,570 Kodum
+yine aynı şekilde çalışacak.
+
+Machine Translated by Google
+343
+00:16:33,570 --> 00:16:35,690
+Ve yine, bilgisayarım çok hızlı,
+ben
+344
+00:16:35,690 --> 00:16:39,480
+eskisinden daha hızlı çalıştığının farkına
+bile varma.
+345
+00:16:39,480 --> 00:16:41,210
+Ama bu tür şeyleri fark
+ederdik
+346
+00:16:41,210 --> 00:16:44,210 Burada
+çok daha fazla iş, çok daha büyük
+programlar yapıyor olsaydık.
+347
+00:16:44,210 --> 00:16:46,400 Ancak
+Python'u karşılaştırma.py çalıştırmama izin verin.
+
+348
+00:16:46,400 --> 00:16:49,670
+Örneğin, bir ve iki yapalım.
+349
+00:16:49,670 --> 00:16:50,720 Hala
+bunun için çalışıyor.
+350
+00:16:50,720 --> 00:16:52,460 İki ve
+bir yapalım.
+351
+00:16:52,460 --> 00:16:53,630 Hala
+bunun için çalışıyor.
+352
+00:16:53,630 --> 00:16:55,340 Bir ve
+bir yapalım.
+353
+00:16:55,340 --> 00:16:57,540 Ve
+gerçekten de şimdi bunun için çalışıyor.
+354
+00:16:57,540 --> 00:17:01,370 Ama
+şimdi bu durumlarda, az önce
+gittiğimiz yolu düşünelim.
+355
+
+Machine Translated by Google
+00:17:01,370 --> 00:17:05,900
+
+Daha önce diyagramımız, if, elif,
+elif yerlerindeyken,
+356
+00:17:05,900 --> 00:17:07,920 biraz
+buna benziyordu.
+357
+00:17:07,920 --> 00:17:11,990
+Ve dikkat edin, başladılar, bir veya iki
+soru sormuş olabiliriz,
+358
+00:17:11,990 --> 00:17:13,910 veya
+en kötü durum, üç tam soru.
+359
+00:17:13,910 --> 00:17:17,329
+Ancak Hope'un önerdiği gibi else
+kullanarak bundan daha iyisini yapabiliriz,
+
+360
+00:17:17,329 --> 00:17:19,582
+Şimdi bu diyagramı şuna kadar
+yontabiliriz.
+361
+00:17:19,582 --> 00:17:22,040
+Ve diyagram büyüyor gibi
+görünse de,
+362
+00:17:22,040 --> 00:17:25,730
+içinde daha az yapı taşı olduğuna
+dikkat edin.
+363
+00:17:25,730 --> 00:17:29,240 Bu
+resimde daha az ok ve daha az
+düğüm var.
+364
+00:17:29,240 --> 00:17:30,620
+Şimdi en baştan başlayalım.
+365
+00:17:30,620 --> 00:17:34,160
+Başlangıç bizi yine de ilk soruya
+götürüyor. x y'den küçük mü?
+366
+00:17:34,160 --> 00:17:35,600
+Cevap doğruysa, harika.
+
+Machine Translated by Google
+367
+
+00:17:35,600 --> 00:17:38,420 x'in
+y'den küçük olduğunu söyleyebiliriz
+ve durabiliriz.
+368
+00:17:38,420 --> 00:17:41,450 Doğru
+değilse, yanlışsa sıradaki soruyu
+sorabiliriz.
+369
+00:17:41,450 --> 00:17:43.820 x
+y'den büyük, doğru mu yanlış mı?
+370
+00:17:43,820 --> 00:17:44,840 Eğer
+öyleyse, harika.
+371
+00:17:44,840 --> 00:17:47,270 x'in
+y'den büyük olduğunu yazdırabilir
+ve durabiliriz.
+372
+00:17:47,270 --> 00:17:51,510 Aksi
+takdirde, x'in y'den büyük olması
+söz konusu değilse, cevap yanlıştır.
+373
+00:17:51,510 --> 00:17:56,060
+Hemen, mantıksal olarak, x eşittir y
+diyebiliriz.
+374
+00:17:56,060 --> 00:17:58,610
+Üçüncü soruyu hiç eklemek zorunda
+değiliz.
+375
+00:17:58,610 --> 00:18:00,740 Orada
+hemen sonuca varabiliriz.
+376
+00:18:00,740 --> 00:18:02,150 Peki
+burada ne anlama geliyor?
+377
+00:18:02,150 --> 00:18:05,180
+Bu resimlerle göreli bir
+düşüş görebilirsiniz.
+378
+00:18:05,180 --> 00:18:07,140 bir
+programın karmaşıklığında.
+
+Machine Translated by Google
+379
+
+00:18:07,140 --> 00:18:10.670
+İlki çok uzun ve uzundu, çok soru vardı.
+
+380
+00:18:10,670 --> 00:18:12,283
+gereksiz yere, nihayetinde.
+381
+00:18:12,283 --> 00:18:13,700 Bir
+sonraki biraz kısaldı.
+382
+00:18:13,700 --> 00:18:15,560 Ve
+bu daha da kısa.
+383
+00:18:15,560 --> 00:18:19,280
+Ve yine, sahip olduğunuz daha
+az kod satırı, daha az olası
+384
+00:18:19,280 --> 00:18:21,400
+Muhtemelen herhangi bir hata yapacaksınız.
+385
+00:18:21,400 --> 00:18:23,150
+Diğer insanların okuması o kadar
+kolay olur.
+386
+00:18:23,150 --> 00:18:26,930
+Ve genel olarak, bu
+okunabilirlik, bu sadeleştirme,
+387
+00:18:26,930 --> 00:18:28,760
+gerçekten de iyi bir şey.
+388
+00:18:28,760 --> 00:18:33,200
+Pekala, devam edelim ve Python'a
+başka bir yetenek parçası ekleyelim,
+389
+00:18:33,200 --> 00:18:34,400 ve
+buradaki bu.
+390
+00:18:34,400 --> 00:18:37,730
+Tıpkı İngilizce'de olduğu gibi, bu soruyu
+veya diğer soruyu sorabilirsiniz,
+391
+
+Machine Translated by Google
+
+00:18:37,730 --> 00:18:41.540 Python'da
+
+kelimenin tam anlamıyla bu veya
+kelimesini kullanarak aynı şeyi söyleyebilirsiniz.
+
+392
+00:18:41,540 --> 00:18:44,540 O
+halde burada Python koduma geri
+döneyim.
+393
+00:18:44,540 --> 00:18:47,150
+Ve hadi birkaç soruyu nasıl
+sorabileceğimizi önerelim.
+394
+00:18:47,150 --> 00:18:51,860 bu
+sefer bir kerede, belki bu sefer nasıl
+sormayacağımızı düşünürsek
+395
+00:18:51,860 --> 00:18:54,050 büyük
+veya eşit olsun ya da olmasın,
+
+396
+00:18:54,050 --> 00:18:56,070 ve
+kesin cevabı önemsemek.
+397
+00:18:56,070 --> 00:18:58,190 Burada
+daha kaba bir yaklaşımı ele alalım.
+398
+00:18:58,190 --> 00:19:04,730 Ve x'in
+y'ye eşit olup olmadığını belirlemeye
+çalışalım.
+399
+00:19:04,730 --> 00:19:06,980
+Pekala, devam edeyim ve bu
+kodun bir kısmını sileyim
+400
+00:19:06,980 --> 00:19:08,540 ve
+sorduğumuz soruyu değiştirin.
+401
+00:19:08,540 --> 00:19:12,290
+Bunu yapmama izin ver-- peki, eğer
+eşit olup olmadığını umursuyorsam,
+402
+00:19:12,290 --> 00:19:14,060 olası
+senaryoları kontrol edelim.
+
+Machine Translated by Google
+403
+
+00:19:14,060 --> 00:19:19,850
+x, y'den küçük veya x, y'den
+büyükse, devam edelim
+404
+00:19:19,850 --> 00:19:23,840 ve
+çıktısı x, y'ye eşit değil.
+405
+00:19:23,840 --> 00:19:26,240 Şimdi
+neden bu, herhangi bir kelime oyunu amaçlanmadı?
+
+406
+00:19:26,240 --> 00:19:29,240 Eğer
+x, y'den küçükse, açıkçası eşit
+değildir.
+407
+00:19:29,240 --> 00:19:31,730 x,
+y'den büyükse, açıkça eşit değildir.
+
+408
+00:19:31,730 --> 00:19:35,840 Yani
+x'in y'ye eşit olmadığı sonucuna varabiliriz.
+409
+00:19:35,840 --> 00:19:41,180
+Yani, bunun yerine, eşit
+olduğundan emin olmak istersek,
+410
+00:19:41,180 --> 00:19:47,940 sadece
+Hope'un başkasını kullanabiliriz, tırnak
+işareti kullanarak alıntıyı kaldır x eşittir y.
+411
+00:19:47,940 --> 00:19:49,410 Ve
+yine, bu neden?
+412
+00:19:49,410 --> 00:19:52,470
+Peki, x y'den küçükse
+veya x y'den büyükse,
+413
+00:19:52,470 --> 00:19:53,820
+kesinlikle eşit değiller.
+414
+00:19:53,820 --> 00:19:56,580 Aksi
+takdirde, mantıksal olarak, aslında
+eşit olmaları gerekir.
+
+Machine Translated by Google
+415
+
+00:19:56,580 --> 00:19:57,390 Şimdi
+bunu çalıştıralım.
+416
+00:19:57,390 --> 00:19:59,565
+Devam edelim ve Python'u
+karşılaştırma.py çalıştıralım.
+417
+00:19:59,565 --> 00:20:00,240 x
+nedir?
+418
+00:20:00,240 --> 00:20:00,930 Bir.
+
+419
+00:20:00,930 --> 00:20:01,560 y
+nedir?
+420
+00:20:01,560 --> 00:20:02,250 İki.
+
+421
+00:20:02,250 --> 00:20:03,960
+Tamam, x, y'ye eşit değil.
+422
+00:20:03,960 --> 00:20:08,550
+Tekrar yapalım, x için iki, y için bir
+tane koyalım. x, y'ye eşit değil.
+423
+00:20:08,550 --> 00:20:12,450 Ve
+üçüncü kez, x'in bir ve y'nin bir
+olmasına ne dersiniz?
+424
+00:20:12,450 --> 00:20:14,760 x
+artık y'ye eşit.
+425
+00:20:14,760 --> 00:20:17,610
+Şimdi bunu görsel olarak da
+karşılaştırmak istersek,
+426
+00:20:17,610 --> 00:20:20.980 İzin
+ver de resmin biraz böyle
+göründüğünü söylememe izin ver.
+427
+00:20:20.980 --> 00:20:23.340
+
+Machine Translated by Google
+Ve yine, bu mantıksal
+olarak tamamen aynı şeydir,
+428
+00:20:23,340 --> 00:20:25,197
+ama bu onun resimli bir temsilidir.
+
+429
+00:20:25,197 --> 00:20:26,280 İlk
+soru nedir?
+430
+00:20:26,280 --> 00:20:30,900
+Eğer x, y'den küçükse, o zaman
+gerçek oku izleriz.
+431
+00:20:30,900 --> 00:20:33,840 Ve
+alıntı diyoruz, alıntıyı kaldır x y'ye
+eşit değil.
+432
+00:20:33,840 --> 00:20:35,280 Ve
+sonra dururuz.
+433
+00:20:35,280 --> 00:20:37,623 Peki
+ya x, y'den küçük değilse?
+434
+00:20:37,623 --> 00:20:38,790 Ya
+y'den büyükse?
+435
+00:20:38,790 --> 00:20:40,800
+Sırasıyla iki ve bir ise?
+436
+00:20:40,800 --> 00:20:44,590 O
+halde x'in y'den küçük olduğu ilk
+sorunun cevabı yanlıştır.
+437
+00:20:44,590 --> 00:20:45,480 O halde
+buraya gidiyoruz.
+
+438
+00:20:45,480 --> 00:20:48,720
+İkinci soruyu soruyoruz, çünkü
+veya,
+439
+00:20:48,720 --> 00:20:51,060 ve bu,
+x'in y'den büyük olup olmadığını soruyor.
+
+Machine Translated by Google
+440
+00:20:51,060 --> 00:20:55,830
+Eğer öyleyse, şuna dikkat edin, bu resmin aynı
+kısımlarından bazılarını yeniden kullanabiliriz,
+441
+00:20:55,830 --> 00:20:58,260 ve
+sadece x'in y'ye eşit olmadığını söyleyin.
+442
+00:20:58,260 --> 00:21:01,020 Okları
+ve reklam kutularını gereksiz yere
+eklememize gerek yok.
+443
+00:21:01,020 --> 00:21:06,480 Tıpkı
+kod satırlarımız olduğu gibi, kod satırlarını,
+resmin bölümlerini yeniden kullanabiliriz.
+444
+00:21:06,480 --> 00:21:07,620 Ve
+sonra dururuz.
+445
+00:21:07,620 --> 00:21:09,780 Son
+olarak, aşağıdakilere sahibiz.
+446
+00:21:09,780 --> 00:21:12,300
+x'in y'den küçük
+olmadığını biliyorsak, biliriz
+447
+00:21:12,300 --> 00:21:16,080 x'in
+y'den büyük olmaması durumunda
+x'in y'ye eşit olması gerekir.
+448
+00:21:16,080 --> 00:21:18,900 Üçüncü
+bir soru sormamıza gerek yok, başka
+bir elmas.
+449
+00:21:18,900 --> 00:21:24.000 Hemen
+o kadarını yazdırabilir ve sonra dur
+diyebiliriz.
+450
+00:21:24.000 --> 00:21:25,710 Peki,
+burada ne yapabilirim?
+451
+00:21:25,710 --> 00:21:28,560
+Bahse girerim geliştirebilirim
+
+Machine Translated by Google
+bu kod biraz.
+452
+00:21:28,560 --> 00:21:31,440
+Ve eğer gerçekten titiz
+olmak istiyorsak,
+453
+00:21:31,440 --> 00:21:34,800 bunun
+artık gerçekten sadece küçük bir
+iyileştirme olduğunu iddia ediyor,
+
+454
+00:21:34,800 --> 00:21:37,410
+ama düşünmeye başlamak iyi bir
+alışkanlıktır.
+455
+00:21:37,410 --> 00:21:38,760
+Kodum daha iyi olabilir mi?
+456
+00:21:38,760 --> 00:21:41,100
+Kodum daha basit olabilir mi?
+457
+00:21:41,100 --> 00:21:43,740 Bu
+kodu daha da geliştirebilir miyim?
+458
+00:21:43,740 --> 00:21:47,160 Çok
+ince ama tasarımı iyileştirebilir
+miyim?
+459
+00:21:47,160 --> 00:21:48,960
+Daha az soru sorabilir miyim?
+460
+00:21:48,960 --> 00:21:52,460
+Deyim yerindeyse sıkılaştırabilir miyim?
+461
+00:21:52,460 --> 00:21:54,280
+İnsanlar ne düşünüyor?
+
+462
+00:21:54,280 --> 00:21:58,060
+KONUŞMACI 3: x eşittir y mi diye
+sorabilirsiniz.
+463
+00:21:58,060 --> 00:22:03,625 O
+zaman x eşittir y yazdırırsanız x
+eşittir y değildir.
+
+Machine Translated by Google
+464
+00:22:03,625 --> 00:22:04,500 DAVID
+MALAN: Mükemmel.
+465
+00:22:04,500 --> 00:22:07,560 Daha
+önce mevcut listede gördüğümüz diğer
+sembollerden birini hatırlayın.
+466
+00:22:07,560 --> 00:22:10.680 Daha
+küçük, daha büyük veya eşit olarak
+kontrol edemeyiz.
+467
+00:22:10.680 --> 00:22:13.410
+Kelimenin tam anlamıyla şu soruyu
+sorabiliriz, eşittir değil mi?
+468
+00:22:13,410 --> 00:22:17,400 Küçük
+mü yoksa büyük mü diye sormak için neden
+zaman harcıyoruz?
+469
+00:22:17,400 --> 00:22:21,100 Tek
+umursadığın şey eşit olmamasıysa, bence
+tam olarak bunu yapabiliriz.
+470
+00:22:21,100 --> 00:22:24,610 Sadece
+önemsediğimiz basit bir soruyu
+soralım.
+471
+00:22:24,610 --> 00:22:25,950 O
+yüzden buraya geri dönmeme izin verin.
+472
+00:22:25,950 --> 00:22:29,580 Ve bu
+soruların ikisini de söylememe izin verin,
+ya da'dan kurtulalım.
+473
+00:22:29,580 --> 00:22:33,840
+Diyelim ki x, y'ye eşit
+değilse, o zaman gidelim
+474
+00:22:33,840 --> 00:22:36,510 ileride
+ve x yazdır, y'ye eşit değil.
+475
+00:22:36,510 --> 00:22:39,190
+
+Machine Translated by Google
+Ve bence bu da tamamen
+aynı şekilde çalışacak.
+476
+00:22:39,190 --> 00:22:41.980 Ancak
+resim şimdi biraz farklı görünüyor.
+
+477
+00:22:41,980 --> 00:22:44,190
+Bunun daha önceki akış
+şemamız olduğuna dikkat edin,
+
+Aynı
+mantığı temsil eden 478 00:22:44,190
+--> 00:22:45,947.
+479
+00:22:45,947 --> 00:22:47,280 Ve
+biraz karmaşıklık var.
+480
+00:22:47,280 --> 00:22:48,690
+Sola gitmelisin, sağa
+gitmelisin,
+481
+00:22:48,690 --> 00:22:50,732 bu
+birkaç sorunun cevabına göre.
+
+482
+00:22:50,732 --> 00:22:53,820
+Şimdi programın bu versiyonunun neye
+benzediğini hesaba katarsak,
+483
+00:22:53,820 --> 00:22:56,820 daha
+da basit, belki de şimdiye kadar
+gördüğümüz en basit olanı.
+484
+00:22:56,820 --> 00:23:00,330
+Programı başlattığımızda, sadece bir ve
+sadece bir soru soruyoruz,
+485
+00:23:00,330 --> 00:23:02,040 x, y'ye
+eşit değil mi?
+486
+00:23:02,040 --> 00:23:06,930 Ve
+eğer öyleyse, doğru, devam edip
+x'in y'ye eşit olmadığını yazdırıyoruz.
+
+Machine Translated by Google
+487
+
+00:23:06,930 --> 00:23:10,350
+Cevap yanlışsa, elbette, y'ye eşit
+olmalıdır,
+488
+00:23:10,350 --> 00:23:12.040 onun
+yerine bunu söylüyoruz.
+489
+00:23:12,040 --> 00:23:14,070 Ve
+gerçekten istersek bunu tersine
+çevirebiliriz.
+490
+00:23:14,070 --> 00:23:17.080
+Koduma geri dönersem ve
+herhangi bir nedenle,
+491
+00:23:17,080 --> 00:23:20.730 sadece
+eşit ya da eşit olmayan terimleriyle
+düşünmeyi tercih edersiniz,
+492
+00:23:20.730 --> 00:23:25,270 eşit
+veya eşit değil, tamamen size kalmış.
+
+493
+00:23:25,270 --> 00:23:27,900 Bunu
+eşittir eşittir olarak değiştirebiliriz.
+
+494
+00:23:27,900 --> 00:23:32.020 Ama
+baskı ifadelerimi ters sırada olacak şekilde
+değiştirmem gerekecek.
+495
+00:23:32.020 --> 00:23:34,890
+Şimdi devam edeyim ve bu
+ikisini burada tersine çevirelim,
+496
+00:23:34,890 --> 00:23:38,950 ve
+ikinciyi önce ve birinciyi saniye
+hareket ettirin.
+497
+00:23:38,950 --> 00:23:42,240 Şimdi,
+bu kodu çalıştırdığımda hala tek bir soru
+soruyorum.
+498
+
+Machine Translated by Google
+00:23:42,240 --> 00:23:44,550
+Yani hala aynı derecede iyi,
+kısa ve öz.
+
+499
+00:23:44,550 --> 00:23:47,070
+Ama şimdi diyagram, böyle
+görünmek yerine,
+500
+00:23:47,070 --> 00:23:50,310
+eşit olmayanı eşitle değiştirecek.
+
+501 00:23:50,310 -->
+00:23:54,400 Ve buna göre doğru
+olanı yazdırdığımızdan emin olmamız gerekiyor.
+502
+00:23:54,400 --> 00:23:57,990
+Ve yine, burada da, kod biraz daha
+kompakt hale gelirken, biraz
+503
+00:23:57,990 --> 00:24:00,330
+daha az ve daha az karakterle
+daha kompakt,
+504
+00:24:00,330 --> 00:24:05,460
+bu diyagramlar da öyle, bu akış
+şemaları göreli basitleştirmeyi gösteriyor
+505
+00:24:05,460 --> 00:24:08,040
+da bu programların her biri.
+506
+00:24:08,040 --> 00:24:11,610
+Şimdi devam edeyim ve burada herhangi bir
+soru olup olmadığını görmek için burada durayım.
+
+507
+00:24:11,610 --> 00:24:13,140
+bu kod sürümlerinden.
+508
+00:24:13,140 --> 00:24:16,530
+509
+00:24:16,530 --> 00:24:19,150
+KONUŞMACI 4: Evet, birkaç
+sorum var.
+
+Machine Translated by Google
+510
+00:24:19,150 --> 00:24:22,380
+Girinti kullanılmazsa ne olur?
+511
+00:24:22,380 --> 00:24:25,600
+DAVID MALAN: Girinti kullanılmadığı
+takdirde programınız çalışmayacaktır.
+512
+00:24:25,600 --> 00:24:28,080
+Yani Python bir çok
+şeyden biraz farklı
+513
+00:24:28,080 --> 00:24:32,100
+dil, girinti gereksinimini zorunlu
+kılar.
+514
+00:24:32,100 --> 00:24:34,080
+Bazılarınız yıllardır
+programlama yapıyor
+515
+00:24:34,080 --> 00:24:37,800,
+kodunuzu doğru bir şekilde
+girintileme alışkanlığına sahip olmayabilir.
+516
+00:24:37,800 --> 00:24:40,170
+Ve muhtemelen Python'un
+özelliklerinden biri
+517
+00:24:40,170 --> 00:24:44,850
+kodunuzu girintili hale
+getirmenizdir, yoksa sadece çalışmaz.
+518
+00:24:44,850 --> 00:24:47,460
+Sanırım başka bir sorunuz var
+mıydı?
+519
+00:24:47,460 --> 00:24:50,820
+KONUŞMACI 4: Evet, kolon gerekli mi?
+520
+00:24:50,820 --> 00:24:52,530
+DAVID MALAN: Kolon gerekli mi?
+521
+00:24:52,530 --> 00:24:55,150
+
+Machine Translated by Google
+Evet, kolon da gereklidir.
+522
+00:24:55,150 --> 00:24:57,960 Python
+ile, burada ne görüyorsanız onu
+alırsınız.
+523
+00:24:57,960 --> 00:25:01,020 Ve
+gerçekten de girintili olması gerekiyor
+ve iki nokta üst üste gerekli.
+524
+00:25:01,020 --> 00:25:05,670
+Python, C ve C++ ve Java ile aynı şekilde
+kullanmaz,
+525
+00:25:05,670 --> 00:25:07,410 blokları
+birleştirmek için küme parantezleri.
+526
+00:25:07,410 --> 00:25:10.680 Bunun
+yerine, gerçekten de bu girintiye
+dayanır.
+527
+00:25:10.680 --> 00:25:14.490
+Pekala, burada Python'da başka bir anahtar
+kelime tanıtmayı önermeme izin verin,
+528
+00:25:14,490 --> 00:25:17,310 ek
+düşünceleri nasıl birleştirebileceğimizi
+tam olarak görmek için.
+529
+00:25:17,310 --> 00:25:20.490
+Ve bu kelimenin tam anlamıyla
+kelime olacak ve birin birleşimi,
+530
+00:25:20,490 --> 00:25:24,690 veya
+bir kerede sormak isteyebileceğimiz
+iki veya daha fazla soru.
+531
+00:25:24,690 --> 00:25:28,650
+Ve burada, bu tür bir mantığı
+keşfetmemizi önermeme izin verin.
+532
+00:25:28,650 --> 00:25:32,400
+tamamen başka bir program yoluyla, VS
+Kodunda, şimdi devam edeceğim
+
+Machine Translated by Google
+
+533
+00:25:32,400 --> 00:25:35,760
+ve grade.py adında yeni bir
+program oluşturun.
+534
+00:25:35,760 --> 00:25:38,160
+Bir öğrencinin tam olarak hangi
+notu alması gerektiğini düşünelim,
+
+535
+00:25:38,160 --> 00:25:40,950
+bir sınav, test veya kısa
+sınavdaki puanlarına göre,
+536
+00:25:40,950 --> 00:25:42,900
+veya buna benzer başka bir atama.
+537
+00:25:42,900 --> 00:25:46,513
+Kendime yeni bir dosya vermek
+içingrade.py kodunu çalıştıracağım.
+538
+00:25:46,513 --> 00:25:49,680
+Ve devam edeceğim ve tekrar
+kullanıcının puanını alarak başlayacağım,
+539
+00:25:49,680 --> 00:25:51,700
+bazı ödevler, testler veya
+benzerleri için.
+540
+00:25:51,700 --> 00:25:55,200
+Ve onu skor adında bir
+değişkende saklayacağım, getiriye eşit
+541
+00:25:55,200 --> 00:25:58,320
+Kullanıcının istediği her şeyi
+dönüştürecek olan int işlevinin değeri
+542
+00:25:58,320 --> 00:26:00,610
+bu puan istendiğinde giriş yapılır.
+543
+00:26:00,610 --> 00:26:04,650
+Yani yine, kullanıcı bana sıfır veya
+bir gibi bir sayı vererek mecbur olmalı,
+544
+
+Machine Translated by Google
+
+00:26:04,650 --> 00:26:09,090 veya
+
+iki veya umarım bundan çok daha
+yüksek, 97, 98, 99, 100 gibi,
+545
+00:26:09,090 --> 00:26:13,330
+testin veya değerlendirmenin 100
+puan üzerinden olduğu varsayılarak.
+546
+00:26:13,330 --> 00:26:17,220
+Şimdi, öğrencinin puanına nasıl bir not
+verebilirim?
+547
+00:26:17,220 --> 00:26:19,710
+ABD'de, bu çok
+yaygın bir durum
+548
+00:26:19,710 --> 00:26:22,500 90
+ile 100 arasında alırsanız, bu A olur.
+
+549
+00:26:22,500 --> 00:26:29,160 80
+ile 89 arasındaysa, B'dir. 70 ile 79
+arasındaysa, C'dir,
+550
+00:26:29,160 --> 00:26:32,558 ve
+benzeri, E olması gereken F'ye
+kadar,
+551
+00:26:32,558 --> 00:26:34,350 ama
+biraz sıçrama olduğunu göreceğiz.
+
+552
+00:26:34,350 --> 00:26:35,572 Peki
+bunu nasıl ifade edebilirim?
+553
+00:26:35,572 --> 00:26:36,780 Şey,
+koşul cümlelerini kullanabilirim.
+554
+00:26:36,780 --> 00:26:39,750
+Birkaç soru sorabilir ve ardından
+öğrencinin notunu yazdırabilirim.
+555
+00:26:39,750 --> 00:26:40,600 buna
+göre.
+
+Machine Translated by Google
+556
+00:26:40,600 --> 00:26:44,040
+Öğrencinin puanı ise şöyle
+ifade edeyim.
+557
+00:26:44,040 --> 00:26:47,820 90'a
+eşit veya daha büyük ve öğrencinin
+puanı
+558
+00:26:47,820 --> 00:26:51,750
+100'den küçük veya 100'e eşit,
+yani bu aralıkta, devam edelim
+559
+00:26:51,750 --> 00:26:55,980 ve
+notlarının A olacağını yazdırın.
+90'larda oldukları için,
+560
+00:26:55,980 --> 00:26:58,080
+kalite aralığının üzerinde.
+561
+00:26:58,080 --> 00:27:02,580 elif
+puan 80'den büyük veya eşitse,
+
+562
+00:27:02,580 --> 00:27:07,980 ve
+puan, diyelim ki 89'dan küçük veya ona
+eşit, ama burada bazı seçeneklerim var.
+563
+00:27:07,980 --> 00:27:11,050
+Mantıksal olarak, aslında kendimi
+herhangi bir şekilde ifade edebilirim.
+564
+00:27:11,050 --> 00:27:12,800
+Ve belki biraz daha
+temiz olmak için, ben
+565
+00:27:12,800 --> 00:27:15,060
+puanın 90'dan az olduğunu söyleyecek.
+566
+00:27:15,060 --> 00:27:18,300
+Yani, küçüktür veya eşittir yerine
+daha az kullanıyorum.
+567
+
+Machine Translated by Google
+00:27:18,300 --> 00:27:21.690 Bu
+yüzden bu sınıflar arasındaki sınırların doğru
+olduğundan emin oluyorum.
+568
+00:27:21,690 --> 00:27:26,460 Sonra
+devam edeceğim ve öğrenciye 80'lerdeyse B
+vereceğim.
+569
+00:27:26,460 --> 00:27:31.770 elif
+puanı 70'e eşit veya daha büyük ve puan
+80'den küçük,
+570
+00:27:31,770 --> 00:27:34,851 Devam
+edeceğim ve onlara C vereceğim.
+571
+00:27:34,851 --> 00:27:40,380 elif puan
+60'a eşit veya daha büyük ve puan 70'den
+küçük,
+572
+00:27:40,380 --> 00:27:43.080 Devam
+edeceğim ve ona bir D vereceğim. İşte
+burada
+573
+00:27:43,080 --> 00:27:46,380 burada
+biraz anormal, en azından buradaki
+bazı okullarda, yoksa
+574
+00:27:46,380 --> 00:27:51,060 Devam
+edeceğim ve onlara bir F vereceğim. Yani E'yi
+tamamen atlıyoruz,
+575
+00:27:51,060 --> 00:27:53,760 ve
+bunun yerine not için bir F vereceğiz.
+
+576
+00:27:53,760 --> 00:27:55,080 Demek
+bütün mesele bu.
+577
+00:27:55,080 --> 00:27:58,020
+Ve bence, mantıksal olarak,
+Bunu doğru anladım,
+578
+00:27:58,020 --> 00:28:00,360 en
+azından bulunduğum yere göre
+
+Machine Translated by Google
+büyürken okula gitti,
+579
+00:28:00,360 --> 00:28:03,950 öyle ki
+bir A veya B veya C veya D verecek,
+
+580
+00:28:03,950 --> 00:28:06,512 yoksa
+F aldığınızı varsayacaktır.
+
+581
+00:28:06,512 --> 00:28:08,220 Pekala,
+hadi burada bunlardan birkaçını
+deneyelim.
+582
+00:28:08,220 --> 00:28:10,260
+Grad.py'nin Python'unu çalıştıralım.
+583
+00:28:10,260 --> 00:28:13,650 Puanım,
+hadi güçlü başlayalım, 100.
+584
+00:28:13,650 --> 00:28:17,040 A aldım.
+Bir dahaki sefer pek iyi olmadı, belki
+95-585
+00:28:17,040 --> 00:28:21,270 hala A.
+Daha fazla kaymaya başladım, bu
+yüzden bir dahaki sefere 89 aldım.
+586
+00:28:21,270 --> 00:28:25,320 Bu
+şimdi, diyelim ki bir B. Diyelim ki
+gerçekten kötü bir hafta geçirdim,
+587
+00:28:25,320 --> 00:28:27,030 ve
+şimdi 71.
+588
+00:28:27,030 --> 00:28:31,830 Bu
+artık bir C. Veya hiç göndermedim bile, bu
+tamamen F.
+589
+00:28:31,830 --> 00:28:32.940 Yani
+işe yarıyor gibi görünüyor.
+590
+00:28:32,940 --> 00:28:35,070
+
+Machine Translated by Google
+Bu gerçekten kapsamlı
+bir test değil, ama en azından
+591
+00:28:35,070 --> 00:28:38,810
+oradaki bazı örneklemelere göre kodum
+beklediğim gibi çalışıyor.
+592
+00:28:38,810 --> 00:28:40,560 Ama
+bakalım bunu sıkılaştıramayacak
+mıyız.
+593
+00:28:40,560 --> 00:28:41,220 Yanlış
+değil.
+594
+00:28:41,220 --> 00:28:42,070 Doğru.
+
+595
+00:28:42,070 --> 00:28:44,070
+Ve gerçekten de, kendi
+özelliklerime göre,
+596
+00:28:44,070 --> 00:28:45,510 Bu kodun
+doğru olduğunu söylemeye cüret ediyorum.
+
+597
+00:28:45,510 --> 00:28:46,710 Ama
+sıkılaştırabilir miyiz?
+598
+00:28:46,710 --> 00:28:50,500 Hata
+olasılığını şimdi mi yoksa ileride mi
+azaltabiliriz?
+599
+00:28:50,500 --> 00:28:52,230
+Okunabilirliğini artırabilir miyiz?
+600
+00:28:52,230 --> 00:28:54,030 Ve
+bunun verimliliğini artırabilir miyiz?
+
+601
+00:28:54,030 --> 00:28:57,690
+Bilgisayarın daha az soruya
+cevap vermesini sağlayabilir miyiz?
+602
+00:28:57,690 --> 00:28:59,375
+
+Machine Translated by Google
+ve hala aynı sonucu alıyor musunuz?
+
+603
+00:28:59,375 --> 00:29:00,750 Peki,
+ne yapabileceğimize bir bakalım.
+604
+00:29:00,750 --> 00:29:03,690
+Sadece yapabileceğimizi göstermek
+için bir şeyleri değiştirmeme izin verin.
+605
+00:29:03,690 --> 00:29:05,760 bu
+sembolleri farklı şekillerde kullanır.
+606
+00:29:05,760 --> 00:29:10,200
+Yaptığım gibi, eğer puan 90'dan büyük
+veya ona eşitse söyleyebilirim.
+607
+00:29:10,200 --> 00:29:12,570 Ama
+bunu gerçekten yapabilirim, tersine
+çevirebilirim.
+608
+00:29:12,570 --> 00:29:14,800
+Daha büyük veya
+eşittir demek yerine,
+609
+00:29:14,800 --> 00:29:19,060 diyelim
+ki 90 puana eşit veya küçük.
+
+610
+00:29:19,060 --> 00:29:23,980 Ve
+burada, 80'in puandan küçük veya
+eşit olup olmadığını varsayalım.
+611
+00:29:23,980 --> 00:29:28,180 Ve
+burada 70, puana eşit veya küçüktür.
+
+612
+00:29:28,180 --> 00:29:31,390 Ve son
+olarak, 60, puana eşit veya küçüktür.
+
+613
+00:29:31,390 --> 00:29:33,370 Yani
+mantıksal olarak aynı şey.
+614
+
+Machine Translated by Google
+00:29:33,370 --> 00:29:36,460
+Ben sadece bir şeyleri değiştiriyorum,
+tıpkı senin kağıt kalemde yapabileceğin gibi
+615
+00:29:36,460 --> 00:29:37,670 eğer
+gerçekten istiyorsan.
+616
+00:29:37.670 --> 00:29:39,200 Ama
+şimdi bu numaraya dikkat edin.
+617
+00:29:39,200 --> 00:29:42,460
+Ve bu mümkün değil, C veya C++ ile
+programlamış olanlarınız için,
+618
+00:29:42,460 --> 00:29:44,320 veya
+Java veya diğer diller.
+619
+00:29:44,320 --> 00:29:48,760 Burada
+yapabileceğim şeyin aslında bu
+aralıkları birleştirmek olduğuna dikkat edin.
+
+620
+00:29:48,760 --> 00:29:52,000 İki
+soru sorduğuma dikkat edin, iki
+Boole ifadesi.
+621
+00:29:52,000 --> 00:29:57,250 90
+puana eşit mi yoksa küçük mü ve puan
+100'e eşit mi küçük mü?
+622
+00:29:57,250 --> 00:30:01,150
+Python, bu şeyleri şöyle
+yerleştirmenize izin verir,
+623
+00:30:01,150 --> 00:30:02,680 ve
+birbirine zincirleyin.
+624
+00:30:02,680 --> 00:30:06,070
+Ve tıpkı gerçek dünyada kağıt
+kalem üzerinde yapacağınız gibi,
+625
+00:30:06,070 --> 00:30:09,732
+Python'da kodlayabilirsin, bunu yap, bu
+biraz daha temiz.
+
+Machine Translated by Google
+626
+00:30:09,732 --> 00:30:11,440
+Kodu biraz daha sıkılaştırıyor.
+
+627
+00:30:11,440 --> 00:30:12,550
+Daha az tuş vuruşu.
+628
+00:30:12,550 --> 00:30:13,660
+Yazmak daha hızlıdır.
+629
+00:30:13,660 --> 00:30:15,530
+Okuması daha kolay, ilerleyerek.
+630
+00:30:15,530 --> 00:30:18,140
+Yani bu muhtemelen daha iyi.
+631
+00:30:18,140 --> 00:30:19,450
+Yani bu bir gelişme.
+632
+00:30:19,450 --> 00:30:21,422 Bu
+durumda büyük ölçüde estetik.
+633
+00:30:21,422 --> 00:30:23,380
+Hala aynı sayıda
+soru soruyor,
+634
+00:30:23,380 --> 00:30:26,950
+ama yine de biraz daha özlü
+yapıyor.
+635
+00:30:26,950 --> 00:30:29,500 Pekala,
+bundan sonra burada daha ne yapabilirim?
+
+636
+00:30:29,500 --> 00:30:30,730
+Biliyor musun?
+637
+00:30:30,730 --> 00:30:32.920
+Bu notlara her karar
+verdiğimde,
+638
+00:30:32,920 --> 00:30:34,940
+sanırım iki soru sormam gerekiyor.
+
+Machine Translated by Google
+
+639
+00:30:34,940 --> 00:30:38,290
+Sormama gerek yok, 90'dan
+büyük ve 100'den küçük mü?
+640
+00:30:38,290 --> 00:30:40,840
+80'den büyük ve 90'dan küçük mü?
+641
+00:30:40,840 --> 00:30:45.070
+Mantığımı yeniden düşünürsem,
+belki bunu daha da iyi yapabilirim.
+642
+00:30:45,070 --> 00:30:48,920 Bunu
+daha da basitleştirmemizi ve sadece
+bunu yapmamızı önermeme izin verin.
+
+643
+00:30:48,920 --> 00:30:53,260
+Şu an için girdinin 0 ile 100 arasında
+olacağını biliyorsak,
+644
+00:30:53,260 --> 00:30:54,730
+bazı varsayımlarda bulunabiliriz.
+645
+00:30:54,730 --> 00:30:58,870
+Puan 90'dan büyük veya eşitse
+şöyle bir şey söyleyebiliriz,
+646
+00:30:58,870 --> 00:31:04,150
+peki, öğrenci A. elif puanı 80'e eşit
+veya daha büyükse,
+647
+00:31:04,150 --> 00:31:08,110
+öğrenci B. elif puanı 70 veya
+daha büyükse,
+648
+00:31:08,110 --> 00:31:13,930
+C. elif puanı 60'tan büyük veya
+eşitse,
+649
+00:31:13,930 --> 00:31:19,940
+D alırlar, yoksa F alırlar. Peki
+ben burada ne yaptım?
+650
+
+Machine Translated by Google
+00:31:19,940 --> 00:31:23,200
+
+Her seferinde iki soru
+sormak yerine,
+651
+00:31:23,200 --> 00:31:26,320 bu
+aralığın alt sınırlarını ve üst sınırını
+kontrol etmek,
+652
+00:31:26,320 --> 00:31:31,030
+Skorun 90'dan büyük olup olmadığını
+sorarak biraz daha akıllı davrandım,
+653
+00:31:31,030 --> 00:31:33.430, belli
+ki A veya daha iyi bir not almışlar.
+
+654
+00:31:33,430 --> 00:31:36,070
+Puanınız 80'den büyükse,
+siz de
+655
+00:31:36.070 --> 00:31:40,750
+gerçekten güçlüyse A'yı, 80'in biraz
+üzerindeyse B'yi hak eder.
+656
+00:31:40,750 --> 00:31:44,680
+Ama elif mantığından
+dolayı zaten kontrol ettik.
+657
+00:31:44,680 --> 00:31:46,450
+öğrencinin puanı 90'dan büyük mü?
+658
+00:31:46,450 --> 00:31:50,020 Ve
+değilse, o zaman şu soruyu soruyoruz:
+80'den büyük mü?
+659
+00:31:50,020 --> 00:31:54,220
+Yani örtük olarak 80 ila 89
+aralığında bir yerde olduğunu biliyorsun,
+660
+00:31:54,220 --> 00:31:58,780 70
+ila 79 aralığında olduğunu biliyorsun,
+yoksa sonraki aralıkta
+661
+00:31:58,780 --> 00:31:59,350
+
+Machine Translated by Google
+aşağı.
+662
+00:31:59,350 --> 00:32:02,950 Yani
+daha az soru sormamızı sağlayan
+küçük bir optimizasyon.
+663
+00:32:02,950 --> 00:32:05,980
+Ama yine de, kodu tartışmalı bir
+şekilde biraz daha okunabilir hale getiriyor,
+664
+00:32:05,980 --> 00:32:09,580
+kesinlikle daha kısa ve o zaman,
+umarım, daha sürdürülebilir
+665
+00:32:09,580 --> 00:32:10,600 daha
+uzun vadeli.
+666
+00:32:10,600 --> 00:32:15,890
+Bu tür değişikliklerle ilgili
+herhangi bir sorunuz varsa,
+667
+00:32:15,890 --> 00:32:20,200 ve
+kodumuzla bu tür bir mantık mı?
+668
+00:32:20,200 --> 00:32:22,120
+KONUŞMACI 4: Ya elif kullanmazsak?
+
+669
+00:32:22,120 --> 00:32:25,345 Kodu if
+olarak yazarsak ne olur?
+670
+00:32:25,345 --> 00:32:27,220
+DAVID MALAN: Evet, bu iyi bir
+soru,
+671
+00:32:27,220 --> 00:32:31,360 çünkü
+burada aslında istenmeyen bir etkisi
+olacak.
+672
+00:32:31,360 --> 00:32:33,340
+Bırak kurtulayım
+F geçici olarak ve sadece
+673
+
+Machine Translated by Google
+
+00:32:33,340 --> 00:32:36,460 A'dan
+D'ye odaklanın.
+
+nereye dönersek
+
+674
+00:32:36,460 --> 00:32:39,190
+Bugünkü hikayeye koşullu
+cümlelerle başladık, eğer öyleyse,
+675
+00:32:39,190 --> 00:32:45,070 eğer, eğer,
+eğer, şimdi burada daha geniş vuruşlar
+kullanma konusundaki akıllılığımız
+
+676
+00:32:45,070 --> 00:32:47,680 ve
+bir üst ve alt sınır aralığı
+kullanmamak
+677
+00:32:47,680 --> 00:32:51,010 bir
+dezavantaj olarak geri dönecek.
+678
+00:32:51,010 --> 00:32:53,320
+Devam edeyim ve Python'u
+grade.py ile çalıştırayım.
+679
+00:32:53,320 --> 00:32:56,560 Ve
+puanımın 95 olduğunu varsayalım.
+680
+00:32:56,560 --> 00:32:58,120 Çok
+heyecanlıyım.
+681
+00:32:58,120 --> 00:33:00,520 A'mı
+istiyorum ama hayır.
+682
+00:33:00,520 --> 00:33:06,040 Az
+önce A, B, C ve D aldım.
+Mantıken, bunlar bozuk şeyler.
+683
+00:33:06,040 --> 00:33:09,220
+Çünkü bu koşulları birbirini
+dışlamazsanız,
+684
+00:33:09,220 --> 00:33:13,540 Bu
+soruların her biri sorulacak ve dolayısıyla
+cevaplanacak.
+
+Machine Translated by Google
+685
+
+00:33:13,540 --> 00:33:16,720
+Ve notun 90'ın üzerinde
+olsa bile,
+686
+00:33:16,720 --> 00:33:20,140
+ayrıca mantıksal olarak 80'in üstü,
+70'in üstü, 60'ın üstü,
+687
+00:33:20,140 --> 00:33:23,580 ve
+eğer onu orada tutsaydım, ben de
+bir F ile başarısız olurdum.
+688
+00:33:23,580 --> 00:33:24,920
+Gerçekten güzel bir soru.
+689
+00:33:24,920 --> 00:33:28,690 Bu
+mantık biçimiyle ilgili başka
+sorular mı var?
+690
+00:33:28,690 --> 00:33:30,940
+KONUŞMACI 5: Temizlemenin
+daha iyi bir yolu var mı?
+691
+00:33:30,940 --> 00:33:33,130
+Daha önce yaptığımız gibi sadece
+bu basit ifade bile,
+692
+00:33:33,130 --> 00:33:36,280
+önceki elif ile olan?
+
+693
+00:33:36,280 --> 00:33:40,270
+DAVID MALAN: İşleri daha da basitleştirme
+hevesinizi seviyorum.
+694
+00:33:40,270 --> 00:33:45,010
+Burada bir uzvun dışına çıkacağım ve bunun
+olabileceği kadar iyi olduğunu söyleyeceğim,
+
+695
+00:33:45,010 --> 00:33:48.070 en
+azından sadece koşullu ifadeler
+kullanarak.
+696
+
+Machine Translated by Google
+00:33:48,070 --> 00:33:52,390
+
+Aklım karışırsa, biraz daha akıllıca
+bir yol düşünebilirim.
+697
+00:33:52,390 --> 00:33:54,490
+bunu yapmak için, belki döngü
+denen bir şeyle,
+698
+00:33:54,490 --> 00:33:55,902 veya
+başka bir programlama yapısı.
+699
+00:33:55,902 --> 00:33:57,610
+Henüz kelime dağarcığımızda bu
+yok.
+700
+00:33:57,610 --> 00:33:59,610 Ama
+evet, bunu yapmanın kesinlikle
+başka yolları var.
+701
+00:33:59,610 --> 00:34:01,780
+Ama sanırım henüz
+kendimizi kısıtlamak istiyorsak
+702
+00:34:01,780 --> 00:34:07,120
+sadece if, ve veya, ve başka ve elif,
+ve ve ve benzeri kelimelere.
+703
+00:34:07,120 --> 00:34:10,810
+Pekala, şimdi burada başka bir yaklaşım
+kullanmak için dönmeyi önermeme izin verin.
+
+704
+00:34:10,810 --> 00:34:12,800
+şimdiye kadar başka bir sembol
+kullanan,
+705
+00:34:12,800 --> 00:34:14.409
+gerçekten kullanma fırsatımız olmadı.
+706
+00:34:14,409 --> 00:34:18.580
+Parite adını vereceğimiz bir programı
+uygulamamızı önermeme izin verin.
+707
+00:34:18,580 --> 00:34:22,460
+Matematikte, parite başvurabilir
+
+Machine Translated by Google
+
+bir sayının çift mi yoksa tek mi olduğu ile ilgili.
+
+708
+00:34:22,460 --> 00:34:24,530 Ve bu
+biraz ilginç bir soru.
+
+709
+00:34:24,530 --> 00:34:26,863
+Ve diğer uygulamalarda faydalı
+olabileceği ortaya çıktı,
+710
+00:34:26,863 --> 00:34:29,770 de,
+sadece soruyu sormak için verilen bir
+sayının çift mi yoksa tek mi olduğunu,
+711
+00:34:29,770 --> 00:34:31,300 kullanıcı
+yazmış olabilir mi?
+712
+00:34:31,300 --> 00:34:33,670
+Ve devam edeyim ve yeni
+bir program yazayım
+713
+00:34:33,670 --> 00:34:38,800,
+terminalimdeki parity.py kodu
+aracılığıyla parity.py olarak adlandırılır.
+714
+00:34:38,800 --> 00:34:41.560
+Ve bunu bir fırsat olarak
+kullanmamızı önermeme izin verin.
+715
+00:34:41.560 --> 00:34:45,190 bu
+aritmetik sembollerin sonuncusunu
+tanıtmak için,
+716
+00:34:45,190 --> 00:34:48,800 en
+azından çoğuna aşina olduğumuz,
+toplama, çıkarma,
+717
+00:34:48,800 --> 00:34:49,900 çarpma,
+bölme.
+718
+00:34:49,900 --> 00:34:53,317 Ama bu
+listede daha önce vardı, bu sonuncusu
+burada, yüzde işareti.
+
+Machine Translated by Google
+719
+
+00:34:53,317 --> 00:34:55,150
+Ve bu durumda yüzde
+anlamına gelmez,
+720
+00:34:55,150 --> 00:34:57,850
+Python'da programlamada
+operatör olarak kullanıldığında.
+721
+00:34:57,850 --> 00:35:01,000
+Bunun yerine, sözde
+modulo operatörünü temsil eder,
+722
+00:35:01,000 --> 00:35:02,260
+modüler aritmetik için.
+723
+00:35:02,260 --> 00:35:05,710
+Ya da en azından bizim durumumuzda, ne
+zaman kalanı hesaplamak için kullanacağız?
+
+724
+00:35:05,710 --> 00:35:07,930 bir
+sayıyı diğerine bölme.
+725
+00:35:07,930 --> 00:35:09,140
+Peki, bununla ne demek istiyorum?
+726
+00:35:09,140 --> 00:35:12,070
+Bir bölü üç gibi bir sayı
+alırsanız,
+727
+00:35:12,070 --> 00:35:14,840 üçü
+bire tam olarak girmez.
+728
+00:35:14,840 --> 00:35:16,690
+Yani bir tane kaldı.
+729
+00:35:16,690 --> 00:35:20,140 İki
+bölü üç, kalan ikidir.
+
+730
+00:35:20,140 --> 00:35:24,550 Üç
+bölü üç, temiz bir şekilde bölündüğü için
+kalan sıfıra sahiptir.
+
+Machine Translated by Google
+731
+
+00:35:24,550 --> 00:35:30,088
+Dört bölü üç, bir kalana sahiptir, çünkü
+onu bir kereye bölebilirsiniz,
+732
+00:35:30,088 --> 00:35:32,380
+ama sonra bir tane bırakır,
+yani geriye bir tane kalır.
+733
+00:35:32,380 --> 00:35:35,692
+Ve son olarak, beş bölü üç
+gibi bir şey
+734
+00:35:35,692 --> 00:35:37,150,
+elbette, ikidir.
+735
+00:35:37,150 --> 00:35:39,700
+Yani kalandan kastımız
+bu, ne kadar kaldı
+736
+00:35:39,700 --> 00:35:41,830
+bir sayıyı diğerine böldükten sonra.
+737
+00:35:41,830 --> 00:35:46,180
+Şimdi koduma geri dönersem ve
+nasıl uygulayabileceğimi düşünürsem
+738
+00:35:46,180 --> 00:35:49,150
+soru bu sayı çift mi tek mi?
+739
+00:35:49,150 --> 00:35:51,520
+Bunu nasıl
+uygulayabileceğimizi düşünelim,
+740
+00:35:51,520 --> 00:35:53,885
+çünkü belki de bunu nasıl
+yapacağımız çok açık olmayabilir.
+
+741
+00:35:53,885 --> 00:35:55,510
+bu ek yapı taşını kullanabilir.
+742
+00:35:55,510 --> 00:35:58,460
+Ama uzun vadede çok faydalı
+olacağı ortaya çıktı.
+
+Machine Translated by Google
+743
+00:35:58,460 --> 00:36:01,630 İlk önce
+kullanıcıdan x adlı bir değişkende bir
+sayı alalım.
+744
+00:36:01,630 --> 00:36:04,570
+Ve bunu int'e dönüştürmeye
+eşitleyeceğim
+745
+00:36:04,570 --> 00:36:08,890 kullanıcı
+x'in ne olduğunu sorduktan sonra, soru
+işareti olarak girdi.
+746
+00:36:08,890 --> 00:36:10,840 Ve bunu
+daha önce birçok kez yaptık.
+747
+00:36:10,840 --> 00:36:14,750 Şimdi
+x'in çift mi yoksa tek mi olduğunu
+nasıl belirleyebilirim?
+748
+00:36:14,750 --> 00:36:19,270
+Görünüşe göre, bana şunu söyleyen
+programlı bir operatöre erişimim varsa
+749
+00:36:19,270 --> 00:36:21,742 geri
+kalan, sanırım bunu yapabilirim.
+750
+00:36:21,742 --> 00:36:23,200 Aslında
+gruba sormama izin verin.
+751
+00:36:23,200 --> 00:36:25,480
+Ve bu sadece ilkokul
+matematiğinden, belki de,
+752
+00:36:25,480 --> 00:36:28,750 Bir
+sayının çift olması ne anlama gelir?
+
+753
+00:36:28,750 --> 00:36:36,235
+Açık olmak gerekirse, 0, 2, 4, 6, 8,
+10, 12, 14, 16 gibi bir sayı,
+754
+00:36:36,235 --> 00:36:37,360
+
+Machine Translated by Google
+bunların hepsi çift sayılardır.
+
+755
+00:36:37,360 --> 00:36:38,652 Ama
+bu gerçekten ne anlama geliyor?
+756
+00:36:38,652 --> 00:36:40,960
+Elena, eğer doğru söylüyorsam?
+757
+00:36:40,960 --> 00:36:43,990
+ELENA: Onu tam olarak ikiye
+bölebilen çift sayılar.
+758
+00:36:43,990 --> 00:36:48,275
+Örneğin, 2, 4, 6, 8 ve 10 ve-759
+00:36:48,275 --> 00:36:49,150
+DAVID MALAN: Mükemmel.
+760
+00:36:49,150 --> 00:36:51,040
+Ve kelimenin tam anlamıyla
+bütün gün devam edebiliriz,
+
+761
+00:36:51,040 --> 00:36:53,332
+çünkü sonsuz sayıda çift sayı var.
+
+762
+00:36:53,332 --> 00:36:56,260
+Ama bunu bir soru olarak formüle
+etmen güzel
+763
+00:36:56,260 --> 00:36:58,240
+bunu çok net bir şekilde sorabiliriz.
+764
+00:36:58,240 --> 00:37:01,360 Bu
+sayı tam olarak ikiye bölündü mü?
+765
+00:37:01,360 --> 00:37:05,460 Yani
+onu kalansız, sıfırdan bir kalansız ikiye
+bölebilir miyiz?
+766
+00:37:05,460 --> 00:37:09,430
+Bu mükemmel, çünkü bu operatöre
+sahipsek, bu yüzde işareti, bu
+
+Machine Translated by Google
+767
+00:37:09,430 --> 00:37:13,300 tam
+da buna cevap vermemize izin veriyor,
+kalan nedir, muhtemelen kontrol edebiliriz
+768
+00:37:13,300 --> 00:37:15,790 kalan
+sıfır mı yoksa bir mi?
+769
+00:37:15,790 --> 00:37:19,120 Hiçbir
+şeyimiz kalmadı mı yoksa bir tane
+mi kaldı?
+770
+00:37:19,120 --> 00:37:20,080 Peki,
+bunu soralım.
+771
+00:37:20,080 --> 00:37:28,568
+Elena'nın önerdiği gibi x bölü ikiye sıfır
+kalana sahipse, devam edelim
+772
+00:37:28,568 --> 00:37:30,610 ve
+alıntı, hatta alıntı yapma gibi bir
+şey yazdırın.
+773
+00:37:30,610 --> 00:37:32,410 Ve
+kullanıcıya da aynısını söyleyin.
+774
+00:37:32,410 --> 00:37:35,380 Aksi
+takdirde, bir sayı çift değilse,
+
+775
+00:37:35,380 --> 00:37:38,660
+gerçekten de bir tamsayıysa, garip
+olacak.
+776
+00:37:38,660 --> 00:37:41.590 Bu
+yüzden devam edip alıntıyı yazdıracağım,
+bunun yerine alıntıyı kaldıracağım.
+777
+00:37:41.590 --> 00:37:45,100 Şimdi
+devam edelim ve şimdi istemimde
+Python parity.py'yi çalıştıralım.
+778
+00:37:45,100 --> 00:37:45,760
+
+Machine Translated by Google
+x nedir?
+779
+00:37:45,760 --> 00:37:46,840 İkiyle
+başlayalım.
+780
+00:37:46,840 --> 00:37:48,220 İki
+aslında çifttir.
+781
+00:37:48,220 --> 00:37:49,390 Dört
+ile başlayalım.
+782
+00:37:49,390 --> 00:37:50,560 Dört
+aslında çifttir.
+783
+00:37:50,560 --> 00:37:53,750 Üç ile
+ilginçleşelim.
+784
+00:37:53,750 --> 00:37:54,838 Üç
+artık tek.
+785
+00:37:54,838 --> 00:37:57,880
+Ve bence bunu bütün gün yapabilir ve
+umarım geri dönebiliriz, gerçekten,
+786
+00:37:57,880 --> 00:37:59,770 tam
+olarak bu cevap.
+787
+00:37:59,770 --> 00:38:02,180 Ama
+burada daha fazla ne yapabiliriz?
+788
+00:38:02,180 --> 00:38:03,910 Bunu
+nasıl geliştirebiliriz?
+789
+00:38:03,910 --> 00:38:08,050 Kendi
+fonksiyonlarımızı icat etme
+yeteneğimiz olduğunu hatırlayın.
+790
+00:38:08,050 --> 00:38:10,270
+Ve tartışma uğruna teklif
+edeyim,
+791
+00:38:10,270 --> 00:38:12,145
+
+Machine Translated by Google
+sonunda bunun
+olduğunu bulacağız
+792
+00:38:12,145 --> 00:38:14,600 Bir
+sayının çift mi yoksa tek mi olduğunu
+belirleyebilmek için kullanışlıdır.
+793
+00:38:14,600 --> 00:38:17,080 Ve bu
+işlevselliği yerleşik olarak kullanmak
+istiyoruz.
+794
+00:38:17,080 --> 00:38:20,230 Ve
+Python'un bana bunu söyleyecek bir
+işlevi olduğunu düşünmüyorum.
+795
+00:38:20,230 --> 00:38:23,240 Ama tam
+da bunun gibi bir kod kullanarak onu
+icat edebilirim.
+
+796
+00:38:23,240 --> 00:38:26,770 Bu
+yüzden önceki versiyonuma geçeyim.
+
+797
+00:38:26,770 --> 00:38:29,810 Ve
+bunu yapmamızı önermeme izin verin.
+798
+00:38:29,810 --> 00:38:32,680 Devam
+edip bir ana fonksiyon yazayım.
+
+799
+00:38:32,680 --> 00:38:36,130
+Temsil edilecek bir ana işlevi tanımlama
+alışkanlığına geri döneceğim.
+800
+00:38:36,130 --> 00:38:37,457
+programımın ana kısmı.
+801
+00:38:37,457 --> 00:38:39,040 Ve
+daha önce yaptığım şeyi yapacağım.
+802
+00:38:39.040 --> 00:38:41,710
+Kullanıcının girdisinden bir
+tamsayı alacağım,
+
+Machine Translated by Google
+803
+
+00:38:41,710 --> 00:38:44,680 onlara
+x'in ne olduğunu soruyor, soru işareti.
+804
+00:38:44,680 --> 00:38:46,420 Ve
+sonra bu soruyu soracağım.
+805
+00:38:46,420 --> 00:38:48,667
+Şu an için, saf bir şekilde
+varsayacağım
+806
+00:38:48,667 --> 00:38:50,500 işlevin
+zaten var olduğunu, ancak bu
+
+807
+00:38:50,500 --> 00:38:52,390 faydalı
+bir problem çözme tekniği.
+808
+00:38:52,390 --> 00:38:55,270
+Bununla nereye gideceğim
+hakkında henüz bir fikrim olmasa bile,
+
+809
+00:38:55,270 --> 00:38:58,750 Bir
+sayının çift olup olmadığını belirleyen bir
+fonksiyonu nasıl icat edeceğim,
+810
+00:38:58,750 --> 00:39:01,780
+Sadece "eşittir" adında bir
+fonksiyon olduğunu varsayacağım,
+811
+00:39:01,780 --> 00:39:04,240 ve ben
+buna körü körüne böyle diyeceğim.
+
+812
+00:39:04,240 --> 00:39:11,470 Eğer
+çift ise, x'i geçiyorsa, o zaman devam
+edin ve alıntıyı yazdırın, çift alıntıyı kaldırın.
+813
+00:39:11,470 --> 00:39:17,650
+Öyleyse, "eşittir" olarak adlandırılan bu sihirli
+işlev, dönüş değeri olarak true değerini döndürürse
+
+814
+00:39:17,650 --> 00:39:19,960 Çift
+olduğunu yazdıracağım.
+
+Machine Translated by Google
+815
+00:39:19,960 --> 00:39:23,710 Aksi
+takdirde, bunun elbette tuhaf
+olduğunu varsayacağım.
+816
+00:39:23,710 --> 00:39:27,625
+Şimdi bu programla ilgili tek sorun, buradan
+main'i çağırsam bile,
+817
+00:39:27,625 --> 00:39:30,010 ki bu
+bile yok.
+818
+00:39:30,010 --> 00:39:32,620 Ve
+şimdi çalıştırırsam bu program
+bozulur.
+819
+00:39:32,620 --> 00:39:33,530 Ama
+sorun değil.
+820
+00:39:33,530 --> 00:39:35,990 Kendi
+işlevimi icat etme yeteneğim var,
+hatırlıyorum.
+821
+00:39:35,990 --> 00:39:39,970 O halde
+def ile "is çift" adında bir işlevi
+tanımlamama izin verin.
+822
+00:39:39,970 --> 00:39:42,760 Bu
+işlevin bir argüman almasını istiyorum.
+
+823
+00:39:42,760 --> 00:39:45,550 Ve ben
+buna genel olarak n, sadece bir sayı
+diyeceğim.
+824
+00:39:45,550 --> 00:39:46,690 x
+diyebilirim.
+825
+00:39:46,690 --> 00:39:49,640 Ama
+yine de, hangi x'in hangisi olduğu
+konusunda kafamı karıştırmak istemiyorum.
+826
+00:39:49,640 --> 00:39:52,100
+
+Machine Translated by Google
+Bu yüzden ona farklı bir isim
+vereceğim ve sorun değil.
+827
+00:39:52,100 --> 00:39:54,700 Ben
+sadece daha genel olarak sayı için n
+diyeceğim.
+828
+00:39:54,700 --> 00:39:56,590 Ve sonra
+bunu yapacağım.
+829
+00:39:56,590 --> 00:40:03,490
+Eğer daha önce olduğu gibi, N % iki sıfıra
+eşitse diyeceğim, o zaman,
+830
+00:40:03,490 --> 00:40:06,520 ve işte
+sihir, sen, programcı,
+
+831
+00:40:06,520 --> 00:40:10.660 aslında
+Boole değerleri olarak adlandırılan
+değerleri döndürebilir.
+832
+00:40:10.660 --> 00:40:16.430
+Python'da Python'un hareketler veya dizgiler,
+ints veya tamsayılar olduğunu gördük.
+833
+00:40:16,430 --> 00:40:19,000 kayan
+nokta veya kayan nokta değerleri,
+bunların tümü
+834
+00:40:19,000 --> 00:40:21,520
+Python'da farklı veri türleridir.
+835
+00:40:21,520 --> 00:40:26,210 Python
+ayrıca Boole değeri için bool adında
+dördüncü bir veri türüne sahiptir.
+836
+00:40:26,210 --> 00:40:29,470
+Ve bu sadece listemize ekleniyor olsa da, bools
+ile ilgili güzel şey
+837
+00:40:29,470 --> 00:40:32,890, yalnızca
+doğru veya yanlış olabilmeleridir.
+
+Machine Translated by Google
+838
+
+00:40:32.890 --> 00:40:36,280 Bir
+int, sonsuz sayıda olası değerden
+herhangi biri olabilir.
+839
+00:40:36,280 --> 00:40:39,040 Bir
+bool yalnızca doğru veya yanlış olabilir.
+840
+00:40:39.040 --> 00:40:43.460 Ve
+kendi yazıyorsanız büyük T ve
+büyük F olmalıdır.
+841
+00:40:43,460 --> 00:40:46,030
+Şimdi koduma geri
+dönersem ve düşünürsem
+842
+00:40:46,030 --> 00:40:49,480 tam
+olarak buraya dönmek istediğim şey.
+843
+00:40:49,480 --> 00:40:53,560
+Peki, n % iki sıfıra eşitse,
+yani,
+844
+00:40:53,560 --> 00:40:58,270 n'nin
+ikiye bölümünden kalan sıfır ise, bence
+çifttir,
+845
+00:40:58,270 --> 00:40:59,750 ile
+Elena, senin tanımın.
+846
+00:40:59,750 --> 00:41:05,380 O
+halde doğru, büyük T'yi döndürelim.
+Aksi takdirde, sıfırdan kalanı yoksa,
+847
+00:41:05,380 --> 00:41:08,440
+Matematiksel olarak 1'in kalanı
+olması gerektiğine oldukça eminim.
+848
+00:41:08,440 --> 00:41:09,400 Ama
+önemli değil.
+849
+00:41:09,400 --> 00:41:13,210 Eşit
+olmadığını biliyorum, bu yüzden
+false döndüreceğim.
+
+Machine Translated by Google
+850
+00:41:13,210 --> 00:41:18,610 Ve
+büyük F yerine false döndürürüz. Ve
+şimdi hem main'i tanımladığımıza göre
+851
+00:41:18,610 --> 00:41:23,350 ve
+çifttir ve alttan main'i arıyorum,
+sanırım bunu doğru anladım.
+852
+00:41:23,350 --> 00:41:25,960
+parity.py Python, Enter.
+853
+00:41:25,960 --> 00:41:26,650 x
+nedir?
+854
+00:41:26,650 --> 00:41:28,780 İki
+tane gibi basit bir şey deneyelim.
+855
+00:41:28,780 --> 00:41:29,890 Ve
+eşit.
+856
+00:41:29,890 --> 00:41:30,850
+Tekrar yapalım.
+857
+00:41:30,850 --> 00:41:31,420 x
+nedir?
+858
+00:41:31,420 --> 00:41:32,560 Peki
+ya dört?
+859
+00:41:32,560 --> 00:41:33,100 Çift.
+
+860
+00:41:33,100 --> 00:41:34,480 Bir
+kez daha x nedir?
+861
+00:41:34,480 --> 00:41:35,740 Peki
+ya üç?
+862
+00:41:35,740 --> 00:41:36,910 Ve
+bu tuhaf.
+
+Machine Translated by Google
+863
+00:41:36,910 --> 00:41:38,140
+Şimdi ben burada ne yaptım?
+864
+00:41:38,140 --> 00:41:42,700
+Az önce, "is" adlı kendi işlevimi
+oluşturmak istersem,
+865
+00:41:42,700 --> 00:41:44,410
+hatta" bu soruyu benim için
+yanıtlıyor,
+866
+00:41:44,410 --> 00:41:47,350
+şimdi bu programda kullanabilirim ve
+heck, belki gelecekteki programlar
+867
+00:41:47,350 --> 00:41:51,190
+yazdığım, artık kimsenin bana
+vermediği bir işlevim var,
+868
+00:41:51,190 --> 00:41:53,290 Kendime,
+kullanabileceğim ve yeniden kullanabileceğim bir şey verdim.
+
+869
+00:41:53,290 --> 00:41:55,580
+Hatta belki başkalarıyla da
+paylaşabilirim.
+870
+00:41:55,580 --> 00:41:59,560 Bu
+işlevi şimdi üçüncü satırda sadece bir
+karar vermek için kullanıyorum.
+871
+00:41:59,560 --> 00:42:01,360
+Orada bir koşullu kullanıyorum.
+872
+00:42:01,360 --> 00:42:05,140
+Ve Boole ifadem, doğru ya da
+yanlış olan bir şey,
+873
+00:42:05,140 --> 00:42:08,800,
+x'in y'den küçük olması gibi açık
+bir şey olmayacak,
+874
+00:42:08,800 --> 00:42:11,020
+veya y, x'ten büyük veya benzeri.
+
+Machine Translated by Google
+875
+00:42:11,020 --> 00:42:13,180 Bu bir
+işlev çağrısı olacak.
+876
+00:42:13,180 --> 00:42:15,790 Boole
+ifadem olarak bir işlev kullanıyorum.
+
+877
+00:42:15,790 --> 00:42:18,160
+Ama sorun değil çünkü
+biliyorum, çünkü yazdım,
+878
+00:42:18,160 --> 00:42:23,580 "çifttir"
+işlevi doğru veya yanlış döndürür.
+
+879
+00:42:23,580 --> 00:42:26,750
+Ve bir karar vermek için şartlı
+olarak ihtiyacım olan tek şey bu
+
+880
+00:42:26,750 --> 00:42:29,810 çift
+veya tek yazdırmak için.
+881
+00:42:29,810 --> 00:42:33,110
+Şimdi burada durup nasıl çalıştığıma dair
+herhangi bir soru olup olmadığını görmeme izin verin.
+
+882
+00:42:33,110 --> 00:42:36,875 bu
+bool kullanılarak "çifttir" uygulandı.
+883
+00:42:36,875 --> 00:42:38.000
+KONUŞMACI 6: Merhaba, merhaba David.
+884
+00:42:38.000 --> 00:42:41,120
+Öncelikle bu harika ders için
+teşekkür ederim.
+885
+00:42:41,120 --> 00:42:43,340
+dünden ve bugünden önce efendim.
+886
+00:42:43,340 --> 00:42:47,720
+Java'nın arka planına dayalı tek bir
+sorgum var.
+
+Machine Translated by Google
+887
+00:42:47,720 --> 00:42:50,810
+Orada, argümanı
+ilettiğimizde,
+888
+00:42:50,810 --> 00:42:53,940
+değişkenlerin adresini de
+iletebiliriz.
+889
+00:42:53,940 --> 00:42:57,120
+Python'da böyle bir kavram var
+mı?
+890
+00:42:57,120 --> 00:42:58,370
+DAVID MALAN: Kısa cevap, hayır.
+891
+00:42:58,370 --> 00:43:02,300
+Java veya diğer dillere veya C veya C+
++'a aşina olmayanlar,
+892
+00:43:02,300 --> 00:43:06,230
+Genelde değerleri farklı mekanizmalarda
+iletmenin,
+893
+00:43:06,230 --> 00:43:07,700 veya
+bunları değiştirmenize izin vermeyin.
+
+894
+00:43:07,700 --> 00:43:08,897
+Python'da, no.
+895
+00:43:08,897 --> 00:43:11,480
+Göreceğimiz her şey aslında bir
+nesnedir.
+896
+00:43:11,480 --> 00:43:13,890
+Ama daha fazlası bu konuda.
+897
+00:43:13,890 --> 00:43:17,960
+Bu bools ve bunlar hakkında bir soru
+daha sormaya ne dersiniz?
+898
+00:43:17,960 --> 00:43:19,700
+"çift sayıdır."
+
+Machine Translated by Google
+899
+00:43:19,700 --> 00:43:23,720
+KONUŞMACI 7: Aslında bir işlevi
+tanımlamayla ilgili bir sorum vardı,
+900
+00:43:23,720 --> 00:43:24,680 sorun
+olmazsa.
+901
+00:43:24,680 --> 00:43:25,430 DAVID
+MALAN: Elbette.
+902
+00:43:25,430 --> 00:43:29,030
+KONUŞMACI 7: Yani, kodunuz içinde bir
+tane tanımlarsanız, yaptığınız gibi,
+903
+00:43:29,030 --> 00:43:33,230 nokta
+operatörünü nokta şeridini
+adlandırdığımız gibi kullanma izniniz var mı,
+904
+00:43:33,230 --> 00:43:34,295 ve bu
+şekilde mi kullanıyorsunuz?
+
+905
+00:43:34,295 --> 00:43:35,420 DAVID
+MALAN: Güzel soru.
+906
+00:43:35,420 --> 00:43:37,880
+Kendi işlevinizi
+oluşturduysanız,
+907
+00:43:37,880 --> 00:43:42,350 nokta
+şeridi veya nokta başlığı veya nokta
+büyük harf gibi diğer işlevleri kullanın,
+908
+00:43:42,350 --> 00:43:44,210
+geçmişte gördüğümüz?
+909
+00:43:44,210 --> 00:43:46,580 Bunları
+dizelerde kullanabilirsiniz.
+910
+00:43:46,580 --> 00:43:49,110 Bu
+işlevler dizelerle birlikte gelir.
+911
+
+Machine Translated by Google
+00:43:49,110 --> 00:43:51,980
+Bunları mutlaka kendi
+işlevlerinizde kullanamazsınız,
+912
+00:43:51,980 --> 00:43:56,030
+Verdiğiniz örnekler için işleviniz
+bir dize döndürmedikçe.
+913
+00:43:56,030 --> 00:43:57,350 Bir
+bool döndürüyorum.
+914
+00:43:57,350 --> 00:44:00,140
+Bool'ların sağında veya solunda
+boşluk kavramı yoktur.
+915
+00:44:00,140 --> 00:44:02,207
+Strip'i arayamazsınız, büyük
+harfle arayamazsınız.
+916
+00:44:02,207 --> 00:44:04,040
+Ama farklı bir fonksiyon
+yazıyor olsaydınız
+917
+00:44:04,040 --> 00:44:06,020
+kesinlikle bir dize döndürür.
+918
+00:44:06,020 --> 00:44:08,015 Bu
+işlevleri de kullanabilirsiniz.
+919
+00:44:08,015 --> 00:44:10,640
+Pekala, izin verirseniz dikkatimizi
+şu örneğe dönelim.
+920
+00:44:10,640 --> 00:44:13,220
+burada ve şimdi sık sık yaptığımız
+gibi düşünün,
+921
+00:44:13,220 --> 00:44:15,920 Bu
+kodun tasarımını iyileştirebilir
+miyiz?
+922
+00:44:15,920 --> 00:44:18,290 Bu
+programı daha iyi hale getirebilir
+miyim?
+
+Machine Translated by Google
+923
+00:44:18,290 --> 00:44:19,340 Ve
+yapabilirim.
+924
+00:44:19,340 --> 00:44:20.630
+Burada birkaç yol var.
+925
+00:44:20,630 --> 00:44:24,320 Ve
+size artık genellikle Pythonic olarak bilinen
+bir şey göstereceğim.
+926
+00:44:24,320 --> 00:44:26,840
+Python dünyasında aslında
+bu sanat terimi var,
+927
+00:44:26,840 --> 00:44:31,468
+burada bir şey Python'da bir şeyler
+yapıyorsanız Pythonic'tir.
+928
+00:44:31,468 --> 00:44:33,260
+Yani, zaten gördük
+
+929
+00:44:33,260 --> 00:44:35,480
+belirli sorunları çözmenin pek çok
+farklı yolu.
+930
+00:44:35,480 --> 00:44:38.000
+Python programcıları
+topluluğunda,
+931
+00:44:38.000 --> 00:44:41.990 Bazı
+yollar diğerlerinden daha çok
+gülümsüyor olma eğilimindedir.
+932
+00:44:41.990 --> 00:44:45,560
+Ve belki de sadece Python'un sahip olduğu
+özelliklerle ilgili olma eğilimindedirler,
+
+933
+00:44:45,560 --> 00:44:46,785
+ancak diğer diller değil.
+934
+00:44:46,785 --> 00:44:49,910
+
+Machine Translated by Google
+Ve işte Java gibi dillerde görmemiş
+olabileceğiniz bazı sözdizimi,
+935
+00:44:49,910 --> 00:44:52,470 veya
+C veya daha önce programladıysanız
+C++.
+936
+00:44:52,470 --> 00:44:55,700 Ve
+daha önce hiç programlamadıysanız,
+bu da yeni olacak.
+937
+00:44:55,700 --> 00:45:02,420
+Python'da böyle bir soru sormak yerine,
+dört satır kullanıyorsanız,
+938
+00:45:02,420 --> 00:45:07,520
+İsterseniz, bunu bir şık satıra daha
+daraltabilirsiniz.
+939
+00:45:07,520 --> 00:45:12,320
+n'nin ikiye bölümünden kalanının
+sıfır olup olmadığını sormak yerine,
+940
+00:45:12,320 --> 00:45:15,390 true,
+değilse false döndürür.
+941
+00:45:15,390 --> 00:45:23,150
+Hepsini sileyim ve şunu söyleyim, n ikiye
+bölünürse true döndür
+942
+00:45:23,150 --> 00:45:27,660'ın
+kalanı sıfırdır, aksi takdirde false
+döndürür.
+943
+00:45:27,660 --> 00:45:30,140
+Şimdi, daha önce programlama
+deneyimine sahip olanlarınız
+944
+00:45:30,140 --> 00:45:31,940
+bunun gerçekten harika olduğunu
+düşünebilir.
+945
+00:45:31,940 --> 00:45:35,960
+Dört satırdan yoğunlaşabilirsiniz
+
+Machine Translated by Google
+bir satırda, aynı düşünce.
+946
+00:45:35,960 --> 00:45:39,260
+Ve nedenlerinden biri
+Python popülerdir, öyledir
+947
+00:45:39,260 --> 00:45:41,270
+İngilizce gibi okuma eğilimindedir.
+948
+00:45:41,270 --> 00:45:44,660 Çoğu
+İngilizce veya çoğu insan dili kadar
+kullanıcı dostu değildir.
+949
+00:45:44,660 --> 00:45:48,470 Ama
+dikkat edin, satır daha çok ne
+demek istediğinizi söylüyor.
+950
+00:45:48,470 --> 00:45:55,190 Eğer
+n'nin ikiye bölümünden kalan sıfır ise,
+aksi takdirde false döndürür.
+951
+00:45:55,190 --> 00:45:58,820
+Bu, mantıksal olarak, İngilizce olarak
+söyleyebileceğiniz bir şeye oldukça yakın,
+952
+00:45:58,820 --> 00:46:02,060 çift
+ve tek ya da gerçekten başka bir
+şey hakkında olsun.
+953
+00:46:02,060 --> 00:46:04,280 Yani
+bu program tamamen aynı şekilde
+çalışacak.
+954
+00:46:04,280 --> 00:46:06,650
+Parity.py'nin Python'u, iki tane yazmama izin verin.
+955
+00:46:06,650 --> 00:46:07,520 Hala
+eşit.
+956
+00:46:07,520 --> 00:46:08,600 Üç
+tane yazayım.
+957
+00:46:08,600 --> 00:46:09,830
+
+Machine Translated by Google
+Hala garip.
+
+958
+00:46:09,830 --> 00:46:12,180 Ama
+bunu daha da geliştirebilirim.
+959
+00:46:12,180 --> 00:46:15,260
+Ve yine, sadece doğru kodu yazmama
+fikriyle tutarlı olarak,
+960
+00:46:15,260 --> 00:46:19,820 ama
+gitgide daha iyi kod yazıyor ama yine
+de okunabilir durumda tutuyor,
+961
+00:46:19,820 --> 00:46:22,730
+Bundan daha iyisini yapabilirim.
+962
+00:46:22,730 --> 00:46:25,760
+Buradaki değerin benim Boole
+ifadem olduğuna dikkat edin.
+963
+00:46:25,760 --> 00:46:28,640 Ve
+doğru veya yanlış olarak
+değerlendirilecek.
+964
+00:46:28,640 --> 00:46:33,800 n'nin
+ikiye bölümünden kalan sıfır mı,
+değil mi?
+965
+00:46:33,800 --> 00:46:35,940 Bu,
+tanımı gereği bir Boole ifadesidir.
+
+966
+00:46:35,940 --> 00:46:39,600 Evet/
+hayır yanıtı, doğru/yanlış yanıtı var.
+
+967
+00:46:39,600 --> 00:46:45,290
+Peki, Boole ifadenizin kendisinin
+doğru veya yanlış bir cevabı varsa,
+968
+00:46:45,290 --> 00:46:48,740 en
+başta neden soru soruyorsun?
+
+Machine Translated by Google
+969
+
+00:46:48,740 --> 00:46:50,270 Neden
+soruyorsun?
+970
+00:46:50,270 --> 00:46:51,770 Neden
+başka desin ki?
+971
+00:46:51,770 --> 00:46:57,140
+Sadece kendi Boole ifadenizin
+değerini döndürün.
+972
+00:46:57,140 --> 00:47:01,670
+Ve belki de en sıkı versiyon, en özlü ve
+hala okunabilir,
+973
+00:47:01,670 --> 00:47:05,450 bu
+kodun versiyonu bu satırın tamamını
+silmek olacaktır, Pythonic
+974
+00:47:05,450 --> 00:47:12,530 olsa
+da ve sadece n modulo iki eşittir
+sıfır döndürün.
+975
+00:47:12,530 --> 00:47:15,530
+Yardımcı olacaksa, geçici
+olarak parantez ekleyeyim,
+976
+00:47:15,530 --> 00:47:18,910 çünkü
+parantez içinde olacaklar önce olacak.
+
+977
+00:47:18,910 --> 00:47:24,160 n bölü
+ikiye ya sıfırdan kalanı var ya da yok.
+
+978
+00:47:24,160 --> 00:47:25,990 Varsa,
+cevap doğrudur.
+979
+00:47:25,990 --> 00:47:28,130
+Olmazsa, yanıt yanlıştır.
+980
+00:47:28,130 --> 00:47:31,310 O
+halde, isterseniz soruyu geri
+gönderin.
+
+Machine Translated by Google
+981
+00:47:31,310 --> 00:47:35,020 Açıkça
+bir if ve else ile sarmanız gerekmez.
+
+982
+00:47:35,020 --> 00:47:37,780
+Ve aslında, işlem sırası
+nedeniyle,
+983
+00:47:37,780 --> 00:47:39,620
+parantezlere bile ihtiyacınız yok.
+984
+00:47:39,620 --> 00:47:45,370 Bu
+aynı fikri uygulamanın belki de en zarif yolu.
+
+985
+00:47:45,370 --> 00:47:46,540 Şimdi
+hangisi daha iyi?
+986
+00:47:46,540 --> 00:47:47,870 Bu
+oldukça iyi.
+987
+00:47:47,870 --> 00:47:51,010 Ve
+bununla suçlanmak zor çünkü çok
+kısa ve öz.
+988
+00:47:51,010 --> 00:47:54,250
+Ama bu tamamen sorun
+değil ve bir o kadar da doğru,
+
+989
+00:47:54,250 --> 00:47:56,500 için
+bir if ve sonra bir başkası olur.
+990
+00:47:56,500 --> 00:47:59,260
+Toplam dört satır olsa da, yardımcı
+olacaksa
+991
+00:47:59,260 --> 00:48:01,480
+kodunuz hakkında daha net
+düşünürsünüz ve bu yardımcı olur
+992
+00:48:01,480 --> 00:48:04,100 diğer
+insanlar da bunun hakkında akıl yürütüyor.
+
+Machine Translated by Google
+993
+00:48:04,100 --> 00:48:06,490
+Yani, başka bir sözdizimi
+olduğu ortaya çıktı.
+994
+00:48:06,490 --> 00:48:08,920 aynı
+koşullu fikri uygulamak için
+kullanabilir,
+995
+00:48:08,920 --> 00:48:12,910 bazı
+Boolean yanıtlarına dayalı olarak isteğe bağlı
+olarak bir şeyler yaparsınız
+996
+00:48:12,910 --> 00:48:13,720 ifadesi.
+
+997
+00:48:13,720 --> 00:48:17,020
+Ve şimdi kullanabileceğiniz anahtar
+kelime, Python'un son sürümlerinde,
+998
+00:48:17,020 --> 00:48:18,610 buna-eşleşme denir.
+999
+00:48:18,610 --> 00:48:21,850
+Eşleştirme, daha önce programladıysanız,
+ruh olarak benzer bir mekanizmadır.
+1000
+00:48:21,850 --> 00:48:24,340 diğer
+dillerde geçiş adı verilen bir şeye.
+
+1001
+00:48:24,340 --> 00:48:28,450
+Örneğin, buradan devam edeyim ve
+parity.py'yi kapatayım ve devam edeyim
+1002
+00:48:28,450 --> 00:48:31,750 ve
+house.py adında yeni bir dosya oluşturun.
+1003
+00:48:31,750 --> 00:48:33,700 Ve
+house.py'de sanırım ne yapacağımızı
+düşünüyorum
+1004
+00:48:33,700 --> 00:48:37,243
+
+Machine Translated by Google
+yapılacak şey, kullanıcıdan adını soran
+bir program uygulamaya çalışmaktır,
+1005
+00:48:37,243 --> 00:48:39,160 ve
+sonra sadece hangi evin bilindiğini
+çıkarır
+1006
+00:48:39,160 --> 00:48:41,110 Harry
+Potter dünyasında olmak.
+1007
+00:48:41,110 --> 00:48:43,040
+Örneğin, devam edeyim ve şunu
+yapayım.
+1008
+00:48:43,040 --> 00:48:46,450
+Kendime name adında bir değişken
+vereyim, onu getiriye eşitle
+1009
+00:48:46,450 --> 00:48:47,860 giriş
+fonksiyonunun değeri.
+1010
+00:48:47,860 --> 00:48:50,890 Adınız
+ne, soru işareti gibi bir şey
+söyleyeceğim.
+1011
+00:48:50,890 --> 00:48:52,750
+Ve ondan sonra,
+sadece kullanacağım
+1012
+00:48:52,750 --> 00:48:58,210 Bu
+kişinin hangi evde olduğuna karar
+vermek için geleneksel bir if, elif, else inşa eder.
+1013
+00:48:58,210 --> 00:49:03,100
+Öyleyse söyleyeyim, eğer isim eşittir, diyelim
+ki Harry, Harry Potter'da olduğu gibi, peki,
+
+1014
+00:49:03,100 --> 00:49:06,280 hadi
+devam edelim ve çıktısını alalım
+Harry'nin Gryffindor olan evi
+1015
+00:49:06,280 --> 00:49:08,060 Harry
+Potter dünyasında.
+
+Machine Translated by Google
+1016
+
+00:49:08,060 --> 00:49:11,890 elif
+onun yerine isim Hermione, öyleyse
+
+1017
+00:49:11,890 --> 00:49:15,280 devam
+edin ve ayrıca alıntı yapın,
+Gryffindor'dan alıntı yapmayın,
+1018
+00:49:15,280 --> 00:49:16,750 çünkü
+o da aynı evde.
+1019
+00:49:16,750 --> 00:49:19,900 elif
+adı eşittir
+Ron, devam edelim
+1020
+00:49:19,900 --> 00:49:23,487 ve
+benzer şekilde Gryffindor alıntısını
+yazdırın, alıntı yapmayın.
+1021
+00:49:23,487 --> 00:49:25,570 Şimdi
+bunu biraz daha ilginç hale getirelim.
+
+1022
+00:49:25,570 --> 00:49:29,230 elif
+adı alıntıya eşittir, alıntıyı kaldırma
+Draco'ya ne dersin?
+1023
+00:49:29,230 --> 00:49:32,110
+Draco Malfoy, kitaplarda-- hadi devam
+edelim ve alıntıyı yazdıralım,
+1024
+00:49:32,110 --> 00:49:33,760
+Slytherin'den alıntı yapma.
+1025
+00:49:33,760 --> 00:49:36,640
+Ve başka birinin adının
+girilmesi durumunda,
+1026
+00:49:36,640 --> 00:49:39,550
+şimdilik, onları tanımadığımızı
+varsayalım,
+1027
+00:49:39,550 --> 00:49:41,890
+
+Machine Translated by Google
+ve varsayılan olarak,
+alıntıyı yazdırın,
+1028
+00:49:41,890 --> 00:49:44.530 alıntıyı
+kaldır kim, soru işareti, sadece iletmek
+için
+1029
+00:49:44,530 --> 00:49:48,130 bu belirli
+isme gerçekten kodlanmış bir yanıtımız yok.
+
+1030
+00:49:48,130 --> 00:49:52.635 Şimdi
+devam edeyim ve bunu house.py
+Python, Enter olarak çalıştırayım.
+1031
+00:49:52,635 --> 00:49:54,760 Devam
+edip Harry gibi bir şey yazacağım.
+
+1032
+00:49:54,760 --> 00:49:57,250 Ve işte,
+Harry'nin gerçekten de Gryffindor'da
+olduğunu görüyoruz.
+1033
+00:49:57,250 --> 00:50:000,040 Bir kez
+daha çalıştıralım, house.py'nin
+Python'u.
+1034
+00:50:000,040 --> 00:50:01,690 Bu
+sefer Draco yazalım.
+1035
+00:50:01,690 --> 00:50:02,500 Slytherin.
+
+1036
+00:50:02,500 --> 00:50:05,140 Ve şimdi
+tanınmayan bir isim yazalım.
+
+1037
+00:50:05,140 --> 00:50:07,540 Devam
+edelim ve house.py'nin Python'unu
+yeniden çalıştıralım.
+1038
+00:50:07,540 --> 00:50:10,000 Ve
+devam edelim ve Padma, Enter
+yazalım.
+
+Machine Translated by Google
+1039
+00:50:10,000 --> 00:50:10.570 Peki
+kim?
+1040
+00:50:10.570 --> 00:50:14.800
+Bu durumda aslında bir elif koşuluyla
+kodlamadığımız için,
+1041
+00:50:14,800 --> 00:50:17.290
+Padma'nın hangi evde olması gerektiği.
+1042
+00:50:17,290 --> 00:50:19,750 Bunu
+uygulamanın başka yolları olduğu
+ortaya çıktı.
+1043
+00:50:19,750 --> 00:50:22,030
+Gerçekten de, burada
+biraz fazlalık var, bunda
+1044
+00:50:22,030 --> 00:50:25,837 Harry,
+Hermione veya Ron'un Gryffindor'da olup
+olmadığını kontrol ediyoruz.
+1045
+00:50:25,837 --> 00:50:28,420
+En azından bu kodu biraz
+daha sıkılaştırabiliriz gibi hissediyorum,
+1046
+00:50:28,420 --> 00:50:30,260 daha
+önce gördüğümüz teknikleri kullanarak.
+1047
+00:50:30,260 --> 00:50:31,640
+Öyleyse devam edeyim ve şunu yapayım.
+1048
+00:50:31,640 --> 00:50:34,370 Buraya
+çıkıp bunun yerine şöyle bir şey
+yapayım.
+1049
+00:50:34,370 --> 00:50:37,120
+Bu iki elif bloğundan
+kurtulalım,
+1050
+00:50:37,120 --> 00:50:38,890 bir an
+için sadece Harry'nin evinden ayrılıyor.
+
+Machine Translated by Google
+1051
+00:50:38,890 --> 00:50:41,980
+Ve o "veya" anahtar sözcüğünü
+tekrar kullanalım ve diyelim ya da adını söyleyelim.
+
+1052
+00:50:41,980 --> 00:50:47,080
+eşittir alıntı, Hermione'yi alıntılamayın veya
+ad eşittir alıntıyı, Ron'u alıntılamayın,
+1053
+00:50:47,080 --> 00:50:51,370
+böylece üç vakayı da, isterseniz
+tek bir vakada birleştirirsiniz.
+1054
+00:50:51,370 --> 00:50:52,360 if
+ifadesi.
+1055
+00:50:52,360 --> 00:50:55,270
+O zaman hala Draco için ayrı
+bir elifimiz var çünkü o değil,
+1056
+00:50:55,270 --> 00:50:56,230
+aslında, Gryffindor'da.
+1057
+00:50:56,230 --> 00:50:59,260 Ve
+sonra başka birini yakalamak için
+sonuncusu.
+1058
+00:50:59,260 --> 00:51:03,280
+Şimdi devam edeyim ve programın bu
+sürümünü, house.py'nin Python'unu çalıştırayım.
+1059
+00:51:03,280 --> 00:51:05,470 Bu
+sefer Hermione yazacağım.
+1060
+00:51:05,470 --> 00:51:07,030 O
+da hala Gryffindor'da.
+1061
+00:51:07,030 --> 00:51:08,170 Ron
+ile deneyeyim.
+1062
+00:51:08,170 --> 00:51:10.582 Ve
+bu da hala doğru görünüyor.
+
+Machine Translated by Google
+1063
+00:51:10,582 --> 00:51:13,540
+Görünüşe göre tamamen başka bir
+yaklaşım var, belki de
+1064
+00:51:13,540 --> 00:51:16,000,
+kodunuzu biraz daha az ayrıntılı hale getirin.
+1065
+00:51:16,000 --> 00:51:18,790
+Bu kodun ne kadar karmaşık
+olabileceğini hayal edebilirsiniz.
+1066
+00:51:18,790 --> 00:51:21.940 sadece
+Harry olmasaydı ve
+Hermione ve Ron, ama bir sürü
+1067
+00:51:21,940 --> 00:51:25.030 diğer
+isimler de,
+Gryffindor, Slytherin için ve herkes için
+1068
+00:51:25,030 --> 00:51:26,650 diğer
+Hogwarts evleri.
+1069
+00:51:26,650 --> 00:51:29,737 Yani
+bu kodun oldukça hızlı bir şekilde oldukça
+hantal hale geldiğini hayal edebilirsiniz.
+1070
+00:51:29,737 --> 00:51:31,570
+Pekala, yapabileceğin
+başka bir teknik ortaya çıktı.
+1071
+00:51:31,570 --> 00:51:34,940 kullanım,
+gerçekten de, eşleme olarak adlandırılan ve
+öz olarak çok benzer olan bu anahtar kelimedir,
+
+1072
+00:51:34,940 --> 00:51:36,130 ancak
+sözdizimi farklıdır.
+1073
+00:51:36,130 --> 00:51:39,580 Ve
+aynı fikirleri biraz daha derli toplu bir
+şekilde ifade etmenizi sağlar.
+1074
+00:51:39,580 --> 00:51:41,620
+
+Machine Translated by Google
+O halde house.py'a geri dönmeme izin verin.
+
+1075
+00:51:41,620 --> 00:51:45,700
+Ve şu anki halimden kurtulmayı teklif
+edeyim, elif, başka bir yaklaşımla,
+1076
+00:51:45,700 --> 00:51:47,080 ve
+bunun yerine bunu yapın.
+1077
+00:51:47,080 --> 00:51:51,070
+Kelimenin tam anlamıyla anahtar kelime
+eşleşmesini kullanın ve değişkenin adını yazın,
+
+1078
+00:51:51,070 --> 00:51:53.055 veya
+eşleştirmek istediğimiz değer.
+1079
+00:51:53,055 --> 00:51:55,180 Sonra
+devam edip iki nokta üst üste
+ekleyeceğim.
+1080
+00:51:55,180 --> 00:51:58,240
+Ve sonra bunun altına, kelimenin
+tam anlamıyla,
+1081
+00:51:58,240 --> 00:51:59,740 case
+adında bir anahtar kelime.
+1082
+00:51:59,740 --> 00:52:02,290 Ve
+dikkate almak istediğim ilk vaka
+Harry olacak.
+1083
+00:52:02,290 --> 00:52:05,690 Ve
+Harry'yi tırnak içine alacağım, çünkü bu bir
+sicim ya da heyecan.
+1084
+00:52:05,690 --> 00:52:08,350 Ve bu
+satırın sonunda başka bir iki nokta
+üst üste işaretim olacak.
+1085
+00:52:08,350 --> 00:52:11,020
+Ve onun altına girintili, devam
+edeceğim ve şimdilik,
+1086
+
+Machine Translated by Google
+00:52:11,020 --> 00:52:13,990
+Gryffindor'un çıktısını alın, ki bu
+elbette Harry'nin evidir.
+1087
+00:52:13,990 --> 00:52:17,590 Aksi
+takdirde, Hermione'den alıntı yapmamak için
+başka bir alıntı yapacağım.
+1088
+00:52:17,590 --> 00:52:20,350
+Ve benzer şekilde, bu girintinin
+altında,
+1089
+00:52:20,350 --> 00:52:23,560 alıntı
+yazdır, Gryffindor'dan alıntıyı kaldır,
+alıntıyı kapat.
+1090
+00:52:23,560 --> 00:52:27,740 Şimdi
+Ron için, tırnak içinde, iki nokta üst üste
+olan başka bir vakam olacak.
+1091
+00:52:27,740 --> 00:52:29,950 Şimdi
+alıntıyı yazdırın, Gryffindor'dan alıntı yapmayın.
+1092
+00:52:29,950 --> 00:52:33,122 Ve
+şimdi, diyelim ki Draco için başka bir
+davam olacak.
+1093
+00:52:33,122 --> 00:52:35,830
+Bu biraz daha ilginçleşiyor
+çünkü Draco, elbette,
+1094
+00:52:35,830 --> 00:52:37,750 şimdi
+Slytherin'de.
+1095
+00:52:37,750 --> 00:52:40,830 Ve
+sonra devam edeceğim ve şimdilik
+olduğu gibi bırakacağım.
+1096
+00:52:40,830 --> 00:52:44,080
+Öyleyse devam edeyim ve bu dosyayı
+kaydedeyim ve terminal pencereme geri dönelim,
+1097
+00:52:44,080 --> 00:52:46,930
+house.py'nin Python'unu çalıştırıyor, Enter.
+
+Machine Translated by Google
+1098
+00:52:46,930 --> 00:52:48,485 Ve
+devam edelim ve Harry'yi deneyelim.
+1099
+00:52:48,485 --> 00:52:50,110 Ve hala
+Gryffindor'da görünüyor.
+1100
+00:52:50,110 --> 00:52:52.810
+Hermione için tekrar çalıştıralım, Girin.
+1101
+00:52:52,810 --> 00:52:53,560
+Gryffindor.
+1102
+00:52:53,560 --> 00:52:56,653
+Draco'ya geçelim ve Draco'nun adını
+yazalım.
+1103
+00:52:56,653 --> 00:52:57,820 O
+gerçekten de Slytherin'de.
+1104
+00:52:57,820 --> 00:53:00,790
+Şimdi ele almadığımız başka bir
+isim deneyelim
+1105
+00:53:00,790 --> 00:53:03,310 için bir
+vaka, yine Padma gibi, Enter.
+1106
+00:53:03,310 --> 00:53:04,540 Ve biz
+sadece görmezden gelindik.
+1107
+00:53:04,540 --> 00:53:07,660 Padma
+davası olmadığı için herhangi bir çıktı yok.
+
+1108
+00:53:07,660 --> 00:53:11,440 Şimdi
+elbette geri dönüp Padma için açıkça bir
+tane ekleyebiliriz.
+1109
+00:53:11,440 --> 00:53:14,440
+Ama ya biz, else yapısına
+benzer şekilde,
+1110
+
+Machine Translated by Google
+00:53:14,440 --> 00:53:18,700 sadece
+adı açıkça belirtilmeyen herkesi ele alan bir genel
+bilgi mi istiyorsunuz?
+1111
+00:53:18,700 --> 00:53:22,150
+Peki, bu yeni eşleşme ifadesini kullanarak
+bunun sözdizimi ortaya çıkıyor,
+1112
+00:53:22,150 --> 00:53:24,730 hala
+başka bir kasaya sahip olmak, ancak
+daha sonra kullanmak
+1113
+00:53:24,730 --> 00:53:28,480
+Python'daki diğer bağlamlarda kullanılan bu tek
+alt çizgi karakteri.
+1114
+00:53:28,480 --> 00:53:32,440
+Ama burada, henüz ele alınmamış
+herhangi bir davanın söylenmesi gerekiyor.
+1115
+00:53:32,440 --> 00:53:35,410 devam
+edin ve daha önce yaptığımız gibi çıktı
+alın, örneğin,
+1116
+00:53:35,410 --> 00:53:38,900 alıntı,
+kimin alıntısını kaldırın, sonunda bir
+soru işareti ile.
+1117
+00:53:38,900 --> 00:53:42,310 Şimdi
+devam edelim ve house.py'nin bu
+Python'unu yeniden çalıştıralım.
+1118
+00:53:42,310 --> 00:53:43.668 Padma'nın
+adını tekrar yazacağım.
+1119
+00:53:43,668 --> 00:53:45,460
+Ve bu sefer, sanırım en
+azından gidiyoruz
+1120
+00:53:45,460 --> 00:53:48,250 kim
+olduğunu belirten açık bir yanıt almak
+için,
+1121
+00:53:48,250 --> 00:53:50,920
+
+Machine Translated by Google
+oysa daha önce bunun eşdeğeri
+yoktu.
+1122
+00:53:50,920 --> 00:53:53,440 Şimdi
+biraz gerilediğimizi düşünüyorum.
+
+1123
+00:53:53,440 --> 00:53:56,590
+İşleri sıkılaştırmaktan Harry ve
+Hermione'yi koyarak yola çıktık.
+1124
+00:53:56,590 --> 00:53:59,650 ve
+Ron hepsi aynı if ifadesinde aynı
+satırda.
+1125
+00:53:59,650 --> 00:54:02,780
+Ama burada, şimdi yine üçü için üç
+vaka ifademiz var.
+1126
+00:54:02,780 --> 00:54:03,280 tanesi.
+
+1127
+00:54:03,280 --> 00:54:05,950 Bu
+kodu da sıkılaştırabiliriz.
+
+1128
+00:54:05,950 --> 00:54:08,240 Ancak
+sözdizimi biraz farklı olacak.
+
+1129
+00:54:08,240 --> 00:54:12,160
+Devam edeceğim ve Hermione ve Ron için
+bu iki orta durumu sileceğim.
+1130
+00:54:12,160 --> 00:54:15,320
+Ve sonra burada, yanında
+Harry'nin adı, iki nokta üst üste işaretinden önce,
+
+1131
+00:54:15,320 --> 00:54:18.070
+Devam edeceğim ve tek bir dikey
+çubuk kullanacağım ve sonra
+1132
+00:54:18,070 --> 00:54:19,810 bir
+alıntı, Hermione'den alıntı yapma.
+
+Machine Translated by Google
+1133
+00:54:19,810 --> 00:54:23,110
+Sonra tek bir çubuk daha ve alıntı
+yapın, Ron'dan alıntı yapın.
+1134
+00:54:23,110 --> 00:54:26,140
+Ve bu şekilde, nispeten yeni
+olan bu eşleşme ifadesini kullanarak,
+1135
+00:54:26,140 --> 00:54:30,220
+Harry, Hermione veya Ron,
+1136
+00:54:30,220 --> 00:54:33,640
+ancak bir if deyimi kullanmaktan
+daha kısa ve öz
+1137
+00:54:33,640 --> 00:54:35,870,
+daha önce uyguladığımız gibi.
+1138
+00:54:35,870 --> 00:54:40,210
+Şimdi, house.py'nin Python'u ile
+programın son bir çalıştırması.
+1139
+00:54:40,210 --> 00:54:42,490
+Harry'nin hala Gryffindor'da
+olduğundan emin olalım.
+1140
+00:54:42,490 --> 00:54:44,920
+Hermione'nin hala Gryffindor'da
+olduğundan emin olalım.
+1141
+00:54:44,920 --> 00:54:46,990
+Ron'un hala Gryffindor'da
+olduğundan emin olalım.
+1142
+00:54:46,990 --> 00:54:48,880 Ve
+gerçekten de üçü de öyle.
+1143
+00:54:48,880 --> 00:54:51,553
+Şimdi, her zaman olduğu gibi Python
+ve programlamada daha genel olarak,
+
+1144
+
+Machine Translated by Google
+00:54:51,553 --> 00:54:54,220
+bu sorunları çözmenin farklı
+yolları olacak.
+1145
+00:54:54,220 --> 00:54:56,290
+Bu, araç setinizdeki başka bir
+araçtır.
+1146
+00:54:56,290 --> 00:54:58,240
+Muhtemelen işleri sıkılaştırdı.
+1147
+00:54:58,240 --> 00:55:00,190
+Muhtemelen, belki
+biraz daha okunabilir
+1148
+00:55:00,190 --> 00:55:02,500
+çünkü biraz daha az sözdizimi
+oluyor,
+1149
+00:55:02,500 --> 00:55:05,710
+eşittir işaretlerinin ve elifin biraz
+daha az tekrarı,
+1150
+00:55:05,710 --> 00:55:07,390
+ve elif, her yerde elif.
+1151
+00:55:07,390 --> 00:55:11,740
+Ama nihayetinde, bu aynı soruna eşit
+derecede doğru bir yaklaşım olacaktır.
+1152
+00:55:11,740 --> 00:55:13,600
+Ama bir maç deyimi
+ile çıkıyor
+1153
+00:55:13,600 --> 00:55:16,360
+daha güçlü eşleştirme biçimleri
+de yapabilir.
+1154
+00:55:16,360 --> 00:55:20,500
+Burada, elif ile aynı fikri uygulamak için
+kullandık.
+1155
+00:55:20,500 --> 00:55:21,460
+başka yapı.
+
+Machine Translated by Google
+1156
+00:55:21,460 --> 00:55:24,700
+Başka bir dilde programladıysanız,
+şunu da belirtmekte fayda var.
+1157
+00:55:24,700 --> 00:55:26,200
+buradaki sözdizimi gerçekten de doğrudur.
+1158
+00:55:26,200 --> 00:55:28,600
+Örneğin, bir break
+ifadesine ihtiyacınız yok,
+1159
+00:55:28,600 --> 00:55:29,950
+baştan sona karabiber olarak.
+1160
+00:55:29,950 --> 00:55:32.665 Ve
+varsayılan gibi bir şeye veya açık bir
+şeye ihtiyacınız yok.
+1161
+00:55:32,665 --> 00:55:37,700
+Gerçekten de, maçın sonunda bu alt çizgiyi
+yakalamanız için kullanın.
+1162
+00:55:37,700 --> 00:55:40,900
+Yani sadece bu yeni anahtar
+kelimelerden bazılarını ekleyerek
+
+1163
+00:55:40,900 --> 00:55:45,340
+burada if ve elif gibi ve yoksa artık
+yeteneğimiz var
+1164
+00:55:45,340 --> 00:55:47,320
+değerler hakkında soru sormak için.
+1165
+00:55:47,320 --> 00:55:50,140
+Kullanıcılardan gelen girdileri
+analiz etme yeteneğine sahibiz,
+
+1166
+00:55:50,140 --> 00:55:52.090 ve
+nihai olarak bu konuda kararlar verin.
+1167
+00:55:52.090 --> 00:55:54,730 Ve
+bunlar, o zaman, koşullarımızın olduğu yer.
+
+Machine Translated by Google
+1168
+00:55:54,730 --> 00:55:58,180
+Önümüzde uzanmak, bizim için sadece
+işlevleri kullanma yeteneği olmayacak,
+1169
+00:55:58,180 --> 00:56:00,380 ve
+değişkenler ve ayrıca bu koşullar,
+
+1170
+00:56:00,380 --> 00:56:06,330 ama
+aynı zamanda döngüler-- şimdi,
+tekrar tekrar bir şeyler yapma yeteneği.
+1171
+00:56:06,330 --> 00:56:08.000
+
+
