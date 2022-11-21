@@ -1,0 +1,8135 @@
+Machine Translated by Google
+
+  1 00:00:00,000 --> 00:00:03,451
+  [MÜZİK ÇALIYOR]
+
+
+
+  2 00:00:03,451 --> 00:00:24,160
+
+
+
+
+  3 00:00:24,160 --> 00:00:25,180
+  DAVID MALAN: Pekala.
+
+
+
+  4 00:00:25,180 --> 00:00:28,540 Bu,
+  CS50'nin Python ile Programlamaya
+  Giriş bölümüdür.
+
+
+
+  5 00:00:28,540 --> 00:00:33,010
+  Benim adım David Malan ve bu hafta döngülere,
+  Python'daki bu yeteneğe odaklanacağız.
+
+
+
+  6 00:00:33,010 --> 00:00:37,000 ve
+  bir şeyi tekrar tekrar yapmak için birçok başka
+  programlama dili,
+
+
+
+  7 00:00:37,000 --> 00:00:38,500 bir
+  çeşit döngü.
+
+
+
+  8 00:00:38,500 --> 00:00:40,420
+  Ve motive ederek
+  başlayamaz mıyız görelim
+
+  9
+
+  00:00:40,420 --> 00:00:45,310 tam olarak
+  bu döngüleri kullanarak bir şeyleri döngüsel
+  olarak yapma yeteneğine sahip olmamızın nedeni.
+
+
+  10
+  00:00:45,310 --> 00:00:48,130
+  Devam edip VS Code'u açacağım.
+
+
+
+
+  11 00:00:48,130 --> 00:00:50,260
+  Ve terminal
+  penceremde, hadi devam edelim
+
+  12
+  00:00:50,260 --> 00:00:57,100 ve
+  cat.py kodu aracılığıyla kedi gibi
+  miyavlayan bir Python programı oluşturun.
+Machine Translated by Google
+
+  13
+  00:00:57,100 --> 00:01:00,910
+  Ve ben burada devam edeceğim
+  Kod sekmesi ve çok basit bir şekilde, belki de
+
+
+  14
+  00:01:00,910 --> 00:01:03,760 Bu
+  kediyi print kullanarak uygulamaya
+  başlayacağım.
+
+  15
+  00:01:03,760 --> 00:01:06,010
+  Bu kedinin duyulabilir sesler
+  çıkarmamasını sağlayacağız,
+
+  16
+  00:01:06,010 --> 00:01:08,860 ama
+  ekrana üç kez miyav, miyav, miyav
+  yazdırın.
+
+
+  17
+  00:01:08,860 --> 00:01:12,640
+  Sanırım bunu yapmanın en basit yolu bir
+  kez miyav basmak,
+
+  18
+  00:01:12,640 --> 00:01:18,590 ve
+  tekrar miyav yazdırmak ve ekrana son bir
+  kez miyav yazdırmak için.
+
+
+  19
+  00:01:18,590 --> 00:01:23,320 Ve
+  şimdi terminal pencereme inmeme izin verin,
+  cat.py'nin Python'unu çalıştırmama izin verin,
+
+  20
+  00:01:23,320 --> 00:01:25,480 Girin
+  ve miyav, miyav, miyav.
+
+  21
+  00:01:25,480 --> 00:01:27,670
+  Pekala, bu program çalışıyor.
+
+  22
+  00:01:27,670 --> 00:01:31,120
+  Amacım kediyi üç kez miyavlatmaksa bu
+  program gerçekten işe yarıyor.
+
+  23
+  00:01:31,120 --> 00:01:34,280
+  Ve izin ver teklif edeyim, sadece
+  kafamızı toparlamamıza yardımcı olmak için
+
+
+  24
+Machine Translated by Google
+  00:01:34,280 --> 00:01:36,430
+  bilgisayarın içinde neler oluyor, bırakın
+
+
+
+  25
+  00:01:36,430 --> 00:01:38,810 bu akış
+  şemasını dikkate almayı öneriyorum.
+
+
+
+  26
+  00:01:38,810 --> 00:01:40,810
+  Daha önce olduğu gibi, bu
+  akış şemasına sahibiz
+
+
+  27
+  00:01:40,810 --> 00:01:44,140 bu
+  ovalle başlar, yani buradan okumaya
+ başlayın.
+
+  28
+  00:01:44,140 --> 00:01:50,050 Ve
+  sonra dikkat edin, oklarla miyav, miyav,
+  miyav'a gidiyor ve sonra duruyor.
+
+  29
+  00:01:50,050 --> 00:01:53,890
+  Tamamen doğru ve dürüst
+  olmak gerekirse, harika bir şekilde basit,
+
+  30
+  00:01:53,890 --> 00:01:58,090 ama
+  yine de kodumda hata bulabileceğimizi
+  düşünüyorum.
+
+  31
+  00:01:58,090 --> 00:02:03,550 Kodum
+  neden kötü tasarlanmış olabilir?
+
+  32
+  00:02:03,550 --> 00:02:05,680
+  Şimdi cevap bir şekilde
+  döngüler olacak,
+
+  33
+  00:02:05,680 --> 00:02:08,169 ama
+  bakalım ne şekilde tanımlayabilecek
+  miyiz
+
+  34
+  00:02:08,169 --> 00:02:12,950 kod
+  aslında bir anlamda kötü tasarlanmış.
+
+
+
+  35
+  00:02:12,950 --> 00:02:13,660
+Machine Translated by Google
+  Bakalım.
+
+
+  36
+  00:02:13,660 --> 00:02:14,260 Herhangi
+  bir düşünce.
+
+
+  37
+  00:02:14,260 --> 00:02:15,608 Alex?
+
+
+
+  38
+  00:02:15,608 --> 00:02:16,150 İZLEYİCİ:
+  Tamam.
+
+
+  39
+  00:02:16,150 --> 00:02:21,580
+  Yani, aynı eylemi üç kez veya daha
+  fazla tekrarlamaktan bahsediyorum.
+
+
+  40
+  00:02:21,580 --> 00:02:23,095 iyi bir
+  alışkanlık değil.
+
+
+  41
+  00:02:23,095 --> 00:02:24,970 DAVID
+  MALAN: Evet, sadece kendimi tekrar
+ ediyorum.
+
+
+  42
+  00:02:24,970 --> 00:02:27,340 Ve
+  dürüst olmak gerekirse, o kadar da önemli değil.
+
+
+  43
+  00:02:27,340 --> 00:02:31,780
+  Buradaki koduma geri dönersek, am
+  Gerçekten çok kötü bir şey yapıyorum
+
+
+  44
+  00:02:31,780 --> 00:02:34,180 sadece
+  üç kez miyav, miyav, miyav yazdırarak
+  mı?
+
+
+  45
+  00:02:34,180 --> 00:02:37,250 Pek
+  sayılmaz ama bunun mantıksal
+  uzantısını düşünelim.
+
+
+  46
+  00:02:37,250 --> 00:02:43,510 Diyelim
+  ki dört kez veya beş kez veya 50 kez veya 500 kez
+  miyavlamak istedim.
+
+
+  47
+  00:02:43,510 --> 00:02:46,150
+  Olsa bile gerçekten düşünüyor musun?
+Machine Translated by Google
+  daha önce hiç programlamadın,
+
+  48
+  00:02:46,150 --> 00:02:50,350 bu
+  sorunun çözümü gerçekten 50 kez
+  kopyala-yapıştır'a basmak mı olacak?
+
+  49
+  00:02:50,350 --> 00:02:51,310
+  Muhtemelen değil gibi.
+
+  50
+  00:02:51,310 --> 00:02:52,840
+  Muhtemelen bundan daha iyisini yapabiliriz.
+
+  51
+  00:02:52,840 --> 00:02:54,850
+  Ve o noktada sadece çirkin
+  olmanın ötesinde,
+
+  52
+  00:02:54,850 --> 00:02:57,732 çok
+  sayıda aynı kod satırına sahip
+  olmak, sadece
+
+  53
+  00:02:57,732 --> 00:02:59,440 kodu
+  değiştirmek isteyip istemediğinizi
+  hayal edin.
+
+  54
+  00:02:59,440 --> 00:03:02,607 Belki
+  fikrimi değiştiririm ve kedi yapmak istemiyorum,
+  köpek yapmak istiyorum.
+
+  55
+  00:03:02,607 --> 00:03:04,930 Yani
+  şimdi birçok kez hav, hav, hav
+  demek zorunda.
+
+  56
+  00:03:04,930 --> 00:03:07,780
+  Şimdi bunu 50 farklı yerde
+  değiştirmem gerekiyor.
+
+  57
+  00:03:07,780 --> 00:03:10,030
+  Ve evet, elbette, bulabilir
+  ve değiştirebilirim,
+
+  58
+  00:03:10,030 --> 00:03:12,070 ama
+  hadi ama artık programcıyız gibi
+Machine Translated by Google
+  59
+  00:03:12,070 --> 00:03:15,080
+  kendimizi tekrar etmekten daha
+ iyi bir yol olmalı.
+
+  60
+  00:03:15,080 --> 00:03:18,400
+  Bu yüzden biraz düşünürsek bundan
+  daha iyisini yapabileceğimize bahse girerim
+
+
+  61
+  00:03:18,400 --> 00:03:22,960 bu
+  programı nasıl yapılandıracağımız
+  konusunda daha zor.
+
+  62
+  00:03:22,960 --> 00:03:26,750
+  Kelime dağarcığımızı biraz genişletirsek
+  bunu yapabiliriz.
+
+  63
+  00:03:26,750 --> 00:03:28,870
+  Görünüşe göre Python'da
+  ve diğer dillerde,
+
+  64
+  00:03:28,870 --> 00:03:31,270 bir
+  de while adında bir anahtar kelime var.
+
+  65
+  00:03:31,270 --> 00:03:34,960
+  Ve while, döngü denen şeyi ifade
+  etmenin bir yoludur,
+
+  66
+  00:03:34,960 --> 00:03:38,530 bir
+  şeyi tekrar tekrar yapacak bir kod
+  bloğu--
+
+  67
+  00:03:38,530 --> 00:03:43,480 0
+  defa, 1 defa, 2 defa, 50 defa,
+  istediğimiz kadar.
+
+  68
+  00:03:43,480 --> 00:03:48,520
+  Ama ayrıntıları bize
+  bırakırken
+
+  69
+  00:03:48,520 --> 00:03:52,010 bir
+  şeyi tekrar tekrar yapmak için
+  kendimizi nasıl ifade ettiğimiz.
+
+  70
+Machine Translated by Google
+  00:03:52,010 --> 00:03:56,260 O
+  halde burada VS Code'a geri döneyim ve
+  bunu yapmamı önermeme izin verin.
+
+  71
+  00:03:56,260 --> 00:04:01,765
+  While, tekrar tekrar soru sormamı
+  sağlayan bir yapı.
+
+  72
+  00:04:01,765 --> 00:04:03,640
+  Ve ne zaman bir soru
+  görsek, bu
+
+  73
+  00:04:03,640 --> 00:04:07,180 bir
+  Boole ifadesi biçiminde, cevabı şu olan
+  bir soru
+
+  74
+  00:04:07,180 --> 00:04:08,900
+  doğru veya yanlış.
+
+
+  75
+  00:04:08,900 --> 00:04:10,250 Bunu
+  nasıl yapabilirim?
+
+  76
+  00:04:10,250 --> 00:04:15,340
+  Nasıl üç kez miyav yazdırabilirim ve
+  üç kez bir soru sorabilirim
+
+  77
+  00:04:15,340 --> 00:04:18,079
+  hangisinin cevabı doğru mu yanlış mı?
+
+
+  78
+  00:04:18,079 --> 00:04:20,110 Peki
+  ya biraz saysam?
+
+  79
+  00:04:20,110 --> 00:04:21,560 Kelimenin
+  tam anlamıyla parmaklarımda gibi.
+
+
+  80
+  00:04:21,560 --> 00:04:25,360
+  Ve eğer üçten geriye doğru saymaya
+  çalışırsam, üç kez miyavlamak istiyorum.
+
+
+
+  81 00:04:25,360 --> 00:04:28,060
+  Üç parmağımı kaldırabilirim ve
+  miyavlayabilirim.
+
+  82
+Machine Translated by Google
+  00:04:28,060 --> 00:04:31,342 Ve
+  sonra parmaklarımdan birini
+  aşağı indirip miyavlayabilirim.
+
+  83
+  00:04:31,342 --> 00:04:33,550 Ve
+  parmaklarımdan birini aşağı
+  indirip miyavlayabilirim.
+
+  84
+  00:04:33,550 --> 00:04:34,870
+  Parmaklardan birini yere koyun.
+
+  85
+  00:04:34,870 --> 00:04:38,200
+  Ve belki de her
+  miyavladığımda sorabileceğim soru
+
+  86
+  00:04:38,200 --> 00:04:40,840 hala
+  parmağım var mı?
+
+  87
+  00:04:40,840 --> 00:04:42,370 Hala
+  parmağım var mı?
+
+  88
+  00:04:42,370 --> 00:04:43,662 Hala
+  parmağım var mı?
+
+  89
+  00:04:43,662 --> 00:04:45,490 Ve
+  cevap doğruysa, devam edin.
+
+  90
+  00:04:45,490 --> 00:04:48,040
+  Cevap yanlışsa durun.
+
+
+
+  91 00:04:48,040 --> 00:04:50,710
+  Peki bunu koda nasıl çevirebilirim?
+
+  92
+  00:04:50,710 --> 00:04:53,020
+  Bunu while anahtar
+  kelimesini ekledikten sonra--
+
+  93
+  00:04:53,020 --> 00:04:57,590
+  Sanırım tüm yapı taşlarına zaten sahibiz,
+  bunu yapmamı önereyim.
+
+  94
+  00:04:57,590 --> 00:04:59,860
+  teklif edeyim ben
+Machine Translated by Google
+  kendime bir değişken ver.
+
+  95
+  00:04:59,860 --> 00:05:02,740
+  Ve tamsayı için ona i diyeceğim, ama
+  Buna istediğim her şeyi diyebilirdim,
+
+  96
+  00:05:02,740 --> 00:05:04,780 ve onu
+  3'e sıfırlayacağım.
+
+  97
+  00:05:04,780 --> 00:05:07,780
+  Sonra Python'un bu yeni
+  özelliğini kullanacağım, bu arada,
+
+  98
+  00:05:07,780 --> 00:05:12,380 ve bir
+  soru soracağım, cevabı doğru ya da yanlış
+  olmalı.
+
+
+  99
+  00:05:12,380 --> 00:05:17,470 Ve i 0'a
+  eşit değilken diyeceğim.
+
+
+
+  100
+  00:05:17,470 --> 00:05:22,630 Yani
+  soruyu soracağım i 0'a eşit değilken
+  aşağıdakileri yapın.
+
+  101
+  00:05:22,630 --> 00:05:24,760 Satırın
+  sonundaki iki noktaya dikkat edin.
+
+
+  102
+  00:05:24,760 --> 00:05:25,890
+  Girintime dikkat edin.
+
+  103
+  00:05:25,890 --> 00:05:28,470
+  Ve tıpkı fonksiyonlarda olduğu gibi,
+ tıpkı koşul ifadelerinde olduğu gibi,
+
+
+  104
+  00:05:28,470 --> 00:05:34,440 sadece
+  bu diğer şeyin bir parçası olarak yürütmek
+  istediğiniz satırları girintilersiniz.
+
+  105
+  00:05:34,440 --> 00:05:37,920 i 0'a
+  eşit değilken ne yapmak istiyorum?
+
+
+
+  106
+Machine Translated by Google
+  00:05:37,920 --> 00:05:41,130 Sanırım
+  sadece miyavlamak istiyorum.
+
+
+  107
+  00:05:41,130 --> 00:05:44,820 Ama
+  sadece bu kodu yazmak yeterli değil.
+
+
+
+  108
+  00:05:44,820 --> 00:05:52,380 Çok
+  tehlikeli bir şekilde cat.py'nin Python'unu çalıştırıp
+  hemen şimdi Enter tuşuna bassaydım,
+
+
+  109
+  00:05:52,380 --> 00:05:55,560 ekranda
+  ne olabilir?
+
+
+  110
+  00:05:55,560 --> 00:05:58,320 Daha
+  önce programlamış olsanız da olmasanız da.
+
+
+  111
+  00:05:58,320 --> 00:06:01,200 Bu neden
+  potansiyel olarak çok kötü bir şey?
+
+
+
+  112
+  00:06:01,200 --> 00:06:05,700
+  Bir şeyleri bozmayacak ama bilgisayarımın
+  kontrolünü kaybedebilir
+
+
+  113
+  00:06:05,700 --> 00:06:07,270 bir şekilde.
+
+
+
+  114
+  00:06:07,270 --> 00:06:08,620 Herhangi
+  bir fikriniz var mı?
+
+
+  115
+  00:06:08,620 --> 00:06:10,120 Evet,
+  Timo?
+
+
+  116
+  00:06:10,120 --> 00:06:11,020
+  İZLEYİCİLER: Merhaba.
+
+
+  117
+  00:06:11,020 --> 00:06:18,790
+  Sanırım i her zaman 3'e eşit olduğu için miyav
+  çıktısını almaya devam edecek
+
+
+  118
+  00:06:18,790 --> 00:06:20,995 ve while
+  her zaman doğrudur.
+Machine Translated by Google
+
+  119
+  00:06:20,995 --> 00:06:22,120
+  DAVID MALAN: Evet, kesinlikle.
+
+  120
+  00:06:22,120 --> 00:06:26,320
+  i'yi 3'e başlatıyorsam, yani 1.
+  satırda 3'e eşitliyorsam,
+
+  121
+  00:06:26,320 --> 00:06:29,440 o
+  zaman soruyu soruyorum, i 0'a
+  eşit değilken,
+
+  122
+  00:06:29,440 --> 00:06:31,810 ve
+  bu doğru olacak, 0'a eşit değil,
+
+
+
+  123
+  00:06:31,810 --> 00:06:34,240
+  açıkça 3'e eşit, yazdır miyav.
+
+  124
+  00:06:34,240 --> 00:06:38,950
+  Ve bir while döngüsünün çalışma şekli,
+  Python yorumlayıcısının yalnızca
+
+  125
+  00:06:38,950 --> 00:06:40,480
+  sürekli ileri geri gidiyor.
+
+  126
+  00:06:40,480 --> 00:06:45,310
+  1. satırdan 2. satıra,
+  ardından 3. satıra gider,
+
+  127
+  00:06:45,310 --> 00:06:48,490 ve
+  ardından soruyu tekrar sormak
+  için 2. satıra dönüyor.
+
+  128
+  00:06:48,490 --> 00:06:50,950
+  Cevap hala doğruysa 3. satıra
+  gider.
+
+  129
+  00:06:50,950 --> 00:06:52,420
+  Ardından 2. satıra geri döner.
+
+  130
+  00:06:52,420 --> 00:06:55,090
+  Cevap hala doğruysa,
+Machine Translated by Google
+  3. satıra geri döner.
+
+  131
+  00:06:55,090 --> 00:07:00,100
+  Ve Timo'nun bakış açısına göre, i'nin
+  değerini gerçekten değiştirmiyorsanız,
+
+  132
+  00:07:00,100 --> 00:07:04,450 her
+  zaman 3'tür, kelimenin tam anlamıyla
+  sonsuza kadar döngü yapacaksınız,
+
+  133
+  00:07:04,450 --> 00:07:07,028 ve bu
+  tesadüfi bir sonsuz döngü.
+
+  134
+  00:07:07,028 --> 00:07:08,570 Yani
+  bundan daha akıllı olmalıyız.
+
+  135
+  00:07:08,570 --> 00:07:09,820
+  Ve vurmayacağım
+  gir çünkü ben yokum
+
+
+  136
+  00:07:09,820 --> 00:07:12,195 burada
+  bilgisayarımın kontrolünü kaybetmek
+  istiyorum öyle ki
+
+  137
+  00:07:12,195 --> 00:07:14,080
+  sonsuza kadar miyav basmak.
+
+  138
+  00:07:14,080 --> 00:07:16,960
+  Neyse ki, bunu yaparsanız ve
+  kendinizi bulursanız
+
+  139
+  00:07:16,960 --> 00:07:21,940
+  yanlışlıkla sonsuz döngüde,
+  İptal veya kesme için Control-C
+
+  140
+  00:07:21,940 --> 00:07:23,110 senin
+  arkadaşın olacak.
+
+  141
+  00:07:23,110 --> 00:07:26,110
+  Kontrolü kaybetmiş gibi
+  görünürseniz, yeniden başlatmanız gerekmez
+
+
+  142
+  00:07:26,110 --> 00:07:27,520
+Machine Translated by Google
+  veya bilgisayarı kapatın.
+
+  143
+  00:07:27,520 --> 00:07:30,430
+  Terminal pencerenizde Control-
+  C'ye basabilirsiniz.
+
+  144
+  00:07:30,430 --> 00:07:32,560 ve bu
+  muhtemelen sorunu çözecektir.
+
+  145
+  00:07:32,560 --> 00:07:35,920 Pekala,
+  her seferinde miyavladıktan sonra ne
+  yapmak istiyorum?
+
+  146
+  00:07:35,920 --> 00:07:39,820 Sanırım
+  burada yapmak istediğim şey belki
+  de bunun gibi bir şey.
+
+  147
+  00:07:39,820 --> 00:07:46,750
+  i'yi şu anki değer eksi 1'e eşit olacak
+  şekilde güncelleyeyim.
+
+
+  148
+  00:07:46,750 --> 00:07:47,530 Hay
+  aksi, üzgünüm.
+
+  149
+  00:07:47,530 --> 00:07:48,820 Eksi 1.
+
+
+
+  150
+  00:07:48,820 --> 00:07:51,310
+  Yani eğer i her yinelemede--
+
+
+  151
+  00:07:51,310 --> 00:07:55,090
+  i'yi bir eksik, bir eksik, bir eksik
+  olacak şekilde güncelliyorum
+
+
+  152
+  00:07:55,090 --> 00:08:00,610 sonunda
+  0'a ulaşmalıdır, bu noktada 9.2'nin
+  sorusunun cevabı
+
+  153
+  00:08:00,610 --> 00:08:02,540 şimdi
+  yanlış olacak.
+
+
+  154
+  00:08:02,540 --> 00:08:03,770 Bakalım
+  işe yarayacak mı?
+Machine Translated by Google
+
+  155
+  00:08:03,770 --> 00:08:06,790
+  Terminal pencereme gidip cat.py'nin
+  Python'unu çalıştıracağım,
+
+  156
+  00:08:06,790 --> 00:08:09,700 ve
+  gerçekten de üç miyav alıyorum.
+
+  157
+  00:08:09,700 --> 00:08:10,360 Neden?
+
+
+
+  158
+  00:08:10,360 --> 00:08:14,230 Çünkü
+  bunu yazılımdaki bir makine gibi
+  bağladım, isterseniz.
+
+  159
+  00:08:14,230 --> 00:08:17,360 i'yi 3'e
+  eşitledim, sonra bu soruyu sorup
+  duruyorum.
+
+  160
+  00:08:17,360 --> 00:08:21,940
+  Ama vitesleri çevirmeye devam ediyorum,
+  değişkenin değerini değiştirmeye devam ediyorum
+
+
+  161
+  00:08:21,940 --> 00:08:25,180 sonuçta
+  gerçekten olduğundan emin olmak
+  için
+
+  162
+  00:08:25,180 --> 00:08:30,468
+  azaltılıyor-- yani sonunda 0'a ulaşana kadar 1
+  azaltılıyor.
+
+  163
+  00:08:30,468 --> 00:08:33,010
+  Şimdi düşünenler için
+  Ben biraz daha grafiksel olarak,
+
+  164
+  00:08:33,010 --> 00:08:35,110 İzin
+  verin her zamanki akış şemalarımızdan
+  birini açayım.
+
+
+  165
+  00:08:35,110 --> 00:08:38,610 Bu
+  sadece aynı şeyin grafiksel bir temsili.
+
+
+
+  166
+Machine Translated by Google
+  00:08:38,610 --> 00:08:39,610 Neler
+  olduğuna dikkat edin.
+
+  167
+  00:08:39,610 --> 00:08:44,020
+  Önce programı başlatırım
+  ve sonra i'yi 3'e başlatırım,
+
+  168
+  00:08:44,020 --> 00:08:46,300 ve
+  ardından ilk sorumu soruyorum.
+
+
+
+  169
+  00:08:46,300 --> 00:08:48,577 Yine
+  elmaslar her zaman soruları temsil
+  eder.
+
+  170
+  00:08:48,577 --> 00:08:50,410 Ve
+  cevap doğru mu yanlış mı olacak.
+
+
+
+  171
+  00:08:50,410 --> 00:08:52,690 i 0
+  değil mi?
+
+  172
+  00:08:52,690 --> 00:08:54,190 Değil,
+  3'e eşit.
+
+  173
+  00:08:54,190 --> 00:08:56,710 Yani
+  doğru çizgiyi takip edersem miyavlarım.
+
+  174
+  00:08:56,710 --> 00:09:01,690 Sonra
+  bu oku takip ediyorum ve i'yi i eksi 1'e
+  eşitleyecek şekilde güncelliyorum.
+
+  175
+  00:09:01,690 --> 00:09:05,200
+  Hikayenin bu noktasında, i
+  muhtemelen matematiksel olarak 2'ye eşittir.
+
+  176
+  00:09:05,200 --> 00:09:06,400 Oku
+  takip ediyorum.
+
+
+  177
+  00:09:06,400 --> 00:09:07,483 Ve işte
+  döngü.
+
+  178
+  00:09:07,483 --> 00:09:09,400
+Machine Translated by Google
+  Bu yüzden bunu
+  grafiksel olarak görmek güzel,
+
+  179
+  00:09:09,400 --> 00:09:12,770 belki
+  de tam anlamıyla ileri geri döngüyü
+  görebildiğiniz içindir.
+
+  180
+  00:09:12,770 --> 00:09:14,240
+  Şimdi soruyu tekrar soruyorum.
+
+  181
+  00:09:14,240 --> 00:09:16,270 2,
+  0'a eşit değil mi?
+
+  182
+  00:09:16,270 --> 00:09:20,060 0'a
+  eşit değil, 2, bu yüzden tekrar
+  miyavlıyoruz.
+
+  183
+  00:09:20,060 --> 00:09:21,940 i'yi
+  2'den 1'e değiştiriyoruz.
+
+  184
+  00:09:21,940 --> 00:09:23,770 Peki
+  1, 0'a eşit değil mi?
+
+  185
+  00:09:23,770 --> 00:09:27,490
+  Açıkçası 1 0 değil, bu yüzden
+  tekrar miyavlıyoruz.
+
+  186
+  00:09:27,490 --> 00:09:30,580 i'yi
+  tekrar azaltıyoruz. şimdi 0'ım
+
+  187
+  00:09:30,580 --> 00:09:33,070 0,
+  0'a eşit değil mi?
+
+  188
+  00:09:33,070 --> 00:09:37,930
+  Hayır, 0'a eşit, yani cevap yanlış ve
+  duruyoruz.
+
+  189
+  00:09:37,930 --> 00:09:41,260
+  Yani orada, belki de önceki akış
+  şemalarımızdan daha fazla,
+
+  190
+  00:09:41,260 --> 00:09:45,295
+  gerçekten yapısını görüyor musunuz?
+Machine Translated by Google
+  programın içinde neler oluyor?
+
+  191
+  00:09:45,295 --> 00:09:47,920
+  Ve bu çizelgeleri yapma alışkanlığı
+  edinmeniz gerekmiyor.
+
+  192
+  00:09:47,920 --> 00:09:50,830 veya bu
+  çizelgeleri oluşturmak, ama sadece ne
+ olduğuna dair ilk geçiş olarak
+
+
+  193
+  00:09:50,830 --> 00:09:55,010
+  bilgisayarın içinde olup bitenler, gerçekten de
+  onu görselleştirmenin bir yolu.
+
+  194
+  00:09:55,010 --> 00:09:57,760
+  Pekala, her zaman olduğu gibi,
+  birçok farklı yol olduğunu önermeme izin verin.
+
+  195
+  00:09:57,760 --> 00:09:58,690 bu
+  sorunu çözmek için.
+
+  196
+  00:09:58,690 --> 00:10:01,023 Ve
+  biraz farklı düşünmek istediğinizi
+  varsayalım.
+
+  197
+  00:10:01,023 --> 00:10:04,700 Belki
+  3'ten başlayıp 0'a kadar geri saymayı
+  sevmiyorsun.
+
+  198
+  00:10:04,700 --> 00:10:05,200 Neden?
+
+
+
+  199
+  00:10:05,200 --> 00:10:07,075
+  Belki de sadece beynin bu
+  şekilde çalışmıyor
+
+  200
+  00:10:07,075 --> 00:10:09,100 ve
+  aşağı yerine yukarı saymayı tercih
+  ediyorsunuz.
+
+  201
+  00:10:09,100 --> 00:10:10,400
+  Tamamen iyi.
+
+  202
+Machine Translated by Google
+  00:10:10,400 --> 00:10:15,700
+  Devam edeyim ve i'yi 3 yerine 1 olarak
+  ayarlamak için buradaki kodumu değiştireyim.
+
+  203
+  00:10:15,700 --> 00:10:18,040 Ve
+  burada, mantığımı değiştirmeme izin verin.
+
+  204
+  00:10:18,040 --> 00:10:20,500
+  0'a eşit olmadığını kontrol
+  etmek yerine, belki gibi
+
+  205
+  00:10:20,500 --> 00:10:23,500 değil
+  şeklinde düşünmeyi sevmiyorsunuz
+  çünkü bu biraz kafa karıştırıcı,
+
+  206
+  00:10:23,500 --> 00:10:28,720 ve
+  olabilir, hadi i'nin 3'ten küçük veya
+  eşit olduğunu kontrol edelim.
+
+  207
+  00:10:28,720 --> 00:10:30,310 O
+  yüzden biraz daha açık olacağız.
+
+  208
+  00:10:30,310 --> 00:10:34,690
+  Her miyav baskısında 1'den 3'e
+  kadar sayacağız,
+
+  209
+  00:10:34,690 --> 00:10:36,970 ama
+  buradaki satırı değiştirmem
+  gerekecek.
+
+  210
+  00:10:36,970 --> 00:10:40,240 Birini
+  benim yerime hat değiştirmesi için
+  çağırabilir miyiz bir bakayım.
+
+  211
+  00:10:40,240 --> 00:10:47,560
+  1'den yukarı doğru saymakla tutarlı
+  olması için 4. satırı nasıl değiştirmek isterim?
+
+  212
+  00:10:47,560 --> 00:10:52,080 ile 3
+  arasında mı?
+
+  213
+  00:10:52,080 --> 00:10:57,465
+  SEYİRCİ: Her miyavlayışında ben
+  artı 1 olurdum.
+Machine Translated by Google
+
+  214
+  00:10:57,465 --> 00:10:58,590
+  DAVID MALAN: Evet, kesinlikle.
+
+  215
+  00:10:58,590 --> 00:11:01,800 Bu
+  durumda, 1 çıkarmak değil, bir
+  eklemek istiyoruz.
+
+
+  216
+  00:11:01,800 --> 00:11:05,460 Ve
+  aslında, bunu düşünürseniz, bu 2
+  çok kötü bitebilir.
+
+  217
+  00:11:05,460 --> 00:11:09,630
+  1'den saymaya başlarsanız ve sürekli
+  1 çıkarırsanız, 1 çıkarırsanız,
+
+  218
+  00:11:09,630 --> 00:11:11,850 1'i
+  çıkarırsak, sanırım kendimizi
+  bulacağız
+
+  219
+  00:11:11,850 --> 00:11:15,780 aynı
+  problemle, yani asla durmayacağız çünkü
+  biz
+
+  220
+  00:11:15,780 --> 00:11:19,140
+  ayağa kalkmak yerine giderek daha fazla
+  olumsuz olmaya devam edecek
+
+  221
+  00:11:19,140 --> 00:11:20,160 3
+  numaraya.
+
+
+  222
+  00:11:20,160 --> 00:11:24,660
+  Bence haklısın, bunu i eşittir i artı 1
+  olarak değiştirmem gerekiyor.
+
+  223
+  00:11:24,660 --> 00:11:27,840
+  Ve şimdi sadece netlik için
+  eşittir işaretine de dikkat edin
+
+  224
+  00:11:27,840 --> 00:11:30,810 yine
+  sağdan sola atama operatörümüz.
+
+
+
+  225
+Machine Translated by Google
+  00:11:30,810 --> 00:11:33,150
+  Mantıken bu size garip gelebilir.
+
+
+
+  226
+  00:11:33,150 --> 00:11:35,880
+  Mesela i kendisi artı 1'e nasıl eşitleyebilirim?
+
+  227
+  00:11:35,880 --> 00:11:39,720 Bu
+  kodu sağdan sola çalıştırana kadar
+  olmaz.
+
+  228
+  00:11:39,720 --> 00:11:44,550
+  i'ye 1 eklersiniz veya i'den 1 çıkarırsınız ve
+  ardından i'nin değerini güncellersiniz.
+
+  229
+  00:11:44,550 --> 00:11:45,240 solda.
+
+
+
+  230
+  00:11:45,240 --> 00:11:48,400
+  Atama, değeri sağdan sola kopyalar.
+
+
+
+  231
+  00:11:48,400 --> 00:11:49,780 Bunu
+  başka nasıl yapabilirim?
+
+  232
+  00:11:49,780 --> 00:11:55,110
+  Pekala, çoğu programcının, daha genel olarak
+  bilgisayar bilimcisinin,
+
+  233
+  00:11:55,110 --> 00:11:57,180, 0'dan
+  saymaya başlama eğilimindedir.
+
+  234
+  00:11:57,180 --> 00:11:59,640
+  Bu bir kongre ve aslında
+  iyi tarafları bile var
+
+  235
+  00:11:59,640 --> 00:12:02,440
+  Python'da ve genel olarak konuşulan
+  diğer dillerde,
+
+  236
+  00:12:02,440 --> 00:12:04,600 0'dan
+  saymaya başlamak iyi bir şey
+Machine Translated by Google
+  237
+  00:12:04,600 --> 00:12:07,620
+  gerçek dünyada yaptığımız gibi
+  1'den saymak yerine.
+
+  238
+  00:12:07,620 --> 00:12:10,170
+  Devam edelim ve şimdi bu kuralı
+  benimseyelim.
+
+  239
+  00:12:10,170 --> 00:12:14,400 i'yi
+  0'a eşitleyeyim ve şimdi bir
+  değişiklik yapmam gerekiyor.
+
+  240
+  00:12:14,400 --> 00:12:19,560
+  Dikkat edin, eğer mantığımı
+  değiştirmezsem, bu program arızalı hale geldi.
+
+  241
+  00:12:19,560 --> 00:12:20,730
+  Kedide böcek var.
+
+  242
+  00:12:20,730 --> 00:12:23,940
+  Şimdi olduğu gibi çalıştırırsam
+  dört kez miyavlıyor.
+
+  243
+  00:12:23,940 --> 00:12:27,660
+  Ama buradaki en kolay düzeltme
+
+  benim eşitsizliğimi değiştirmek olacaktır.
+
+
+  244
+  00:12:27,660 --> 00:12:31,810 bu,
+  küçüktür veya eşittir yerine
+  küçüktür.
+
+  245
+  00:12:31,810 --> 00:12:36,480
+  Şimdi 0'dan başlıyorum ama 3'e
+  kadar çıkıyorum.
+
+  246
+  00:12:36,480 --> 00:12:40,020
+  Ve şimdiye kadar gördüğümüz onca
+  şeyden bu mümkün olsa da,
+
+  247
+  00:12:40,020 --> 00:12:44,400
+  belki en az tanıdık geliyor, çoğumuz 1,
+  2, sonra 3'ten başlayabiliriz,
+
+  248
+Machine Translated by Google
+  00:12:44,400 --> 00:12:47,220 şimdi
+  0'dan başlamak iyi bir alışkanlık,
+
+
+
+  249
+  00:12:47,220 --> 00:12:52,110 ve
+  nihayetinde önemsediğiniz değere
+  kadar çıkın,
+
+  250
+  00:12:52,110 --> 00:12:53,510 3
+  burada bu durumda.
+
+
+  251
+  00:12:53,510 --> 00:12:55,260
+  Pekala, burada işleri biraz
+  sıkılaştırmama izin verin.
+
+  252
+  00:12:55,260 --> 00:12:57,630
+  Bu sadece sayma
+  sorunumu çözmekle kalmayacak,
+
+  253
+  00:12:57,630 --> 00:13:00,330 şimdi
+  beklendiği gibi 3 kez miyavlıyor, var
+
+
+
+  254
+  00:13:00,330 --> 00:13:03,240 i
+  eşittir i ifade etmenin daha özlü bir
+  yolu
+
+  255
+  00:13:03,240 --> 00:13:06,690 artı 1
+  ve bunun nedeni, kodda yapılacak
+  çok popüler bir şey olmasıdır.
+
+  256
+  00:13:06,690 --> 00:13:11,830 Bunun
+  yerine i artı eşittir 1 diyebilirsiniz, o
+  kadar.
+
+  257
+  00:13:11,830 --> 00:13:14,250 Her
+  şeyi sağ tarafa koymanıza gerek yok.
+
+
+
+  258
+  00:13:14,250 --> 00:13:19,320
+  Bu, tam olarak aynı şeyi söyleyen özel
+  bir sözdizimidir, artış i,
+
+  259
+  00:13:19,320 --> 00:13:21,742
+Machine Translated by Google
+  ancak bunu birkaç
+  tuşa daha az basarak yapıyor.
+
+  260
+  00:13:21,742 --> 00:13:24,700
+  Yazması biraz daha keyifli, okuması
+  biraz daha hızlı,
+
+  261
+  00:13:24,700 --> 00:13:25,830 bu
+  sadece bir gelenek.
+
+  262
+  00:13:25,830 --> 00:13:29,745
+  C, C++, Python'da
+  programlama yapanlarınız--
+
+  263
+  00:13:29,745 --> 00:13:30,660 hayır,
+  Python değil.
+
+  264
+  00:13:30,660 --> 00:13:36,990 C, C+
+  +, Java, JavaScript artı-artı veya eksi-eksi
+  görmüş olabilir.
+
+  265
+  00:13:36,990 --> 00:13:40,080
+  Üzgünüm, Python'da yok, yani onu
+  kullanamazsınız.
+
+  266
+  00:13:40,080 --> 00:13:44,040 Bu,
+  kod satırınızın olabileceği kadar kısa
+  ve öz.
+
+  267
+  00:13:44,040 --> 00:13:44,870 Pekala.
+
+
+
+  268
+  00:13:44,870 --> 00:13:46,620
+  Bakmak için burada
+  durayım, öyleyse, varsa
+
+  269
+  00:13:46,620 --> 00:13:53,400 while
+  döngülerinin bu uygulamaları
+  hakkında herhangi bir soru.
+
+  270
+  00:13:53,400 --> 00:13:55,620
+  KİTLE: Döngüler gibi şeyler
+  kullanabilir miyiz?
+Machine Translated by Google
+  271
+  00:13:55,620 --> 00:14:02,760
+  başlangıçta belirli bir i-değerine
+  sahip olanlar
+
+
+  272
+  00:14:02,760 --> 00:14:09,300 ve o
+  şeye koyduğunuz özel koşuldan
+  hareket ediyor
+
+  273
+  00:14:09,300 --> 00:14:12,090 ve
+  ilerledikçe artırıyor musunuz?
+
+  274
+  00:14:12,090 --> 00:14:15,700
+  DAVID MALAN: Kısa cevap, hayır, tarif ettiğiniz
+  şeyi yapamazsınız.
+
+  275
+  00:14:15,700 --> 00:14:18,790 ama
+  yakında göreceğimiz başka bir for
+  döngüsü türü daha var.
+
+  276
+  00:14:18,790 --> 00:14:20,520 Ama
+  birazdan buna gelelim.
+
+  277
+  00:14:20,520 --> 00:14:26,080
+  Burada while kullanan döngülerle
+  ilgili diğer sorular?
+
+  278
+  00:14:26,080 --> 00:14:28,443
+  KİTLE: Bu akış şeması hakkında bir
+  sorum vardı.
+
+
+  279
+  00:14:28,443 --> 00:14:29,110
+  DAVID MALAN: Tamam.
+
+
+  280
+  00:14:29,110 --> 00:14:30,490
+  İZLEYİCİLER: Orada-- evet.
+
+  281
+  00:14:30,490 --> 00:14:36,510
+  Belirli türden ifadeler için belirli
+  semboller vardı:
+
+
+  282
+  00:14:36,510 --> 00:14:42,283
+  kesinlikle bu tür ifadeler için
+  kullanılıyorlar mı?
+Machine Translated by Google
+
+  283
+  00:14:42,283 --> 00:14:43,200
+  DAVID MALAN: Öyleler.
+
+  284
+  00:14:43,200 --> 00:14:44,790
+  Ben de kasıtlı--
+
+  285
+  00:14:44,790 --> 00:14:47,340
+  Kasten belirli türde
+  semboller, belirli şekiller kullanıyorum.
+
+  286
+  00:14:47,340 --> 00:14:51,570
+  burada oval, start ve stop için
+  gelenekseldir.
+
+  287
+  00:14:51,570 --> 00:14:56,820
+  Ödev veya yazdırma gibi herhangi bir
+  kod ifadesi için dikdörtgenler kullandım
+
+  288
+  00:14:56,820 --> 00:14:57,630 vb.
+
+
+
+  289
+  00:14:57,630 --> 00:15:02,040
+  Ve sorabileceğiniz soruları temsil
+  etmek için elmasları kullandım,
+
+  290
+  00:15:02,040 --> 00:15:03,988
+  koşullar gördüğümüz gibi.
+
+  291
+  00:15:03,988 --> 00:15:06,030
+  Bunu kendin için
+  yapıyorsan, eğer sadece
+
+  292
+  00:15:06,030 --> 00:15:07,950
+  kodunuzu anlamlandırmaya
+  çalışmak ve onu yazmak,
+
+  293
+  00:15:07,950 --> 00:15:10,158
+  kesinlikle bu resmi sembolleri
+  kullanmanıza gerek yok,
+
+  294
+  00:15:10,158 --> 00:15:13,367
+  ama tutarlı olmaya çalıştım
+Machine Translated by Google
+  bazı en iyi uygulamalarla.
+
+  295
+  00:15:13,367 --> 00:15:15,450
+  Ve aslında, aynı resme geri
+  döneyim,
+
+  296
+  00:15:15,450 --> 00:15:17,533
+  çünkü bu, resmimizin ilk
+  versiyonuydu,
+
+  297
+  00:15:17,533 --> 00:15:19,830 ama
+  o zamandan beri kodumuzu
+  birkaç kez değiştirdik.
+
+  298
+  00:15:19,830 --> 00:15:22,455
+  Bu, hatırlayın, sorduğumuz
+  sorunun olduğu versiyondu.
+
+  299
+  00:15:22,455 --> 00:15:26,340 i 0'a
+  eşit değil miydi, devam edeyim ve
+  şimdi bu kodu değiştireyim
+
+  300
+  00:15:26,340 --> 00:15:29,250
+  yaptığımız bir sonraki sürümü
+  temsil etmek için, hatırlayın,
+
+  301
+  00:15:29,250 --> 00:15:31,950
+  mantığımızı 1'den saymaya başlayacak
+  şekilde değiştirdik,
+
+  302
+  00:15:31,950 --> 00:15:36,060 i'nin
+  3'ten küçük veya eşit olup olmadığını
+  kontrol etmek için sorumuzu değiştirdi,
+
+
+  303
+  00:15:36,060 --> 00:15:39,570 ama
+  sonra sayma dışında her şey aynıydı.
+
+
+
+  304
+  00:15:39,570 --> 00:15:41,580 artık
+  eksi yerine artı.
+
+  305
+  00:15:41,580 --> 00:15:47,040
+  Ve sonra şimdi 0'dan başlayıp 0'a
+  kadar sayarak biraz daha geliştirdik.
+Machine Translated by Google
+
+  306
+  00:15:47,040 --> 00:15:48,570 ama
+  3'ten değil.
+
+  307
+  00:15:48,570 --> 00:15:52,170
+  Ve bu kodu burada sadece 1'i
+  artırarak daralttık.
+
+  308
+  00:15:52,170 --> 00:15:54,220 biraz
+  daha kısa sözdizimini kullanarak.
+
+
+
+  309
+  00:15:54,220 --> 00:15:57,120
+  Dolayısıyla bu noktada, bu akış şemaları
+  giderek daha az kullanışlı hale gelebilir.
+
+  310
+  00:15:57,120 --> 00:16:00,690 bizim
+  için, çünkü konsepti bir kez kavradığınızda
+
+
+
+  311
+  00:16:00,690 --> 00:16:03,750 ve
+  umarım resim bu konsepti hayata
+  geçirmeye yardımcı olur,
+
+  312
+  00:16:03,750 --> 00:16:06,600
+  tamamen koda odaklanmak kesinlikle
+  iyi
+
+  313
+  00:16:06,600 --> 00:16:09,240 ve
+  sadece bunun gibi bir şey düşün,
+  hatta çiz
+
+  314
+  00:16:09,240 --> 00:16:12,120 daha
+  karmaşık bir şeye kafa yormanız
+  gerekirse
+
+  315
+  00:16:12,120 --> 00:16:13,200
+  alıştığınızdan daha fazla.
+
+  316
+  00:16:13,200 --> 00:16:15,240
+  Pekala, izin verirseniz devam
+  edeyim ve teklifte bulunayım.
+
+
+  317
+Machine Translated by Google
+  00:16:15,240 --> 00:16:20,490 başka
+  bir döngü türü yaklaşımına geçiş yapıyoruz
+
+
+
+  318
+  00:16:20,490 --> 00:16:22,740 burada
+  anahtar kelime, yani bir for döngüsü.
+
+  319
+  00:16:22,740 --> 00:16:25,050
+  Ve bu diğer dillerde var olan bir
+  kelimedir,
+
+  320
+  00:16:25,050 --> 00:16:28,290 ancak
+  diğer diller kadar çok özelliğe sahip olması
+  gerekmez
+
+  321
+  00:16:28,290 --> 00:16:29,260 için
+  kullan.
+
+
+  322
+  00:16:29,260 --> 00:16:33,300 Ama
+  farklı bir döngü türü var -- while döngüsü
+  değil, for döngüsü.
+
+  323
+  00:16:33,300 --> 00:16:37,620
+  Ve bir for döngüsü kendimizi biraz farklı
+  ifade etmemizi sağlayacak,
+
+  324
+  00:16:37,620 --> 00:16:40,020 ama
+  bunu yapmanın en kolay yolunu
+  öneriyorum
+
+  325
+  00:16:40,020 --> 00:16:43,890
+  Python'da başka bir fikir ortaya
+  koyarsak o da bir liste fikridir.
+
+  326
+  00:16:43,890 --> 00:16:48,120
+  Ve burada da, kelime oyunu yapmak niyetinde
+  değiliz, veri türleri listesine ekliyoruz
+
+
+  327
+  00:16:48,120 --> 00:16:49,290
+  Python'un desteklediği.
+
+  328
+  00:16:49,290 --> 00:16:51,480 Diziler
+  veya diziler gördük.
+Machine Translated by Google
+  329
+  00:16:51,480 --> 00:16:53,050
+  Tamsayılar veya tamsayılar.
+
+
+  330
+  00:16:53,050 --> 00:16:54,780 Kayan
+  veya kayan nokta değerleri.
+
+
+  331
+  00:16:54,780 --> 00:16:56,670 Bool'lar
+  veya Boole ifadeleri.
+
+
+  332
+  00:16:56,670 --> 00:17:00,480
+  Python ayrıca başka bir veri türü
+  olan listelere de sahiptir.
+
+
+  333
+  00:17:00,480 --> 00:17:02,730 ama
+  harika bir şekilde, bu muhtemelen
+  oldukça tanıdık.
+
+
+  334
+  00:17:02,730 --> 00:17:06,240 Gerçek
+  dünyadaki şeylerin listesi, Python'daki
+  şeylerin listesidir.
+
+
+  335
+  00:17:06,240 --> 00:17:11,490
+  Hepsi aynı yerde birden fazla değer
+  içermenin bir yolu, hepsi
+
+
+  336
+  00:17:11,490 --> 00:17:12,940 aynı
+  değişkende.
+
+
+  337
+  00:17:12,940 --> 00:17:14,319 Peki
+  bununla ne demek istiyorum?
+
+
+  338
+  00:17:14,319 --> 00:17:18,480
+  Pekala, burada VS Kodumuza geri
+  dönmemizi önermeme izin verin,
+
+
+  339
+  00:17:18,480 --> 00:17:22,480 ve
+  burada kodumla yeniden başlamama izin
+  verin ve hiç while döngüsü kullanmayayım,
+
+
+  340
+  00:17:22,480 --> 00:17:24,690 ama şu
+  yeni anahtar kelimeyi kullanmama izin verin.
+
+
+  341
+Machine Translated by Google
+  00:17:24,690 --> 00:17:30,363
+  Döngünün çalışma şekli, bir öğe listesi üzerinde
+  yineleme yapmanıza izin vermesidir.
+
+
+  342
+  00:17:30,363 --> 00:17:31,530 Peki bu
+  neye benziyor?
+
+
+  343
+  00:17:31,530 --> 00:17:32,940
+  Şöyle görünebilir--
+
+
+  344
+  00:17:32,940 --> 00:17:39,030 i ve
+  aşağıdaki 0, 1, 2 öğe listesi için.
+
+
+
+  345
+  00:17:39,030 --> 00:17:41,640
+  Bu benim başlangıç noktam
+  ve her yinelemede
+
+
+  346
+  00:17:41,640 --> 00:17:45,450 bu
+  döngü-- yani bu döngünün tekrar
+  tekrar her yürütülmesinde,
+
+
+  347
+  00:17:45,450 --> 00:17:47,550 Miyav
+  çıktısını almak istiyorum.
+
+
+  348
+  00:17:47,550 --> 00:17:51,360
+  Şimdi itiraf edeceğim, bu kodun
+  görünüşünü şimdiden beğendim
+
+
+  349
+  00:17:51,360 --> 00:17:53,580 burada
+  yeni bir sözdizimi olmasına rağmen,
+
+
+
+  350
+  00:17:53,580 --> 00:17:55,770 çünkü
+  sadece while döngüsünden daha kısa.
+
+
+
+  351
+  00:17:55,770 --> 00:17:58,480
+  Kısa bir süre önce while
+  döngüsünde birden çok satır vardı
+
+
+  352
+  00:17:58,480 --> 00:18:01,320 ve i'nin
+  ne olduğuna karar vermek tamamen
+  bana bağlıydı.
+Machine Translated by Google
+
+  353
+  00:18:01,320 --> 00:18:04,530 Bir
+  koşulu kontrol etmem gerekiyor, i'yi
+  artırmam veya azaltmam gerekiyor.
+
+
+  354
+  00:18:04,530 --> 00:18:07,230
+  Nispeten konuşursak, çok iş
+  yapıyormuşum gibi,
+
+
+  355
+  00:18:07,230 --> 00:18:10,710 o şeyi
+  döndürmek, o döngüyü devam
+  ettirmek.
+
+
+  356
+  00:18:10,710 --> 00:18:12,720 Bir
+  bakıma çok mekanikti.
+
+
+  357
+  00:18:12,720 --> 00:18:18,030
+  Zihninizin gözünde belki de tüm bu değişkenler gibi
+  dönen dişlileri görebilirsiniz.
+
+
+  358
+  00:18:18,030 --> 00:18:21,120 değişiyor
+  ve bu sorular soruluyor.
+
+
+
+  359
+  00:18:21,120 --> 00:18:24,450
+  Bir for döngüsü tüm
+  bunları basitleştirir ve yalnızca
+
+
+  360
+  00:18:24,450 --> 00:18:27,480 diyor ki,
+  i gibi bir değişken istiyorsanız, bir sayı,
+
+
+
+  361
+  00:18:27,480 --> 00:18:31,770 ve bu
+  döngünün kaç kez yürütülmesini istediğinizi önceden
+  biliyorsunuz-- üç
+
+
+  362
+  00:18:31,770 --> 00:18:34,380 kez, ne
+  olduğunu bir nevi belirteceğiz
+
+
+
+  363
+  00:18:34,380 --> 00:18:37,560 i'nin açık
+  bir şekilde değerler olarak almasını
+  istiyor musunuz?
+Machine Translated by Google
+  364
+  00:18:37,560 --> 00:18:41,940
+  Bu döngüde i, Python tarafından
+  otomatik olarak 0 olarak başlatılacak,
+
+  365
+  00:18:41,940 --> 00:18:43,530
+  sonra miyav basılacak.
+
+  366
+  00:18:43,530 --> 00:18:48,870
+  Sonra Python otomatik olarak i'yi 1'e
+  eşitleyecek, ardından miyav yazdırılacak.
+
+  367
+  00:18:48,870 --> 00:18:53,520
+  Ardından Python i'yi otomatik olarak 2
+  olarak güncelleyecek ve miyav yazdırılacak.
+
+  368
+  00:18:53,520 --> 00:18:57,270
+  Ve o listedeki değerler bu kadar
+  olduğu için, Python duracak
+
+  369
+  00:18:57,270 --> 00:19:00,090 ve
+  toplamda yalnızca üç kez
+  miyavlayacak.
+
+  370
+  00:19:00,090 --> 00:19:01,170 Liste
+  nedir?
+
+  371
+  00:19:01,170 --> 00:19:05,130
+  Bu programdaki liste tam olarak şu
+  şekildedir, 0, virgül, 1, virgül, 2,
+
+  372
+  00:19:05,130 --> 00:19:07,200 ve
+  köşeli parantezlere dikkat edin.
+
+  373
+  00:19:07,200 --> 00:19:11,350
+  Bunlar parantez değil, bir listeyi temsil
+  eden köşeli parantezler.
+
+  374
+  00:19:11,350 --> 00:19:15,540
+  Programcı olarak görsel olarak bu kadar--
+  Python dili bu şekilde bilir
+
+  375
+  00:19:15,540 --> 00:19:18,460
+  bunun bir liste olmasını istediğinizi.
+Machine Translated by Google
+
+  376
+  00:19:18,460 --> 00:19:23,490
+  Öyleyse devam edeyim ve cat.py'nin bu
+  Python'unu çalıştırayım ve aynı şekilde çalışıyor.
+
+  377
+  00:19:23,490 --> 00:19:24,660 Ama
+  sadece iki satır.
+
+  378
+  00:19:24,660 --> 00:19:28,330
+  Bu yapıya aşina olduğunuzda oldukça
+  okunabilir,
+
+  379
+  00:19:28,330 --> 00:19:33,970 ama
+  doğrulukla ilgili sabit noktama
+  göre ille de değil
+
+  380
+  00:19:33,970 --> 00:19:38,800
+  tasarımla aynı olduğuna göre, bu
+  program hangi anlamda belki de
+
+  381
+  00:19:38,800 --> 00:19:40,150 kötü
+  tasarlanmış mı?
+
+  382
+  00:19:40,150 --> 00:19:41,140
+  Çalışıyor gibi görünüyor.
+
+
+  383
+  00:19:41,140 --> 00:19:45,790
+  Üç kez miyavlıyor, ama
+  bu neden olmasın
+
+  384
+  00:19:45,790 --> 00:19:48,130 bu
+  sorunu çözmenin en iyi yolu olabilir mi?
+
+  385
+  00:19:48,130 --> 00:19:51,190
+  Daha önce hiç
+  programlama yapmamış olsanız bile, tekrar
+
+  386
+  00:19:51,190 --> 00:19:54,310 köşe
+  vakalarını, olabilecek ya da
+  olmayabilecek şeyleri düşünün.
+
+  387
+  00:19:54,310 --> 00:19:59,168
+  Aşırı vakaları düşünün
+Machine Translated by Google
+  gerçekten bu kodun kalitesini test edin.
+
+  388
+  00:19:59,168 --> 00:19:59,710 SEYİRCİ:
+  Tamam.
+
+
+  389
+  00:19:59,710 --> 00:20:06,880 Sanırım
+  3 kez 0, 1, 2 söylediğimiz için.
+
+
+
+  390
+  00:20:06,880 --> 00:20:11,030 Ve
+  sonra bir milyon almak istiyorsanız 1,
+  2, 3 dersiniz.
+
+  391
+  00:20:11,030 --> 00:20:12,967 DAVID
+  MALAN: Evet, kesinlikle.
+
+  392
+  00:20:12,967 --> 00:20:15,550 Aşırı
+  durumlar hakkında düşünmekten
+  kastım da bu.
+
+  393
+  00:20:15,550 --> 00:20:18,430
+  Kendi kodunuzun iyi olup
+  olmadığına kendiniz karar vermeye çalışıyorsanız
+
+  394
+  00:20:18,430 --> 00:20:22,120 veya
+  başka birinin kodu iyi, ilk bakışta öyle
+  görünebilir,
+
+  395
+  00:20:22,120 --> 00:20:23,530 ama uç
+  noktayı düşünün.
+
+
+  396
+  00:20:23,530 --> 00:20:26,410 Peki ya
+  üç şey değilse, bir milyon şeyse?
+
+
+
+  397
+  00:20:26,410 --> 00:20:31,180
+  Demek istediğim, gerçekten 0'dan bir
+  milyona kadar mı yoksa 0'a kadar mı yazacaksın?
+
+
+  398
+  00:20:31,180 --> 00:20:33,160 - 9--
+
+
+
+  399
+  00:20:33,160 --> 00:20:38,090
+Machine Translated by Google
+  999,999?
+
+  400
+  00:20:38,090 --> 00:20:40,840
+  Yok gibi ekrana o kadar rakam
+  yazmayacaksın
+
+  401
+  00:20:40,840 --> 00:20:42,500 daha
+  iyi bir yol olmalı.
+
+  402
+  00:20:42,500 --> 00:20:45,100
+  Öyleyse en başından
+  daha iyi bir yol yapalım
+
+  403
+  00:20:45,100 --> 00:20:47,980 bir
+  şeyi kötü yapmaya zemin
+  hazırlamaktansa.
+
+  404
+  00:20:47,980 --> 00:20:52,090
+  Ve tasarımı iyileştirmek için bu sorunu
+  çözmemizin tek yolu
+
+  405
+  00:20:52,090 --> 00:20:56,950 sadece
+  manuel olarak değer listesi belirlemeyin,
+  bir işlev kullanın,
+
+  406
+  00:20:56,950 --> 00:20:59,140 Python
+  ile gelen başkasının işlevi
+
+
+
+  407
+  00:20:59,140 --> 00:21:00,850 bu size
+  istediğiniz listeyi verir.
+
+  408
+  00:21:00,850 --> 00:21:02,680
+  Ve bunu Python'da
+  yapmanın en kolay yolu,
+
+  409
+  00:21:02,680 --> 00:21:07,480 bir
+  değer aralığına geri dönen aralık
+  adlı bir işlevi kullanmak için.
+
+  410
+  00:21:07,480 --> 00:21:09,940
+  Girdi olarak en az bir
+  bağımsız değişken bekler,
+Machine Translated by Google
+  411
+  00:21:09,940 --> 00:21:14,170 ve bu
+  sayı geri almak istediğiniz değerlerin
+  sayısı olacak.
+
+  412
+  00:21:14,170 --> 00:21:18,620
+  Bu değerler 0'dan başlayacak ve 1'e,
+  2'ye ve bu şekilde devam edecek.
+
+  413
+  00:21:18,620 --> 00:21:22,910 ama
+  ikiye çıkacaklar ama belirttiğiniz
+  sayıdan geçmeyecekler.
+
+  414
+  00:21:22,910 --> 00:21:26,200
+  Dolayısıyla, 3 aralığını
+  belirterek, esasen
+
+  415
+  00:21:26,200 --> 00:21:29,350 1, 2,
+  3 değerleri geri veriliyor.
+
+  416
+  00:21:29,350 --> 00:21:33,730 Ve
+  varsayılan olarak, bu değerler 0, 1
+  ve 2'dir ve hepsi bu.
+
+  417
+  00:21:33,730 --> 00:21:37,240
+  Ama bunun harika yanı şu ki, Hope'un
+  deyişiyle, eğer yaparsam
+
+  418
+  00:21:37,240 --> 00:21:38,950 milyon
+  kez miyavlamak istiyor--
+
+
+  419
+  00:21:38,950 --> 00:21:44,320
+  Demek istediğim, bu kızgın bir kedi, şimdi
+  sadece bir milyon yazarak bir milyon yapabilirim.
+
+  420
+  00:21:44,320 --> 00:21:48,910
+  Kelimenin tam anlamıyla 0, virgül,
+  1, virgül, 2, virgül, 3, virgül yazmam gerekmiyor.
+
+  421
+  00:21:48,910 --> 00:21:53,620 4,
+  999,999'a kadar, sadece bunu
+  yapıyorum.
+
+  422
+  00:21:53,620 --> 00:21:57,140
+Machine Translated by Google
+  Yani bu, uzun vadede
+  daha iyi bir yol olmalı.
+
+  423
+  00:21:57,140 --> 00:21:59,080
+  Yani bu gerçekten
+  yapabileceğimiz bir gelişme
+
+  424
+  00:21:59,080 --> 00:22:03,050
+  burada hala bir for döngüsü
+  kullanıyor, ancak şimdi bu aralık işlevini kullanıyor.
+
+  425
+  00:22:03,050 --> 00:22:05,470
+  Ve size Pythonic olan başka bir şey
+  göstermek için--
+
+  426
+  00:22:05,470 --> 00:22:07,690 bu
+  kesinlikle gerekli değil ama
+  genellikle
+
+  427
+  00:22:07,690 --> 00:22:11,560 bitti,
+  burada yapabileceğimiz küçük bir
+  iyileştirme var,
+
+  428
+  00:22:11,560 --> 00:22:14,180 üç
+  kez miyavlıyor olsak bile.
+
+  429
+  00:22:14,180 --> 00:22:20,710 Ve
+  bir i değişkeni tanımlamama rağmen onu hiç
+  kullanmadığıma dikkat edin.
+
+  430
+  00:22:20,710 --> 00:22:24,700
+  Ve bu mantıksal olarak bir bakıma
+  gerekli, çünkü Python, muhtemelen,
+
+  431
+  00:22:24,700 --> 00:22:26,620
+  saymak için bir şey kullanmak zorunda.
+
+  432
+  00:22:26,620 --> 00:22:28,960 Neyi
+  yinelediğini bilmek zorunda.
+
+  433
+  00:22:28,960 --> 00:22:30,970
+  Ancak Python'da
+  bu sözleşme var, burada
+Machine Translated by Google
+  434
+  00:22:30,970 --> 00:22:35,320
+  programlama özelliği gerektirdiği için
+  bir değişkene ihtiyacınız varsa
+
+  435
+  00:22:35,320 --> 00:22:38,890 bir
+  tür sayma veya otomatik güncelleme
+  yapmak için, ama siz, insan,
+
+  436
+  00:22:38,890 --> 00:22:42,550
+  değeri umrumda değil, burada
+  Pythonic bir gelişme
+
+  437
+  00:22:42,550 --> 00:22:45,520 o
+  değişkeni tek bir alt çizgi olarak
+  adlandırmak olur.
+
+  438
+  00:22:45,520 --> 00:22:48,280
+  Sadece gerekli
+  olmadığı için, değil
+
+  439
+  00:22:48,280 --> 00:22:50,410
+  programın doğruluğunu
+  değiştiriyor ama
+
+  440
+  00:22:50,410 --> 00:22:54,190 daha
+  sonra kendinize sinyal verir, meslektaşlarınıza
+  veya öğretmenlere şunun sinyalini verir:
+
+
+  441
+  00:22:54,190 --> 00:22:57,207
+  sizin de kodunuza bakıyor, evet,
+  bu bir değişken,
+
+  442
+  00:22:57,207 --> 00:23:00,040
+  ama adını umursamıyorsun çünkü
+  daha sonra kullanmayacaksın,
+
+  443
+  00:23:00,040 --> 00:23:04,840
+  sadece bu özelliği kullanmak için
+  gerekli, bu durumda bu döngü.
+
+  444
+  00:23:04,840 --> 00:23:09,190
+  Yani sadece küçük bir iyileştirme
+  veya değişiklik var.
+Machine Translated by Google
+  445
+  00:23:09,190 --> 00:23:13,510
+  Ama Python'da neyin mümkün
+  olduğunu gerçekten meraklandırmak için,
+
+  446
+  00:23:13,510 --> 00:23:15,140 hadi
+  bunu bir adım öteye götürelim.
+
+
+  447
+  00:23:15,140 --> 00:23:19,780
+  Eğer gerçekten Pythonic olmak istiyorsak,
+  bu, eğer daha önce programlama yaptıysanız,
+
+  448
+  00:23:19,780 --> 00:23:22,310 tabiri
+  caizse aklınızı başınızdan alacak,
+
+
+
+  449
+  00:23:22,310 --> 00:23:27,820 kedinin
+  üç kez miyavlamasını istersem, bunu gerçekten
+  yaparsam ne olur?
+
+  450
+  00:23:27,820 --> 00:23:34,350 yazdır,
+  parantez aç, alıntı-alıntı yapma, miyav
+  süreleri 3.
+
+  451
+  00:23:34,350 --> 00:23:37,620 Bunun
+  harika olduğunu düşünmek için biraz inek
+  olmalısın, ama bu biraz havalı.
+
+
+  452
+  00:23:37,620 --> 00:23:40,620
+  Yani kelimenin tam
+ anlamıyla istediğinizi yazdırabilirsiniz,
+
+
+  453
+  00:23:40,620 --> 00:23:44,070
+  istediğiniz sayı ile çarpın,
+
+
+
+  454
+  00:23:44,070 --> 00:23:47,760 ve tam
+  olarak bu sonucu alacaksınız.
+
+
+
+  455
+  00:23:47,760 --> 00:23:50,763 Şimdi
+  burada bir tür hata yaptım.
+
+
+  456
+  00:23:50,763 --> 00:23:51,930
+Machine Translated by Google
+  Peki bunun ne işe yaradığını görelim.
+
+
+  457
+  00:23:51,930 --> 00:23:56,730
+  Bu kodun size göründüğü kadar
+  güzel değil-- bazılarınız için,
+
+  458
+  00:23:56,730 --> 00:23:57,240 bana
+  göre.
+
+
+  459
+  00:23:57,240 --> 00:24:00,300
+  Cat.py'nin Python'unu çalıştırayım, Enter.
+
+  460
+  00:24:00,300 --> 00:24:02,820
+  Tamam, gerçekten aç bir kedi falan.
+
+
+
+  461
+  00:24:02,820 --> 00:24:04,350 Çok
+  hızlı miyavlıyor.
+
+  462
+  00:24:04,350 --> 00:24:06,830 Ama bunu
+  düzeltebilirim, bahse girerim.
+
+
+  463
+  00:24:06,830 --> 00:24:10,010 Şimdi
+  tartıştığımız bazı temel yapı taşlarını
+  düşünelim.
+
+  464
+  00:24:10,010 --> 00:24:13,160
+  Sorun açıkça şu ki,
+  kelimenin tam anlamıyla miyav, miyav,
+
+  465
+  00:24:13,160 --> 00:24:16,460 miyav
+  üç kez tekrarlanıyor ama istediğim kadar
+  güzel değil.
+
+  466
+  00:24:16,460 --> 00:24:19,910 Ayrı
+  satırlarda miyav, miyav, miyav
+  olmasını istiyorum.
+
+  467
+  00:24:19,910 --> 00:24:22,850
+  Hala burada olası bir çözüm
+  ne olabilir?
+
+
+  468
+  00:24:22,850 --> 00:24:26,780
+Machine Translated by Google
+  bu çarpma operatörünü kullanıyor musunuz?
+
+
+  469
+  00:24:26,780 --> 00:24:27,560 Ve
+  tekrar düşünün.
+
+  470
+  00:24:27,560 --> 00:24:30,170
+  Dizeleri birleştirmek için artı kullandık.
+
+  471
+  00:24:30,170 --> 00:24:33,980
+  Görünüşe göre dizeleri birleştirmek için
+  çarpmayı kullanabilirsiniz, ancak birden fazla
+
+  472
+  00:24:33,980 --> 00:24:35,180
+  tekrar ve tekrar.
+
+  473
+  00:24:35,180 --> 00:24:37,580
+  Bunu geri dönmeden
+  nasıl temizleyebilirim?
+
+  474
+  00:24:37,580 --> 00:24:42,240
+  benim for döngüme mi yoksa benim
+  while döngüme mi?
+
+  475
+  00:24:42,240 --> 00:24:45,975
+  KİTLE: Ters eğik çizgi n olacak kaçış
+  sırasını kullanabiliriz.
+
+  476
+  00:24:45,975 --> 00:24:46,850
+  DAVID MALAN: İnanılmaz.
+
+  477
+  00:24:46,850 --> 00:24:47,350 Evet.
+
+
+
+  478
+  00:24:47,350 --> 00:24:50,750
+  Programcı olarak sizin yolunuz olan
+  ters eğik çizgi n'yi düşünün.
+
+  479
+  00:24:50,750 --> 00:24:52,970
+  kodda yeni bir satır ifade edebilir.
+
+  480
+  00:24:52,970 --> 00:24:57,560
+  Ve bence, tavsiyene uyarsam,
+  İçeriye bir ters eğik çizgi koydum
+Machine Translated by Google
+
+  481
+  00:24:57,560 --> 00:25:02,390
+  alıntılarım, böylece her miyavın
+  sonunda yeni bir satır olur,
+
+  482
+  00:25:02,390 --> 00:25:03,470 bunun
+  nasıl göründüğüne bir bakalım.
+
+
+  483
+  00:25:03,470 --> 00:25:06,650 Ekranımı
+  temizlememe ve cat.py'nin Python'unu
+  çalıştırmama izin verin.
+
+
+  484
+  00:25:06,650 --> 00:25:08,270
+  Tamam, çok yakın.
+
+  485
+  00:25:08,270 --> 00:25:09,030 Bunu
+  beğendim.
+
+
+  486
+  00:25:09,030 --> 00:25:10,490 Başka
+  birini arayayım.
+
+
+  487
+  00:25:10,490 --> 00:25:13,670
+  Sevmediğim tek şey-- ve şu anda
+  gerçekten ukalalık ettiğimi biliyorum--
+
+  488
+  00:25:13,670 --> 00:25:15,840 ayrı
+  satırlarda miyav, miyav, miyav
+  olması,
+
+  489
+  00:25:15,840 --> 00:25:20,300 ama
+  bu fazladan boş satır var ki ben
+  bunu estetik olarak sevmiyorum.
+
+  490
+  00:25:20,300 --> 00:25:25,430
+  KİTLE: Sanırım n'yi sütuna
+  eşitleyebiliriz...
+
+  491
+  00:25:25,430 --> 00:25:27,410 sütun,
+  eğik çizgi gibi değil
+
+  492
+  00:25:27,410 --> 00:25:28,160 DAVID
+  MALAN: Evet.
+Machine Translated by Google
+  493
+  00:25:28,160 --> 00:25:31,010
+  Yani burada da, geçtiğimiz
+  haftalarda gördüğümüz tüm bu şeyler gibi
+
+
+  494
+  00:25:31,010 --> 00:25:32,630 bir nevi
+  bir araya geliyorlar.
+
+
+  495
+  00:25:32,630 --> 00:25:37,010 Yazdırma
+  işlevinin satır sonunun ne olduğunu
+  kontrol etmenize izin verdiğini hatırlayın.
+
+
+  496
+  00:25:37,010 --> 00:25:39,570 Varsayılan
+  olarak ters bölü n'nin kendisidir.
+
+
+  497
+  00:25:39,570 --> 00:25:41,540
+  Bu yüzden bu baskının
+  en sonunda,
+
+
+  498
+  00:25:41,540 --> 00:25:44,300 imleç
+  tekrar bir sonraki satıra taşınıyor.
+
+
+
+  499
+  00:25:44,300 --> 00:25:46,260 Pekala,
+  bunu geçersiz kılmamız gerekiyor.
+
+
+  500
+  00:25:46,260 --> 00:25:50,420
+  O halde buradaki koduma girmeme
+  izin verin ve bunu virgül n olarak değiştireyim.
+
+
+  501
+  00:25:50,420 --> 00:25:54,890 eşittir
+  alıntı-alıntı olmayan, yani artık varsayılan
+  ters eğik çizgi n,
+
+
+  502
+  00:25:54,890 --> 00:25:59,150 bunun
+  yerine artık hiçbir şey olmayacak.
+
+
+
+  503
+  00:25:59,150 --> 00:26:03,890 O zaman
+  umarım bu ek boş satırı ortadan
+  kaldırır.
+
+
+  504
+  00:26:03,890 --> 00:26:07,220
+  Bu yüzden bunu son bir kez çalıştırmama izin ver
+Machine Translated by Google
+  burada, cat.py'nin Python'u, Enter,
+
+  505
+  00:26:07,220 --> 00:26:08,640 ve işte
+  elimizde.
+
+
+  506
+  00:26:08,640 --> 00:26:12,200
+  Yani şimdi, en azından
+  programlama devam ederken,
+
+
+  507
+  00:26:12,200 --> 00:26:15,530 Bunu
+  kısa bir satıra damıtabileceğim
+  kadar havalı
+
+
+  508
+  00:26:15,530 --> 00:26:17,120 ve
+  birden kendimi ifade ediyorum.
+
+  509
+  00:26:17,120 --> 00:26:19,520 Adil
+  olmak gerekirse, biraz daha az
+  okunabilir.
+
+
+  510
+  00:26:19,520 --> 00:26:21,950
+  Şimdi olduğu gibi bende ters eğik
+  çizgi var, bende çarpı 3 var,
+
+
+  511
+  00:26:21,950 --> 00:26:23,390 Bende
+  n eşittir alıntı-alıntı yok.
+
+  512
+  00:26:23,390 --> 00:26:25,400 Yani
+  işleri bu şekilde yapmak zorunda değilsiniz.
+
+  513
+  00:26:25,400 --> 00:26:28,440 Bir for
+  döngüsü ile önceki yaklaşımım,
+  tamamen iyi.
+
+  514
+  00:26:28,440 --> 00:26:31,940
+  Bir süre döngüsü ile önceki yaklaşımım,
+  tamamen iyi ve bir anlamda,
+
+  515
+  00:26:31,940 --> 00:26:33,740
+  mükemmel şekilde iyi tasarlanmış.
+
+  516
+  00:26:33,740 --> 00:26:36,600
+  Ama bu henüz
+Machine Translated by Google
+  bunu yapmanın başka bir yolu,
+
+
+  517
+  00:26:36,600 --> 00:26:40,250
+  ama senin veya öğretmenin, meslektaşın,
+  arkadaşın olması iyi bir şey değil
+
+  518
+  00:26:40,250 --> 00:26:42,410
+  kendi kodunuzu okumak için
+  mücadele edecek.
+
+  519
+  00:26:42,410 --> 00:26:47,870
+  Ancak bu, Python'un aslında bazı
+  dillerde olmayan bir özelliğidir.
+
+  520
+  00:26:47,870 --> 00:26:51,110
+  Pekala, işlerin daha da ilginçleşmesini
+  önereyim.
+
+  521
+  00:26:51,110 --> 00:26:53,690
+  eğer sadece üç kez
+  miyavlamıyorsak,
+
+  522
+  00:26:53,690 --> 00:26:56,180
+  ama değişken sayıda miyavlıyoruz.
+
+
+
+  523
+  00:26:56,180 --> 00:26:58,940
+  Kullanıcıya bu kedinin kaç kez
+  miyavlaması gerektiğini soralım.
+
+  524
+  00:26:58,940 --> 00:27:03,540
+  Buradaki ekranı temizlememe izin verin
+  ve şunu anlamama izin verin, peki,
+
+
+  525
+  00:27:03,540 --> 00:27:05,760
+  kullanıcıdan nasıl numara alabilirim?
+
+  526
+  00:27:05,760 --> 00:27:08,670
+  Buradaki püf noktası, eğer kullanıcının
+  bana bir numara vermesini istersem,
+
+
+  527
+  00:27:08,670 --> 00:27:12,290
+  Ben matematik yapmıyorum,
+  miyavlıyorum ve bu nedenle kullanıcı
+Machine Translated by Google
+
+  528
+  00:27:12,290 --> 00:27:14,630 bana
+  pozitif bir değer vermeli.
+
+  529
+  00:27:14,630 --> 00:27:17,100
+  Kullanıcının bana pozitif bir değer
+  vermesi gerekiyor.
+
+  530
+  00:27:17,100 --> 00:27:18,860 Peki
+  bunda nasıl ısrar edebilirim?
+
+
+  531
+  00:27:18,860 --> 00:27:25,800 Bunu
+  yaparsam, n eşittir int, n nedir, soru
+  işareti?
+
+  532
+  00:27:25,800 --> 00:27:28,040
+  Şey, kontrol etmek istiyorum--
+
+  533
+  00:27:28,040 --> 00:27:32,150
+  n'nin 0'dan küçük olduğunu söyleyebilirim--
+
+
+  534
+  00:27:32,150 --> 00:27:34,430 eğer
+  olumsuzsa, bunu yapabilirim.
+
+
+
+  535
+  00:27:34,430 --> 00:27:35,870 O
+  zaman tekrar sor.
+
+  536
+  00:27:35,870 --> 00:27:40,370 Int,
+  girdi, n nedir, soru işareti?
+
+  537
+  00:27:40,370 --> 00:27:43,312
+  Tamam, peki ya kullanıcı bana yine
+  de pozitif bir sayı vermezse?
+
+  538
+  00:27:43,312 --> 00:27:45,770
+  Ya gerçekten zorsa, dikkat
+  etmiyorlarsa
+
+  539
+  00:27:45,770 --> 00:27:47,395 ve iki
+  negatif sayı mı yazdılar?
+
+  540
+Machine Translated by Google
+  00:27:47,395 --> 00:27:53,000
+  Eğer n 0'dan küçükse, hadi tekrar
+  yapalım. n eşittir--
+
+  541
+  00:27:53,000 --> 00:27:54,170
+  bunun sonu pek iyi değil.
+
+  542
+  00:27:54,170 --> 00:27:58,070
+  Sayısız kez kontrol edemezsiniz,
+  negatif mi,
+
+  543
+  00:27:58,070 --> 00:27:59,630
+  olumsuz mu yoksa olumsuz mu?
+
+  544
+  00:27:59,630 --> 00:28:01,700
+  Program asla yazılmayacaktı.
+
+  545
+  00:28:01,700 --> 00:28:05,010
+  Yani bunu belki bir döngü ile
+  daha iyi yapabiliriz.
+
+  546
+  00:28:05,010 --> 00:28:06,200
+  Öyleyse şunu önereyim.
+
+  547
+  00:28:06,200 --> 00:28:09,020
+  Python'da çok yaygın bir
+  paradigma,
+
+  548
+  00:28:09,020 --> 00:28:14,000
+  sahip olduğunuz belirli bir beklentiyle
+  eşleşen kullanıcı girişi almak istiyor,
+
+  549
+  00:28:14,000 --> 00:28:17,570
+  hepsi olumlu, hepsi olumsuz ya
+  da bunun gibi bir şey,
+
+  550
+  00:28:17,570 --> 00:28:20,840
+  doğruyken hemen söylüyorsunuz.
+
+  551
+  00:28:20,840 --> 00:28:24,380
+  Kasıtlı olarak ve biraz tehlikeli
+  ama çok geleneksel bir şekilde,
+
+  552
+Machine Translated by Google
+  00:28:24,380 --> 00:28:25,962
+  sonsuz bir döngüye neden olur.
+
+  553
+  00:28:25,962 --> 00:28:27,170 Şimdi
+  sonsuz döngü nedir?
+
+  554
+  00:28:27,170 --> 00:28:28,550
+  Sonsuza kadar giden tek şey.
+
+  555
+  00:28:28,550 --> 00:28:31,430 Ve
+  bunun matematiksel olarak kazara nasıl
+  olabileceğini gördük.
+
+  556
+  00:28:31,430 --> 00:28:34,700 Doğru
+  dediğinizde kesinlikle olacak.
+
+
+
+  557
+  00:28:34,700 --> 00:28:35,240
+  Neden?
+
+  558
+  00:28:35,240 --> 00:28:39,180 Doğru
+  sorunun cevabı her zaman
+  doğrudur.
+
+  559
+  00:28:39,180 --> 00:28:41,570
+  Yani bu kasıtlı olarak bir döngü
+  oluşturmanın bir yolu.
+
+  560
+  00:28:41,570 --> 00:28:43,470
+  varsayılan olarak sonsuza kadar gidecek.
+
+  561
+  00:28:43,470 --> 00:28:46,940
+  Bu döngüden çıkmanın bir yoluna
+  ihtiyacımız olacak.
+
+  562
+  00:28:46,940 --> 00:28:48,350
+  istediğimiz sayıya sahibiz.
+
+
+  563
+  00:28:48,350 --> 00:28:50,600
+  Konvansiyon, aksi halde
+  bunun içinde olsa da
+
+
+  564
+  00:28:50,600 --> 00:28:52,970
+Machine Translated by Google
+  sonsuz bir döngü, ilgilendiğiniz
+  soruyu sormaktır,
+
+
+  565
+  00:28:52,970 --> 00:28:55,760
+  kullanıcıdan girdi isteyerek bana bir
+  int vermek gibi.
+
+
+  566
+  00:28:55,760 --> 00:28:57,800 N nedir,
+  soru işareti gibi mi?
+
+
+  567
+  00:28:57,800 --> 00:28:59,330 Ve sonra
+  sadece sorunuzu sorun.
+
+
+  568
+  00:28:59,330 --> 00:29:04,580
+  Yani eğer n 0'dan küçükse, Python'un
+  devam etmesini istediğimizi düşünüyorum.
+
+
+  569
+  00:29:04,580 --> 00:29:05,910
+  kullanıcıdan tekrar istemek için.
+
+
+  570
+  00:29:05,910 --> 00:29:09,760
+  Yani, kodun döngüde kalmasını, giriş işlevini
+  geri çağırmasını,
+
+
+  571
+  00:29:09,760 --> 00:29:11,760 ve
+  umarım kullanıcı bize daha iyi bir
+  cevap verir.
+
+
+  572
+  00:29:11,760 --> 00:29:14,730
+  Eğer bu sefer 0'dan küçükse,
+  kelimenin tam anlamıyla
+
+
+  573
+  00:29:14,730 --> 00:29:16,980 Python'un
+  devam anahtar kelimesini kullanın, bu
+  da şunu söylüyor
+
+
+  574
+  00:29:16,980 --> 00:29:20,100 sadece
+ bu-- bu döngü içinde kalmaya devam
+  edin.
+
+
+  575
+  00:29:20,100 --> 00:29:24,000
+  Aksi takdirde, 0'dan az değilse,
+  devam edelim ve ayrılalım
+Machine Translated by Google
+  576
+  00:29:24,000 --> 00:29:27,120
+  döngünün tamamı Python'da başka
+  bir anahtar sözcük kullanarak, break.
+
+  577
+  00:29:27,120 --> 00:29:31,140
+  Break, bu durumda sizi en son başlatılan
+  döngüden çıkaracaktır.
+
+  578
+  00:29:31,140 --> 00:29:34,080 eğer
+  n 0'dan küçük değilse.
+
+
+
+  579
+  00:29:34,080 --> 00:29:38,310
+  Bu işe yarayacak ve 0 veya daha büyük
+  bir değer elde etmemizi sağlayacak.
+
+  580
+  00:29:38,310 --> 00:29:41,340
+  kullanıcıdan, ama bence bunu daha
+  da sıkılaştırabiliriz
+
+  581
+  00:29:41,340 --> 00:29:43,500 bir if,
+  and, and else olması zahmetine girer.
+
+  582
+  00:29:43,500 --> 00:29:49,227 Bunun
+  yerine neden n 0'dan büyükse, devam
+  edin ve kırın demiyoruz?
+
+  583
+  00:29:49,227 --> 00:29:51,060
+  Aslında o kadar da ilgi
+  çekici bir program değil.
+
+  584
+  00:29:51,060 --> 00:29:52,830 eğer
+  kullanıcının 0 yazmasına bile izin verirsek.
+
+  585
+  00:29:52,830 --> 00:29:56,430
+  Bize 0'dan büyük bir tamsayı
+  verene kadar bekleyelim.
+
+  586
+  00:29:56,430 --> 00:29:59,040 ve
+  sonra bu döngüden çıkın.
+
+  587
+  00:29:59,040 --> 00:30:00,960 Şimdi
+  burada ne yapabilirim?
+Machine Translated by Google
+
+  588
+  00:30:00,960 --> 00:30:07,260 n değeri
+  ne olursa olsun, i için miyav yazdır.
+
+
+
+  589
+  00:30:07,260 --> 00:30:10,340
+  Ve dürüst olmak gerekirse, i'ye burada
+  ihtiyacım yok, o yüzden bu prensibe geri döneyim.
+
+
+  590
+  00:30:10,340 --> 00:30:10,840 önce.
+
+
+
+  591
+  00:30:10,840 --> 00:30:12,590
+  Ve bunu bir alt çizgi olarak
+  değiştirmeme izin ver
+
+
+  592
+  00:30:12,590 --> 00:30:14,110 sadece
+ Pythonic olmak için, eğer istersen.
+
+
+  593
+  00:30:14,110 --> 00:30:15,360 Peki neler
+  oluyor?
+
+
+  594
+  00:30:15,360 --> 00:30:20,130
+  1'den 4'e kadar olan satırlar kasıtlı
+  olarak sonsuz bir döngü uygular
+
+
+  595
+  00:30:20,130 --> 00:30:23,280 aksi
+  takdirde varsayılan olarak sonsuza
+  kadar gidecek.
+
+
+  596
+  00:30:23,280 --> 00:30:26,370
+  Ama ben bir soru soruyorum, o
+  döngünün içinde,
+
+
+  597
+  00:30:26,370 --> 00:30:30,450 2. satırdaki
+  kullanıcıdan bir int aldıktan sonra
+  kontrol ediyorum,
+
+
+  598
+  00:30:30,450 --> 00:30:32,310 0'dan
+  büyük mü?
+
+
+  599
+  00:30:32,310 --> 00:30:33,570 Yoksa 0
+  mı?
+Machine Translated by Google
+
+  600
+  00:30:33,570 --> 00:30:34,220
+  Negatif mi?
+
+  601
+  00:30:34,220 --> 00:30:35,970
+  Miyavlayan kedi için bunların
+  hiçbiri mantıklı değil.
+
+  602
+  00:30:35,970 --> 00:30:38,380
+  Sanki kedinin en az bir kez
+  miyavlamasını istiyorum.
+
+  603
+  00:30:38,380 --> 00:30:41,220
+  Yani 0'dan büyükse kırın.
+
+  604
+  00:30:41,220 --> 00:30:45,030
+  Ve bu break deyimi, girintili
+  olmasına rağmen, iki kez girintili,
+
+  605
+  00:30:45,030 --> 00:30:50,140 en
+  son başlatılan while döngüsünden
+  çıkma etkisine sahiptir.
+
+  606
+  00:30:50,140 --> 00:30:53,670
+  Kullanıcı size pozitif bir
+  değer verdiğinde,
+
+  607
+  00:30:53,670 --> 00:30:58,650
+  sonra 6. sıraya geliyoruz, bu
+  noktada birçok kez miyavlıyoruz çünkü
+
+  608
+  00:30:58,650 --> 00:30:59,850
+  satır 6 ve 7.
+
+  609
+  00:30:59,850 --> 00:31:03,960
+  Şimdi bunu cat.py'nin Python'unu
+  çalıştırırsam, Enter, n nedir?
+
+  610
+  00:31:03,960 --> 00:31:06,895
+  Başladığımız 3 ile başlayalım,
+  miyav, miyav, miyav.
+
+  611
+  00:31:06,895 --> 00:31:10,020
+Machine Translated by Google
+ Peki bu sefer, devam edeyim ve
+ terminal penceremin boyutunu büyüteyim
+
+  612
+  00:31:10,020 --> 00:31:11,100
+ sadece geçici olarak.
+
+  613
+  00:31:11,100 --> 00:31:16,140
+  cat.py'nin Python'unu çalıştırayım, 10
+  kez yapayım, şimdi 10 kez miyavlayayım
+
+  614
+  00:31:16,140 --> 00:31:17,520
+  ekranda belirir.
+
+  615
+  00:31:17,520 --> 00:31:20,640
+ Ve buradaki çıkarımlar sadece 10
+ kez miyavlayabilmemiz değil
+
+  616
+  00:31:20,640 --> 00:31:22,890
+  veya bir şeyi tekrar tekrar yapın,
+  ama bu
+
+  617
+  00:31:22,890 --> 00:31:26,880, bir
+ şeyi tekrar yapmak istediğinizde
+ Python'da çok yaygın bir paradigmadır
+
+  618
+  00:31:26,880 --> 00:31:31,320 ve
+ tekrar tekrar, ancak yalnızca
+ kullanıcı size gerçekten verene kadar
+
+  619
+  00:31:31,320 --> 00:31:34,230
+  burada önemsediğiniz bir değer.
+
+  620
+  00:31:34,230 --> 00:31:36,540
+ Ve şimdi pratik yaptığımıza
+ göre önermeme izin ver
+
+  621
+  00:31:36,540 --> 00:31:41,830
+  vaaz ettiğimiz şeyi biraz daha fazla, özellikle
+  söz konusu olduğunda, söyle--
+
+  622
+  00:31:41,830 --> 00:31:45,075
+  özellikle kendi fonksiyonlarınızı
+  yazmak söz konusu olduğunda.
+Machine Translated by Google
+  623
+  00:31:45,075 --> 00:31:46,950
+  Şimdi tüm bu miyavlamayı
+  yapıyorum, olabilir
+
+  624
+  00:31:46,950 --> 00:31:50,970 Python
+  mucitlerinin gerçekten bir miyav
+  işlevine sahip olması güzel
+
+  625
+  00:31:50,970 --> 00:31:52,680 tasavvur
+  etmedim, o yüzden bırak ben yapayım.
+
+
+  626
+  00:31:52,680 --> 00:31:56,050 Tüm bu
+  kodlardan gerçekten kurtulayım ve
+  devam edip şunu yapayım.
+
+
+  627
+  00:31:56,050 --> 00:31:59,950
+  Devam edeyim ve daha önce yaptığım
+  gibi bir ana işlev tanımlayayım,
+
+
+  628
+  00:31:59,950 --> 00:32:02,400 ve körü
+  körüne miyav 3 dememe izin verin.
+
+
+  629
+  00:32:02,400 --> 00:32:05,910 Miyav
+  henüz yok, ama olduğunda harika
+  olacak.
+
+  630
+  00:32:05,910 --> 00:32:08,640 Şimdi
+  devam edip miyavı tanımlayayım.
+
+  631
+  00:32:08,640 --> 00:32:11,850
+  Öyleyse ben miyav işlevi
+  girdi olarak almalı
+
+
+  632
+  00:32:11,850 --> 00:32:16,350 n adında
+  bir parametre veya istediğim herhangi
+  bir şey ve bu kısım artık oldukça kolay.
+
+  633
+  00:32:16,350 --> 00:32:17,880 N defa
+  nasıl miyavlarsınız?
+
+  634
+  00:32:17,880 --> 00:32:22,470 Alt çizgi
+  n için, n aralığı, devam edin ve miyav
+  yazdırın.
+Machine Translated by Google
+
+  635
+  00:32:22,470 --> 00:32:24,780
+  Yani öncekiyle aynı kod,
+  burada yeni bir şey yok,
+
+  636
+  00:32:24,780 --> 00:32:28,470
+  Ben sadece bu mantığı bir miyav
+  fonksiyonunun içine koyuyorum
+
+
+  637
+  00:32:28,470 --> 00:32:30,810 bu
+  miyav baskı yan etkisine sahip
+  olacak.
+
+  638
+  00:32:30,810 --> 00:32:34,620 Ve
+  şimdi, daha önce olduğu gibi, buraya
+  ineyim ve ana aramayı yaptığımdan emin olayım.
+
+
+  639
+  00:32:34,620 --> 00:32:39,420 Ve
+  şimdi bu kodu çalıştırırsam, Python of
+  cat.py, miyav, miyav, miyav.
+
+  640
+  00:32:39,420 --> 00:32:42,960 Her
+  zaman üç yapacak çünkü ben 3
+  olarak kodladım.
+
+
+  641
+  00:32:42,960 --> 00:32:44,730
+  Pekala, burada bir iyileştirme yapalım.
+
+  642
+  00:32:44,730 --> 00:32:48,720 Şimdi
+  devam edeyim ve belki bunu yapabilirim.
+
+  643
+  00:32:48,720 --> 00:32:50,350
+  Kullanıcıdan bir sayı rica edeyim.
+
+
+  644
+  00:32:50,350 --> 00:32:54,700 Şöyle
+  bir şey söyleyelim, sayı eşittir sayı
+  olsun.
+
+  645
+  00:32:54,700 --> 00:32:55,200 Pekala.
+
+
+
+  646
+  00:32:55,200 --> 00:32:57,210
+  maalesef var
+Machine Translated by Google
+  Python'da işlev yok
+
+  647
+  00:32:57,210 --> 00:32:59,940
+  çağrılan sayı kullanıcıdan pozitif
+  bir sayı alır,
+
+  648
+  00:32:59,940 --> 00:33:01,080 ama
+  bunu icat edebilirim.
+
+
+  649
+  00:33:01,080 --> 00:33:05,070 Yani
+  alma numarasını tanımlayın, ebeveyni
+  açın, ebeveyni kapatın.
+
+
+  650
+  00:33:05,070 --> 00:33:07,260 Ve
+  sonra bu fonksiyonun içinde şunu
+  yapayım.
+
+  651
+  00:33:07,260 --> 00:33:11,160
+  Doğru iken, devam edin ve
+  kullanıcıdan bir numara alın,
+
+  652
+  00:33:11,160 --> 00:33:14,730 bunu
+  bir int'ye çevirerek onlara, n nedir,
+  soru işareti?
+
+  653
+  00:33:14,730 --> 00:33:19,260
+  Ve sonra istediğim şey n ise,
+  0'dan büyük bir değerdir,
+
+  654
+  00:33:19,260 --> 00:33:24,710
+  pozitif bir sayı, bu sefer mutlaka
+  kırmak istemiyorum,
+
+  655
+  00:33:24,710 --> 00:33:26,000
+  yapabilsem de.
+
+  656
+  00:33:26,000 --> 00:33:30,750
+  Bunun yerine, bunu gerçekten
+  yapabilmek için değeri döndürmek istiyorum.
+
+  657
+  00:33:30,750 --> 00:33:32,600 Ve
+  bu da Python'un bir özelliği.
+
+  658
+Machine Translated by Google
+  00:33:32,600 --> 00:33:35,690
+  Bu yetenek, bir kod
+  bloğundan öylece çıkmak değil,
+
+
+  659
+  00:33:35,690 --> 00:33:38,750 ama aynı
+  zamanda kodda bir değer döndürmek için.
+
+
+  660
+  00:33:38,750 --> 00:33:42,590
+  Gerçekte bir değer döndürmek, size
+  sonuçta şu yeteneği verir:
+
+
+  661
+  00:33:42,590 --> 00:33:47,030 açık bir
+  değer döndürmek için, işlevinizin sadece
+  bir tarafı olmasın
+
+
+  662
+  00:33:47,030 --> 00:33:51,650 etki,
+  zorunlu olarak, ama aslında tıpkı girdinin
+  yaptığı gibi, geri verir,
+
+
+  663
+  00:33:51,650 --> 00:33:56,220 tıpkı
+ int'in yaptığı gibi, tıpkı float'ın yaptığı
+  gibi, kullanıcı için gerçek bir değer.
+
+
+  664
+  00:33:56,220 --> 00:33:58,790 Açık
+  olmak gerekirse, burada n'yi
+  döndürmek zorunda değilim.
+
+
+  665
+  00:33:58,790 --> 00:34:02,330
+  Geçmişte kodla yaptığım gibi hala
+  döngüden çıkabilirim
+
+
+  666
+  00:34:02,330 --> 00:34:06,860 bunun
+  gibi, ama döngüden sonra hala geri
+  dönmem gerekiyor.
+
+
+  667
+  00:34:06,860 --> 00:34:10,969
+  Burada olan şey şu ki, döngüden çıkmak için
+  break kullanırsanız,
+
+
+  668
+  00:34:10,969 --> 00:34:13,730 ama bir
+  fonksiyondan bir değer geri vermeniz
+  gerekiyor,
+
+
+  669
+  00:34:13,730 --> 00:34:15,980
+Machine Translated by Google
+  şimdi dönüş anahtar
+  kelimesini kullanmanız gerekiyor
+
+
+  670
+  00:34:15,980 --> 00:34:20,389 açıkça
+  ya döngüde
+  Yaptım ya da şimdi döngünün dışında
+
+
+  671
+  00:34:20,389 --> 00:34:24,110 ama
+  yine de fonksiyonun içinde.
+
+
+  672
+  00:34:24,110 --> 00:34:26,420
+  Şimdi burada yapacağım son
+  şey değişiklik
+
+
+  673
+  00:34:26,420 --> 00:34:28,969 daha
+  önce kodladığımız o 3, aslında
+
+
+
+  674
+  00:34:28,969 --> 00:34:31,590
+  kullanıcıdan aldığımız değişkenin
+  değeri olsun
+
+
+  675
+  00:34:31,590 --> 00:34:36,380 böylece
+  şimdi burada, cat.py'nin Python'unu
+  çalıştırırsam Enter, n nedir?
+
+
+  676
+  00:34:36,380 --> 00:34:40,219
+  3 yazabilirim, üç miyavımı alıyorum
+  ya da sadece bir tane istersem,
+
+
+  677
+  00:34:40,219 --> 00:34:43,020 Şimdi
+  bunun yerine bir miyav alıyorum.
+
+
+  678
+  00:34:43,020 --> 00:34:43,520 Pekala.
+
+
+
+  679
+  00:34:43,520 --> 00:34:48,230
+  Şimdi bu döngülerde bir şeyleri tekrar
+  tekrar yapma yeteneğine sahipsek,
+
+
+  680
+  00:34:48,230 --> 00:34:51,800 bakalım
+  başka problemleri çözebilecek miyiz?
+Machine Translated by Google
+  681
+  00:34:51,800 --> 00:34:55,894
+  kendimizi döngüsel olarak ifade etmek, ama
+  aynı zamanda bazı ilginç cevaplar almak.
+
+  682
+  00:34:55,894 --> 00:34:58,898
+  Örneğin, bakmamızı
+  önermeme izin verin.
+
+
+  683
+  00:34:58,898 --> 00:35:00,440 bu
+  listelerde biraz daha yakından.
+
+  684
+  00:35:00,440 --> 00:35:03,107
+  Görünüşe göre Python'da ve
+  gerçekten, genel olarak programlarda,
+
+  685
+  00:35:03,107 --> 00:35:05,600 bir
+  değerler listesine sahip olmak
+  faydalıdır, çünkü biz
+
+
+  686
+  00:35:05,600 --> 00:35:10,160 gittikçe
+  daha fazla veriyle, daha büyük ve daha büyük
+  veri setleriyle çalışabilecek.
+
+  687
+  00:35:10,160 --> 00:35:12,530
+  Öyleyse, burada VS Koduna
+  geri dönmemizi önermeme izin verin
+
+
+  688
+  00:35:12,530 --> 00:35:15,620 ve hadi
+  bazı insanlara biraz tanıdık gelen bir şey
+  yapalım,
+
+
+  689
+  00:35:15,620 --> 00:35:17,030
+  Hogwarts dünyası.
+
+  690
+  00:35:17,030 --> 00:35:19,850
+  Devam etmeme izin verin ve
+  Hogwarts adlı bir dosyayı kodlayayım,
+
+  691
+  00:35:19,850 --> 00:35:23,840 ve burada
+  Hogwarts'taki öğrencilerin bir listesine
+
+  sahip olup olamayacağımıza bir bakalım.
+
+
+  692
+  00:35:23,840 --> 00:35:26,270
+Machine Translated by Google
+ Hogwarts.py adında yeni bir sekmem var.
+
+  693
+  00:35:26,270 --> 00:35:30,710 ve
+  devam edeyim ve bu programda
+  tanımladığımı önereyim
+
+  694
+  00:35:30,710 --> 00:35:32,780
+  isimlerini önceden bildiğim
+  öğrencilerin bir listesi.
+
+  695
+  00:35:32,780 --> 00:35:34,572
+  Yani şimdilik kullanıcı girdisi
+  almayacağım.
+
+  696
+  00:35:34,572 --> 00:35:37,250
+  Ben sadece hareket
+  halindeyken bileceğim ki, üç
+
+  697
+  00:35:37,250 --> 00:35:39,110
+  dikkate almak istediğim öğrenciler bunlar.
+
+  698
+  00:35:39,110 --> 00:35:41,030
+  Değişkenimiz öğrenciler olarak
+  adlandırılacak.
+
+  699
+  00:35:41,030 --> 00:35:44,540
+  Geçmişte yaptığım gibi köşeli
+  paranteze eşit olacak.
+
+  700
+  00:35:44,540 --> 00:35:46,100
+  demek, hey, işte bir liste geliyor.
+
+  701
+  00:35:46,100 --> 00:35:49,520
+  Ve bu değerler olacak
+  Tırnak içinde Hermione, çünkü
+
+  702
+  00:35:49,520 --> 00:35:53,980 bir
+  dizi; Harry tırnak içinde, çünkü bu
+  bir dizi; ve sonra tırnak içinde Ron,
+
+  703
+  00:35:53,980 --> 00:35:55,230
+  çünkü bu aynı zamanda bir dizi.
+
+  704
+Machine Translated by Google
+  00:35:55,230 --> 00:35:57,800 Yani
+  bu 3 uzunluğunda bir liste.
+
+  705
+  00:35:57,800 --> 00:36:00,500
+  Daha önceki uzunluk 3
+  listeme ruh olarak benzer,
+
+  706
+  00:36:00,500 --> 00:36:02,960 ama 3
+  int, 0, 1, 2 vardı.
+
+  707
+  00:36:02,960 --> 00:36:06,020 Şimdi
+  bunun yerine üç diziden oluşan bir
+  listem var.
+
+  708
+  00:36:06,020 --> 00:36:08,940
+  Ve bu şu anda pek
+  kullanışlı değil,
+
+  709
+  00:36:08,940 --> 00:36:11,600 ama
+  kendimi kontrol etmek için bir şeyler
+  yapmama izin verin.
+
+  710
+  00:36:11,600 --> 00:36:14,510 Bu
+  öğrencilerin her birinin çıktısını almama izin verin.
+
+  711
+  00:36:14,510 --> 00:36:19,760 Peki
+  bir dakika, bir listenin içeriğini nasıl
+  yazdırırım?
+
+  712
+  00:36:19,760 --> 00:36:22,610
+  Geçmişte, bir değişken
+  yazdırdığımızda,
+
+  713
+  00:36:22,610 --> 00:36:24,900 az
+  önce değişkenin adını yazdırdık.
+
+
+
+  714
+  00:36:24,900 --> 00:36:28,970 Ama
+  tüm Hermione, Harry ve Ron'un hepsini
+  birden yazdırmak istemiyorum.
+
+  715
+  00:36:28,970 --> 00:36:33,350 Belki
+  önce Hermione'nin, sonra Harry'nin, sonra
+  Ron'un çıktısını almak istiyorum.
+Machine Translated by Google
+
+  716
+  00:36:33,350 --> 00:36:36,050
+  Bu yüzden hangisini daha kesin olarak
+
+  ifade etmenin bir yoluna ihtiyacım var
+
+
+  717
+  00:36:36,050 --> 00:36:37,790 bu
+  listeden istediğim değer var mı?
+
+
+  718
+  00:36:37,790 --> 00:36:42,590
+  Python'da bunu yapma şekliniz, köşeli
+  parantezleri başka bir şekilde kullanmaktır.
+
+  719
+  00:36:42,590 --> 00:36:45,890
+  Eğer bir değişkeniniz varsa-- bu
+  durumda, öğrenciler olarak adlandırılır,
+
+
+  720
+  00:36:45,890 --> 00:36:49,850 ve o
+  değişkenin içine girip belirli bir değer
+  elde etmek istiyorsunuz--
+
+  721
+  00:36:49,850 --> 00:36:52,940 yani
+  listeye indekslemek istiyorsunuz,
+
+
+
+  722
+  00:36:52,940 --> 00:36:57,500 köşeli
+  parantezleri bu şekilde köşeli parantezlerin
+  içindeki sayıları kullanarak kullanıyorsunuz.
+
+  723
+  00:36:57,500 --> 00:37:02,570
+  İşte burada 0 cinsinden düşünmenin ve
+  saymanın yararlı olduğunu görüyoruz.
+
+
+  724
+  00:37:02,570 --> 00:37:04,280 yukarı
+  yerine 1 yukarı.
+
+  725
+  00:37:04,280 --> 00:37:08,120
+  Python'daki bu listeler, sıfır dizinli
+  diyelim mi?
+
+  726
+  00:37:08,120 --> 00:37:13,700
+  Bir listedeki ilk öğe, Python listesindeki
+  ikinci öğe 0 konumundadır.
+
+  727
+Machine Translated by Google
+  00:37:13,700 --> 00:37:16,760 bu
+  konum 1'dir ve üçüncüsü bu
+  konum 2'dir.
+
+
+  728
+  00:37:16,760 --> 00:37:19,940
+  Yani zihinsel olarak her zaman bir sayı
+  fark atıyorsun, ama buna alışıyorsun,
+
+  729
+  00:37:19,940 --> 00:37:22,275 daha
+  önce hiç programlama
+  yapmadıysanız zamanla.
+
+  730
+  00:37:22,275 --> 00:37:23,900 Üç
+  öğrencinin de çıktısını almama izin verin.
+
+  731
+  00:37:23,900 --> 00:37:27,410
+  Öyleyse öğrenci parantezi 0'ı,
+  ardından öğrenci parantez 1'i yazdırayım.
+
+  732
+  00:37:27,410 --> 00:37:30,290
+  Son olarak, öğrencilerin
+  parantez 2'yi yazdırmasına izin verin,
+
+
+  733
+  00:37:30,290 --> 00:37:32,078 ve
+  bu benim üçüncü ve son satırım.
+
+  734
+  00:37:32,078 --> 00:37:35,120 Ve
+  tabii ki, bu kodu çalıştırırsam,
+  muhtemelen tahmin ettiğiniz şeyi yapar.
+
+  735
+  00:37:35,120 --> 00:37:39,500
+  Hogwarts.py'nin Python'unu
+  çalıştırırsam, Hermione, Harry ve Ron var
+
+  736
+  00:37:39,500 --> 00:37:41,450 orada
+  her biri kendi hattında.
+
+
+  737
+  00:37:41,450 --> 00:37:43,443
+  Ama daha iyi bir yol
+  olmalı, özellikle
+
+  738
+  00:37:43,443 --> 00:37:45,860 bu
+  listede kimlerin olacağını önceden
+  bilmezsem,
+Machine Translated by Google
+
+  739
+  00:37:45,860 --> 00:37:48,230 eğer
+  gelecek yıl Hogwarts'ta yeni öğrenciler
+  olursa,
+
+
+  740
+  00:37:48,230 --> 00:37:50,930 bir şeyi
+  otomatik olarak yapmak için bir
+  döngü kullanabiliriz
+
+
+  741
+  00:37:50,930 --> 00:37:54,590 manuel
+  olarak 0 ve ardından 1 ve 2 yazmak
+  zorunda kalmadan.
+
+
+  742
+  00:37:54,590 --> 00:37:57,110 İşte
+  Python'un başka bir özelliği.
+
+
+  743
+  00:37:57,110 --> 00:38:01,310
+  Sadece 0'dan 1'e ve 2'ye kadar
+ saymak için bir for döngüsü kullanabilirsiniz,
+
+
+  744
+  00:38:01,310 --> 00:38:03,870 Python'u
+  her şeyi yinelemek için kullanabilirsiniz.
+
+
+
+  745
+  00:38:03,870 --> 00:38:05,420 Sadece
+  sayılar değil, dizeler.
+
+
+  746
+  00:38:05,420 --> 00:38:07,100 Yani
+  bunu gerçekten yapabilirim.
+
+
+  747
+  00:38:07,100 --> 00:38:13,460
+  Öğrencilerde öğrenci için, iki nokta
+  üst üste ve ardından bunun altında girintili,
+
+
+  748
+  00:38:13,460 --> 00:38:15,050 Matbaa
+  öğrencisi diyebilirim.
+
+
+  749
+  00:38:15,050 --> 00:38:19,700
+  Artık 3 öğrencim veya 4 veya
+  400 öğrencim olması farketmez,
+
+
+  750
+  00:38:19,700 --> 00:38:23,930 bu iki
+  kod satırı, bu döngü
+Machine Translated by Google
+  tüm bu öğrencileri benim için yazdıracak
+
+  751
+  00:38:23,930 --> 00:38:24,810 teker
+  teker.
+
+
+  752
+  00:38:24,810 --> 00:38:28,490 Şimdi
+  hogwarts.py'nin Python'unu
+  çalıştırırsam, aynı liste var,
+
+  753
+  00:38:28,490 --> 00:38:32,420 ama
+  gerçek listenin ne kadar uzun olduğunu
+  önceden bilmeme gerek yok.
+
+  754
+  00:38:32,420 --> 00:38:35,130 Şimdi
+  dikkat edin, burada bilinçli bir karar
+  verdim.
+
+
+  755
+  00:38:35,130 --> 00:38:39,680
+  Bu değişkene alt çizgi
+  demedim çünkü bu sefer ben
+
+  756
+  00:38:39,680 --> 00:38:40,970
+  değişken kullanılarak.
+
+  757
+  00:38:40,970 --> 00:38:44,210
+  Ve bunu yapabildiğim
+  halde, şimdi, hayır, hayır, hayır, hayır,
+
+
+  758
+  00:38:44,210 --> 00:38:46,130
+  kodunuz çok şifreli hale geliyor.
+
+  759
+  00:38:46,130 --> 00:38:48,860
+  Değişkeni alt çizgi olarak
+  adlandırıyorsanız ve
+
+  760
+  00:38:48,860 --> 00:38:51,530 alt
+  çizgi değişkenini kullanarak, artık
+  kimseye yardım etmiyorsunuz.
+
+  761
+  00:38:51,530 --> 00:38:54,890
+  Şimdi okuyucunun kafasını
+  karıştırıyorsun, satır sonunda kendin,
+
+  762
+Machine Translated by Google
+  00:38:54,890 --> 00:38:57,370
+  değişkenlerinizi oldukları gibi
+  adlandırmalısınız.
+
+  763
+  00:38:57,370 --> 00:39:00,470
+  Çok uygun bir isim, eminim başka isimler de
+  bulabilirsin,
+
+  764
+  00:39:00,470 --> 00:39:04,430
+  öğrenci olurdu ve burada öğrenci olarak da
+  kalacağınızı söyleyebilirsiniz.
+
+  765
+  00:39:04,430 --> 00:39:06,710
+  Daha kısa ve öz olmayı
+  tercih ederseniz,
+
+  766
+  00:39:06,710 --> 00:39:09,380 böyle
+  bir döngüde kısa ve öz bir şey yapmak
+  mantıksız değil.
+
+  767
+  00:39:09,380 --> 00:39:13,430
+  Öğrencilerdeki s için, belki de
+  listedeki aynı harfi kullanarak
+
+
+  768
+  00:39:13,430 --> 00:39:15,740 ile
+  başlıyor, ama yine de neden zahmet
+  edelim?
+
+  769
+  00:39:15,740 --> 00:39:17,510
+  Python'un daha okunabilir olması amaçlanıyor.
+
+  770
+  00:39:17,510 --> 00:39:22,530 Eğer
+  bir öğrenci listeniz varsa, her seferinde
+  bir öğrenciyi tekrar edin.
+
+
+  771
+  00:39:22,530 --> 00:39:25,490
+  Şimdi listelerle ilgili soru olup
+  olmadığını görmek için burada durayım
+
+  772
+  00:39:25,490 --> 00:39:28,220 şimdi
+  tanımladığım şekliyle, bu durumda
+  dizilerin bir listesi,
+
+  773
+  00:39:28,220 --> 00:39:33,860
+Machine Translated by Google
+  veya bu adların her birini yinelemek ve
+  yazdırmak için şimdi bir for döngüsü kullanmak.
+
+
+  774
+  00:39:33,860 --> 00:39:34,550
+  SEYİRCİ: Evet.
+
+  775
+  00:39:34,550 --> 00:39:38,150
+  Yani bu durumda öğrenciyi
+  başlatmak gerekli değil mi?
+
+  776
+  00:39:38,150 --> 00:39:40,575
+  Veya döngüde bir değişken
+  bildirebilir miyiz?
+
+  777
+  00:39:40,575 --> 00:39:41,700
+  DAVID MALAN: Güzel soru.
+
+  778
+  00:39:41,700 --> 00:39:43,450
+  Manuel olarak başlatmanıza
+  gerek yok.
+
+  779
+  00:39:43,450 --> 00:39:47,810
+  Python, öğrenci değişkenini
+  Hermione olarak başlatma işini üstlenir
+
+  780
+  00:39:47,810 --> 00:39:49,960
+  önce, sonra Harry ikinci, sonra
+  Ron üçüncü.
+
+  781
+  00:39:49,960 --> 00:39:53,210
+  Diğer dillerin aksine, onu kendi başınıza
+  bir şeye başlatmanız gerekmez,
+
+  782
+  00:39:53,210 --> 00:39:55,250
+  sadece var ve çalışacak.
+
+  783
+  00:39:55,250 --> 00:39:58,662 Bu
+  şekilde döngüler ve listelerle ilgili
+  diğer sorular?
+
+  784
+  00:39:58,662 --> 00:40:00,620
+  İZLEYİCİ: Molayı tarif
+  ettiğinize göre var mı?
+Machine Translated by Google
+  785
+  00:40:00,620 --> 00:40:04,232
+  döngülerde belirli bir durumu atlayabilmemiz
+  için herhangi bir devam kavramı var mı?
+
+  786
+  00:40:04,232 --> 00:40:04,940 DAVID
+  MALAN: Evet.
+
+
+  787
+  00:40:04,940 --> 00:40:06,933 Başka
+  bir söz dizimi kullanmaya da devam
+  edebilirsiniz.
+
+  788
+  00:40:06,933 --> 00:40:07,850 Bunu
+  göstermedik.
+
+
+  789
+  00:40:07,850 --> 00:40:10,668 Şimdilik
+  sadece molaya odaklandık.
+
+  790
+  00:40:10,668 --> 00:40:11,210 SEYİRCİ:
+  Tamam.
+
+
+  791
+  00:40:11,210 --> 00:40:15,770
+  Öyleyse bu for döngüsü, karma
+  tablolarla veya farklı türde çalışabilir mi?
+
+
+  792
+  00:40:15,770 --> 00:40:17,607 tablolar
+  mı yoksa diziler mi?
+
+  793
+  00:40:17,607 --> 00:40:18,440 DAVID
+  MALAN: Gerçekten.
+
+
+  794
+  00:40:18,440 --> 00:40:20,190
+  Yani orada kendimizin
+  önüne geçiyoruz,
+
+
+  795
+  00:40:20,190 --> 00:40:22,610 ama
+  Python'da başka veri türleri de var,
+
+
+
+  796
+  00:40:22,610 --> 00:40:26,550 ve
+  aslında, bunlar üzerinde yineleme
+  yapmak için bir for döngüsü kullanabilirsiniz.
+
+
+  797
+Machine Translated by Google
+  00:40:26,550 --> 00:40:28,940
+  Yinelenebilir olan
+  her şey, tabiri caizse,
+
+
+  798
+  00:40:28,940 --> 00:40:32,030 bunun
+  gibi bir döngü ile kullanılabilecek bir
+  veri parçası.
+
+
+  799
+  00:40:32,030 --> 00:40:34,290 Ama
+  bunlar hakkında daha fazlası-- daha fazlası yakında.
+
+
+  800
+  00:40:34,290 --> 00:40:37,967
+  Aslında, çözmenin başka bir yolunu
+  göstermek için buraya geçmeme izin verin.
+
+
+  801
+  00:40:37,967 --> 00:40:40,550 aynı
+  problem, çünkü şimdiye kadar
+  döngüler kullandık,
+
+
+  802
+  00:40:40,550 --> 00:40:43,040
+  gerçekten sayılara güvendik ve sorun
+  değil
+
+
+  803
+  00:40:43,040 --> 00:40:45,620 eğer o
+  alanda kalmayı tercih ederseniz.
+
+
+  804
+  00:40:45,620 --> 00:40:49,610
+  Diyelim ki i ve 0 gibi sayıları
+  kullanarak yineleme yapmak istedim,
+
+
+  805
+  00:40:49,610 --> 00:40:50,910 1, 2, vb.
+
+
+
+  806
+  00:40:50,910 --> 00:40:53,700 Bu kodu
+  şu şekilde değiştirebileceğimizi
+  önereyim.
+
+
+  807
+  00:40:53,700 --> 00:40:56,930
+  Düşünmeyi tercih ederseniz veya
+  programınız varsa
+
+
+  808
+  00:40:56,930 --> 00:40:59,810
+  uygulamaya çalışmak, bunun gibi
+  sayılar kullanmanızı gerektirir,
+Machine Translated by Google
+
+  809
+  00:40:59,810 --> 00:41:00,830 bunu
+  yapabilirsin.
+
+  810
+  00:41:00,830 --> 00:41:04,820
+  Ben-- şey, sadece öğrenci
+  demek istemiyorum,
+
+  811
+  00:41:04,820 --> 00:41:07,580 çünkü
+  o zaman i bir sayı olmayacak.
+
+
+
+  812
+  00:41:07,580 --> 00:41:13,010 tam
+  anlamıyla Hermione, sonra Harry,
+  sonra Ron olacağım.
+
+  813
+  00:41:13,010 --> 00:41:17,030 0'dan
+  1'e ve 2'ye yinelemem gerekiyor.
+
+
+  814
+  00:41:17,030 --> 00:41:21,320
+  Üç elemanlı bir liste şu konumlara
+  sahipse, 0, 1, 2,
+
+  815
+  00:41:21,320 --> 00:41:25,400 Bir
+  şekilde 0'da başlayıp 2'de biten bir
+  döngü yaratmam gerekiyor.
+
+
+  816
+  00:41:25,400 --> 00:41:28,340
+  Daha önce bunu yapmak
+  istediğimde menzile ihtiyacım vardı,
+
+  817
+  00:41:28,340 --> 00:41:30,290 ama
+  bu 2 işe yaramayacak.
+
+  818
+  00:41:30,290 --> 00:41:32,750
+  Sadece öğrenci
+  yelpazesinde söyleyemem,
+
+  819
+  00:41:32,750 --> 00:41:36,030 çünkü
+  öğrenciler bir sayı değil, bir tamsayı
+  değil,
+
+  820
+  00:41:36,030 --> 00:41:37,640
+Machine Translated by Google
+  yani menzile geçemezsin.
+
+  821
+  00:41:37,640 --> 00:41:39,260 Aralık
+  bir tamsayı bekliyor.
+
+  822
+  00:41:39,260 --> 00:41:41,840 Ama
+  burada bir çözüm var.
+
+
+  823
+  00:41:41,840 --> 00:41:47,390
+  Görünüşe göre Python'da uzunluk veya
+  len, LEN, LEN,
+
+  824
+  00:41:47,390 --> 00:41:51,890 bu
+  size bir listenin uzunluğunu ve sonraki
+  diğer şeyleri de söyleyecektir.
+
+  825
+  00:41:51,890 --> 00:41:55,850
+  Ve şimdi bu yapı taşlarını bir araya
+  getirebileceğimi düşünüyorum.
+
+  826
+  00:41:55,850 --> 00:41:57,740 sayıları
+  bu şekilde kullanmama izin verin.
+
+  827
+  00:41:57,740 --> 00:42:02,870
+  Yani aralık bir dizge listesi
+  almaz, bir sayı alır,
+
+  828
+  00:42:02,870 --> 00:42:04,790 ve
+  ideal olarak bu sayı 3 olacak,
+
+
+
+  829
+  00:42:04,790 --> 00:42:07,580 böylece
+  0, 1 ve 2 gibi bir dizi değer elde ediyorum.
+
+  830
+  00:42:07,580 --> 00:42:10,640
+  Sanırım fonksiyonlarımı bu şekilde
+  iç içe geçirebilirim.
+
+  831
+  00:42:10,640 --> 00:42:15,410
+  Önce öğrenci listesinin
+  uzunluğunu alırsam, bu 3 olacak,
+
+  832
+  00:42:15,410 --> 00:42:18,620
+Machine Translated by Google
+  sonra bu dönüş değerini
+  argüman olarak iletiyorum
+
+  833
+  00:42:18,620 --> 00:42:23,840 aralığı,
+  bu bana 0, sonra 1, sonra 2 gibi bir değer
+  aralığı verecek.
+
+  834
+  00:42:23,840 --> 00:42:26,570
+  Ve eğer istersem kodda ne yapmamı
+  sağlayacak?
+
+
+  835
+  00:42:26,570 --> 00:42:28,310 sadece
+  bu değil.
+
+  836
+  00:42:28,310 --> 00:42:33,650
+  Şimdi öğrenciler parantez i'yi
+  yazdırabilirim ve bu şimdi
+
+  837
+  00:42:33,650 --> 00:42:38,270 burada
+  gördüğümüz sözdizimi çok anlamlı hale geliyor--
+  yeni ve belki
+
+  838
+  00:42:38,270 --> 00:42:39,200 yabancı.
+
+
+
+  839
+  00:42:39,200 --> 00:42:44,090
+  Ama parantez aç, 0, parantez kapat
+  veya parantez aç, 1 yapabilirsem,
+
+  840
+  00:42:44,090 --> 00:42:47,990 yakın
+  parantez veya açık parantez, 2, yakın
+  parantez, çıkıyor,
+
+  841
+  00:42:47,990 --> 00:42:49,940
+  Aslında oraya bir
+  değişken koyabilirim ve ben
+
+
+  842
+  00:42:49,940 --> 00:42:52,490 bu
+  parantezlerin içindeki herhangi bir
+  sayıyı ifade edebilir
+
+
+  843
+  00:42:52,490 --> 00:42:54,800
+  bunların hepsini bir döngüde
+  dinamik olarak yazdırmak için.
+Machine Translated by Google
+
+  844
+  00:42:54,800 --> 00:42:57,680 Bunu
+  yapmama izin verin, hogwarts.py
+  Python'u, Enter,
+
+
+  845
+  00:42:57,680 --> 00:43:00,140 Hermione,
+  Harry ve Ron var.
+
+
+  846
+  00:43:00,140 --> 00:43:02,570
+  Ve şimdi eğer sadece merak
+  ediyorsam, sadece dürtmek istiyorum
+
+
+  847
+  00:43:02,570 --> 00:43:05,060 civarında
+  veya belki bir sıralama yapmak
+  istiyorum, kim gibi
+
+
+  848
+  00:43:05,060 --> 00:43:08,240 okuldaki
+  veya Gryffindor'daki ilk üç öğrenci mi?
+
+
+
+  849
+  00:43:08,240 --> 00:43:11,000 Aynı
+  anda birden çok şeyi yazdırabiliyorum,
+  gördük.
+
+
+  850
+  00:43:11,000 --> 00:43:14,540
+  Sadece lokasyondaki
+  öğrencilerin çıktısını almama izin verin
+
+
+  851
+  00:43:14,540 --> 00:43:19,340 i, bunun
+  yerine önce i'yi sonra i konumundaki
+  öğrenciyi yazdıralım.
+
+
+  852
+  00:43:19,340 --> 00:43:22,850
+  Yazdırılacak iki şey var ve biliyoruz ki print iki
+  argüman alabilir,
+
+
+  853
+  00:43:22,850 --> 00:43:25,280 daha
+  önce bir boşlukla ayrıldıklarını gördük.
+
+
+
+  854
+  00:43:25,280 --> 00:43:26,900 Devam
+  edeyim ve bunu tekrar çalışayım.
+
+
+  855
+Machine Translated by Google
+  00:43:26,900 --> 00:43:31,533 Şimdi
+  görüyorum ki, tamam, Hermione en iyi
+  öğrenci ama sıfırıncı sırada.
+
+
+  856
+  00:43:31,533 --> 00:43:32,450 Bu biraz
+  garip.
+
+
+  857
+  00:43:32,450 --> 00:43:35,930
+  Benim programımı kullanarak
+  insanı göstermemize gerek yokmuş gibi
+
+
+  858
+  00:43:35,930 --> 00:43:37,430 0'dan
+  saymaya başladık.
+
+
+  859
+  00:43:37,430 --> 00:43:38,570 Bunu
+  temizleyebilirim.
+
+
+  860
+  00:43:38,570 --> 00:43:41,600
+  Buradaki i'ye sadece 1
+  ekleyebilirim ve şimdi
+
+
+  861
+  00:43:41,600 --> 00:43:43,640 ilk üç
+  öğrenci listesine bakın.
+
+
+  862
+  00:43:43,640 --> 00:43:47,540 Hermione
+  1 numara, Harry 2 numara ve tabii ki Ron 3
+  numara.
+
+
+  863
+  00:43:47,540 --> 00:43:50,960 Böylece
+  aynı değerlerin hepsine de erişebiliriz.
+
+
+
+  864
+  00:43:50,960 --> 00:43:55,320 Şu anda
+  bu listelerde herhangi bir soru var mı?
+
+
+
+  865
+  00:43:55,320 --> 00:43:58,320 Bu
+  listelerle ilgili herhangi bir sorunuz var mı?
+
+
+  866
+  00:43:58,320 --> 00:44:01,050 Bu
+  uzunluk, bu aralıklar veya başka türlü?
+
+
+  867
+  00:44:01,050 --> 00:44:08,350
+Machine Translated by Google
+  İZLEYİCİ: Sorum şu, menzil içinde i için
+  bunu bir kez daha açıklayabilir misiniz?
+
+  868
+  00:44:08,350 --> 00:44:10,210 DAVID
+  MALAN: Elbette.
+
+
+  869
+  00:44:10,210 --> 00:44:12,640
+  Öyleyse zamanı geri saralım.
+
+
+  870
+  00:44:12,640 --> 00:44:13,960 Bunu
+  yapmaya başladık.
+
+  871
+  00:44:13,960 --> 00:44:20,770 0, 1,
+  2'deki i için ve sonra bu şekilde üç kez
+  miyav yazdırıyoruz.
+
+  872
+  00:44:20,770 --> 00:44:23,830
+  for döngüsünün çalışma
+  şekli, oluşturmasıdır
+
+
+  873
+  00:44:23,830 --> 00:44:27,730 sizin için
+  i olarak adlandırdığım bir değişken ama
+  onu istediğim her şey olarak adlandırabilirim.
+
+
+  874
+  00:44:27,730 --> 00:44:31,390 Daha
+  sonra başlangıçta i'yi listedeki ilk
+  şeye atar.
+
+  875
+  00:44:31,390 --> 00:44:34,690
+  Ardından otomatik olarak i'yi
+  listedeki bir sonraki şeye atar.
+
+  876
+  00:44:34,690 --> 00:44:37,210 Ve
+  sonra i'yi listedeki üçüncü şeye atar.
+
+
+
+  877
+  00:44:37,210 --> 00:44:41,520 Ve her
+  seferinde altındaki girintili kodun
+  tamamını yapar.
+
+
+  878
+  00:44:41,520 --> 00:44:43,740
+  Yine de bunun
+  olmayacağını anlıyoruz
+Machine Translated by Google
+  879
+  00:44:43,740 --> 00:44:46,380 milyon
+  kez gibi bir şey yapmak istersem iyi
+  ölçeklendirmek için.
+
+  880
+  00:44:46,380 --> 00:44:48,480 Bunun
+  yerine menzili ekledik.
+
+  881
+  00:44:48,480 --> 00:44:51,240 Bunun
+  aynı şeyi yapma etkisi var.
+
+
+
+  882
+  00:44:51,240 --> 00:44:55,080
+  Bana bir dizi değer veriyor-- üç şeyden
+  oluşan bir liste, gerçekten,
+
+  883
+  00:44:55,080 --> 00:44:57,330 yani
+  davranış tamamen aynı.
+
+  884
+  00:44:57,330 --> 00:45:01,890
+  Şimdi bu Hogwarts örneğine hızlıca gidersek,
+  ne yapıyorum?
+
+  885
+  00:45:01,890 --> 00:45:04,500
+  sadece bu küçük fikirleri birleştiriyor.
+
+  886
+  00:45:04,500 --> 00:45:06,330 Hâlâ
+  bir for döngüsü oluşturuyorum.
+
+  887
+  00:45:06,330 --> 00:45:08,520 Hala
+  i adında bir değişken yaratıyorum.
+
+  888
+  00:45:08,520 --> 00:45:11,760 Bunu
+  bir değer aralığında yapmak
+  istiyorum ama kaç değer?
+
+  889
+  00:45:11,760 --> 00:45:15,390
+  Peki, uzunluk işlevini kullanırsam ve
+  uzunluk işlevine geçersem
+
+  890
+  00:45:15,390 --> 00:45:18,300
+  değerler listesi, uzunluğun hayattaki
+  amacı
+Machine Translated by Google
+  891
+  00:45:18,300 --> 00:45:21,120 bana bu
+  listenin ne kadar uzun olduğunu
+  söyleyecek ve 3.
+
+
+  892
+  00:45:21,120 --> 00:45:25,740
+  Yani bu neredeyse eskisi gibi,
+  Az önce böyle bir şey yaptım
+
+
+  893
+  00:45:25,740 --> 00:45:29,220 ama 3'ü
+  sabit kodlamak istemiyorum,
+  Dinamik olarak anlamak istiyorum
+
+
+  894
+  00:45:29,220 --> 00:45:30,870
+  Hogwarts'ta kaç öğrenci var.
+
+
+  895
+  00:45:30,870 --> 00:45:32,910
+  Bu yüzden sadece beste yapıyorum,
+
+  beste yapıyorum, beste yapıyorum,
+
+
+  896
+  00:45:32,910 --> 00:45:36,210 veya tüm
+  bu çeşitli fikirleri iç içe yerleştirmek.
+
+
+  897
+  00:45:36,210 --> 00:45:38,880
+  Pekala, izin verirseniz,
+  şimdi geçiş yapmama izin verin--
+
+
+  898
+  00:45:38,880 --> 00:45:42,540
+  Hogwarts'ta daha önce son bir veri
+  türü tanıtılacak
+
+
+  899
+  00:45:42,540 --> 00:45:45,690 her şeyi
+  birkaç son programla birleştiriyoruz.
+
+
+
+  900
+  00:45:45,690 --> 00:45:49,410
+  Görünüşe göre Python'da sadece
+  diziler yok, sadece
+
+
+  901
+  00:45:49,410 --> 00:45:51,600 int,
+  sadece kayan nokta değerleri değil,
+  değil
+
+
+  902
+  00:45:51,600 --> 00:45:53,790
+Machine Translated by Google
+ sadece bool'lar, sadece
+  listeler değil, aynı zamanda
+
+
+  903
+  00:45:53,790 --> 00:45:58,560
+  Sözlükler veya diskler denen şeyler, size
+  izin veren bir veri yapısıdır.
+
+  904
+  00:45:58,560 --> 00:46:02,250 bir
+  değeri diğeriyle ilişkilendirmek için.
+
+
+  905
+  00:46:02,250 --> 00:46:04,380
+  Kelimenin tam anlamıyla insan
+  dünyasındaki gibi bir sözlük.
+
+
+  906
+  00:46:04,380 --> 00:46:07,680
+  İster İngilizce ister başka bir insan dilinde
+  olsun, bir sözlük açacak olsaydınız,
+
+  907
+  00:46:07,680 --> 00:46:09,190
+  sözlüğün içinde ne var?
+
+  908
+  00:46:09,190 --> 00:46:12,480 Pekala,
+  bir sürü kelime ve tanım.
+
+
+
+  909
+  00:46:12,480 --> 00:46:14,760
+  Yine de bir bilgisayar
+  bilimcisi ve bir programcı
+
+  910
+  00:46:14,760 --> 00:46:19,470 bunları
+  daha genel olarak anahtarlar ve değerler
+  olarak tanımlar, bir şey
+
+  911
+  00:46:19,470 --> 00:46:21,360 başka
+  bir şeyle bağlantılı.
+
+  912
+  00:46:21,360 --> 00:46:22,950 Sözlük
+  bundan ibaret.
+
+  913
+  00:46:22,950 --> 00:46:25,930 Bir
+  şeyi başka bir şeyle ilişkilendirmenizi
+  sağlar.
+
+  914
+Machine Translated by Google
+  00:46:25,930 --> 00:46:29,160 Ve
+  dikkat edin, bu zaten bir listeden
+  daha güçlü, daha ilginç.
+
+  915
+
+  00:46:29,160 --> 00:46:32,670 Bir liste
+  birden çok değerden oluşan bir kümeden ibarettir.
+
+
+  916
+  00:46:32,670 --> 00:46:36,240 Ama
+  bir sözlük iki boyutludur, tabiri
+  caizse.
+
+  917
+  00:46:36,240 --> 00:46:39,390
+  Tıpkı bir insan sözlüğü, bir kitap
+  gibi, bir şeyleri çağrıştırır.
+
+  918
+  00:46:39,390 --> 00:46:42,210
+  tanımlarıyla kelimeler gibi başka
+  bir şeyle.
+
+
+  919
+  00:46:42,210 --> 00:46:44,500 Şimdi
+  bu aslında pratikte ne anlama
+  geliyor?
+
+  920
+  00:46:44,500 --> 00:46:48,390
+  Pekala, takip etmek
+  istediğimizi varsayalım
+
+  921
+  00:46:48,390 --> 00:46:51,810
+  Hogwarts'ta kimin hangi evde olduğu.
+
+  922
+  00:46:51,810 --> 00:46:54,240 Şey,
+  sadece listeleri kullanarak yapabilirim.
+
+  923
+  00:46:54,240 --> 00:46:55,950
+  VS'ye geri dönmeme izin ver
+  Buraya kodlayın ve bana izin verin
+
+
+
+  924
+  00:46:55,950 --> 00:46:59,470
+ sadece geçici olarak-- ama bir şekilde
+  Sonunda hoşlanmayacağım--
+
+  925
+  00:46:59,470 --> 00:47:01,620 evler
+  adında başka bir değişken
+  yaratmama izin verin,
+Machine Translated by Google
+
+  926
+  00:47:01,620 --> 00:47:06,750 onu
+  Hermione'nin evine karşılık gelen
+  Gryffindor'a eşitleyin,
+
+  927
+  00:47:06,750 --> 00:47:09,960
+  Gryffindor'a karşılık gelen
+  Harry'nin evi ve Gryffindor,
+
+  928
+  00:47:09,960 --> 00:47:11,250 Ron'un
+  evine karşılık geliyor.
+
+  929
+  00:47:11,250 --> 00:47:12,730 Ve
+  oraya Draco'yu ekleyelim.
+
+
+  930
+  00:47:12,730 --> 00:47:14,640
+  Yani artık üç yerine dört
+  öğrencimiz var.
+
+
+  931
+  00:47:14,640 --> 00:47:18,810 biraz
+ çeşitliliğimiz olsun diye ve o
+  Slytherin'deydi.
+
+  932
+  00:47:18,810 --> 00:47:21,300 Yani
+  şimdi iki listemiz var.
+
+
+  933
+  00:47:21,300 --> 00:47:24,750
+  Ve kendi aramızda
+  anlaşabiliriz
+
+  934
+  00:47:24,750 --> 00:47:28,680 öğrenci
+  değişkeninde birinci olan yaşıyor
+
+
+
+  935
+  00:47:28,680 --> 00:47:31,410 evlerde
+  ilk değerde.
+
+
+  936
+  00:47:31,410 --> 00:47:34,770
+  Öğrencilerde ikinci olan ikinci evde
+  yaşıyor.
+
+
+  937
+  00:47:34,770 --> 00:47:37,680
+  Öğrencilerde üçüncü olan kimdir?
+Machine Translated by Google
+  üçüncü evde yaşıyor.
+
+
+  938
+  00:47:37,680 --> 00:47:38,730 Bunu
+  yapabilirdik.
+
+
+  939
+  00:47:38,730 --> 00:47:41,430
+  Ama dürüst olmak
+  gerekirse, bu hızla bozulacak
+
+  940
+  00:47:41,430 --> 00:47:44,102 çok
+  öğrencimiz varken, çok evimiz varken,
+
+
+
+  941
+  00:47:44,102 --> 00:47:46,560 peki
+  ya bundan daha fazlasını takip
+  etmek istiyorsak?
+
+  942
+  00:47:46,560 --> 00:47:48,810
+  Ya her öğrencinin evini takip etmek
+  istiyorsak
+
+  943
+  00:47:48,810 --> 00:47:52,890 ve
+  patronus, sihirli bir şekilde
+  çağrıştırdıkları bu görüntü?
+
+  944
+  00:47:52,890 --> 00:47:55,290
+  O zaman üçüncü bir listeye
+  ihtiyacımız var-- bu sadece
+
+  945
+  00:47:55,290 --> 00:47:58,440 eğer
+  sadece onur sistemindeysek hızla
+  ortalık karışacak
+
+  946
+  00:47:58,440 --> 00:48:02,640 her
+  şeyin mantıksal olarak sıralandığı
+  çoklu listeler kullanarak.
+
+  947
+  00:48:02,640 --> 00:48:05,940
+  Kodunuz daha karmaşık hale
+  geldiğinde sonu pek iyi olmuyor.
+
+  948
+  00:48:05,940 --> 00:48:07,740 Ama
+  ben bu fikri uygulamak istiyorum.
+Machine Translated by Google
+  949
+  00:48:07,740 --> 00:48:09,990 Bir
+  şeyi bir şeyle ilişkilendirmek
+  istiyorum.
+
+  950
+  00:48:09,990 --> 00:48:12,960
+  Evi olan bir öğrenci, evi olan bir
+  öğrenci, evi olan bir öğrenci
+
+  951
+  00:48:12,960 --> 00:48:15,970 ve
+  benzeri, peki bunu nasıl yapabilirim?
+
+
+
+  952
+  00:48:15,970 --> 00:48:18,570
+  Pekala, buradaki
+  koduma geri döneyim ve izin ver
+
+  953
+  00:48:18,570 --> 00:48:22,410 bunu
+  bir Python sözlüğü kullanarak
+  yapmamızı öneriyorum.
+
+  954
+  00:48:22,410 --> 00:48:25,560 Ve
+  bu gerçekten göreceğimiz yeni
+  sözdiziminin sonuncusu.
+
+  955
+  00:48:25,560 --> 00:48:26,880 İşte
+  yeni söz dizimi.
+
+  956
+  00:48:26,880 --> 00:48:29,280
+  Köşeli parantez kullanmak
+  yerine, gidiyoruz
+
+  957
+  00:48:29,280 --> 00:48:32,500
+  sözlükler için kaşlı ayraç kullanmak.
+
+
+
+  958
+  00:48:32,500 --> 00:48:37,050
+  Tamamen ilgisiz f dizeleri bağlamında kaşlı
+  ayraçlar gördük.
+
+  959
+  00:48:37,050 --> 00:48:40,360
+  Bazen klavyedeki tuşlar ve bir dilin yazarları
+  tükenir.
+
+  960
+Machine Translated by Google
+  00:48:40,360 --> 00:48:43,302
+  sembolleri farklı şekillerde yeniden
+  kullanmaya başlamak gerekiyor, bu
+
+  961
+  00:48:43,302 --> 00:48:44,260 ne
+  olmak üzere.
+
+  962
+  00:48:44,260 --> 00:48:46,150 Kaşlı
+  ayraçları farklı bir şekilde
+  kullanıyoruz.
+
+  963
+  00:48:46,150 --> 00:48:48,690
+  Şimdi öğrenciler adında bir
+  değişken oluşturalım.
+
+  964
+  00:48:48,690 --> 00:48:51,960
+  Ve devam edeyim ve açık
+  olarak ayarlayayım
+
+  965
+  00:48:51,960 --> 00:48:54,030
+  kıvrık ayraç ve kapalı kıvrık ayraç.
+
+  966
+  00:48:54,030 --> 00:48:56,670 Bu
+  şu anda boş bir sözlük.
+
+
+
+  967
+  00:48:56,670 --> 00:48:58,590 Ve
+  sözlük böyle çalışır.
+
+  968
+  00:48:58,590 --> 00:49:01,150
+  Bir şeyi başka bir şeyle
+  ilişkilendirmenizi sağlar,
+
+  969
+  00:49:01,150 --> 00:49:02,400 ve
+  bunu böyle yapıyorsunuz.
+
+  970
+  00:49:02,400 --> 00:49:07,777
+  Hermione, alıntı-alıntı, iki nokta üst
+  üste ve ardından bunların değeri.
+
+  971
+  00:49:07,777 --> 00:49:09,610
+  Hermione ile neyi ilişkilendirmek
+  istiyorsunuz?
+Machine Translated by Google
+  972
+  00:49:09,610 --> 00:49:11,280
+  Pekala, Gryffindor.
+
+  973
+  00:49:11,280 --> 00:49:13,680
+  Harry'yi neyle ilişkilendirmek istiyorum?
+
+  974
+  00:49:13,680 --> 00:49:16,560 Onu
+  Gryffindor ile ilişkilendirmek
+  istiyorum.
+
+  975
+  00:49:16,560 --> 00:49:18,630 Ron'u
+  neyle ilişkilendirmek istiyorum?
+
+
+  976
+  00:49:18,630 --> 00:49:21,240 Onu
+  Gryffindor'la ilişkilendirmek
+  istiyorum.
+
+  977
+  00:49:21,240 --> 00:49:24,600 Şey,
+  bu aslında olmayacak-- bu hızla çok
+  çirkinleşecek.
+
+  978
+  00:49:24,600 --> 00:49:27,502
+  Draco ve Slytherin'i eklediğimizde kodum
+  çok uzayacak.
+
+  979
+  00:49:27,502 --> 00:49:28,710
+  sarmaya başlayacak.
+
+  980
+  00:49:28,710 --> 00:49:30,390 Yani
+  bu tamamen estetik.
+
+  981
+  00:49:30,390 --> 00:49:33,450
+  Python ve diğer dillerde
+  tamamen kabul edilebilir
+
+  982
+  00:49:33,450 --> 00:49:36,570
+  kodunuzu biraz daha kolay
+  biçimlendirmek ve sadece yeni satırlar eklemek
+
+  983
+  00:49:36,570 --> 00:49:38,040 daha
+  okunabilir hale getirirse.
+
+
+  984
+Machine Translated by Google
+  00:49:38,040 --> 00:49:40,480 Ve
+  bunu yapmanın bir yolu şu olabilir.
+
+
+
+  985
+  00:49:40,480 --> 00:49:44,920
+  Kıvırcık telim hala burada duruyor.
+  Kaşlı ayracım hala burada,
+
+  986
+  00:49:44,920 --> 00:49:47,400 ama
+  dikkat edin, şimdi biraz daha
+  okunabilir
+
+
+  987
+  00:49:47,400 --> 00:49:51,743 solda
+  anahtarlarım, bazı şeylerim ve
+  değerlerim var
+
+  988
+  00:49:51,743 --> 00:49:53,160
+  sağda, diğer şeylerim.
+
+  989
+  00:49:53,160 --> 00:49:55,800
+  Yukarıdan aşağıya gözden geçirmek
+  biraz daha kolay.
+
+  990
+  00:49:55,800 --> 00:49:57,480 Farklı
+  şekilde de biçimlendirebilirsiniz.
+
+  991
+  00:49:57,480 --> 00:50:00,690
+  Ama ben devam edeceğim ve
+  şimdi Draco'yu ekleyeceğim
+
+
+  992
+  00:50:00,690 --> 00:50:03,210 kim
+  yaşıyor, tabii ki Slytherin'de.
+
+  993
+  00:50:03,210 --> 00:50:07,320
+  Şimdi solda bu tuşların
+  her birine sahibim
+
+  994
+  00:50:07,320 --> 00:50:09,910 ve
+  sağdaki değerler, ki bu gerçekten,
+  yine,
+
+  995
+  00:50:09,910 --> 00:50:13,200
+ sadece bu fikrin bir kod uygulaması,
+ küçük bir çizelge
+Machine Translated by Google
+
+  996
+  00:50:13,200 --> 00:50:15,300 kağıt
+  kalemle yazabileceğinizi
+
+
+
+  997
+  00:50:15,300 --> 00:50:17,620 bir
+  şeyi başka bir şeyle ilişkilendirirken.
+
+
+
+  998
+  00:50:17,620 --> 00:50:20,680 Peki
+  şimdi bu kodu ilginç bir şekilde nasıl
+  kullanırım?
+
+  999
+  00:50:20,680 --> 00:50:22,230
+  Sözdizimi neredeyse aynı.
+
+  1000
+  00:50:22,230 --> 00:50:26,160
+  İlk öğrencinin, Hermione'nin
+  evinin çıktısını almak istersem,
+
+  1001
+  00:50:26,160 --> 00:50:27,150 Bunu
+  yapabilirim.
+
+
+  1002
+  00:50:27,150 --> 00:50:31,960
+  Değişkenin adını yazdırın ama değişkenin
+  içine girmem gerekiyor.
+
+  1003
+  00:50:31,960 --> 00:50:33,810
+  İndekslemem gerekiyor.
+
+
+  1004
+  00:50:33,810 --> 00:50:38,280
+  Ve sözlüklerle ilgili güzel
+  olan şey şu ki, listeler
+
+
+  1005
+  00:50:38,280 --> 00:50:41,010 sayısal
+  konumlara sahip--
+
+
+  1006
+  00:50:41,010 --> 00:50:45,270
+  0, 1, 2; Hermione,
+  Sırasıyla Harry, Ron,
+
+  1007
+  00:50:45,270 --> 00:50:50,520
+  sözlükler gerçek
+Machine Translated by Google
+  indeksleriniz olarak kelimeler, tabiri caizse,
+
+
+  1008
+  00:50:50,520 --> 00:50:52,750
+  indeksleriniz onların içine girmek için.
+
+
+  1009
+  00:50:52,750 --> 00:50:55,740
+  Yani Hermione'nin evini
+  yazdırmak isterseniz,
+
+
+  1010
+  00:50:55,740 --> 00:50:59,160
+  Önemsediğin anahtar, alıntı yap-alıntı
+  yapma, Hermione,
+
+
+  1011
+  00:50:59,160 --> 00:51:04,050 ve
+  buradaki sözdiziminin ne yapacağına dikkat
+  edin, bu 0, 1 veya 2 değil.
+
+
+  1012
+  00:51:04,050 --> 00:51:05,970 Kelimenin
+  tam anlamıyla Hermione'nin adı.
+
+
+  1013
+  00:51:05,970 --> 00:51:11,070
+  Bu daha önce çizelgeye gidip, tamam, bana
+  Hermione'yi ver demek gibidir.
+
+
+  1014
+  00:51:11,070 --> 00:51:13,628 benim
+  anahtarım, Gryffindor değerim.
+
+
+  1015
+  00:51:13,628 --> 00:51:15,420 Burada
+  sözdizimsel olarak yaptığımız şey bu.
+
+
+
+  1016
+  00:51:15,420 --> 00:51:18,300
+  Hermione'yi arıyoruz ve değerini alıyoruz.
+
+
+
+  1017
+  00:51:18,300 --> 00:51:21,120 Yani
+  koduma geri dönersem, bunun
+  Gryffindor'u yazdırması gerekir.
+
+
+  1018
+  00:51:21,120 --> 00:51:24,330
+  Ve bunu birkaç kez yaparsam,
+  öğrenciler, köşeli parantez, alıntı-alıntı yapma,
+
+
+  1019
+Machine Translated by Google
+  00:51:24,330 --> 00:51:26,280 Harry
+  bana Harry'nin evini vermeli.
+
+  1020
+  00:51:26,280 --> 00:51:30,630 Baskı
+  öğrencileri, açık parantez Ron, bu bana
+  Ron'un evini vermeli.
+
+  1021
+  00:51:30,630 --> 00:51:33,660
+  Ve son olarak, eğer bunu
+  öğrencilerle yaparsam, parantez, Draco,
+
+
+  1022
+  00:51:33,660 --> 00:51:35,727 bu
+  bana Draco'nun evini vermeli.
+
+  1023
+  00:51:35,727 --> 00:51:38,310
+  Şimdi hala biraz manuel ve bahse
+  girerim bunu geliştirebiliriz,
+
+  1024
+  00:51:38,310 --> 00:51:40,620 ama
+  bırakın Python'u hogwarts.py
+  üzerinde çalıştırayım ve biz
+
+  1025
+  00:51:40,620 --> 00:51:44,790
+  Gryffindor'u görmeli, Gryffindor,
+  Gryffindor, Slytherin, hangi
+
+  1026
+  00:51:44,790 --> 00:51:46,500 tam da
+  beklediğimiz gibi.
+
+  1027
+  00:51:46,500 --> 00:51:48,810
+  Şimdi tüm yaptığımız, yine, şimdi
+  taşındık
+
+  1028
+  00:51:48,810 --> 00:51:52,710 sadece
+  basit bir isim listesine sahip olmaktan
+  tekrar iki boyuta,
+
+  1029
+  00:51:52,710 --> 00:51:56,070 kağıt-
+  kalem üzerinde yaptığımız gibi bir
+  şeyi bir şeyle ilişkilendirmek
+
+  1030
+  00:51:56,070 --> 00:51:58,920 başka,
+  sırasıyla değerleri olan tuşlar.
+Machine Translated by Google
+  1031
+  00:51:58,920 --> 00:52:02,580
+  İzin verirseniz, bunun biraz havalı olmaya
+  başladığının farkında olsam da,
+
+  1032
+  00:52:02,580 --> 00:52:07,200 burada
+  işleri biraz yükseltmeme ve bakmadan
+  geçiş yapmama izin ver
+
+  1033
+  00:52:07,200 --> 00:52:13,020
+  örneğin, oradaki kalıp, sadece bu
+  değerlerin kodlanması
+
+  1034
+  00:52:13,020 --> 00:52:15,660 aslında
+  bunları daha dinamik bir şekilde
+  yazdırmak için.
+
+  1035
+  00:52:15,660 --> 00:52:19,510
+  Devam edeyim ve döngümüzü kullanayım ve
+  bu soru daha önce de ortaya çıktı,
+
+  1036
+  00:52:19,510 --> 00:52:25,450 devam
+  edeyim ve öğrencilerdeki her
+  öğrenci için şunu söyleyeyim,
+
+  1037
+  00:52:25,450 --> 00:52:31,240 devam
+  edin ve yazdırın, örneğin öğrenci
+  değişkeni--
+
+  1038
+  00:52:31,240 --> 00:52:32,920 peki,
+  önce öğrenci diyelim.
+
+  1039
+  00:52:32,920 --> 00:52:33,950 Basit
+  tutalım.
+
+  1040
+  00:52:33,950 --> 00:52:35,950
+  Yani bu henüz o kadar
+  ilginç olmayacak,
+
+  1041
+  00:52:35,950 --> 00:52:41,470 ama
+  hogwarts.py'nin Python'unu çalıştırıp Enter'a
+  bastığımda, dikkat edin, ne görmeliyim?
+
+  1042
+  00:52:41,470 --> 00:52:44,200
+Machine Translated by Google
+  Ne olduğumu görmek için
+  burada bir soru almama izin verin
+
+
+  1043
+  00:52:44,200 --> 00:52:48,910 Şimdi
+  Enter'a bastığımda görecek miyim, öğrenciler
+  için öğrenciyken mi?
+
+  1044
+  00:52:48,910 --> 00:52:51,305 SEYİRCİ:
+  Evet, sanırım sadece anahtarları
+  göreceğiz.
+
+  1045
+  00:52:51,305 --> 00:52:52,180 DAVID
+  MALAN: Mükemmel.
+
+
+  1046
+  00:52:52,180 --> 00:52:53,020 Çok iyi
+  bir sezgi.
+
+  1047
+  00:52:53,020 --> 00:52:53,980 Her iki
+  yöne de gidebilirdi.
+
+  1048
+  00:52:53,980 --> 00:52:55,540 Değerler
+  olabilirdi, evler.
+
+
+  1049
+  00:52:55,540 --> 00:53:01,300
+  Ancak Python'da bir sözlük üzerinde yineleme yapmak
+  için bir for döngüsü kullandığınızda, tasarım gereği,
+
+
+  1050
+  00:53:01,300 --> 00:53:03,550 tüm
+  anahtarlar üzerinde yinelenir.
+
+  1051
+  00:53:03,550 --> 00:53:07,960 Yani
+  bence Hermione, Harry, Ron ve
+  Draco'yu görmeliyiz.
+
+  1052
+  00:53:07,960 --> 00:53:11,260
+  Şimdi Enter'a basmama izin verin, Enter
+  ve gerçekten, kesinlikle haklısınız,
+
+  1053
+  00:53:11,260 --> 00:53:12,580 sadece
+  tuşları görüyoruz.
+
+  1054
+  00:53:12,580 --> 00:53:15,580
+  Ama bu gerçekten o kadar kullanışlı değil
+Machine Translated by Google
+  eğer gerçekten umursadığım şey
+
+
+  1055
+  00:53:15,580 --> 00:53:18,430 kim
+  nerede yaşıyor, ikisini de yazdırabilir
+  miyim?
+
+  1056
+  00:53:18,430 --> 00:53:19,930
+  Sanırım yapabilirim.
+
+  1057
+  00:53:19,930 --> 00:53:21,350 Devam
+  edeyim ve şunu yapayım.
+
+  1058
+  00:53:21,350 --> 00:53:24,850
+  Sadece öğrencinin adını
+  değil, anahtarı da yazdırayım,
+
+  1059
+  00:53:24,850 --> 00:53:30,537 ama
+  sözlüğe endekslemek için onların
+  adını, anahtarını kullanmama izin verin.
+
+  1060
+  00:53:30,537 --> 00:53:33,370
+  Sözlükteki kelimeyi biliyorsam, tanımına
+  bir bakayım.
+
+  1061
+  00:53:33,370 --> 00:53:35,980
+  Öğrencinin adını biliyorsam
+  evlerine bakayım.
+
+  1062
+  00:53:35,980 --> 00:53:40,720 ve
+  bunun sözdizimi tıpkı bir liste gibi
+  öğrenciler, köşeli ayraç şeklindedir.
+
+  1063
+  00:53:40,720 --> 00:53:44,480
+  Ve tıpkı geçmişte i'yi bir sayıyken
+  kullandığımız gibi,
+
+  1064
+  00:53:44,480 --> 00:53:48,080
+  sözlükle de bir dizi kullanabiliriz.
+
+
+
+  1065
+  00:53:48,080 --> 00:53:55,180
+  Yani, öğrencinin adı anahtar ise, o
+  zaman bu sözdizimi, öğrenciler,
+Machine Translated by Google
+  1066
+  00:53:55,180 --> 00:54:00,340 ayraç,
+  öğrenci, yakın ayraç Hermione'nin
+  konumuna gidecek
+
+  1067
+  00:54:00,340 --> 00:54:01,330 ve evine
+  geri dön.
+
+  1068
+  00:54:01,330 --> 00:54:04,970 Harry'nin
+  bulunduğu yere gidecek ve evini geri
+  alacak vb.
+
+  1069
+  00:54:04,970 --> 00:54:08,943 Öyleyse
+  hogwarts.py'nin Python'unu
+  yaparsam, Girin, şimdi ben
+
+  1070
+  00:54:08,943 --> 00:54:11,485 bkz.
+  Hermione, Gryffindor; Harry,
+  Gryffindor; Ron, Gryffindor;
+
+  1071
+  00:54:11,485 --> 00:54:12,730 ve
+  Draco Slytherin.
+
+  1072
+  00:54:12,730 --> 00:54:14,940
+  Şimdi hepsine yeni soyadlar
+  vermişim gibi görünüyor.
+
+
+  1073
+  00:54:14,940 --> 00:54:15,940 ama
+  bunu temizleyebilirim.
+
+  1074
+  00:54:15,940 --> 00:54:17,170 Bu
+  sadece bir baskı olayı.
+
+  1075
+  00:54:17,170 --> 00:54:20,110
+  Devam edelim ve ayırıcımızı
+  varsayılan alandan değiştirelim
+
+  1076
+  00:54:20,110 --> 00:54:21,790 belki bir
+  boşluk, virgül.
+
+  1077
+  00:54:21,790 --> 00:54:26,110
+  Ve şimdi sadece yazdırma özelliklerini kullanarak,
+  aynı programı tekrar çalıştırmama izin verin, Enter,
+Machine Translated by Google
+  1078
+  00:54:26,110 --> 00:54:29,050 şimdi
+  orada netleştirmek için bazı güzel
+  virgüllerim var
+
+
+  1079
+  00:54:29,050 --> 00:54:31,810
+  Hermione'nin soyadı aslında
+  Gryffindor değil,
+
+  1080
+  00:54:31,810 --> 00:54:33,730 ama
+  bu sadece bir baskı detayı.
+
+  1081
+  00:54:33,730 --> 00:54:37,120 Bu
+  sözlükler ve az önce yaptıklarım
+  hakkında herhangi bir sorunuz var mı?
+
+  1082
+  00:54:37,120 --> 00:54:39,650
+
+
+
+  1083
+  00:54:39,650 --> 00:54:45,410 Bu
+  sözlükler ve buradaki döngü
+  hakkında sorular?
+
+  1084
+  00:54:45,410 --> 00:54:52,190
+  SEYİRCİ: Öğrenciler için öğrenci kavramını
+  bir türlü anlayamıyorum.
+
+
+  1085
+  00:54:52,190 --> 00:54:54,860 Eğer
+  ben-- haklıysam beni düzeltin.
+
+  1086
+  00:54:54,860 --> 00:55:01,850
+  Bu, öğrenci listesini içe aktardığı ve
+  dizinleri kullandığı anlamına mı geliyor?
+
+
+  1087
+  00:55:01,850 --> 00:55:09,140 veya
+  başka bir deyişle, gerçek indeksler olarak
+  Hermione, Harry ve Ron--
+
+
+  1088
+  00:55:09,140 --> 00:55:10,455
+  öğrencilerin listesi?
+
+
+  1089
+  00:55:10,455 --> 00:55:11,330
+  DAVID MALAN: Doğru.
+Machine Translated by Google
+  1090
+  00:55:11,330 --> 00:55:13,100 Yani
+  bu sadece Python'un bir özelliği.
+
+  1091
+  00:55:13,100 --> 00:55:17,150
+  Sözlükle bir for döngüsü
+  kullandığınızda, olan şudur.
+
+  1092
+  00:55:17,150 --> 00:55:20,513
+  Bu, tuşların üstte ve değerlerin altta
+  olduğu sözlükse,
+
+  1093
+  00:55:20,513 --> 00:55:22,430
+  değişkenin adını siz seçiyorsunuz.
+
+
+
+  1094
+  00:55:22,430 --> 00:55:24,818
+  Mantıklı olduğu için değişken
+ öğrencimi aradım,
+
+  1095
+  00:55:24,818 --> 00:55:26,360 çünkü
+  her seferinde bir öğrenci istiyorum.
+
+
+  1096
+  00:55:26,360 --> 00:55:29,510
+  Ve daha önce sayılarda olduğu
+  gibi for döngüsü ne yapar,
+
+  1097
+  00:55:29,510 --> 00:55:33,060 0, 1
+  ve 2, örneğin,
+
+
+
+  1098
+  00:55:33,060 --> 00:55:35,810
+  öğrenciyi başlangıçta Hermelin'in
+  adıyla eşitleyin.
+
+
+  1099
+  00:55:35,810 --> 00:55:38,990
+  Ve sonra döngünün bir sonraki
+  yinelemesi, bir sonraki döngü,
+
+  1100
+  00:55:38,990 --> 00:55:42,800
+  öğrenciyi Harry'nin, ardından Ron'un
+  ve ardından Draco'nun adına eşitler.
+
+  1101
+  00:55:42,800 --> 00:55:44,300
+Machine Translated by Google
+  Sadece otomatik olarak gerçekleşir.
+
+  1102
+  00:55:44,300 --> 00:55:47,480
+  Python yorumlayıcısının sizin için
+  yaptığı şey gibi
+
+  1103
+  00:55:47,480 --> 00:55:49,140 bunun
+  gibi bir for döngüsü görüyor.
+
+  1104
+  00:55:49,140 --> 00:55:53,090
+  Bu yüzden, bir liste üzerinde bir for
+  döngüsü ile yinelemeye çok benzer,
+
+  1105
+  00:55:53,090 --> 00:55:55,670 ancak
+  sayısal konumu tekrarlamak yerine,
+
+
+
+  1106
+  00:55:55,670 --> 00:56:01,700 0, 1, 2,
+  buradaki bu gösterimde koyu renkli tuşların
+  üzerinden geçiyor
+
+  1107
+  00:56:01,700 --> 00:56:02,930 grafik
+  olarak.
+
+  1108
+  00:56:02,930 --> 00:56:05,960
+  Ve bize Hogwarts hakkında bir
+  örnek daha vermeme izin verin.
+
+  1109
+  00:56:05,960 --> 00:56:09,320 başka
+  bir tanıdık alana bakmadan önce.
+
+
+
+  1110
+  00:56:09,320 --> 00:56:11,670
+  İşlerin biraz büyümesi
+  riskini göze alarak,
+
+  1111
+  00:56:11,670 --> 00:56:15,320 hikayeye
+  son bir Hogwarts ile devam etmeyi
+  önermeme izin verin
+
+  1112
+  00:56:15,320 --> 00:56:17,100 bunun
+  gibi bir örnek.
+
+  1113
+Machine Translated by Google
+  00:56:17,100 --> 00:56:21,280 Ya
+  her bir öğrencimiz hakkında daha fazla
+  bilgiye sahip olursak?
+
+
+  1114
+  00:56:21,280 --> 00:56:23,030 Ve
+  bu kaçınılmaz.
+
+
+  1115
+  00:56:23,030 --> 00:56:26,760
+  Kişiler veya müşteriler içeren bir veritabanı
+  olan bir program uyguluyorsanız,
+
+  1116
+  00:56:26,760 --> 00:56:29,060 veya
+  çalışanlar veya başka bir şey, hayal
+  edebileceğiniz
+
+  1117
+  00:56:29,060 --> 00:56:33,230
+  programınızda temsil ettiğiniz herhangi
+  bir şey hakkında çok fazla veriye sahip olmak
+
+  1118
+  00:56:33,230 --> 00:56:33,740
+  burada.
+
+
+  1119
+  00:56:33,740 --> 00:56:37,470
+  Tartışma adına, Hogwarts'taki her öğrencinin,
+  elbette,
+
+  1120
+  00:56:37,470 --> 00:56:41,480 bir
+  adı var, zaten bir evleri var ama bir
+  de patronları var.
+
+  1121
+  00:56:41,480 --> 00:56:44,360
+  Tanıdık olmayanlar için bu,
+  hayvan veya varlıktır.
+
+  1122
+  00:56:44,360 --> 00:56:48,260 belirli
+  bir büyü yaptıklarında asalarının ucundan
+  çıkan bu.
+
+  1123
+  00:56:48,260 --> 00:56:51,410
+  Buradaki nokta, ilişkilendirmek
+  istediğimiz değil
+
+
+  1124
+  00:56:51,410 --> 00:56:55,670 tek
+ bir şey var
+Machine Translated by Google
+  öğrenci, ancak birden çok şey
+
+  1125
+  00:56:55,670 --> 00:57:00,110
+  ayrıca-- bu durumda isimleri, evleri ve
+  patronları.
+
+  1126
+  00:57:00,110 --> 00:57:02,400 Peki,
+  bunun gibi bir kod nasıl görünebilir?
+
+
+
+  1127
+  00:57:02,400 --> 00:57:07,100 Pekala,
+  izin verin hogwarts.py'a geri döneyim ve bir an
+  için yeniden başlayayım.
+
+  1128
+  00:57:07,100 --> 00:57:10,650 Bunu
+  biraz daha fazla veriyle geliştirmemi
+  önermeme izin verin.
+
+
+  1129
+  00:57:10,650 --> 00:57:12,800 Ve bu
+  veriler aşağıdaki gibi görünecek.
+
+
+
+  1130
+  00:57:12,800 --> 00:57:18,360
+  Öğrencilerim değişkenini şimdi bir liste
+  olarak düşünmemizi önereceğim.
+
+  1131
+  00:57:18,360 --> 00:57:21,320
+  Aşağıdaki gibi bir sözlük listemiz
+  olursa ne olur?
+
+
+  1132
+  00:57:21,320 --> 00:57:24,960
+  Gerçekten de bu resmi tam
+  anlamıyla burada uygulamak istiyorum.
+
+  1133
+  00:57:24,960 --> 00:57:29,210 Önceki
+  resmimin tek bir sözlüğü temsil ettiğine
+ dikkat edin.
+
+  1134
+  00:57:29,210 --> 00:57:33,500 Ama
+  diyelim ki bir sözlük listesi
+  oluşturmak istedim.
+
+  1135
+  00:57:33,500 --> 00:57:36,650
+  Yani, öğrenciler için-- yani
+Machine Translated by Google
+  dört öğrencinin listesi.
+
+
+  1136
+  00:57:36,650 --> 00:57:41,240
+  Ve bu öğrencilerin her birinin
+  kendisinin bir sözlük olduğunu varsayalım,
+
+  1137
+  00:57:41,240 --> 00:57:46,130 anahtar
+  değer çiftleri, anahtarlar ve değerler
+  koleksiyonu,
+
+  1138
+  00:57:46,130 --> 00:57:48,180 bir şey
+  ve başka bir şey.
+
+  1139
+  00:57:48,180 --> 00:57:50,990 Bunu
+  kodda yapmanın başka bir yolu da
+  şu.
+
+
+  1140
+  00:57:50,990 --> 00:57:55,130
+  Burada VS Code'a geri döneyim ve adında
+  bir değişken tanımlayayım.
+
+
+  1141
+  00:57:55,130 --> 00:57:58,100 öğrenci
+  bir listeye eşittir.
+
+  1142
+  00:57:58,100 --> 00:58:01,343
+  Ve önceden imlecimi ayrı satırlara taşıyacağım,
+
+
+
+  1143
+  00:58:01,343 --> 00:58:03,260 çünkü
+  bunun uzun süreceğini biliyorum ve
+  ben
+
+  1144
+  00:58:03,260 --> 00:58:07,320 bu
+  listenin tüm öğelerini içine sığdırmak
+  istiyor.
+
+
+  1145
+  00:58:07,320 --> 00:58:10,555 Şimdi
+  bir sözlük oluşturacağım, öğrenci başına bir
+  sözlük.
+
+  1146
+  00:58:10,555 --> 00:58:11,930 Peki
+  nasıl sözlük oluşturabilirim?
+
+  1147
+Machine Translated by Google
+  00:58:11,930 --> 00:58:13,670 Ben
+  sadece o kaşlı ayraçları kullanıyorum.
+
+  1148
+  00:58:13,670 --> 00:58:16,220 Ama
+  o anahtarların ne olduğunu
+  belirlemek bana kalmış.
+
+  1149
+  00:58:16,220 --> 00:58:18,500
+  Ve bu sefer o anahtarı
+  önermeme izin ver
+
+  1150
+  00:58:18,500 --> 00:58:20,750
+  açıkça öğrencinin adı olmayacak,
+  bu
+
+  1151
+  00:58:20,750 --> 00:58:24,980
+  kelimenin tam anlamıyla kelime adı
+  olacak ve orada Hermione adı olacak.
+
+  1152
+  00:58:24,980 --> 00:58:28,700
+  Aynı öğrencinin ev adında başka
+  bir anahtarı olacak.
+
+  1153
+  00:58:28,700 --> 00:58:31,010 ve
+  değer Gryffindor olacak.
+
+  1154
+  00:58:31,010 --> 00:58:34,700
+  Ve aynı öğrencinin patronus adında
+  üçüncü bir anahtarı olacak,
+
+  1155
+  00:58:34,700 --> 00:58:36,620 ve
+  bunun değeri--
+
+  1156
+  00:58:36,620 --> 00:58:39,710
+  Bakmam gerekiyordu-- kitaba göre
+  bir su samuru.
+
+  1157
+  00:58:39,710 --> 00:58:43,012 Şimdi
+  bu listenin içinde ikinci bir sözlük
+  oluşturacağım.
+
+  1158
+  00:58:43,012 --> 00:58:44,720
+  Ve yine, bir sözlük
+  kelimenin tam anlamıyla
+Machine Translated by Google
+
+  1159
+  00:58:44,720 --> 00:58:46,710
+  insanın kelime sözlüğü gibi.
+
+  1160
+  00:58:46,710 --> 00:58:50,750
+  Anahtarlar ve değerler, kelimeler
+  ve tanımlar içeren bir kitap.
+
+  1161
+  00:58:50,750 --> 00:58:53,630
+  Sözlüklerimin her birine sakladığım
+  üç kelime nedir?
+
+  1162
+  00:58:53,630 --> 00:58:55,640 Ad,
+  ev ve patronus.
+
+  1163
+  00:58:55,640 --> 00:58:58,940 Bu
+  kelimelerin Hermione için tanımları
+  neler?
+
+
+  1164
+  00:58:58,940 --> 00:59:01,850
+  Sırasıyla Hermione, Gryffindor ve
+  su samuru.
+
+  1165
+  00:59:01,850 --> 00:59:05,840 Harry
+  için bu yeni sözlükte tanımlar farklı
+  olacak.
+
+  1166
+  00:59:05,840 --> 00:59:08,270
+  Kendime bir çift kaşlı ayraç
+  daha vermeme izin ver
+
+  1167
+  00:59:08,270 --> 00:59:12,230 ve
+  şunu söyleyin, isim, alıntı-alıntı, iki
+  nokta üst üste, Harry.
+
+  1168
+  00:59:12,230 --> 00:59:15,500
+  Buradaki ev yine Gryffindor olacak.
+
+
+
+  1169
+  00:59:15,500 --> 00:59:21,620 Ve
+  tanıdığım bu patronus, bu durumda
+  bir geyik olacak.
+
+  1170
+Machine Translated by Google
+  00:59:21,620 --> 00:59:23,330
+  Sırada üçüncü bir sözlük var.
+
+  1171
+  00:59:23,330 --> 00:59:25,130
+  Buradaki isim Ron olacak.
+
+  1172
+  00:59:25,130 --> 00:59:27,560 Ve
+  ben devam edeceğim ve bunu
+  aynen böyle yapacağım.
+
+  1173
+  00:59:27,560 --> 00:59:31,070
+  Sonra ev bende ve o da
+  Gryffindor'du.
+
+  1174
+  00:59:31,070 --> 00:59:38,120 Son
+  olarak, buna bakmak zorunda kaldım,
+  Ron'un hamisi bir Jack Russell teriyeriydi.
+
+  1175
+  00:59:38,120 --> 00:59:42,100 Son
+  olarak Draco.
+
+  1176
+  00:59:42,100 --> 00:59:45,070
+  Şimdi dördüncü bir sözlükte--
+  başka bir kaşlı ayraç çifti,
+
+  1177
+  00:59:45,070 --> 00:59:47,380
+  öğrencinin adı tabii ki Draco.
+
+
+
+  1178
+  00:59:47,380 --> 00:59:50,650 Bu
+  öğrencinin evi Slytherin.
+
+  1179
+  00:59:50,650 --> 00:59:55,630
+  Ve Draco, ilginç bir şekilde, en
+  azından internete göre,
+
+  1180
+  00:59:55,630 --> 00:59:57,010
+  patronusu yok.
+
+  1181
+  00:59:57,010 --> 00:59:59,230
+  Kitaplarda veya filmlerde asla
+  ortaya çıkmadı.
+
+  1182
+Machine Translated by Google
+  00:59:59,230 --> 01:00:02,290 Görünen
+  o ki, bu gerçekten öğretilebilir harika
+  bir an.
+
+
+  1183
+  01:00:02,290 --> 01:00:08,170
+  Python'da kelimenin tam anlamıyla Yok ve YOK
+  olan özel bir anahtar sözcük vardır.
+
+
+  1184
+  01:00:08,170 --> 01:00:10,360 ilk harf
+  büyük.
+
+
+  1185
+  01:00:10,360 --> 01:00:14,210 Bu
+  resmen bir değerin yokluğunu temsil
+  ediyor.
+
+
+  1186
+  01:00:14,210 --> 01:00:17,440
+  Böylece biraz dikkatsizce alıntı yap-
+  alıntı yapma gibi bir şey yapabilirim,
+
+
+  1187
+  01:00:17,440 --> 01:00:20,410 ama bu,
+  yazmayı beceremediğim anlamına mı
+
+  geliyor?
+
+
+  1188
+  01:00:20,410 --> 01:00:24,880
+  Kelimenin tam anlamıyla Yok demek
+  anlamsal olarak biraz açık, özel bir anahtar kelime
+
+
+  1189
+  01:00:24,880 --> 01:00:29,620 Python'da
+  bunu açıklığa kavuşturmak için
+  Draco'nun patronusu olmadığını biliyorum.
+
+
+  1190
+  01:00:29,620 --> 01:00:32,320 bu sadece
+  benim açımdan bir gözden kaçırma değil.
+
+
+  1191
+  01:00:32,320 --> 01:00:36,370 Şimdi
+  buna sahibim, bilgisayarın belleğinde
+  ne var?
+
+
+  1192
+  01:00:36,370 --> 01:00:37,360 Bir listem
+  var.
+
+
+  1193
+  01:00:37,360 --> 01:00:38,620 Bunun
+  bir liste olduğunu nasıl anlarım?
+Machine Translated by Google
+  1194
+  01:00:38,620 --> 01:00:42,310
+  Çünkü başında bir köşeli parantez ve başka
+  bir köşeli parantez görüyorum.
+
+
+  1195
+  01:00:42,310 --> 01:00:42,850 sonunda.
+
+
+
+  1196
+  01:00:42,850 --> 01:00:45,730
+  Bu sadece benim görsel ipucum.
+  Tamam, mutlaka bilmiyorum
+
+
+  1197
+  01:00:45,730 --> 01:00:48,910 burada
+  başka neler oluyor, ama bir şeylerin
+  listesi var.
+
+
+  1198
+  01:00:48,910 --> 01:00:50,960 O listede
+  ne var?
+
+
+  1199
+  01:00:50,960 --> 01:00:53,560 Burada
+  da sözdizimi bizim ipucumuz.
+
+
+  1200
+  01:00:53,560 --> 01:00:57,820
+  Bu satır 2 kaşlı ayraçla başlayıp kaşlı ayraçla
+  bittiği için,
+
+
+  1201
+
+  01:00:57,820 --> 01:01:02,570 Bunun bir
+  sözlük olduğunu, anahtar değer çiftlerinden
+  oluşan bir koleksiyon olduğunu biliyorum.
+
+
+  1202
+  01:01:02,570 --> 01:01:04,930
+  Şimdi bunların hepsi ekranıma
+
+  mükemmel bir şekilde sığdı, ben de
+
+
+  1203
+  01:01:04,930 --> 01:01:08,020 tüm
+  anahtar değer çiftlerini yeni satırlara
+  taşıma zahmetine girmedi,
+
+
+  1204
+  01:01:08,020 --> 01:01:11,620 gerçekten
+  uzun yapardı, ben de bu sefer hepsini bir
+  arada tuttum.
+
+
+  1205
+  01:01:11,620 --> 01:01:15,520
+  Ama kaç anahtar yapar
+Machine Translated by Google
+  bu ilk sözlük var mı?
+
+  1206
+  01:01:15,520 --> 01:01:17,897
+  Başka bir deyişle, Hermione'nin
+  fiziksel sözlüğünde,
+
+  1207
+  01:01:17,897 --> 01:01:19,480 o
+  sözlükte kaç kelime var?
+
+  1208
+  01:01:19,480 --> 01:01:20,230 Üç.
+
+
+
+  1209
+  01:01:20,230 --> 01:01:22,990
+  Kelimeler isim, ev ve patronus.
+
+  1210
+  01:01:22,990 --> 01:01:26,140
+  Bu kelimelerin üç tanımı veya değeri
+  nedir?
+
+
+  1211
+  01:01:26,140 --> 01:01:27,640
+  Hermione'nin sözlüğünde mi?
+
+  1212
+  01:01:27,640 --> 01:01:31,000
+  Sırasıyla Hermione, Gryffindor ve
+  su samuru.
+
+  1213
+  01:01:31,000 --> 01:01:35,360
+  Ve aynı hikaye Harry için
+  de geçerli, sonra Ron için,
+
+  1214
+  01:01:35,360 --> 01:01:39,190 o
+  zaman Draco için, tasarım gereği,
+  seçtim
+
+  1215
+  01:01:39,190 --> 01:01:44,440
+  onlara aynı anahtarlara, aynı isimlere
+  sahip sözlükler vermek,
+
+  1216
+  01:01:44,440 --> 01:01:47,200
+  ama hepsinin benzersiz değerleri var.
+
+  1217
+  01:01:47,200 --> 01:01:50,080
+  Ve bu benim tasarımım, bu
+Machine Translated by Google
+  bir programcı olarak ayrıcalığım.
+
+  1218
+  01:01:50,080 --> 01:01:53,200 Peki bu
+  günün sonunda neden şimdi faydalı?
+
+
+
+  1219
+  01:01:53,200 --> 01:01:57,130
+  Koleksiyonun tamamına erişimim var
+  hepsi hakkında ilginç veriler
+
+  1220
+  01:01:57,130 --> 01:01:59,620 bu
+  öğrenciler ve hala bir döngü
+  yapabilirim.
+
+  1221
+  01:01:59,620 --> 01:02:02,980
+  Öğrencilerdeki öğrenciler
+  için söyleyebilirim, bu
+
+
+  1222
+  01:02:02,980 --> 01:02:05,590 bu
+  öğrenci listesini yinelememe izin
+  verecek.
+
+
+  1223
+  01:02:05,590 --> 01:02:08,240 Ve
+  devam edip her seferinde tek bir şey
+  yazdırayım.
+
+  1224
+  01:02:08,240 --> 01:02:10,610 Şu anki
+  öğrencinin adını yazdırayım.
+
+
+
+  1225
+  01:02:10,610 --> 01:02:14,470 Sözlük
+  ne kadar karmaşık olursa olsun, bu
+  oldukça rahat olmalı.
+
+  1226
+  01:02:14,470 --> 01:02:18,490 Öğrenci
+  için, listedeki her öğrenciyi yineleyecek.
+
+
+
+  1227
+  01:02:18,490 --> 01:02:20,420 1, 2, 3,
+  4 toplam.
+
+
+  1228
+  01:02:20,420 --> 01:02:24,580 Bir
+  sonraki satır sadece isim anahtarının
+  değerini yazdıracak.
+Machine Translated by Google
+
+  1229
+  01:02:24,580 --> 01:02:27,850
+  Fiziksel bir sözlüğü açmak,
+  kelime adına bakmak gibi,
+
+  1230
+  01:02:27,850 --> 01:02:30,670 ve
+  bize Hermione'yi veriyor,
+  Harry, Ron ve Draco
+
+  1231
+  01:02:30,670 --> 01:02:32,480 her
+  sözlükten sırasıyla.
+
+  1232
+  01:02:32,480 --> 01:02:36,880
+  Hogwarts'ın bu sürümünü çalıştırıp
+  Enter'a basarsam, üçünü de alırım.
+
+  1233
+  01:02:36,880 --> 01:02:37,780
+  isimleri.
+
+
+  1234
+  01:02:37,780 --> 01:02:39,790 Peki
+  ya bundan daha fazla bilgi istersem?
+
+
+
+  1235
+  01:02:39,790 --> 01:02:42,040 Hem
+  isimlerini hem de evlerini istiyorum.
+
+
+
+  1236
+  01:02:42,040 --> 01:02:47,650
+  Pekala, print'in argümanlarına öğrenci,
+  açık parantez, ev,
+
+  1237
+  01:02:47,650 --> 01:02:48,910 yakın
+  ayraç.
+
+
+  1238
+  01:02:48,910 --> 01:02:50,740
+  Pekala, devam edelim ve bunu çalıştıralım.
+
+  1239
+  01:02:50,740 --> 01:02:53,170
+  hogwarts.py'nin Python'u ve Enter tuşuna basın.
+
+  1240
+  01:02:53,170 --> 01:02:56,078 Yani
+  şimdi Hermione, Gryffindor'u görüyorum;
+  Harry, Gryffindor; ve benzeri.
+Machine Translated by Google
+
+  1241
+  01:02:56,078 --> 01:02:58,120
+  Pekala, estetik olarak bunu
+  biraz temizleyebiliriz.
+
+  1242
+  01:02:58,120 --> 01:03:01,480 bit,
+  virgül ve boşluk gibi baskı ile bir
+  ayırıcı ekleyerek,
+
+  1243
+  01:03:01,480 --> 01:03:03,760 böylece
+ bunu tekrar çalıştırdığımda, şimdi
+
+
+
+  1244
+  01:03:03,760 --> 01:03:05,680 bu
+  değerleri ayıran bazı virgüllere bakın.
+
+  1245
+  01:03:05,680 --> 01:03:08,290
+  Ancak öğrencilerin sadece bir
+  isme sahip olmadığını hatırlayın.
+
+  1246
+  01:03:08,290 --> 01:03:09,910 bir ev,
+  aynı zamanda o patronus.
+
+  1247
+  01:03:09,910 --> 01:03:12,700
+  Yani bunu da yazdırmak
+  istiyorsak, şimdi
+
+
+  1248
+  01:03:12,700 --> 01:03:18,040 her
+  öğrencinin aynı sözlüğe gireceği sözdizimine
+  sahip
+
+  1249
+  01:03:18,040 --> 01:03:22,010 ve
+  patronuslarını ve evlerini kendi adlarına
+  yazdırın.
+
+
+  1250
+  01:03:22,010 --> 01:03:24,520
+  Bu programı son bir kez
+  çalıştırırsam, şimdi
+
+
+  1251
+  01:03:24,520 --> 01:03:28,490 bu
+  sözlükteki tüm verileri görün.
+
+
+
+  1252
+Machine Translated by Google
+  01:03:28,490 --> 01:03:31,390 Yani
+  bu, bir kerede özümsenecek çok
+  şey, eminim.
+
+  1253
+  01:03:31,390 --> 01:03:33,367 Yeni
+  veri türlerimizin sonuncusu.
+
+  1254
+  01:03:33,367 --> 01:03:35,200
+  Listelerin başında şu
+  sözlükler var,
+
+  1255
+  01:03:35,200 --> 01:03:37,750 ama
+  günün sonunda yine bir sözlük,
+
+
+
+  1256
+  01:03:37,750 --> 01:03:41,740
+  sadece bu değerlere benzer
+  değerler topluluğudur
+
+
+  1257
+  01:03:41,740 --> 01:03:44,780
+  burada, anahtarları değerlerle
+  ilişkilendirmenizi sağlar.
+
+  1258
+  01:03:44,780 --> 01:03:48,520
+  Ve bu programın ilk versiyonu kelimenin
+  tam anlamıyla öğrencinin
+
+  1259
+  01:03:48,520 --> 01:03:51,040
+  isimler evleriyle birlikte ama sonra
+  fark ettim
+
+
+  1260
+  01:03:51,040 --> 01:03:53,920
+  sonraki versiyonumda, bir dakika, ya
+  her öğrenci yapmamışsa
+
+  1261
+  01:03:53,920 --> 01:03:55,990
+ sadece bir evdeki bir isim, ama bir patronus mu?
+
+  1262
+  01:03:55,990 --> 01:03:59,230
+  Aslında anahtarlarımızın
+  adlarını standartlaştıralım
+
+  1263
+  01:03:59,230 --> 01:04:03,850 isim,
+  ev ve patronus olmak,
+Machine Translated by Google
+  ve sonra bu tuşların değerleri
+
+  1264
+  01:04:03,850 --> 01:04:08,530
+  aslında veri olabilir, Hermione, Gryffindor,
+  su samuru ve benzeri.
+
+  1265
+  01:04:08,530 --> 01:04:13,240
+  Şimdi bu sözlükler ve yinelemeleri
+  hakkında sorularınız mı var?
+
+  1266
+  01:04:13,240 --> 01:04:18,710
+  KİTLE: Merak ediyordum da, farz
+  edelim ki sözlük çok büyük,
+
+  1267
+  01:04:18,710 --> 01:04:22,270 ve
+  eğer belirli bir öğrenciyi aramak
+  istersem,
+
+  1268
+  01:04:22,270 --> 01:04:26,650 peki
+  o öğrenciye nereden bakacağımı
+  nasıl bilebilirim?
+
+  1269
+  01:04:26,650 --> 01:04:29,470
+  Mesela alfabetik sıraya
+  göre sıralayabilir miyiz?
+
+  1270
+  01:04:29,470 --> 01:04:32,163
+  veya sayısal sıra veya buna benzer bir şey?
+
+  1271
+  01:04:32,163 --> 01:04:33,580
+  DAVID MALAN: Kısaca evet.
+
+  1272
+  01:04:33,580 --> 01:04:37,570
+  Python'un özelliklerinden biri de bu
+  sözlükleri çok üst düzeyde yapmasıdır.
+
+  1273
+  01:04:37,570 --> 01:04:38,680
+  performans sizin için.
+
+  1274
+  01:04:38,680 --> 01:04:42,280
+  Yani, çok büyük olsalar bile, gelecek
+  haftalarda olacağı gibi
+
+  1275
+Machine Translated by Google
+  01:04:42,280 --> 01:04:45,910 daha
+  fazla veriyi manipüle ettiğimizde,
+  Python verileri bulacaktır
+
+  1276
+  01:04:45,910 --> 01:04:48,520 sizin
+  için hızlı bir şekilde ilgileniyorsunuz.
+
+  1277
+  01:04:48,520 --> 01:04:50,650
+  Ve aslında bu, dilin bir
+  özelliğidir,
+
+  1278
+  01:04:50,650 --> 01:04:53,560 bu,
+  size verileri hızlı bir şekilde
+  ulaştırmak için bir sözlüğün özelliğidir.
+
+  1279
+  01:04:53,560 --> 01:04:55,480 Ve
+  kullanabileceğiniz işlevler var.
+
+
+
+  1280
+  01:04:55,480 --> 01:04:57,550
+  Verileri sıralayabilir,
+  gözden geçirebilir,
+
+  1281
+  01:04:57,550 --> 01:05:01,870 eninde
+  sonunda yapacağımız gibi çok
+  performanslı işlemler yapabilirsiniz.
+
+  1282
+  01:05:01,870 --> 01:05:05,800
+  O halde, bu döngüleri
+  tamamlarken şunu önermeme izin verin:
+
+  1283
+  01:05:05,800 --> 01:05:08,740 sadece
+  birkaç son problemi çözdüğümüzde
+  belki de
+
+  1284
+  01:05:08,740 --> 01:05:11,050 en
+  azından geçmişin güzel anılarını
+  uyandır
+
+  1285
+  01:05:11,050 --> 01:05:13,540 benim
+  için, en sevdiğim oyunlardan biri
+  büyürken
+
+  1286
+  01:05:13,540 --> 01:05:15,850
+Machine Translated by Google
+  orijinal Nintendo'daki bu
+  muydu?
+
+  1287
+  01:05:15,850 --> 01:05:19,240
+  Ve bu, karakterlerin yukarı hareket
+  ettiği iki boyutlu bir dünya.
+
+  1288
+  01:05:19,240 --> 01:05:23,020 aşağı
+  ve sağa, çok fazla sola değil, zıplarken
+
+
+
+  1289
+  01:05:23,020 --> 01:05:25,060
+  piramitler ve bunun gibi engeller.
+
+  1290
+  01:05:25,060 --> 01:05:27,670
+  Bunu sadece ilham almak için
+  kullanmamızı önermeme izin verin,
+
+  1291
+  01:05:27,670 --> 01:05:31,180 bunun
+  kadar renkli veya grafiksel bir şey
+  yapmamak, sadece
+
+  1292
+  01:05:31,180 --> 01:05:34,990 örneğin
+  dünyanın ortasındaki bu bariyere
+  odaklanmak
+
+
+  1293
+  01:05:34,990 --> 01:05:38,080 burada
+  Mario veya Luigi üzerinden atlamak
+  zorunda kaldı.
+
+  1294
+  01:05:38,080 --> 01:05:42,372 Ve bu,
+  birbirinin üzerine basmış üç tuğla gibi
+  görünüyor.
+
+  1295
+  01:05:42,372 --> 01:05:44,080
+  Ve şeyleri oldukça grafiksel
+  olarak yapmayacağız,
+
+  1296
+  01:05:44,080 --> 01:05:48,190 ama
+  çok basit bir uygulama yapalım
+  Bunun metinsel olarak Python tabanlı versiyonu
+
+
+  1297
+  01:05:48,190 --> 01:05:50,440 tuğlalar
+  için belki sadece hash kullanıyor.
+Machine Translated by Google
+
+  1298
+  01:05:50,440 --> 01:05:53,500
+  Çünkü burada üst üste bir model
+  var ve ben
+
+  1299
+  01:05:53,500 --> 01:05:56,170
+  bahse girerim bunu herhangi bir
+  şekilde çözebiliriz.
+
+  1300
+  01:05:56,170 --> 01:05:58,720
+  Pekala, burada VS Koduna
+  geri dönmeme izin verin
+
+  1301
+  01:05:58,720 --> 01:06:03,340 ve
+  kod kullanarak mario.py adlı bir
+  program oluşturmamızı önermeme izin verin
+
+  1302
+  01:06:03,340 --> 01:06:04,750
+  terminal penceresinde.
+
+  1303
+  01:06:04,750 --> 01:06:07,630
+  Ve sonra burada, aynı resmi
+  uygulayarak başlayayım.
+
+  1304
+  01:06:07,630 --> 01:06:11,590
+  Yapabildiğim kadar basit, hash'i
+  tam anlamıyla yazdırıyorum,
+
+  1305
+  01:06:11,590 --> 01:06:14,830 ve
+  ardından hash ve ardından
+  üçüncü bir son hash.
+
+  1306
+  01:06:14,830 --> 01:06:17,500
+  Bu onun oldukça metinsel
+  bir tahmini olacak,
+
+  1307
+  01:06:17,500 --> 01:06:20,440 ama
+  sanırım Python mario.py'yi
+  çalıştırırsam,
+
+  1308
+  01:06:20,440 --> 01:06:25,840 aynı
+  tuğla sütununun çok basit bir
+  versiyonu var tabiri caizse.
+Machine Translated by Google
+  1309
+  01:06:25,840 --> 01:06:28,150
+  Ama bunu kesinlikle bir
+  oyunda hayal edebilirsiniz.
+
+  1310
+  01:06:28,150 --> 01:06:31,380
+  burada bu sütunlar yükselebilir
+  veya alçalabilir,
+
+  1311
+  01:06:31,380 --> 01:06:33,880
+  aslında biraz daha fazla kod yazmak
+  güzel olurdu
+
+  1312
+  01:06:33,880 --> 01:06:37,690
+  bundan daha dinamik ve kelimenin tam
+  anlamıyla sadece print, print, print kullanmıyor
+
+  1313
+  01:06:37,690 --> 01:06:39,340
+  kopyala ve yapıştır gibi görünüyor.
+
+  1314
+  01:06:39,340 --> 01:06:42,550
+  En azından bugünün derslerinden
+  bazılarını benimsememe izin ver
+
+
+  1315
+  01:06:42,550 --> 01:06:44,650
+  öğrendi ve bunun yerine böyle bir
+  şey yaptı.
+
+  1316
+  01:06:44,650 --> 01:06:50,620 3
+  aralığındaki alt çizgi için, şimdi bunlardan
+  birini teker teker yazdıralım.
+
+  1317
+  01:06:50,620 --> 01:06:53,230
+  Ama şimdi menzil için
+  3 kullandığım gerçeği
+
+  1318
+  01:06:53,230 --> 01:06:55,840 daha
+  büyük veya daha küçük bir şeye
+  değiştirmek istersem,
+
+  1319
+  01:06:55,840 --> 01:06:59,350 Tek
+  bir yerde değiştiririm, üç veya daha
+  fazla yerde değil.
+
+  1320
+Machine Translated by Google
+  01:06:59,350 --> 01:07:01,450
+  Ve bu kod da, elbette,
+  eğer doğru anladıysam,
+
+  1321
+  01:07:01,450 --> 01:07:05,150 aynı
+  şeyi yazdıracak.
+
+
+
+  1322
+  01:07:05,150 --> 01:07:06,610 Yani
+  burada yineliyoruz.
+
+  1323
+  01:07:06,610 --> 01:07:08,860
+  Ama şimdi tartışmamızı
+  entegre edip edemeyeceğimizi görelim.
+
+
+  1324
+  01:07:08,860 --> 01:07:13,420 biraz
+  daha dinamik bir şeyler yazmaya başlamak
+  için kendi yazma işlevlerimizin
+
+  1325
+  01:07:13,420 --> 01:07:16,180 ve
+  nihayetinde daha karmaşık
+  problemleri çözmek.
+
+  1326
+  01:07:16,180 --> 01:07:18,130
+  Fonksiyonlarla ilgili güzel
+  şeylerden biri,
+
+
+  1327
+  01:07:18,130 --> 01:07:21,550
+  sadece kullanıp yeniden
+  kullanabileceğimiz kodlar yazmamıza izin vermiyorlar,
+
+  1328
+  01:07:21,550 --> 01:07:24,640
+  dilerseniz soyutlamalar
+  yaratmamıza izin veriyorlar.
+
+  1329
+  01:07:24,640 --> 01:07:28,990
+  Soyutlama, potansiyel olarak daha
+  karmaşık bir fikrin basitleştirilmesidir.
+
+  1330
+  01:07:28,990 --> 01:07:31,870 Ve
+  bunu haftalar boyunca birkaç kez
+  gördük.
+
+
+  1331
+  01:07:31,870 --> 01:07:35,650
+Machine Translated by Google
+  Örneğin, merhaba adında bir fonksiyonumuz
+  vardı ve kabul edildiğinde işe yaramadı.
+
+
+  1332
+  01:07:35,650 --> 01:07:37,480 bu
+  kadar, sadece merhaba yazdırdı.
+
+
+  1333
+  01:07:37,480 --> 01:07:40,960
+  Ama hakkında düşünmeme izin verdi.
+  tam olarak yaptığı gibi işlev görür,
+
+
+  1334
+  01:07:40,960 --> 01:07:44,590 genel
+  olarak bir şey yazdırmak değil, kelimenin
+  tam anlamıyla merhaba demek.
+
+
+  1335
+  01:07:44,590 --> 01:07:48,520
+  Tanımlayarak benzer bir şey
+  kullanarak bir sayı elde edebildim.
+
+
+  1336
+  01:07:48,520 --> 01:07:50,320 sayı
+  almak gibi kendi işlevim.
+
+
+  1337
+  01:07:50,320 --> 01:07:53,650
+  Pekala devam etmeme izin verin ve
+  örneğin şu an için varsayalım
+
+
+  1338
+  01:07:53,650 --> 01:07:57,160 ana
+  işlevimde öngördüğüm,
+
+
+
+  1339
+  01:07:57,160 --> 01:07:59,770 sütunu
+  yazdır adlı bir işlev kullanın.
+
+
+  1340
+  01:07:59,770 --> 01:08:03,190
+  Bu, bir işlevi kullanmak için herhangi
+  bir isim kadar iyi görünüyor.
+
+
+  1341
+  01:08:03,190 --> 01:08:05,290 bir tuğla
+  sütunu yazdırır.
+
+
+  1342
+  01:08:05,290 --> 01:08:07,660
+  Peki, şimdi uygulamaya
+  nasıl devam edebilirim?
+
+
+  1343
+Machine Translated by Google
+  01:08:07,660 --> 01:08:12,100 bu
+  soyutlama, gerçek kodlu bu basit baskı
+  sütunu fikri?
+
+  1344
+  01:08:12,100 --> 01:08:14,500 Daha
+  önce def ile gördük, tam da bunu
+  yapabiliriz.
+
+  1345
+  01:08:14,500 --> 01:08:16,720 Sütun
+  yazdır diye bir fonksiyon tanımlayayım.
+
+
+
+  1346
+  01:08:16,720 --> 01:08:21,220 Girdisi
+  olarak, genel olarak konuşursak, yükseklik
+  denen bir parametreyi kabul etmeme izin verin.
+
+  1347
+  01:08:21,220 --> 01:08:25,029
+  Buna n veya h diyebilirdim, ama şimdi
+  yükseklikle biraz daha açık olurdu
+
+  1348
+  01:08:25,029 --> 01:08:27,250 sırf
+ kendime ne yaptığını hatırlatmak için.
+
+  1349
+  01:08:27,250 --> 01:08:30,819 Ve
+  şimdi sanırım daha önceki aynı koddan
+  biraz ödünç alabilirim.
+
+
+  1350
+  01:08:30,819 --> 01:08:37,990 Alt çizgi
+  n yükseklik aralığı için devam edin ve tek bir
+  hash yazdırın.
+
+  1351
+  01:08:37,990 --> 01:08:41,050 Ve tüm
+  bu programın sonunda, haydi main'i
+  çağıralım.
+
+  1352
+  01:08:41,050 --> 01:08:43,120 Yani
+  kodu biraz karmaşık hale getirdim.
+
+  1353
+  01:08:43,120 --> 01:08:45,580
+  Henüz daha fazla bir şey
+  yapmıyor, ama
+
+  1354
+  01:08:45,580 --> 01:08:48,310 beni
+  çözmeye hazırlıyor
+Machine Translated by Google
+  bence ne gidiyor
+
+  1355
+  01:08:48,310 --> 01:08:50,080 daha
+  karmaşık problemler.
+
+  1356
+  01:08:50,080 --> 01:08:53,170
+  Mario.py'nin Python'unu
+  çalıştırırsam, başladığımız yere geri döneriz.
+
+  1357
+  01:08:53,170 --> 01:08:57,520
+  Ama artık bir işlevim var, bir
+  soyutlama, baskı sütunu,
+
+  1358
+  01:08:57,520 --> 01:09:00,040 bu,
+  baskı hakkında düşünmeme izin
+  verecek
+
+  1359
+  01:09:00,040 --> 01:09:03,432 bir
+  seferde Mario dünyasının bir kısmı.
+
+
+
+  1360
+  01:09:03,432 --> 01:09:05,140 Ve
+  bunu farklı şekillerde de yapabilirim.
+
+
+
+  1361
+  01:09:05,140 --> 01:09:09,080 Dikkat
+  edin, gerçekten istersem böyle bir
+  şey yapabilirim.
+
+  1362
+  01:09:09,080 --> 01:09:12,260
+  Now print sütununu farklı
+  şekillerde uygulayabilirim,
+
+  1363
+  01:09:12,260 --> 01:09:15,260
+  özellikle kodumun her yerinde
+  baskı sütunu kullanıyorsam,
+
+  1364
+  01:09:15,260 --> 01:09:19,220 veya
+  belki hala, bir meslektaşım, bir
+  arkadaşım, internette başka biri
+
+  1365
+  01:09:19,220 --> 01:09:21,200 benim
+  yazdırma sütunu işlevimi kullanıyor.
+Machine Translated by Google
+  1366
+  01:09:21,200 --> 01:09:23,899
+  Yazdığınız fonksiyonlar
+  hakkında da güzel olan şeyler
+
+  1367
+  01:09:23,899 --> 01:09:27,770
+  bunların altında yatan uygulama
+  ayrıntılarını değiştirebiliyor musunuz,
+
+  1368
+  01:09:27,770 --> 01:09:31,850 ancak
+  işlevin adını veya parametrelerini
+  değiştirmediğiniz sürece
+
+  1369
+  01:09:31,850 --> 01:09:35,870 ya da
+  ne döndürdüğü, eğer başka kimse
+  farkı bilmiyorsa.
+
+
+  1370
+  01:09:35,870 --> 01:09:37,970
+  Dahili uygulamayı
+  değiştirebilirsiniz
+
+  1371
+  01:09:37,970 --> 01:09:41,760
+  Zaman içinde iyileştirmek veya
+  düzeltmeler yapmak istiyorsanız istediğiniz kadar.
+
+  1372
+  01:09:41,760 --> 01:09:44,390
+  Örneğin, print sütununu
+  uygulayabileceğimiz başka bir yol,
+
+  1373
+  01:09:44,390 --> 01:09:46,340
+  hatırla, bunun gibi bir şey olurdu.
+
+  1374
+  01:09:46,340 --> 01:09:48,920
+  Bir karma ve ardından
+  yeni bir satırla biraz zekice,
+
+  1375
+  01:09:48,920 --> 01:09:51,750 ve
+  sonra belki dizileri çarpabiliriz,
+
+
+
+  1376
+  01:09:51,750 --> 01:09:54,080 ve
+  ardından bu satırı alıntı-alıntısız ile
+  bitirin.
+
+  1377
+Machine Translated by Google
+  01:09:54,080 --> 01:09:57,110 Yine,
+  bu sözdiziminden memnun
+  değilseniz sorun değil.
+
+  1378
+  01:09:57,110 --> 01:09:59,660 Bu,
+  geçmişte gördüğümüz daha akıllıca
+  bir yaklaşımdı.
+
+  1379
+  01:09:59,660 --> 01:10:04,280 Ama
+  burada mario.py'nin Python'unu
+  çalıştırırsam, yine de üçlü bir sütun göreceğim.
+
+
+  1380
+  01:10:04,280 --> 01:10:07,040
+  Ama burada önemli olan,
+  main'in
+
+
+  1381
+  01:10:07,040 --> 01:10:12,110
+  yazdırma sütununun altında yatan
+  uygulamanın ne olduğunu bilmek gerekiyor
+
+  1382
+  01:10:12,110 --> 01:10:13,980
+  değişti.
+
+  1383
+  01:10:13,980 --> 01:10:15,980
+  Peki farklı bir boyuta
+  geçelim,
+
+  1384
+  01:10:15,980 --> 01:10:19,400
+  isterseniz ve sadece bu dikey
+  tuğlaları yazdırmak yerine, hadi
+
+  1385
+  01:10:19,400 --> 01:10:22,160
+  oyunda dünyanın bu kısmına hızlı
+  ileri sarın.
+
+  1386
+  01:10:22,160 --> 01:10:25,490
+  Bir noktada Mario bu tuğlalarla
+  gökyüzünde karşılaşır,
+
+  1387
+  01:10:25,490 --> 01:10:27,690 eğer
+  altına atlarsa bozuk para oluyorlar.
+
+
+
+  1388
+  01:10:27,690 --> 01:10:29,780
+Machine Translated by Google
+  Ve böylece puanını kazanır.
+
+  1389
+  01:10:29,780 --> 01:10:32,270
+  Ama devam edelim ve sadece
+  bu madeni paralara odaklanalım,
+
+
+  1390
+  01:10:32,270 --> 01:10:34,460 ve
+  yazdırmamızı önereyim, oh, sadece
+
+
+
+  1391
+  01:10:34,460 --> 01:10:36,110
+  buradaki dört soru işareti.
+
+  1392
+  01:10:36,110 --> 01:10:38,150 Ve
+  burada VS Koduna geri dönmeme izin verin.
+
+  1393
+  01:10:38,150 --> 01:10:41,480
+  Ve bunu VS içinde önermeme izin verin
+  Burada kod, daha önce olduğu gibi, biz
+
+
+  1394
+  01:10:41,480 --> 01:10:43,010 bunu
+  soyutlamaya çalışın.
+
+  1395
+  01:10:43,010 --> 01:10:45,290
+  Öyleyse devam edeyim ve
+  bu versiyondan kurtulayım,
+
+  1396
+  01:10:45,290 --> 01:10:49,520 çünkü
+  artık çıktımızda dikey yerine yatay ilerliyoruz.
+
+
+
+  1397
+  01:10:49,520 --> 01:10:53,690 Satırı
+  dört kez yazdıralım.
+
+
+
+  1398
+  01:10:53,690 --> 01:10:56,360
+  Elimizdeki sorunu soyutlayayım.
+
+
+
+  1399
+  01:10:56,360 --> 01:10:59,180
+  Bu dört soru işaretini nasıl yazdıracağımı
+  henüz bilmiyorum.
+
+  1400
+Machine Translated by Google
+  01:10:59,180 --> 01:11:03,770 ama
+  hadi buna baskı satırı 4 diyelim ve
+  şimdi bu sorunu çözeceğimi varsayacağım.
+
+  1401
+  01:11:03,770 --> 01:11:06,800 Şimdi
+  sorunu çözmek için o tavşan
+  deliğine inelim.
+
+  1402
+  01:11:06,800 --> 01:11:09,020
+  Yazdırma satırı adlı bir işlev tanımlayın.
+
+  1403
+  01:11:09,020 --> 01:11:11,570
+  Yükseklik yerine
+  genişlik alacak,
+
+  1404
+  01:11:11,570 --> 01:11:14,030
+  çünkü dikey yerine yatay.
+
+
+
+  1405
+  01:11:14,030 --> 01:11:15,750 Ve
+  bunu nasıl yapabilirim?
+
+
+  1406
+  01:11:15,750 --> 01:11:19,160
+  Pekala, artık string çarpımını daha da
+  fazla yapma fırsatımız var.
+
+  1407
+  01:11:19,160 --> 01:11:19,760
+  zarifçe.
+
+  1408
+  01:11:19,760 --> 01:11:23,300 Alıntı-
+  alıntı, soru işareti, çarpı genişlik
+  diyebilirim.
+
+  1409
+  01:11:23,300 --> 01:11:28,010
+  Ve bu, aksi takdirde olabilecekleri
+  yazdırmanın çok hoş bir Pythonic yoludur.
+
+  1410
+  01:11:28,010 --> 01:11:29,990 bir
+  döngü olsun ve sorun değil, ama
+  bu gidiyor
+
+  1411
+  01:11:29,990 --> 01:11:32,630
+  devam edin ve bu soru işaretlerini
+  benim için yazdırın.
+Machine Translated by Google
+
+  1412
+  01:11:32,630 --> 01:11:37,130
+  Mario.py'nin Python'unu yapalım, Enter
+  ve şimdi dört soru işaretim var.
+
+  1413
+  01:11:37,130 --> 01:11:39,530
+  Daha grafiksel versiyon kadar
+  güzel değil,
+
+  1414
+  01:11:39,530 --> 01:11:44,390 ama
+  en azından sahip olmaya yönelik
+  bir yapı taşıdır.
+
+  1415
+  01:11:44,390 --> 01:11:47,870 artık
+  yazdırma satırı gibi yeniden kullanılabilir bir işlev.
+
+  1416
+  01:11:47,870 --> 01:11:49,130 Peki
+  tüm bunları neden yapıyorum?
+
+  1417
+  01:11:49,130 --> 01:11:52,820
+  Mesela, bu problemlerin çözümünü
+  neden gereğinden fazla tasarlıyoruz?
+
+  1418
+  01:11:52,820 --> 01:11:54,920
+  sütunu ve satırı yazdırarak mı?
+
+  1419
+  01:11:54,920 --> 01:11:57,620
+  Faydalı bir problem çözme tekniği.
+
+
+
+  1420
+  01:11:57,620 --> 01:12:00,410
+  Dünyanız tek boyutlu
+  görünmediği anda
+
+
+  1421
+  01:12:00,410 --> 01:12:04,130
+  bunun gibi veya sütun versiyonuyla,
+  ama buna ne demeli?
+
+  1422
+  01:12:04,130 --> 01:12:08,270
+  Daha sonra Super Mario Brothers'ta
+  Mario bu dünyaya atlamak zorunda
+
+  1423
+  01:12:08,270 --> 01:12:11,000
+Machine Translated by Google
+  bu yeraltı engellerinin
+  çoğunun olduğu yerde.
+
+
+  1424
+  01:12:11,000 --> 01:12:13,400 Ve
+  buradaki, örneğin, bir kareye
+  benziyor.
+
+  1425
+  01:12:13,400 --> 01:12:16,400 İki
+  boyutlu, yüksekliği ve genişliği var.
+
+
+
+  1426
+  01:12:16,400 --> 01:12:18,830
+  Ve bu, bir sürü farklı yol
+  olduğu anlamına gelir.
+
+  1427
+  01:12:18,830 --> 01:12:21,980 eğer
+  tartışmak için bu şeyi
+  uygulayabilirsek,
+
+  1428
+  01:12:21,980 --> 01:12:26,780 3'e
+  3 ızgara, 3'e 3 kare gibi.
+
+
+
+  1429
+  01:12:26,780 --> 01:12:29,570
+  Pekala, buradaki sorunu nasıl
+  çözebiliriz?
+
+  1430
+  01:12:29,570 --> 01:12:32,060
+  Pekala, VS Code'a geri
+  dönmeyi önermeme izin verin
+
+  1431
+  01:12:32,060 --> 01:12:36,420 ve
+  bunu birkaç farklı şekilde düşünmemizi
+  önereyim.
+
+  1432
+  01:12:36,420 --> 01:12:39,740
+  Bunu şu şekilde yapabilirim.
+
+  1433
+  01:12:39,740 --> 01:12:44,450
+  Nereye gittiğimi biliyorsam, belki deneyimli
+  bir programcıyım, devam edeyim
+
+  1434
+  01:12:44,450 --> 01:12:45,060 ve
+  bunu yapın.
+Machine Translated by Google
+
+  1435
+  01:12:45,060 --> 01:12:48,530
+  Genişliği ve yüksekliği 3 olan bir
+  kare yazdırayım.
+
+  1436
+  01:12:48,530 --> 01:12:49,487
+  Bu bir soyutlama.
+
+  1437
+  01:12:49,487 --> 01:12:52,070
+  Bir an için zaten var olduğunu
+  hafife alıyorum
+
+  1438
+  01:12:52,070 --> 01:12:56,180 3
+  ve yüksekliği 3 olan print square adlı
+  bir fonksiyon
+
+  1439
+  01:12:56,180 --> 01:12:57,068
+  ayrıca.
+
+  1440
+  01:12:57,068 --> 01:12:59,360
+  Ama birinin bunu uygulaması
+  gerekiyor ve şu anda,
+
+  1441
+  01:12:59,360 --> 01:13:01,580
+  klavyede sadece ben varım, o
+  yüzden devam edelim
+
+  1442
+  01:13:01,580 --> 01:13:03,020 ve
+  o kareyi uygulayın.
+
+  1443
+  01:13:03,020 --> 01:13:05,000
+  Devam etmeme izin verin
+  ve adında bir işlev tanımlayayım.
+
+
+  1444
+  01:13:05,000 --> 01:13:10,250
+  hem yükseklik hem de genişlik için
+  belirli bir boyut alan baskı karesi.
+
+  1445
+  01:13:10,250 --> 01:13:13,310
+  Ve işte burada bu döngülerden
+  bazılarını kullanma fırsatımız var.
+
+  1446
+  01:13:13,310 --> 01:13:16,250
+Machine Translated by Google
+  Ve bu döngüleri henüz
+  yapmadığımız bir şekilde kullanabiliriz.
+
+  1447
+  01:13:16,250 --> 01:13:21,500
+  Tüm bu satırları ve ayrıca tüm bu
+  sütunları yazdırmak istersem,
+
+  1448
+  01:13:21,500 --> 01:13:24,620
+  Artık bir döngünün izin verdiği
+  gibi sadece döngüsel olarak değil,
+
+  1449
+  01:13:24,620 --> 01:13:26,960 ama
+  iki boyutlu düşünmem gerekiyor.
+
+  1450
+  01:13:26,960 --> 01:13:30,560
+  Ve eski tip bir daktiloya veya hatta bir
+  yazıcıya aşina iseniz
+
+  1451
+  01:13:30,560 --> 01:13:33,570
+  günümüzde genellikle yukarıdan
+  aşağıya yazdırıyor.
+
+  1452
+  01:13:33,570 --> 01:13:38,550
+  Böylece, birden çok sütununuz olsa bile, her
+  seferinde bir satırı yazdırırsınız,
+
+  1453
+  01:13:38,550 --> 01:13:41,360 ve siz
+  o satırdayken, yazıcı veya daktilo
+
+
+
+  1454
+  01:13:41,360 --> 01:13:42,750 soldan
+  sağa yazdırır.
+
+  1455
+  01:13:42,750 --> 01:13:46,550 Ve bu,
+  siyah beyaz terminal pencerenizle sahip olmanız
+  gereken zihinsel model.
+
+  1456
+  01:13:46,550 --> 01:13:50,810
+  Şimdiye kadar her örnek için
+  tüm çıktılar en üstte başlar
+
+  1457
+  01:13:50,810 --> 01:13:52,340 ve
+  dibe iner.
+Machine Translated by Google
+  1458
+  01:13:52,340 --> 01:13:54,120
+  Yukarıdan aşağıya, soldan sağa.
+
+
+  1459
+  01:13:54,120 --> 01:13:58,770 Yani
+  çıktımızı, karemizi aynı şekilde oluşturmalıyız.
+
+
+
+  1460
+  01:13:58,770 --> 01:14:01,070 Öyleyse
+  bunu yapmamızı önermeme izin verin.
+
+
+  1461
+  01:14:01,070 --> 01:14:04,790
+  Bunu birçok kez, 3 veya daha fazla yinelememiz
+  gerektiğini bildiğimizi önermeme izin verin.
+
+  1462
+  01:14:04,790 --> 01:14:05,810 genel
+  boyut.
+
+  1463
+  01:14:05,810 --> 01:14:06,560 Öyleyse
+  bırakın şunu yapayım.
+
+
+  1464
+  01:14:06,560 --> 01:14:12,200 Boyut
+  aralığında i için üç kez ne yapmam
+  gerekiyor?
+
+
+  1465
+  01:14:12,200 --> 01:14:14,520 Neyin
+  çıktısını almak istiyorum?
+
+
+  1466
+  01:14:14,520 --> 01:14:17,790 1, 2, 3
+  sıra tuğla.
+
+
+  1467
+  01:14:17,790 --> 01:14:20,850 Ama
+  her tuğla sırasının içine ne yazdırmak
+  istiyorum?
+
+
+  1468
+  01:14:20,850 --> 01:14:24,220 Özellikle
+  1, 2, 3 tuğla.
+
+
+  1469
+  01:14:24,220 --> 01:14:26,790
+  Buradaki şemamıza
+  geri dönersek ve ben
+
+
+  1470
+  01:14:26,790 --> 01:14:33,700
+Machine Translated by Google
+  gerçekten de 3'e 3'lük bir kare, 3'ü
+  geniş ve 3'ü uzun olması gerektiğini şart koşun,
+
+  1471
+  01:14:33,700 --> 01:14:35,880 İlk
+  satırı yazdırmak için ne yapmak
+  istedim?
+
+  1472
+  01:14:35,880 --> 01:14:40,095 Tuğla
+  tuğla yazdırmak istiyorum, tuğla.
+
+  1473
+  01:14:40,095 --> 01:14:42,720 İkinci
+  satıra ne yazdırmak istiyorum? tuğla,
+  tuğla, tuğla.
+
+  1474
+  01:14:42,720 --> 01:14:44,580 Ve
+  üçüncü sıra, tuğla, tuğla, tuğla.
+
+  1475
+  01:14:44,580 --> 01:14:48,390 Yani
+  üç şeyi üç kez yapıyorum.
+
+  1476
+  01:14:48,390 --> 01:14:50,650 Olması
+  gereken çok fazla baskı var.
+
+
+
+  1477
+  01:14:50,650 --> 01:14:53,670
+  Bu yüzden buradaki koduma geri dönmeme
+  izin verin ve şimdi teklif etmeme izin verin
+
+
+  1478
+  01:14:53,670 --> 01:14:57,540 yeni
+  başlattığım bu dış döngüyü
+  düşünüyoruz
+
+  1479
+  01:14:57,540 --> 01:15:00,960 her bir
+  sıramızı temsil ediyor.
+
+  1480
+  01:15:00,960 --> 01:15:04,950
+  Boyut aralığında i için, ne
+  olursa olsun garanti edecek
+
+  1481
+  01:15:04,950 --> 01:15:10,920 bundan
+  sonra ne yapacağım, 1, 2, 3 satır
+  yazdırabilirim veya daha genel olarak,
+
+  1482
+Machine Translated by Google
+  01:15:10,920 --> 01:15:15,030 boyut,
+  burada boyut 3 olabilir, ancak daha
+  küçük veya daha büyük olabilir.
+
+  1483
+  01:15:15,030 --> 01:15:17,520 Her
+  satırda ne yapmak istiyorum?
+
+
+
+  1484
+  01:15:17,520 --> 01:15:21,270
+  Tıpkı eski tarz bir daktilo veya
+  yazıcı gibi, her sırada,
+
+  1485
+  01:15:21,270 --> 01:15:24,420
+  Brick, brick, brick çıktısını almak istiyorum;
+  tuğla, tuğla, tuğla; tuğla, tuğla,
+
+  1486
+  01:15:24,420 --> 01:15:25,470 tuğla.
+
+
+
+  1487
+  01:15:25,470 --> 01:15:28,260 Kulağa
+  bir döngü gibi geliyor, bir tür döngü.
+
+
+
+  1488
+  01:15:28,260 --> 01:15:31,740 Yani
+  belki bir döngünün içinde başka bir
+  döngüye sahip olabilirim.
+
+  1489
+  01:15:31,740 --> 01:15:35,100
+  tekrar i kullanmak istemiyorum çünkü
+  Aynı değişkeni kullanmak istemiyorum
+
+
+  1490
+  01:15:35,100 --> 01:15:36,450 ve
+  sayımı karıştır.
+
+  1491
+  01:15:36,450 --> 01:15:38,860 Bu
+  yüzden kural gereği j kullanacağım.
+
+  1492
+  01:15:38,860 --> 01:15:41,460
+  i ve sonra j'yi kullanmak
+  çok yaygın -- belki k,
+
+  1493
+  01:15:41,460 --> 01:15:44,800 ama
+  bundan sonra birbirinizin içinde
+  yuvalanmaya devam etmemelisiniz.
+Machine Translated by Google
+
+  1494
+  01:15:44,800 --> 01:15:47,790
+  Devam edeyim ve 2 boyut
+  aralığındaki j için şunu söyleyeyim,
+
+
+  1495
+  01:15:47,790 --> 01:15:50,940 çünkü
+  bu bir kare ve bu sıraların her biri,
+
+
+
+  1496
+  01:15:50,940 --> 01:15:57,660 tek bir
+  karma çıktı almama izin verin, ancak
+  yeni satır yok, ancak her satırdan sonra,
+
+  1497
+  01:15:57,660 --> 01:16:00,750 sadece
+  yeni bir satır yazdırayım.
+
+  1498
+  01:16:00,750 --> 01:16:03,720
+  Yani burada çok şey oluyor,
+  özellikle de hiç yapmadıysanız
+
+  1499
+  01:16:03,720 --> 01:16:08,220 bırakın
+  döngüleri, Python'a dokundu, ama
+  burada ne yaptığımı da görün,
+
+  1500
+  01:16:08,220 --> 01:16:10,800 ve
+  netlik için bazı yorumlar ekleyeceğim.
+
+  1501
+  01:16:10,800 --> 01:16:22,300
+  Karedeki her sıra için, sıradaki her
+  tuğla için tuğla yazdırın.
+
+  1502
+  01:16:22,300 --> 01:16:25,330
+  Ve burada yorumlar ve daha genel
+  olarak,
+
+  1503
+  01:16:25,330 --> 01:16:28,990 sözde
+  kod gerçekten kendinize ve
+  başkalarına açıklamaya yardımcı olabilir
+
+  1504
+  01:16:28,990 --> 01:16:30,820 kod
+  satırlarınızın ne yaptığını.
+
+  1505
+  01:16:30,820 --> 01:16:35,410
+Machine Translated by Google
+  8. satırda, i eşittir 0'dan boyuta
+  kadar yineliyorum.
+
+  1506
+  01:16:35,410 --> 01:16:37,180 Yani 0,
+  1, 2.
+
+
+  1507
+  01:16:37,180 --> 01:16:41,560 11.
+  satırda aynı şeyi yapıyorum ama 0, 1, 2'den
+  j kullanıyorum.
+
+  1508
+  01:16:41,560 --> 01:16:45,490 Ama bu
+  iyi çünkü i, satırlarımın her birini nasıl
+  temsil ediyor.
+
+  1509
+  01:16:45,490 --> 01:16:49,300
+  Ve ben bu sıraların her birindeyken,
+  bu dış döngünün içinde,
+
+  1510
+  01:16:49,300 --> 01:16:53,110 Tuğla,
+  tuğla, tuğla yapacağım; 1, 2, 3; 1, 2,
+  3; 1, 2, 3.
+
+
+  1511
+  01:16:53,110 --> 01:16:56,830
+  Ama imlecimin bir sonraki satıra
+  ilerlemesini istemiyorum
+
+  1512
+  01:16:56,830 --> 01:17:01,260
+  satırdayken, bu yüzden o satır sonunu
+  geçersiz kılıyorum.
+
+  1513
+  01:17:01,260 --> 01:17:03,010
+  Ama sana grupla ilgili bir
+  soru sormama izin ver.
+
+  1514
+  01:17:03,010 --> 01:17:10,160 şimdi,
+  neden 16. satırda tek başına bir
+  parmak izim var?
+
+  1515
+  01:17:10,160 --> 01:17:13,820 Neden
+  tek başına bir baskım var?
+
+  1516
+  01:17:13,820 --> 01:17:19,180
+  İç döngünün altında,
+  ancak içinde olduğuna dikkat edin.
+Machine Translated by Google
+
+  1517
+  01:17:19,180 --> 01:17:22,300 dış
+  döngü, tabiri caizse.
+
+  1518
+  01:17:22,300 --> 01:17:26,650 16.
+  satırdaki o döngü nihayetinde ne
+  yapıyor?
+
+  1519
+  01:17:26,650 --> 01:17:29,080
+  KİTLE: Bir satırı her
+  bitirdiğinizde,
+
+  1520
+  01:17:29,080 --> 01:17:33,490
+  sonuna yeni bir satır eklemek zorunda.
+
+
+  1521
+  01:17:33,490 --> 01:17:36,905
+  Yazdır, yeni bir satır yazdırır.
+
+  1522
+  01:17:36,905 --> 01:17:37,780
+  DAVID MALAN: Mükemmel.
+
+
+  1523
+  01:17:37,780 --> 01:17:40,330 Her
+  tuğladan sonra yeni bir satır
+  istemiyorum.
+
+  1524
+  01:17:40,330 --> 01:17:42,670
+  Bunu sadece satırın
+  sonunda yapmak istiyorum,
+
+  1525
+  01:17:42,670 --> 01:17:45,460 ve
+  bu yüzden şimdi yorumlarım belki
+  de aydınlatıcıdır.
+
+  1526
+  01:17:45,460 --> 01:17:51,460
+  Buradaki döngünün sıradaki her
+  tuğla için yinelendiğine dikkat edin.
+
+  1527
+  01:17:51,460 --> 01:17:54,190
+  O iç döngüyle işim
+  bittiğinde, tabiri caizse,
+
+  1528
+  01:17:54,190 --> 01:17:57,760
+  vurgulananlarla işim bittiğinde
+Machine Translated by Google
+  Buradaki çizgiler, Evelyn'in bakış açısına göre,
+
+
+  1529
+  01:17:57,760 --> 01:17:59,927
+  Boş yeni bir satır yazdırmam gerekiyor.
+
+  1530
+  01:17:59,927 --> 01:18:03,010
+  Ve bunu daha önce yapmamıştık ama
+  argümansız print'i çağırdığınızda,
+
+  1531
+  01:18:03,010 --> 01:18:05,770 tek
+  elde ettiğiniz otomatik satır sonu,
+
+
+
+  1532
+  01:18:05,770 --> 01:18:09,110
+  imlecin bir sonraki satıra geçtiği
+  ters eğik çizgi n.
+
+  1533
+  01:18:09,110 --> 01:18:13,540
+  Şimdi terminal pencereme
+  dönüp mario.py'yi çalıştırırsam,
+
+  1534
+  01:18:13,540 --> 01:18:16,653
+  Sanırım 3'e 3'lük bir kare almalıyım.
+
+  1535
+  01:18:16,653 --> 01:18:18,820
+  Ve ekranımda bir kare gibi
+  görünmüyor
+
+  1536
+  01:18:18,820 --> 01:18:22,300
+  çünkü bu karmalar genişliklerinden
+  biraz daha uzun, ama aslında öyle
+
+  1537
+  01:18:22,300 --> 01:18:23,680 3'e
+  3.
+
+  1538
+  01:18:23,680 --> 01:18:26,140
+  Ama izin verin, burada
+  her zaman yaptığımız gibi, nasıl
+
+  1539
+  01:18:26,140 --> 01:18:28,030 bu
+  kodu daha da sıkılaştırabiliriz.
+
+  1540
+  01:18:28,030 --> 01:18:32,050
+Machine Translated by Google
+  Anlaşılır olması için, bir an için
+  yorumlarımdan kurtulmama izin verin.
+
+  1541
+  01:18:32,050 --> 01:18:35,680 toplam
+ kaç satır kodumuz olduğunu
+ görebilelim diye.
+
+
+  1542
+  01:18:35,680 --> 01:18:39,040 Ve
+  bunu yapabileceğimizi önermeme
+  izin verin.
+
+  1543
+  01:18:39,040 --> 01:18:41,737
+  Şunu önermeme izin verin,
+  bilirsiniz, bu iç döngü,
+
+  1544
+  01:18:41,737 --> 01:18:43,570
+  özellikle sarmada sorun yaşıyorsanız
+
+
+
+  1545
+  01:18:43,570 --> 01:18:46,360
+  zihniniz bir döngü içinde başka bir
+  döngü etrafında,
+
+  1546
+  01:18:46,360 --> 01:18:47,710 buna
+  kesinlikle ihtiyacınız yok.
+
+  1547
+  01:18:47,710 --> 01:18:49,270 Ya bu
+  numarayı tekrar yaparsak?
+
+  1548
+  01:18:49,270 --> 01:18:54,130
+  Ya dış kısmın içini yazdırırsak ve
+  her birini sadece döngüye sokarsak
+
+  1549
+  01:18:54,130 --> 01:18:57,910 bu
+  hash'ler çarpı onları istediğimiz sayı
+  kadar mı?
+
+
+  1550
+  01:18:57,910 --> 01:19:00,400
+  Daha önceki bir
+  yaklaşımdan ilham alıyoruz
+
+  1551
+  01:19:00,400 --> 01:19:03,980 ve
+  şimdi mario.py'den Python'u
+  çalıştırıyoruz, aynı sonuç,
+Machine Translated by Google
+
+  1552
+  01:19:03,980 --> 01:19:07,480 ama
+  şimdi, baskı karesi gerçekten güzel
+  ve kompakt.
+
+  1553
+  01:19:07,480 --> 01:19:10,810
+  Açık bir döngüsü var ve
+  hala yazdırılıyor
+
+  1554
+  01:19:10,810 --> 01:19:15,340 o
+  satırdaki tüm sağlamaları bir
+  kerede dize çarpma kullanarak.
+
+
+  1555
+  01:19:15,340 --> 01:19:19,600
+  Soyutlamayı seviyorsanız ve zihninizi
+  neyin etrafında daha fazla sarmak istiyorsanız
+
+  1556
+  01:19:19,600 --> 01:19:21,580 kod
+  yapıyor, hadi şunu yapalım.
+
+  1557
+  01:19:21,580 --> 01:19:23,770
+  Neler olup bittiği
+  konusunda tam olarak net değilseniz,
+
+
+  1558
+  01:19:23,770 --> 01:19:25,870 adlı
+  bir işlevi uyguladığınızı varsayalım.
+
+
+
+  1559
+  01:19:25,870 --> 01:19:28,150 satır
+  yazdır, boyut olarak geçiyor.
+
+  1560
+  01:19:28,150 --> 01:19:33,850
+  Ve bu yazdırma satırı işlevinin, basitçe bu
+  genişliği almasını önermeme izin verin
+
+  1561
+  01:19:33,850 --> 01:19:39,260 ve
+  bireysel sağlama sürelerini birçok
+  kez yazdırın.
+
+  1562
+  01:19:39,260 --> 01:19:43,870
+  Başka bir deyişle, işte soyutlama için bir
+  fırsat, bu sayede, peki, ne
+
+  1563
+Machine Translated by Google
+  01:19:43,870 --> 01:19:45,157 satır
+  yazdırmak anlamına mı geliyor?
+
+  1564
+  01:19:45,157 --> 01:19:46,990
+  Baskı karesini
+  uygularken,
+
+  1565
+  01:19:46,990 --> 01:19:49,720
+  Bir satır yazdırmanın ne
+  anlama geldiği umurumda değil,
+
+
+  1566
+  01:19:49,720 --> 01:19:53,440
+  Sadece birinin satırı yazdırmakla
+  ilgilendiğini bilmem gerekiyor.
+
+  1567
+  01:19:53,440 --> 01:19:56,740
+  Parayı tamamen başka bir işleve
+  aktarabilirsiniz.
+
+  1568
+  01:19:56,740 --> 01:19:58,360 Ve
+  yazdırma satırı nasıl çalışır?
+
+  1569
+  01:19:58,360 --> 01:20:02,500 Bir
+  for döngüsü kullanabilir, bu dize çarpma
+  numarasını kullanabilir.
+
+  1570
+  01:20:02,500 --> 01:20:05,980
+  Bu, daha büyük bir program
+  almanın bir yoludur ve bu muhtemelen en
+
+  1571
+  01:20:05,980 --> 01:20:08,120
+  şimdiye kadar incelediğimiz
+  karmaşık bir tane--
+
+
+  1572
+  01:20:08,120 --> 01:20:13,600 ve
+  bir kez bir araya gelen bu daha küçük
+  bileşenlere ayrıştırmak için,
+
+  1573
+  01:20:13,600 --> 01:20:16,390 nihai
+  fikrinize ulaşın.
+
+  1574
+  01:20:16,390 --> 01:20:19,780
+  Soru yok, döngülere
+  bakışımızın sonu bu
+Machine Translated by Google
+
+  1575
+  01:20:19,780 --> 01:20:22,900
+  Python'da, bu şeyleri döngüsel olarak
+  tekrar tekrar yapma yeteneği,
+
+
+  1576
+  01:20:22,900 --> 01:20:25,480 ve
+  bunları koşullu ifadelerle birleştirdiğimizde,
+  bu yetenek
+
+
+  1577
+  01:20:25,480 --> 01:20:28,870 soru
+  sormak ve cevaplamak ve bunları fonksiyonlarımız
+  ve değişkenlerimizle birleştirmek için,
+
+
+  1578
+  01:20:28,870 --> 01:20:31,450 artık
+  gerçekten yapı taşlarının çoğuna
+  sahibiz
+
+
+  1579
+  01:20:31,450 --> 01:20:34,060 çok
+  daha büyük, çok daha ilginç, çok daha
+  fazlasını çözmemiz gerekiyor
+
+
+  1580
+  01:20:34,060 --> 01:20:35,260 daha
+  fazla kişisel soru.
+
+
+  1581
+  01:20:35,260 --> 01:20:39,100
+  Yani önümüzdeki haftalarda tam olarak
+  neyin ters gidebileceğini görmeye başlayacağız.
+
+
+  1582
+  01:20:39,100 --> 01:20:41,080 olsa da,
+  bunu yaptığımızda sizi tanıştıracağız
+
+
+
+  1583
+  01:20:41,080 --> 01:20:45,600 aynı
+  sorunları çözebileceğiniz daha fazla araç.
+
+
+
+  1584
+  01:20:45,600 --> 01:20:47,000
+
